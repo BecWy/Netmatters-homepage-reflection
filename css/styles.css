@@ -426,28 +426,24 @@ nav {
 /* line 59, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .contact {
   background-color: khaki;
-  height: 50px;
 }
 
-/* line 64, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 63, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .about {
   background-color: lightcoral;
-  height: 50px;
 }
 
-/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 67, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .website {
   background-color: lightskyblue;
-  height: 50px;
 }
 
-/* line 74, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social {
   background-color: lightslategrey;
-  height: 50px;
 }
 
-/* line 83, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 79, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 nav {
   display: flex;
   flex-direction: row;
@@ -456,7 +452,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* line 91, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 87, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 #search-bar {
   flex-basis: 100%;
   align-self: center;
@@ -464,7 +460,7 @@ nav {
   border: 3px solid red;
 }
 
-/* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 94, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .banner {
   background-image: url("https://placeimg.com/1000/480/tech");
   background-size: cover;
@@ -472,7 +468,7 @@ nav {
   background-position: center;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 101, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .main-content {
   width: 95%;
   display: flex;
@@ -481,7 +477,7 @@ nav {
   align-items: center;
 }
 
-/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .cards {
   display: flex;
   flex-direction: column;
@@ -490,12 +486,12 @@ nav {
   justify-content: space-around;
 }
 
-/* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 118, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card {
   border: 3px solid red;
 }
 
-/* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -504,7 +500,7 @@ nav {
   justify-content: space-around;
 }
 
-/* line 134, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 130, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   display: flex;
   flex-direction: column;
@@ -513,13 +509,13 @@ nav {
   justify-content: space-around;
 }
 
-/* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news img {
   width: 94%;
   max-width: 450px;
 }
 
-/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 144, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -527,29 +523,71 @@ nav {
   height: 200px;
 }
 
-/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 156, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   text-align: left;
-  margin: 0 0;
+  margin: 0 10px;
 }
 
-/* line 165, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 161, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .thumbnail img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 167, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 footer {
   display: flex;
   flex-direction: column;
+}
+
+/* line 172, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.contact ul,
+.about ul,
+.website ul,
+.social ul {
+  padding-left: 0;
+}
+
+/* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.social-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.social-button li {
+  list-style-type: none;
+  width: 40%;
+  text-align: center;
+  border: 3px solid red;
+}
+
+/* line 199, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+#facebook,
+#twitter {
+  flex-basis: 1;
+}
+
+/* line 204, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+#linked-in {
+  flex-basis: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
