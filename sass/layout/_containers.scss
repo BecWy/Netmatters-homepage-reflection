@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+
+// TEMPORARY BACKGROUND COLORS TO ACTIVATE TO CHECK LAYOUT
+
+header {
+    background-color: purple;
+}
+
+main {
+    background-color: green;
+}
+
+footer {
+    background-color: hotpink;
+}
+
+
+
+
+// HEADER
+nav {
+    background-color: khaki;
+    height: 100px;
+}
+
+.banner {
+    background-color: lightcoral;
+    height: 400px;
+}
+
+
+//MAIN
+
+.main-content {
+}
+
+.cards {
+    background-color: khaki;  
+}
+
+.card {
+    background-color: white;
+}
+
+.intro {
+    background-color: lightcoral;
+}
+
+.latest {
+    background-color: lightskyblue;
+}
+
+
+//FOOTER
+
+.contact {
+    background-color: khaki;
+    height: 50px;
+}
+
+.about {
+    background-color: lightcoral;
+    height: 50px;
+}
+
+.website {
+    background-color: lightskyblue;
+    height: 50px;
+}
+
+.social {
+    background-color: lightslategrey;
+    height: 50px;
+}
+
+
+
+// START ACTUAL LAYOUT CODE
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#search-bar {
+    flex-basis: 100%;
+    align-self: center;
+    text-align: center;
+    border: 3px solid red;
+}
+
+.banner {
+    background-image: url("https://placeimg.com/1000/480/tech");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+   
+}
+
+.card {
+    border: 3px solid red;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+.news img {
+    width: 94%;
+    max-width: 450px;
+}
+
+.posted-by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.posted-by-text {
+    display: flex;
+    flex-direction: column;
+}   
+ 
+.posted-by-text p {
+    text-align: left;
+    margin: 0 0;
+}
+
+.thumbnail img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
