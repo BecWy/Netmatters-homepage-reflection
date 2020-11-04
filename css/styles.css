@@ -374,75 +374,78 @@ template {
 /* line 1, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 * {
   box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  color: #333645;
 }
 
-/* line 8, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 7, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+a {
+  text-decoration: none;
+  color: #333645;
+}
+
+/* line 15, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 header {
   background-color: purple;
 }
 
-/* line 12, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 19, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 main {
   background-color: green;
 }
 
-/* line 16, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 23, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 footer {
   background-color: hotpink;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 nav {
   background-color: khaki;
   height: 100px;
 }
 
-/* line 26, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 33, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .banner {
   background-color: lightcoral;
 }
 
-/* line 34, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .cards {
   background-color: khaki;
 }
 
-/* line 38, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.card {
-  background-color: white;
-}
-
-/* line 42, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 47, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   background-color: lightcoral;
 }
 
-/* line 46, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 51, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   background-color: lightskyblue;
 }
 
-/* line 53, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 58, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .contact {
   background-color: khaki;
 }
 
-/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 62, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .about {
   background-color: lightcoral;
 }
 
-/* line 61, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 66, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .website {
   background-color: lightskyblue;
 }
 
-/* line 65, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 70, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social {
   background-color: lightslategrey;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 78, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 nav {
   display: flex;
   flex-direction: row;
@@ -451,7 +454,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* line 81, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 86, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 #search-bar {
   flex-basis: 100%;
   align-self: center;
@@ -459,7 +462,7 @@ nav {
   border: 3px solid red;
 }
 
-/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -474,12 +477,12 @@ nav {
   text-align: center;
 }
 
-/* line 102, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 107, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .banner h1 {
   margin-top: 0;
 }
 
-/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 111, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .main-content {
   width: 100%;
   display: flex;
@@ -488,7 +491,7 @@ nav {
   align-items: center;
 }
 
-/* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .cards {
   width: 95%;
   margin: 0 auto;
@@ -496,32 +499,57 @@ nav {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
-  padding: 30px 0;
-}
-
-/* line 125, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.card {
-  border: 3px solid red;
-  margin: 15px 0;
+  letter-spacing: 0.4px;
 }
 
 /* line 130, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.card h3 {
-  position: relative;
-  padding-bottom: 20px;
+.card {
+  border: 1px solid red;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px 30px;
+  margin-top: 30px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+  border-radius: 3px;
 }
 
-/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.card h3::after {
+/* line 142, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.card h2 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.8px;
+}
+
+/* line 152, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.card h2::after {
   content: "";
   position: absolute;
   width: 30px;
-  top: 40px;
+  top: 35px;
   left: calc(50% - 15px);
   border-bottom: 4px solid red;
 }
 
-/* line 145, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 162, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.card p {
+  margin-bottom: 13px;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+/* line 168, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.card .fake-button {
+  padding: 5px 15px;
+  font-size: 17.008px;
+  line-height: 35px;
+}
+
+/* line 174, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -529,17 +557,17 @@ nav {
   padding: 40px 15px;
 }
 
-/* line 152, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 181, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro h1 {
   margin: 0 0;
 }
 
-/* line 156, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 185, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p {
   margin-bottom: 0;
 }
 
-/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   width: 95%;
   display: flex;
@@ -548,51 +576,52 @@ nav {
   margin: 20px 0;
 }
 
-/* line 168, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 197, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h3 {
   padding-bottom: 35px;
   position: relative;
+  text-transform: uppercase;
 }
 
-/* line 173, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 203, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h3::after {
   content: "";
   position: absolute;
-  width: 60px;
+  width: 65px;
   left: 0;
   bottom: 0;
   border-bottom: 5px solid red;
 }
 
-/* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 214, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 0 25px;
 }
 
-/* line 188, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 218, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text > .button {
   text-align: left;
 }
 
-/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 222, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest a {
   margin: 20px auto;
 }
 
-/* line 196, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 226, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   margin: 10px 0px;
   border: 3px red solid;
   padding: 20px 0;
 }
 
-/* line 202, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 232, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news img {
   width: 100%;
   max-width: 600px;
 }
 
-/* line 207, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 237, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -602,20 +631,20 @@ nav {
   margin-top: 10px;
 }
 
-/* line 216, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 246, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 221, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 251, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   text-align: left;
   margin: 0 20px;
   padding: 2px 0;
 }
 
-/* line 227, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 257, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .thumbnail img {
   height: 50px;
   width: 50px;
@@ -623,13 +652,22 @@ nav {
   margin-top: 0;
 }
 
-/* line 234, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 264, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 footer {
   display: flex;
   flex-direction: column;
 }
 
-/* line 239, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 269, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.contact > h2,
+.about > h2,
+.website > h2,
+.social > h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* line 277, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .contact,
 .about,
 .website,
@@ -637,7 +675,7 @@ footer {
   padding: 0px 15px;
 }
 
-/* line 246, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 284, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .contact ul,
 .about ul,
 .website ul,
@@ -646,13 +684,13 @@ footer {
   padding-left: 0;
 }
 
-/* line 254, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 292, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social {
   display: flex;
   flex-direction: column;
 }
 
-/* line 259, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 297, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social-button {
   display: flex;
   flex-direction: row;
@@ -661,7 +699,7 @@ footer {
   justify-content: flex-start;
 }
 
-/* line 267, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 305, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social-button li {
   list-style-type: none;
   width: 45%;
@@ -670,53 +708,58 @@ footer {
   margin: 2%;
 }
 
-/* line 276, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 314, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .social-button li a {
   padding: 15px 50px;
   display: block;
 }
 
-/* line 281, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 319, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 #facebook,
 #twitter {
   flex-basis: 1;
 }
 
-/* line 286, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 324, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 #linked-in {
   flex-basis: 2;
 }
 
-/* line 295, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 333, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.button {
+  font-weight: bold;
+}
+
+/* line 337, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .button a {
-  padding: 15px;
   border: 3px solid red;
-  width: 150px;
   text-align: center;
-  margin-top: 20px;
   display: inline-block;
   border-radius: 5%;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-/* line 305, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 348, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .fake-button {
-  padding: 15px;
   border: 3px solid red;
-  width: 150px;
   text-align: center;
-  margin: 20px 0;
   display: inline-block;
   border-radius: 5%;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-/* line 1, ../../../../Desktop/html-css-reflection/sass/components/_icons.scss */
-.icon {
+/* line 2, ../../../../Desktop/html-css-reflection/sass/components/_icons.scss */
+.icon i {
   background-color: lightblue;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: calc(50% - 30px);
-  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: 17px;
+  line-height: 58px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

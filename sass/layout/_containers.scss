@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #333645;
+}
+
+a {
+    text-decoration: none;
+    color:#333645;
 }
 
 
@@ -35,9 +42,7 @@ nav {
     background-color: khaki;  
 }
 
-.card {
-    background-color: white;
-}
+
 
 .intro {
     background-color: lightcoral;
@@ -117,29 +122,53 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-around;
-    padding: 30px 0;
-   
+    justify-content: space-around; 
+    letter-spacing: 0.4px;  
 }
+
 
 .card {
-    border: 3px solid red;
-    margin: 15px 0;
+    border: 1px solid red;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 30px;
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
+    border-radius: 3px;
 }
 
-.card h3 {
+
+.card h2 {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.8px;
 }
 
-.card h3::after {
+.card h2::after {
     content: "";
     position: absolute;
     width: 30px;
-    top: 40px;
+    top: 35px;
     left: calc(50% - 15px);
     border-bottom: 4px solid red;
     
+}
+
+.card p {
+    margin-bottom: 13px;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.card .fake-button {
+    padding: 5px 15px;
+    font-size: 17.008px;
+    line-height: 35px;
 }
 
 .intro {
@@ -168,12 +197,13 @@ nav {
 .latest > h3 {
     padding-bottom: 35px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .latest > h3::after {
     content: "";
     position: absolute;
-    width: 60px;
+    width: 65px;
     left: 0;
     bottom: 0;
     border-bottom: 5px solid red;
@@ -236,6 +266,14 @@ footer {
     flex-direction: column;
 }
 
+.contact > h2,
+.about > h2,
+.website > h2,
+.social > h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .contact,
 .about,
 .website,
@@ -292,22 +330,28 @@ footer {
 
 
 //BUTTON
+.button {
+    font-weight: bold;
+}
+
 .button a {
-    padding: 15px;
+    // padding: 15px;
     border: 3px solid red;
-    width: 150px;
+    // width: 150px;
     text-align: center;
-    margin-top: 20px;
     display: inline-block;
     border-radius: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .fake-button {
-    padding: 15px;
+    // padding: 15px;
     border: 3px solid red;
-    width: 150px;
+    // width: 150px;
     text-align: center;
-    margin: 20px 0;
     display: inline-block;
     border-radius: 5%;
+    text-transform: uppercase;
+    font-weight: 600;
 }
