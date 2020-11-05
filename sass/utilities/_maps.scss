@@ -39,7 +39,7 @@ $themes: (
 
 // ICONS:HOVER
 @each $theme, $color in $themes {
-    .icon-#{$theme} i:hover {
+    .card-#{$theme}:hover .icon-#{$theme} i {
         color: $color;
         background-color: #ffffff;
     }
@@ -56,11 +56,13 @@ $themes: (
 
 // BUTTONS:HOVER
 @each $theme, $color in $themes {
-    .button-#{$theme}:hover {
+    .card-#{$theme}:hover .button-#{$theme} {
         color: $color;
         background-color: #ffffff;
     }
 } 
+
+
 
 
 // CARD
