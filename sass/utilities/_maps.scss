@@ -1,0 +1,77 @@
+
+// // COLOR MAP
+
+// $color: (
+//     'white': #ffffff,
+
+// );
+
+
+// // BREAKPOINTS
+
+// $breakpoints: (
+//     'sm': 768px,
+//     'med': 993px,
+//     'lg': 1278px,
+// );
+
+
+
+// CARD THEMES
+
+$themes: (
+    'software': #67809f,
+    'it': #4183d7,
+    'marketing': #2ecc71,
+    'telecoms': #d64541,
+    'web': #926fb1,
+    'cyber':  #f62459,
+    'training': #926fb1,
+);
+
+
+// ICONS
+@each $theme, $color in $themes {
+    .icon-#{$theme} i {
+        background-color: $color;
+    }
+} 
+
+// ICONS:HOVER
+@each $theme, $color in $themes {
+    .icon-#{$theme} i:hover {
+        color: $color;
+        background-color: #ffffff;
+    }
+} 
+
+// BUTTONS
+@each $theme, $color in $themes {
+    .button-#{$theme} {
+        color: #ffffff;
+        background-color: $color;
+    }
+} 
+
+// BUTTONS:HOVER
+@each $theme, $color in $themes {
+    .button-#{$theme}:hover {
+        color: $color;
+        background-color: #ffffff;
+    }
+} 
+
+// CARD
+@each $theme, $color in $themes {
+    .card-#{$theme} {
+        background-color: #ffffff;
+    }
+} 
+
+// CARD HOVER
+@each $theme, $color in $themes {
+    .card-#{$theme}:hover {
+        background-color: $color;
+    }
+} 
+

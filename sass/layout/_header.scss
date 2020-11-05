@@ -2,14 +2,53 @@
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    height: 100px;
+    height: 150px;
+    width: 100%;
+    border: 3px solid red;
+}
+
+
+#logo img {
+    width: 300px;
+}
+
+#direct-call {
+    margin-left: 15px;
+    font-size: 26px;
+    line-height: 26px;
+    color: #333645;
+    padding: 5px 15px;
+
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    margin-left: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #ffffff;
+    background-color: #333645;
+    padding: 5px 15px;
+    margin-top: 0;
+}
+
+#menu i {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+#menu span {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
 }
 
 #search-bar {
-    flex-basis: 100%;
+    width: 100%;
     align-self: center;
     text-align: center;
     border: 3px solid red;
@@ -21,7 +60,8 @@ nav {
     align-items: center;
     justify-content: center;
     height: 525px;
-    background-image: url("https://placeimg.com/1000/480/tech");
+    background-image: url("../../html-css-reflection/images/slides/slide-1.jpeg");
+    background-color: yellow;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

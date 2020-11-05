@@ -1,3 +1,234 @@
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-software i {
+  background-color: #67809f;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-it i {
+  background-color: #4183d7;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-marketing i {
+  background-color: #2ecc71;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-telecoms i {
+  background-color: #d64541;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-web i {
+  background-color: #926fb1;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-cyber i {
+  background-color: #f62459;
+}
+
+/* line 35, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-training i {
+  background-color: #926fb1;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-software i:hover {
+  color: #67809f;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-it i:hover {
+  color: #4183d7;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-marketing i:hover {
+  color: #2ecc71;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-telecoms i:hover {
+  color: #d64541;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-web i:hover {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-cyber i:hover {
+  color: #f62459;
+  background-color: #ffffff;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.icon-training i:hover {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-software {
+  color: #ffffff;
+  background-color: #67809f;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-it {
+  color: #ffffff;
+  background-color: #4183d7;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-marketing {
+  color: #ffffff;
+  background-color: #2ecc71;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-telecoms {
+  color: #ffffff;
+  background-color: #d64541;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-web {
+  color: #ffffff;
+  background-color: #926fb1;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-cyber {
+  color: #ffffff;
+  background-color: #f62459;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-training {
+  color: #ffffff;
+  background-color: #926fb1;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-software:hover {
+  color: #67809f;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-it:hover {
+  color: #4183d7;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-marketing:hover {
+  color: #2ecc71;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-telecoms:hover {
+  color: #d64541;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-web:hover {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-cyber:hover {
+  color: #f62459;
+  background-color: #ffffff;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.button-training:hover {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-software {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-it {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-marketing {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-telecoms {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-web {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-cyber {
+  background-color: #ffffff;
+}
+
+/* line 66, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-training {
+  background-color: #ffffff;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-software:hover {
+  background-color: #67809f;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-it:hover {
+  background-color: #4183d7;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-marketing:hover {
+  background-color: #2ecc71;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-telecoms:hover {
+  background-color: #d64541;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-web:hover {
+  background-color: #926fb1;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-cyber:hover {
+  background-color: #f62459;
+}
+
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_maps.scss */
+.card-training:hover {
+  background-color: #926fb1;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -596,28 +827,71 @@ a {
 nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  height: 100px;
+  height: 150px;
+  width: 100%;
+  border: 3px solid red;
 }
 
-/* line 11, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#logo img {
+  width: 300px;
+}
+
+/* line 17, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#direct-call {
+  margin-left: 15px;
+  font-size: 26px;
+  line-height: 26px;
+  color: #333645;
+  padding: 5px 15px;
+}
+
+/* line 26, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#menu {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  margin-left: 20px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: #333645;
+  padding: 5px 15px;
+  margin-top: 0;
+}
+
+/* line 39, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#menu i {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+/* line 44, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#menu span {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
-  flex-basis: 100%;
+  width: 100%;
   align-self: center;
   text-align: center;
   border: 3px solid red;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 525px;
-  background-image: url("https://placeimg.com/1000/480/tech");
+  background-image: url("../../html-css-reflection/images/slides/slide-1.jpeg");
+  background-color: yellow;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -625,7 +899,7 @@ nav {
   text-align: center;
 }
 
-/* line 32, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 72, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
@@ -720,7 +994,6 @@ footer {
 
 /* line 17, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .fake-button {
-  border: 3px solid red;
   text-align: center;
   display: inline-block;
   border-radius: 5%;
@@ -730,7 +1003,6 @@ footer {
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_icons.scss */
 .icon i {
-  background-color: lightblue;
   border-radius: 50%;
   width: 60px;
   height: 60px;
