@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    // color: #333645; NEED TO CHECK
+}
+
+a {
+    text-decoration: none;
+    // color:#333645; NEED TO CHECK
+}
+
+.border-test {
+    border: solid 3px red;
+}
+
+
+
+
+
+
+// TEMPORARY BACKGROUND COLORS TO ACTIVATE TO CHECK LAYOUT
+
+//MAIN
+.cards {
+    background-color: khaki;  
+}
+
+.intro {
+    background-color: lightcoral;
+}
+
+.latest {
+    background-color: lightskyblue;
+}
+
+//FOOTER
+.contact {
+    background-color: khaki;
+}
+
+.about {
+    background-color: lightcoral;
+}
+
+.website {
+    background-color: lightskyblue;
+}
+
+.social {
+    background-color: lightslategrey;
+}

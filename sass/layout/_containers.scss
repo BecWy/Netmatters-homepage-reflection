@@ -1,112 +1,3 @@
-* {
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    color: #333645;
-}
-
-a {
-    text-decoration: none;
-    color:#333645;
-}
-
-
-// TEMPORARY BACKGROUND COLORS TO ACTIVATE TO CHECK LAYOUT
-
-header {
-    background-color: purple;
-}
-
-main {
-    background-color: green;
-}
-
-footer {
-    background-color: hotpink;
-}
-
-// HEADER
-nav {
-    background-color: khaki;
-    height: 100px;
-}
-
-.banner {
-    background-color: lightcoral;
-}
-
-
-//MAIN
-
-
-.cards {
-    background-color: khaki;  
-}
-
-
-
-.intro {
-    background-color: lightcoral;
-}
-
-.latest {
-    background-color: lightskyblue;
-}
-
-
-//FOOTER
-
-.contact {
-    background-color: khaki;
-}
-
-.about {
-    background-color: lightcoral;
-}
-
-.website {
-    background-color: lightskyblue;
-}
-
-.social {
-    background-color: lightslategrey;
-}
-
-
-
-// START ACTUAL LAYOUT CODE
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#search-bar {
-    flex-basis: 100%;
-    align-self: center;
-    text-align: center;
-    border: 3px solid red;
-}
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 525px;
-    background-image: url("https://placeimg.com/1000/480/tech");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.banner h1 {
-    margin-top: 0;
-}
 
 .main-content {
     width: 100%;
@@ -126,7 +17,6 @@ nav {
     letter-spacing: 0.4px;  
 }
 
-
 .card {
     border: 1px solid red;
     margin: 0 auto;
@@ -137,7 +27,6 @@ nav {
     box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
     border-radius: 3px;
 }
-
 
 .card h2 {
     position: relative;
@@ -209,8 +98,6 @@ nav {
     border-bottom: 5px solid red;
 }
 
-
-
 .news-text {
     padding: 0 25px;
 }
@@ -261,97 +148,6 @@ nav {
     margin-top: 0;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact > h2,
-.about > h2,
-.website > h2,
-.social > h2 {
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.contact,
-.about,
-.website,
-.social {
-    padding: 0px 15px;
-}
-
-.contact ul,
-.about ul,
-.website ul,
-.social ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.social {
-    display: flex;
-    flex-direction: column;
-}
-
-.social-button {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.social-button li {
-    list-style-type: none;   
-    width: 45%;
-    text-align: center;
-    border: 3px solid red;
-    margin: 2%;
-   
-}
-
-.social-button li a {
-    padding: 15px 50px;
-    display: block;
-}
-
-#facebook,
-#twitter {
-    flex-basis: 1; 
-}
-
-#linked-in {
-    flex-basis: 2;
-}
 
 
 
-
-
-//BUTTON
-.button {
-    font-weight: bold;
-}
-
-.button a {
-    // padding: 15px;
-    border: 3px solid red;
-    // width: 150px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 5%;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.fake-button {
-    // padding: 15px;
-    border: 3px solid red;
-    // width: 150px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 5%;
-    text-transform: uppercase;
-    font-weight: 600;
-}

@@ -1,2 +1,52 @@
+/* line 1, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+/* line 7, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.border-test {
+  border: solid 3px red;
+}
+
+/* line 24, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.cards {
+  background-color: khaki;
+}
+
+/* line 28, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.intro {
+  background-color: lightcoral;
+}
+
+/* line 32, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.latest {
+  background-color: lightskyblue;
+}
+
+/* line 37, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.contact {
+  background-color: khaki;
+}
+
+/* line 41, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.about {
+  background-color: lightcoral;
+}
+
+/* line 45, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.website {
+  background-color: lightskyblue;
+}
+
+/* line 49, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.social {
+  background-color: lightslategrey;
+}
 
 /*# sourceMappingURL=base.css.map */

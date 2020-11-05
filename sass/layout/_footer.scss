@@ -1,0 +1,65 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact > h2,
+.about > h2,
+.website > h2,
+.social > h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contact,
+.about,
+.website,
+.social {
+    padding: 0px 15px;
+}
+
+.contact ul,
+.about ul,
+.website ul,
+.social ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.social-button li {
+    list-style-type: none;   
+    width: 45%;
+    text-align: center;
+    border: 3px solid red;
+    margin: 2%;
+   
+}
+
+.social-button li a {
+    padding: 15px 50px;
+    display: block;
+}
+
+#facebook,
+#twitter {
+    flex-basis: 1; 
+}
+
+#linked-in {
+    flex-basis: 2;
+}
+
