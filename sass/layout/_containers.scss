@@ -44,8 +44,7 @@
     width: 30px;
     top: 35px;
     left: calc(50% - 15px);
-    border-bottom: 4px solid red;
-    
+    border-bottom: 4px solid #333645;
 }
 
 .card p {
@@ -64,23 +63,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 15px;
+    padding: 50px 15px;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    background-color: #333645;
 }
 
 .intro h1 {
-    margin: 0 0;
+    margin-top: -6px;
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .intro p {
-    margin-bottom: 0;
+    margin-top: -6px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
 }
+
+.intro p strong {
+    font-weight: 600;
+}
+
+
 
 .latest {
     width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px 0;
+    // margin: 20px 0;
 }
 
 .latest > h3 {
@@ -99,7 +119,14 @@
 }
 
 .news-text {
-    padding: 0 25px;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.4;
+    color: #666666;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid red;
 }
 
 .news-text  > .button {

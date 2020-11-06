@@ -18,7 +18,7 @@ a {
 
 
 
-// TEMPORARY BACKGROUND COLORS TO ACTIVATE TO CHECK LAYOUT
+// TEMPORARY BACKGROUND COLORS TO CHECK LAYOUT
 
 //MAIN
 .cards {
@@ -34,18 +34,9 @@ a {
 }
 
 //FOOTER
-.contact {
-    background-color: khaki;
-}
-
-.about {
-    background-color: lightcoral;
-}
-
-.website {
-    background-color: lightskyblue;
-}
-
+.contact,
+.about,
+.website,
 .social {
-    background-color: lightslategrey;
+    border: 3px solid red;
 }

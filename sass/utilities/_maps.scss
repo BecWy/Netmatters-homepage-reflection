@@ -64,18 +64,60 @@ $themes: (
 
 
 
+// TEXT
+.card h2,
+.card p {
+    color: #333645;  
+}
 
-// CARD
-@each $theme, $color in $themes {
-    .card-#{$theme} {
-        background-color: #ffffff;
-    }
-} 
+// TEXT:HOVER
+.card:hover h2,
+.card:hover p {
+    color: #ffffff;
+}
 
-// CARD HOVER
-@each $theme, $color in $themes {
-    .card-#{$theme}:hover {
-        background-color: $color;
-    }
-} 
 
+
+
+// // CARD
+// @each $theme, $color in $themes {
+//     .card-#{$theme} {
+//         background-color: #ffffff;
+//     }
+// } 
+
+// // CARD HOVER
+// @each $theme, $color in $themes {
+//     .card-#{$theme}:hover {
+//         background-color: $color;
+//     }
+// } 
+
+
+
+// CARD MIXIN TEST HOVER
+@mixin themes-bg-hov($map) {
+    @each $theme, $color in $map {
+        &-#{$theme}:hover {
+            background-color: $color;
+        }
+    } 
+}
+
+.card {
+    @include themes-bg-hov($themes);
+}
+
+
+// // ICON & BUTTON MIXIN HOVER need to think about if this is useful
+// @mixin themes-fg-hov($map) {
+//     @each $theme, $color in $map {
+//         &-#{$theme}:hover {
+//             background-color: $color;
+//         }
+//     } 
+// }
+
+// .card > * {
+//     @include themes-fg-hov($themes);
+// }

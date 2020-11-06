@@ -30,23 +30,11 @@ a {
 }
 
 /* line 37, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.contact {
-  background-color: khaki;
-}
-
-/* line 41, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.about {
-  background-color: lightcoral;
-}
-
-/* line 45, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.website {
-  background-color: lightskyblue;
-}
-
-/* line 49, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+.contact,
+.about,
+.website,
 .social {
-  background-color: lightslategrey;
+  border: 3px solid red;
 }
 
 /*# sourceMappingURL=base.css.map */
