@@ -4,6 +4,68 @@ footer {
     flex-direction: column;
 }
 
+
+.client-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    margin: 30px 0;
+    display: none;
+}
+
+
+.partner-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    margin: 30px 0;
+    display: none;
+}
+
+#google {
+    // padding: 0px 0px;
+    // margin: 0px 0px;
+    width: 240px;
+}
+
+#google img {
+    height: 100%;
+}
+
+
+// #future-50:hover {
+//     background-image: url(../../images/external-branding/other/future-50-color.jpeg);
+// }
+
+
+// // STATIC HIDE COLOR 
+// #future-50 .color,
+// #qms .color,
+// #carbon-charter .color {
+//     display: none;
+// }
+
+// // HOVER SHOW COLOR
+// #future-50:hover .color,
+// #qms:hover .color,
+// #carbon-charter:hover .color {
+//     display: inline-block;
+// }
+
+// // HOVER HIDE BW
+// #future-50:hover .bw,
+// #qms:hover .bw,
+// #carbon-charter:hover .bw {
+//     display: none;
+// }
+
+
+
+
+
+
 .contact > h2,
 .about > h2,
 .website > h2,

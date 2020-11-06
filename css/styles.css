@@ -602,22 +602,7 @@ a {
   border: solid 3px red;
 }
 
-/* line 24, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.cards {
-  background-color: khaki;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.intro {
-  background-color: lightcoral;
-}
-
-/* line 32, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.latest {
-  background-color: lightskyblue;
-}
-
-/* line 37, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+/* line 34, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 .contact,
 .about,
 .website,
@@ -735,27 +720,32 @@ a {
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 /* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.latest > h3 {
-  padding-bottom: 35px;
+.latest > h2 {
   position: relative;
   text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #333645;
+  font-weight: 600;
 }
 
-/* line 112, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.latest > h3::after {
+/* line 118, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.latest > h2::after {
   content: "";
   position: absolute;
-  width: 65px;
+  width: 70px;
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #333645;
 }
 
-/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 127, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -767,58 +757,76 @@ a {
   border: 1px solid red;
 }
 
-/* line 132, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.news-text > .button {
-  text-align: left;
+/* line 138, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.news-text h3 > a {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #926fb1;
+  font-weight: 600;
 }
 
-/* line 136, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 146, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.news-text p {
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #666666;
+}
+
+/* line 156, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest a {
   margin: 20px auto;
 }
 
-/* line 140, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   margin: 10px 0px;
   border: 3px red solid;
   padding: 20px 0;
 }
 
-/* line 146, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 166, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news img {
   width: 100%;
   max-width: 600px;
 }
 
-/* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 171, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-top: 1px red solid;
-  padding-top: 25px;
-  margin-top: 10px;
+  border-top: 1px solid #666666;
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #666666;
 }
 
-/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 165, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
-  text-align: left;
+  color: #666666;
   margin: 0 20px;
   padding: 2px 0;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.thumbnail img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin-top: 0;
+/* line 198, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.posted-by-text p strong {
+  color: #333645;
+  font-weight: 600;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
@@ -908,7 +916,37 @@ footer {
   flex-direction: column;
 }
 
-/* line 7, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 8, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.client-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  margin: 30px 0;
+  display: none;
+}
+
+/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.partner-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80px;
+  margin: 30px 0;
+  display: none;
+}
+
+/* line 27, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#google {
+  width: 240px;
+}
+
+/* line 33, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#google img {
+  height: 100%;
+}
+
+/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -917,7 +955,7 @@ footer {
   font-weight: 400;
 }
 
-/* line 15, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 77, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website,
@@ -925,7 +963,7 @@ footer {
   padding: 0px 15px;
 }
 
-/* line 22, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 84, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact ul,
 .about ul,
 .website ul,
@@ -934,13 +972,13 @@ footer {
   padding-left: 0;
 }
 
-/* line 30, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 92, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social {
   display: flex;
   flex-direction: column;
 }
 
-/* line 35, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 97, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social-button {
   display: flex;
   flex-direction: row;
@@ -949,7 +987,7 @@ footer {
   justify-content: flex-start;
 }
 
-/* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 105, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social-button li {
   list-style-type: none;
   width: 45%;
@@ -958,19 +996,19 @@ footer {
   margin: 2%;
 }
 
-/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social-button li a {
   padding: 15px 50px;
   display: block;
 }
 
-/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #facebook,
 #twitter {
   flex-basis: 1;
 }
 
-/* line 62, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 124, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #linked-in {
   flex-basis: 2;
 }
@@ -1014,6 +1052,18 @@ footer {
   opacity: .9;
 }
 
+/* line 40, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.news-text .button a {
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #926fb1;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_icons.scss */
 .icon i {
   border-radius: 50%;
@@ -1029,6 +1079,15 @@ footer {
 .news img {
   border-radius: 0px 0px 3px 3px;
   border: 1px solid red;
+}
+
+/* line 6, ../../../../Desktop/html-css-reflection/sass/components/_images.scss */
+.thumbnail img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 0;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

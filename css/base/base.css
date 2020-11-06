@@ -14,22 +14,7 @@ a {
   border: solid 3px red;
 }
 
-/* line 24, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.cards {
-  background-color: khaki;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.intro {
-  background-color: lightcoral;
-}
-
-/* line 32, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.latest {
-  background-color: lightskyblue;
-}
-
-/* line 37, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+/* line 34, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 .contact,
 .about,
 .website,

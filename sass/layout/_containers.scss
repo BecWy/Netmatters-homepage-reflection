@@ -96,26 +96,32 @@
 
 
 .latest {
-    width: 95%;
+    width: 95%; //need to check pixels match
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    // margin: 20px 0;
+    
+
 }
 
-.latest > h3 {
-    padding-bottom: 35px;
+.latest > h2 { 
     position: relative;
     text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #333645;
+    font-weight: 600;
 }
 
-.latest > h3::after {
+.latest > h2::after {
     content: "";
     position: absolute;
-    width: 65px;
+    width: 70px;
     left: 0;
     bottom: 0;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #333645;
 }
 
 .news-text {
@@ -129,9 +135,23 @@
     border: 1px solid red;
 }
 
-.news-text  > .button {
-    text-align: left;    
+.news-text h3 > a {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #926fb1;
+    font-weight: 600;
 }
+
+.news-text p {
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing:	0.4px;
+    color: #666666;
+}
+
+
 
 .latest a {
     margin: 20px auto;
@@ -152,28 +172,37 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-top: 1px red solid;
-    padding-top: 25px;
-    margin-top: 10px;
+    border-top: 1px solid #666666;
+    padding-top: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #666666;
 }
 
 .posted-by-text {
     display: flex;
     flex-direction: column;
 }   
- 
+
 .posted-by-text p {
-    text-align: left;
+    color: #666666;
     margin: 0 20px;
     padding: 2px 0;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
 }
 
-.thumbnail img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-top: 0;
+.posted-by-text p strong {
+    color: #333645;
+    font-weight: 600;
 }
+ 
+
+
+
 
 
 
