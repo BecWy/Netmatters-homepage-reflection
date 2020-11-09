@@ -8,6 +8,7 @@
 // }
 
 
+
 // WORKING
 @each $theme, $color in $themes {
     #nav-icon-#{$theme}:not(last-child) {
@@ -44,7 +45,6 @@
 
 
 
-// NEED TO FIX - ADD ANOTHER DECLARATION FOR THE UL MINUS THE LI?
 
 .nav-web > ul,
 .nav-it > ul,
@@ -70,7 +70,7 @@
     .title-#{$theme} > .nav-#{$theme}:not(last-child) {
         background-color: $color;
         color: #ffffff;
-        display: none;
+        // display: none; //HIDDEN
         
     }
 } 
@@ -86,6 +86,11 @@
 
 
 // WORKING BACKUP DROPDOWN LISTS. CURRENTLY HIDDEN
+.nav-2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .nav-2-dropdown ul {
     list-style-type: none;
     padding-left: 0;

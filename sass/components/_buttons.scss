@@ -61,3 +61,66 @@
     border-radius:	3px;
     font-weight: 400;
 }
+
+
+
+//SOCIAL BUTTONS
+.social-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 0 0;
+    text-align: left;
+} 
+
+.social-button li {
+    list-style-type: none;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 45%; //or 211px; 
+    // max-width: 250px; //value tbc - here for testing. To add for wider screens?
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    height: 56px;
+    background-color: rgba(0, 0, 0, .25);
+    border: 2px solid #333645;
+}
+
+.social-button li a {
+    padding: 12px 0;
+    justify-content: center;
+    display: block;
+    font-size: 28px;
+    line-height: 28px;
+    width: 100%;
+    height: 100%;
+    padding: auto 15px;
+}
+
+
+
+#linked-in {
+    margin-right: auto;
+}
+
+#twitter {
+    margin-left: auto;
+    // margin-right: auto; //to add for wider screens if needed
+}
+
+#facebook a:hover {
+    background-color: #3b5998;
+}
+
+#linked-in:hover {
+    background-color: #0077b5;
+}
+
+#twitter:hover {
+    background-color: #00aced;
+}

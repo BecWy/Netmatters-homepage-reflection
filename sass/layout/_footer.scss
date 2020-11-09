@@ -85,12 +85,20 @@ footer a {
 .social > h2 {
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 26px;
     margin-top: 0;
     font-size: 16px;
     line-height: 17.6px;
 }
 
+.contact > h2,
+.about > h2,
+.website > h2 {
+    margin-bottom: 26px;
+}
+
+.social > h2 {
+    margin-bottom: 0;
+}
 
 .contact li,
 .about li,
@@ -107,6 +115,7 @@ footer a {
 .website,
 .social {
     padding: 0px 15px;
+    margin-bottom: 15px;
 }
 
 .contact ul,
@@ -122,34 +131,7 @@ footer a {
     flex-direction: column;
 }
 
-.social-button {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-}
 
-.social-button li {
-    list-style-type: none;   
-    width: 45%;
-    text-align: center;
-    border: 3px solid red;
-    margin: 2%;
-   
+#empty {
+    background-color: #333645;
 }
-
-.social-button li a {
-    padding: 15px 50px;
-    display: block;
-}
-
-#facebook,
-#twitter {
-    flex-basis: 1; 
-}
-
-#linked-in {
-    flex-basis: 2;
-}
-

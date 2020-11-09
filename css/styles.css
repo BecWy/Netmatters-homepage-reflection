@@ -603,14 +603,6 @@ a {
   border: solid 3px red;
 }
 
-/* line 30, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.contact,
-.about,
-.website,
-.social {
-  border: 3px solid red;
-}
-
 /* line 2, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .main-content {
   width: 100%;
@@ -647,9 +639,10 @@ a {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
+  padding: 50px 0;
 }
 
-/* line 38, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 39, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card {
   border: 1px solid #d6d6d6;
   margin: 0 auto;
@@ -661,7 +654,7 @@ a {
   border-radius: 3px;
 }
 
-/* line 49, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2 {
   position: relative;
   padding-bottom: 17px;
@@ -672,7 +665,7 @@ a {
   line-height: 19.8px;
 }
 
-/* line 59, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 60, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2::after {
   content: "";
   position: absolute;
@@ -682,26 +675,26 @@ a {
   border-bottom: 4px solid #333645;
 }
 
-/* line 68, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card:hover h2::after {
   border-bottom: 4px solid #ffffff;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 74, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card p {
   margin-bottom: 13px;
   line-height: 22px;
   font-size: 13px;
 }
 
-/* line 79, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card .fake-button {
   padding: 5px 15px;
   font-size: 17.008px;
   line-height: 35px;
 }
 
-/* line 85, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 86, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -713,7 +706,7 @@ a {
   background-color: #333645;
 }
 
-/* line 96, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 97, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro h1 {
   margin-top: -6px;
   margin-bottom: 28px;
@@ -723,7 +716,7 @@ a {
   font-weight: 400;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p {
   margin-top: -6px;
   margin-bottom: 25px;
@@ -731,19 +724,19 @@ a {
   line-height: 30px;
 }
 
-/* line 112, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p strong {
   font-weight: 600;
 }
 
-/* line 118, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 124, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 125, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2 {
   position: relative;
   text-transform: uppercase;
@@ -753,19 +746,29 @@ a {
   line-height: 24px;
   color: #333645;
   font-weight: 600;
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+  margin-top: 0;
 }
 
-/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2::after {
   content: "";
   position: absolute;
   width: 70px;
-  left: 0;
+  left: 15px;
   bottom: 0;
   border-bottom: 5px solid #333645;
 }
 
-/* line 145, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.news {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 0;
+}
+
+/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -777,7 +780,7 @@ a {
   margin-top: -4px;
 }
 
-/* line 156, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 166, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text h3 > a {
   font-size: 16px;
   line-height: 24px;
@@ -785,7 +788,7 @@ a {
   font-weight: 600;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 173, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text p {
   margin-bottom: 25px;
   font-size: 13px;
@@ -793,18 +796,12 @@ a {
   color: #666666;
 }
 
-/* line 172, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest a {
   margin: 20px auto;
 }
 
-/* line 176, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
-.news {
-  margin: 10px 0px;
-  padding: 20px 0;
-}
-
-/* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -817,13 +814,13 @@ a {
   color: #666666;
 }
 
-/* line 194, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 199, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 206, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   color: #666666;
   margin: 0 20px;
@@ -832,7 +829,7 @@ a {
   line-height: 22px;
 }
 
-/* line 207, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 214, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
@@ -852,18 +849,21 @@ nav {
 /* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #logo img {
   width: 300px;
+  border: 1px solid red;
 }
 
-/* line 17, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #direct-call {
   margin-left: 15px;
   font-size: 26px;
   line-height: 26px;
   color: #333645;
   padding: 5px 15px;
+  padding-top: 10px;
+  border: 1px solid red;
 }
 
-/* line 26, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 29, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu {
   display: flex;
   flex-direction: column;
@@ -872,24 +872,28 @@ nav {
   text-align: center;
   color: #ffffff;
   background-color: #333645;
-  padding: 5px 15px;
+  padding: 6px 15px;
   margin-top: 0;
+  border-radius: 3px;
+  border: 1px solid red;
 }
 
-/* line 38, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu i {
   font-size: 26px;
   line-height: 26px;
 }
 
-/* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 48, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu span {
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
+  letter-spacing: normal;
+  margin-top: 5px;
 }
 
-/* line 49, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 56, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
   width: 100%;
   align-self: center;
@@ -897,7 +901,7 @@ nav {
   border: 3px solid red;
 }
 
-/* line 56, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 63, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -913,7 +917,7 @@ nav {
   text-align: center;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
@@ -980,13 +984,24 @@ footer a {
 .social > h2 {
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 26px;
   margin-top: 0;
   font-size: 16px;
   line-height: 17.6px;
 }
 
-/* line 95, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.contact > h2,
+.about > h2,
+.website > h2 {
+  margin-bottom: 26px;
+}
+
+/* line 99, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.social > h2 {
+  margin-bottom: 0;
+}
+
+/* line 103, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact li,
 .about li,
 .website li {
@@ -994,15 +1009,16 @@ footer a {
   line-height: 22px;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website,
 .social {
   padding: 0px 15px;
+  margin-bottom: 15px;
 }
 
-/* line 112, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact ul,
 .about ul,
 .website ul,
@@ -1011,83 +1027,53 @@ footer a {
   padding-left: 0;
 }
 
-/* line 120, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social {
   display: flex;
   flex-direction: column;
 }
 
-/* line 125, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.social-button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: flex-start;
+/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#empty {
+  background-color: #333645;
 }
 
-/* line 133, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.social-button li {
-  list-style-type: none;
-  width: 45%;
-  text-align: center;
-  border: 3px solid red;
-  margin: 2%;
-}
-
-/* line 142, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.social-button li a {
-  padding: 15px 50px;
-  display: block;
-}
-
-/* line 147, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#facebook,
-#twitter {
-  flex-basis: 1;
-}
-
-/* line 152, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#linked-in {
-  flex-basis: 2;
-}
-
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-software:not(last-child) {
   color: #67809f;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-it:not(last-child) {
   color: #4183d7;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-marketing:not(last-child) {
   color: #2ecc71;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-telecoms:not(last-child) {
   color: #d64541;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-web:not(last-child) {
   color: #926fb1;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-cyber:not(last-child) {
   color: #f62459;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-training:not(last-child) {
   color: #926fb1;
 }
 
-/* line 19, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 20, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 > ul {
   list-style-type: none;
   padding-left: 0;
@@ -1099,7 +1085,7 @@ footer a {
   display: none;
 }
 
-/* line 31, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 32, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 > ul > ul {
   list-style-type: none;
   padding-left: 0;
@@ -1108,7 +1094,7 @@ footer a {
   text-align: center;
 }
 
-/* line 40, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 ul ul li * {
   padding: 0 0;
   margin: 0 0;
@@ -1136,49 +1122,42 @@ footer a {
 .title-software > .nav-software:not(last-child) {
   background-color: #67809f;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it > .nav-it:not(last-child) {
   background-color: #4183d7;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing > .nav-marketing:not(last-child) {
   background-color: #2ecc71;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms > .nav-telecoms:not(last-child) {
   background-color: #d64541;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > .nav-web:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber > .nav-cyber:not(last-child) {
   background-color: #f62459;
   color: #ffffff;
-  display: none;
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training > .nav-training:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
-  display: none;
 }
 
 /* line 79, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
@@ -1231,6 +1210,12 @@ footer a {
 }
 
 /* line 89, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 94, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown ul {
   list-style-type: none;
   padding-left: 0;
@@ -1241,56 +1226,56 @@ footer a {
   margin: 0 auto;
 }
 
-/* line 100, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 105, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown ul li {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-software:not(last-child) {
   background-color: #67809f;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-it:not(last-child) {
   background-color: #4183d7;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-marketing:not(last-child) {
   background-color: #2ecc71;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-telecoms:not(last-child) {
   background-color: #d64541;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-web:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-cyber:not(last-child) {
   background-color: #f62459;
   color: #ffffff;
   display: none;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2-dropdown > .nav-training:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
@@ -1362,6 +1347,70 @@ footer a {
   background-color: #926fb1;
   border-radius: 3px;
   font-weight: 400;
+}
+
+/* line 68, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.social-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0;
+  text-align: left;
+}
+
+/* line 78, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.social-button li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 45%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+  height: 56px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid #333645;
+}
+
+/* line 94, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.social-button li a {
+  padding: 12px 0;
+  justify-content: center;
+  display: block;
+  font-size: 28px;
+  line-height: 28px;
+  width: 100%;
+  height: 100%;
+  padding: auto 15px;
+}
+
+/* line 107, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#linked-in {
+  margin-right: auto;
+}
+
+/* line 111, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#twitter {
+  margin-left: auto;
+}
+
+/* line 116, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#facebook a:hover {
+  background-color: #3b5998;
+}
+
+/* line 120, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#linked-in:hover {
+  background-color: #0077b5;
+}
+
+/* line 124, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#twitter:hover {
+  background-color: #00aced;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_icons.scss */
