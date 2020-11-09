@@ -5,8 +5,8 @@
 		"../../sass/base/base.scss"
 	],
 	"sourcesContent": [
-		"* {\r\n    box-sizing: border-box;\r\n    font-family: 'poppins', sans-serif;\r\n    // color: #333645; NEED TO CHECK\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    // color:#333645; NEED TO CHECK\r\n}\r\n\r\n.border-test {\r\n    border: solid 3px red;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n// TEMPORARY BACKGROUND COLORS TO CHECK LAYOUT\r\n\r\n//MAIN\r\n// .cards {\r\n//     background-color: khaki;  \r\n// }\r\n\r\n\r\n// .latest {\r\n//     background-color: lightskyblue;\r\n// }\r\n\r\n//FOOTER\r\n.contact,\r\n.about,\r\n.website,\r\n.social {\r\n    border: 3px solid red;\r\n}\r\n"
+		"* {\r\n    box-sizing: border-box;\r\n    font-family: 'poppins', sans-serif;\r\n    letter-spacing: 0.4px;\r\n    // color: #333645; NEED TO CHECK\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    // color:#333645; NEED TO CHECK\r\n}\r\n\r\n.border-test {\r\n    border: solid 3px red;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n// TEMPORARY BACKGROUND COLORS TO CHECK LAYOUT\r\n\r\n\r\n// .latest {\r\n//     background-color: lightskyblue;\r\n// }\r\n\r\n//FOOTER\r\n.contact,\r\n.about,\r\n.website,\r\n.social {\r\n    border: 3px solid red;\r\n}\r\n"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,qBAAqB;CAErC;;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CAExB;;;AAED,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,aAAa;CACxB;;;AAoBD,AAAA,QAAQ;AACR,MAAM;AACN,QAAQ;AACR,OAAO,CAAC;EACJ,MAAM,EAAE,aAAa;CACxB"
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,qBAAqB;EAClC,cAAc,EAAE,KAAK;CAExB;;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CAExB;;;AAED,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,aAAa;CACxB;;;AAeD,AAAA,QAAQ;AACR,MAAM;AACN,QAAQ;AACR,OAAO,CAAC;EACJ,MAAM,EAAE,aAAa;CACxB"
 }

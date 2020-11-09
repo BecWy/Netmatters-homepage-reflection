@@ -14,13 +14,29 @@
     font-weight: 600;
 }
 
+.banner > .button a {
+    padding: 5px 20px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #926fb1;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.banner > .button:hover {
+    background-color: #7e57a0;
+    box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.125);
+}
+
+
 .fake-button {
-    // padding: 15px;
     text-align: center;
     display: inline-block;
-    border-radius: 5%;
+    border-radius: 3px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .intro .button a {
@@ -28,7 +44,6 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 35px;
-    letter-spacing: 0.4px;
     background-color: #ffffff;
     color: #333645;
 }
@@ -41,7 +56,6 @@
     padding:	5px 15px;
     font-size:	17px;
     line-height:	35px;
-    letter-spacing:	0.4px;
     color:	#ffffff;
     background-color:	#926fb1;
     border-radius:	3px;

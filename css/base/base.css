@@ -2,19 +2,20 @@
 * {
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  letter-spacing: 0.4px;
 }
 
-/* line 7, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+/* line 8, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 12, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+/* line 13, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 .border-test {
   border: solid 3px red;
 }
 
-/* line 34, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
+/* line 30, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 .contact,
 .about,
 .website,

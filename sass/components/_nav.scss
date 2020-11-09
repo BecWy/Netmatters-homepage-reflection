@@ -8,14 +8,14 @@
 // }
 
 
-
+// WORKING
 @each $theme, $color in $themes {
     #nav-icon-#{$theme}:not(last-child) {
         color: $color;
     }
 } 
 
-
+// WORKING TITLE LIST - HIDDEN FOR SMALL SCREENS
 .nav-2 > ul {
     list-style-type: none;
     padding-left: 0;
@@ -24,8 +24,10 @@
     justify-content: space-around;
     width: 95%;
     margin: 0 auto;
+    display: none; //HIDDEN
 }
 
+// WORKING TITLE BOXES
 .nav-2 > ul > ul {
     list-style-type: none;
     padding-left: 0;
@@ -34,29 +36,36 @@
     text-align: center;
 }
 
+// WORKING TITLE BOX ITEMS
 .nav-2 ul ul li * {
     padding: 0 0;
     margin: 0 0;
 }
 
 
-.nav-2-dropdown ul {
+
+// NEED TO FIX - ADD ANOTHER DECLARATION FOR THE UL MINUS THE LI?
+
+.nav-web > ul,
+.nav-it > ul,
+.nav-telecoms > ul,
+.nav-software > ul,
+.nav-marketing > ul,
+.nav-cyber > ul {
     list-style-type: none;
     padding-left: 0;
+    text-align: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 95%;
     margin: 0 auto;
 }
 
 
-.nav-2-dropdown ul li {
-    font-weight: 500;
-    text-transform: uppercase;
-}
 
-
+// ICON & BACKGROUND COLORS- WORKING
 @each $theme, $color in $themes {
     .title-#{$theme} > .nav-#{$theme}:not(last-child) {
         background-color: $color;
@@ -75,10 +84,30 @@
 } 
 
 
-// .nav-web {
-//     display: none;
-// }
 
-// .nav-2:hover .nav-web {
-//     display: inline-block;
-// }
+// WORKING BACKUP DROPDOWN LISTS. CURRENTLY HIDDEN
+.nav-2-dropdown ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+}
+
+// WORKING BACKUP DROPDOWN LIST ITEMS. CURRENTLY HIDDEN
+.nav-2-dropdown ul li {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+// WORKING BACKUP DROPDOWN LIST COLORS. CURRENTLY HIDDEN
+@each $theme, $color in $themes {
+    .nav-2-dropdown > .nav-#{$theme}:not(last-child) {
+        background-color: $color;
+        color: #ffffff;
+        display: none;       //HIDDEN
+    }
+} 

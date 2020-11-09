@@ -4,7 +4,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 150px;
+    height: 150px; 
     width: 100%;
     border: 3px solid red;
 }
@@ -29,7 +29,6 @@ nav {
     height: 56px;
     margin-left: 20px;
     text-align: center;
-    letter-spacing: normal;
     color: #ffffff;
     background-color: #333645;
     padding: 5px 15px;
@@ -60,13 +59,15 @@ nav {
     align-items: center;
     justify-content: center;
     height: 525px;
-    background-image: url("../../html-css-reflection/images/slides/slide-1.jpeg");
-    background-color: yellow;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .95), 60%, transparent), //quite close
+                        linear-gradient(to right bottom, rgba(0, 0, 0, .8), 55%, transparent), //quite close            
+                        url("../../html-css-reflection/images/slides/slide-1.jpeg");
+    background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; 
 }
 
 .banner h1 {

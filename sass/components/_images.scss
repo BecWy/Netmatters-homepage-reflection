@@ -1,7 +1,11 @@
 .news img {
-    border-radius: 0px 0px 3px 3px;
-    border: 1px solid red;
+    border-radius: 3px 3px 0px 0px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 0px;
 }
+
 
 .thumbnail img {
     height: 50px;
