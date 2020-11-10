@@ -2,6 +2,7 @@
 footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
     font-size: 16px;
     line-height: 22.8571px;
     color:	#ffffff;
@@ -23,8 +24,19 @@ footer a {
     justify-content: space-around;
     height: 100px;
     margin: 30px 0;
-    display: none;
+    // display: none; //desktop only
 }
+
+
+#beat {
+    width: 72px; height: 70px;
+    background: url(../../images/external-branding/clients/beat-sprite.png) -10px -10px;
+    border: 2px solid red;
+}
+
+// #beat:hover {
+//     background: url(../../images/external-branding/clients/beat-sprite.png) -102px -10px;
+// }
 
 
 .partner-footer {
@@ -33,7 +45,7 @@ footer a {
     justify-content: space-around;
     height: 80px;
     margin: 30px 0;
-    display: none;
+    display: none; //desktop only
 }
 
 #google {
@@ -88,6 +100,7 @@ footer a {
     margin-top: 0;
     font-size: 16px;
     line-height: 17.6px;
+    width: 95%;
 }
 
 .contact > h2,
@@ -97,7 +110,7 @@ footer a {
 }
 
 .social > h2 {
-    margin-bottom: 0;
+    margin-bottom: 0; //adjusted for social button top margin of 30px
 }
 
 .contact li,
@@ -126,12 +139,5 @@ footer a {
     padding-left: 0;
 }
 
-.social {
-    display: flex;
-    flex-direction: column;
-}
 
 
-#empty {
-    background-color: #333645;
-}

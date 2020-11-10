@@ -63,13 +63,23 @@ nav {
 .banner {
     display: flex;
     flex-direction: column;
+    width: 100%; 
     align-items: center;
     justify-content: center;
     height: 525px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .95), 60%, transparent), //quite close
-                        linear-gradient(to right bottom, rgba(0, 0, 0, .8), 55%, transparent), //quite close            
-                        url("../../html-css-reflection/images/slides/slide-1.jpeg");
+
     background-color: #000000;
+
+    //mobile/tablet gradient
+    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
+    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
+   
+   //desktop gradient
+//    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
+//    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
+
+
+   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

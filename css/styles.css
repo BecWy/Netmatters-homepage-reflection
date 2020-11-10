@@ -620,18 +620,20 @@ a {
   color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
+  width: 95%;
 }
 
-/* line 19, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 20, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .banner > span {
   margin-bottom: 35px;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   font-weight: 400;
+  width: 95%;
 }
 
-/* line 29, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 31, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .cards {
   width: 95%;
   margin: 0 auto;
@@ -642,7 +644,7 @@ a {
   padding: 50px 0;
 }
 
-/* line 39, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card {
   border: 1px solid #d6d6d6;
   margin: 0 auto;
@@ -654,7 +656,7 @@ a {
   border-radius: 3px;
 }
 
-/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2 {
   position: relative;
   padding-bottom: 17px;
@@ -665,7 +667,7 @@ a {
   line-height: 19.8px;
 }
 
-/* line 60, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 62, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2::after {
   content: "";
   position: absolute;
@@ -675,29 +677,30 @@ a {
   border-bottom: 4px solid #333645;
 }
 
-/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card:hover h2::after {
   border-bottom: 4px solid #ffffff;
 }
 
-/* line 74, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 76, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card p {
   margin-bottom: 13px;
   line-height: 22px;
   font-size: 13px;
 }
 
-/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card .fake-button {
   padding: 5px 15px;
   font-size: 17.008px;
   line-height: 35px;
 }
 
-/* line 86, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: space-around;
   padding: 50px 15px;
   font-size: 16px;
@@ -706,7 +709,7 @@ a {
   background-color: #333645;
 }
 
-/* line 97, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 100, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro h1 {
   margin-top: -6px;
   margin-bottom: 28px;
@@ -716,7 +719,7 @@ a {
   font-weight: 400;
 }
 
-/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p {
   margin-top: -6px;
   margin-bottom: 25px;
@@ -724,19 +727,19 @@ a {
   line-height: 30px;
 }
 
-/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p strong {
   font-weight: 600;
 }
 
-/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 125, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 128, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2 {
   position: relative;
   text-transform: uppercase;
@@ -751,7 +754,7 @@ a {
   margin-top: 0;
 }
 
-/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 142, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2::after {
   content: "";
   position: absolute;
@@ -761,14 +764,14 @@ a {
   border-bottom: 5px solid #333645;
 }
 
-/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   width: 95%;
   margin: 10px auto;
   padding: 20px 0;
 }
 
-/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 158, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -780,7 +783,7 @@ a {
   margin-top: -4px;
 }
 
-/* line 166, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text h3 > a {
   font-size: 16px;
   line-height: 24px;
@@ -788,7 +791,7 @@ a {
   font-weight: 600;
 }
 
-/* line 173, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 176, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text p {
   margin-bottom: 25px;
   font-size: 13px;
@@ -796,12 +799,12 @@ a {
   color: #666666;
 }
 
-/* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 185, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest a {
   margin: 20px auto;
 }
 
-/* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -814,13 +817,13 @@ a {
   color: #666666;
 }
 
-/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 204, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 206, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 209, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   color: #666666;
   margin: 0 20px;
@@ -829,7 +832,7 @@ a {
   line-height: 22px;
 }
 
-/* line 214, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 217, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
@@ -905,11 +908,12 @@ nav {
 .banner {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   justify-content: center;
   height: 525px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), 60%, transparent), linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), 55%, transparent), url("../../html-css-reflection/images/slides/slide-1.jpeg");
   background-color: #000000;
+  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.597543) 80%, rgba(0, 0, 0, 0.398664) 100%), url("../../html-css-reflection/images/slides/slide-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -917,7 +921,7 @@ nav {
   text-align: center;
 }
 
-/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 90, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
@@ -926,6 +930,7 @@ nav {
 footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
   font-size: 16px;
   line-height: 22.8571px;
   color: #ffffff;
@@ -934,24 +939,31 @@ footer {
   padding-bottom: 43px;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 footer a {
   font-size: 13px;
   line-height: 22px;
   color: #ffffff;
 }
 
-/* line 20, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 100px;
   margin: 30px 0;
-  display: none;
 }
 
-/* line 30, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 31, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#beat {
+  width: 72px;
+  height: 70px;
+  background: url(../../images/external-branding/clients/beat-sprite.png) -10px -10px;
+  border: 2px solid red;
+}
+
+/* line 42, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .partner-footer {
   display: flex;
   flex-direction: row;
@@ -961,23 +973,23 @@ footer a {
   display: none;
 }
 
-/* line 39, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 51, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #google {
   width: 240px;
 }
 
-/* line 45, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #google img {
   height: 100%;
 }
 
-/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 62, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #future-50:hover {
   opacity: 0;
   background-image: url(../../images/external-branding/other/future-50-color.jpeg);
 }
 
-/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 94, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -987,21 +999,22 @@ footer a {
   margin-top: 0;
   font-size: 16px;
   line-height: 17.6px;
+  width: 95%;
 }
 
-/* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2 {
   margin-bottom: 26px;
 }
 
-/* line 99, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 112, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social > h2 {
   margin-bottom: 0;
 }
 
-/* line 103, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact li,
 .about li,
 .website li {
@@ -1009,7 +1022,7 @@ footer a {
   line-height: 22px;
 }
 
-/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website,
@@ -1018,24 +1031,13 @@ footer a {
   margin-bottom: 15px;
 }
 
-/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 134, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact ul,
 .about ul,
 .website ul,
 .social ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.social {
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#empty {
-  background-color: #333645;
 }
 
 /* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
@@ -1355,28 +1357,23 @@ footer a {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  margin: 0 0;
-  text-align: left;
+  margin-top: 0;
 }
 
-/* line 78, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 76, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: center;
   width: 45%;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
-  height: 56px;
+  height: 55px;
   background-color: rgba(0, 0, 0, 0.25);
-  border: 2px solid #333645;
 }
 
-/* line 94, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 89, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li a {
   padding: 12px 0;
   justify-content: center;
@@ -1388,27 +1385,22 @@ footer a {
   padding: auto 15px;
 }
 
-/* line 107, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#linked-in {
-  margin-right: auto;
-}
-
-/* line 111, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 100, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter {
   margin-left: auto;
 }
 
-/* line 116, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 105, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #facebook a:hover {
   background-color: #3b5998;
 }
 
-/* line 120, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #linked-in:hover {
   background-color: #0077b5;
 }
 
-/* line 124, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter:hover {
   background-color: #00aced;
 }

@@ -70,25 +70,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
-    margin: 0 0;
-    text-align: left;
+    margin-top: 0;
 } 
 
 .social-button li {
     list-style-type: none;   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    width: 45%; //or 211px; 
+    width: 45%; //or 211px in peeper; 
     // max-width: 250px; //value tbc - here for testing. To add for wider screens?
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 0;
-    height: 56px;
+    height: 55px;
     background-color: rgba(0, 0, 0, .25);
-    border: 2px solid #333645;
 }
 
 .social-button li a {
@@ -102,17 +97,11 @@
     padding: auto 15px;
 }
 
-
-
-#linked-in {
-    margin-right: auto;
-}
-
 #twitter {
     margin-left: auto;
-    // margin-right: auto; //to add for wider screens if needed
 }
 
+//HOVER COLORS
 #facebook a:hover {
     background-color: #3b5998;
 }
