@@ -7,8 +7,6 @@ footer {
     line-height: 22.8571px;
     color:	#ffffff;
     background-color:	#333645;
-    padding-top: 47px;
-    padding-bottom:	43px;
 }
 
 footer a {
@@ -17,80 +15,125 @@ footer a {
     color:	#ffffff;
 }
 
-
+//CLIENT FOOTER
 .client-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 100px;
-    margin: 30px 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
     // display: none; //desktop only
 }
 
 
-#beat {
-    width: 72px; height: 70px;
-    background: url(../../images/external-branding/clients/beat-sprite.png) -10px -10px;
-    border: 2px solid red;
+//CLIENT LOGOS
+#busseys {
+    width: 188px; 
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
 }
 
-// #beat:hover {
-//     background: url(../../images/external-branding/clients/beat-sprite.png) -102px -10px;
-// }
+#busseys:hover {
+    background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
+}
+
+#crane {
+    width: 287px; 
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
+}
+
+#crane:hover {
+    background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
+}
+
+#beat { 
+    width: 72px; 
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;    
+}
+
+#beat:hover {
+    background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
+}
 
 
+#northern-diver {
+        width: 322px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
+}
+
+#northern-diver:hover {
+        background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
+    }
+
+//PARTNER FOOTER
 .partner-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 80px;
-    margin: 30px 0;
-    display: none; //desktop only
-}
-
-#google {
-    // padding: 0px 0px;
-    // margin: 0px 0px;
-    width: 240px;
-}
-
-#google img {
+    // height: 80px;
+    // margin: 30px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
     height: 100%;
+
+    background-color: #ffffff;
+    // display: none; //desktop only
 }
 
-// need to figure out color background
+//PARTNER LOGOS
+#google {
+    width: 214px;
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/other/google-color.png");
+    background-size: cover;
+}
+
+#microsoft {
+    width: 115px;
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
+    background-size: cover;
+}
+
+#future-50 {
+        width: 44px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
+    }
+
 #future-50:hover {
-    opacity: 0;
-    background-image: url(../../images/external-branding/other/future-50-color.jpeg);
+    background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
+}
 
+#qms {
+    width: 60px; 
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
+}
+#qms:hover {
+    background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
+}
+
+#carbon-charter {
+    width: 175px; 
+    height: 70px;
+    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
+}
+
+#carbon-charter:hover {
+    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
 }
 
 
-// // STATIC HIDE COLOR 
-// #future-50 .color,
-// #qms .color,
-// #carbon-charter .color {
-//     display: none;
-// }
-
-// // HOVER SHOW COLOR
-// #future-50:hover .color,
-// #qms:hover .color,
-// #carbon-charter:hover .color {
-//     display: inline-block;
-// }
-
-// // HOVER HIDE BW
-// #future-50:hover .bw,
-// #qms:hover .bw,
-// #carbon-charter:hover .bw {
-//     display: none;
-// }
-
-
-
-
-
+//MAIN FOOTER
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -121,8 +164,6 @@ footer a {
 
 }
 
-
-
 .contact,
 .about,
 .website,
@@ -139,5 +180,11 @@ footer a {
     padding-left: 0;
 }
 
+.contact {
+    padding-top: 43px;
+}
 
+.social {
+    padding-bottom: 43px;
+}
 
