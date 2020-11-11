@@ -9,14 +9,36 @@
 
 
 
-// WORKING
+// ICON COLOR
 @each $theme, $color in $themes {
     #nav-icon-#{$theme}:not(last-child) {
         color: $color;
     }
 } 
 
-// WORKING TITLE LIST - HIDDEN FOR SMALL SCREENS
+//ICON HOVER WHITE
+@each $theme, $color in $themes {
+    .title-#{$theme}:hover:not(last-child) > li > #nav-icon-#{$theme}:not(last-child) {
+        color: #ffffff;
+    }
+} 
+
+//BOX HOVER BACKGROUND COLOR
+@each $theme, $color in $themes {
+    .title-#{$theme}:hover:not(last-child) {
+        background-color: $color;
+    }
+} 
+
+
+
+
+
+// TITLE LIST - HIDDEN FOR SMALL SCREENS
+.nav-2 {
+    border-bottom: .5px solid #ffffff;
+}
+
 .nav-2 > ul {
     list-style-type: none;
     padding-left: 0;
@@ -42,12 +64,36 @@
     // padding-top: 18px;  //disabled as spacings are off
     // padding-bottom: 19px; //disabled as spacings are off
     color: #ffffff;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-right: 1px solid rgba(0,0,0,.25);
     text-transform: uppercase;
+    position: relative;
     // margin-left: 0;
     // margin-right: 0;
 }
+
+
+//BOX PSEUDO-ELEMENTS FOR EXTRA SIDE BORDERS
+.title-web::before {
+    content: "";
+    position: absolute;
+    height: 98px;
+    left: -1.5px;   //needs to be -1.5px in chrome & edge, but -2.5px in IE? firefox is slightly different too
+    top: 0;
+    border-right: 1px solid rgba(0,0,0,.25);
+}
+
+.title-cyber::after {
+    content: "";
+    position: absolute;
+    height: 98px;
+    right: -2px;  //similar issue to the above comment
+    top: 0;
+    border-left: 1px solid hsla(0,0%,100%,.1);
+}
+
+
+
 
 // WORKING TITLE BOX ITEMS
 .nav-2 ul ul li * {
