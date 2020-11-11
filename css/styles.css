@@ -652,11 +652,12 @@ a {
   padding: 30px 30px;
   margin-top: 30px;
   width: 100%;
+  max-width: 658px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
   border-radius: 3px;
 }
 
-/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 53, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2 {
   position: relative;
   padding-bottom: 17px;
@@ -667,7 +668,7 @@ a {
   line-height: 19.8px;
 }
 
-/* line 62, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 63, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2::after {
   content: "";
   position: absolute;
@@ -677,26 +678,26 @@ a {
   border-bottom: 4px solid #333645;
 }
 
-/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 72, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card:hover h2::after {
   border-bottom: 4px solid #ffffff;
 }
 
-/* line 76, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 77, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card p {
   margin-bottom: 13px;
   line-height: 22px;
   font-size: 13px;
 }
 
-/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 83, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card .fake-button {
   padding: 5px 15px;
   font-size: 17.008px;
   line-height: 35px;
 }
 
-/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 89, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -709,7 +710,7 @@ a {
   background-color: #333645;
 }
 
-/* line 100, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 101, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro h1 {
   margin-top: -6px;
   margin-bottom: 28px;
@@ -719,7 +720,7 @@ a {
   font-weight: 400;
 }
 
-/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 110, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p {
   margin-top: -6px;
   margin-bottom: 25px;
@@ -727,19 +728,19 @@ a {
   line-height: 30px;
 }
 
-/* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 117, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p strong {
   font-weight: 600;
 }
 
-/* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 128, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2 {
   position: relative;
   text-transform: uppercase;
@@ -754,7 +755,7 @@ a {
   margin-top: 0;
 }
 
-/* line 142, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2::after {
   content: "";
   position: absolute;
@@ -764,14 +765,14 @@ a {
   border-bottom: 5px solid #333645;
 }
 
-/* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 152, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   width: 95%;
   margin: 10px auto;
   padding: 20px 0;
 }
 
-/* line 158, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -783,7 +784,7 @@ a {
   margin-top: -4px;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text h3 > a {
   font-size: 16px;
   line-height: 24px;
@@ -791,7 +792,7 @@ a {
   font-weight: 600;
 }
 
-/* line 176, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 177, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text p {
   margin-bottom: 25px;
   font-size: 13px;
@@ -799,12 +800,12 @@ a {
   color: #666666;
 }
 
-/* line 185, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 186, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest a {
   margin: 20px auto;
 }
 
-/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 193, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -817,13 +818,13 @@ a {
   color: #666666;
 }
 
-/* line 204, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 205, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 209, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   color: #666666;
   margin: 0 20px;
@@ -832,7 +833,7 @@ a {
   line-height: 22px;
 }
 
-/* line 217, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 218, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
@@ -842,25 +843,24 @@ a {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   height: 150px;
   width: 100%;
+  padding: 20px 15px;
 }
 
 /* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #logo img {
-  width: 300px;
   border: 1px solid red;
+  max-width: 100%;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #direct-call {
-  margin-left: 15px;
   display: flex;
-  height: 52px;
-  width: 52px;
-  font-size: 26px;
+  height: 44px;
+  width: 42px;
+  font-size: 20px;
   line-height: 26px;
   color: #333645;
   justify-content: center;
@@ -868,86 +868,90 @@ nav {
   border: 1px solid red;
 }
 
-/* line 34, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 37, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu {
   display: flex;
   flex-direction: column;
-  height: 56px;
+  height: 44px;
+  width: 50px;
   margin-left: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #333645;
-  padding: 6px 15px;
+  padding: 5px 15px;
   margin-top: 0;
   border-radius: 3px;
   border: 1px solid red;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu i {
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 22px;
+  align-self: center;
 }
 
-/* line 53, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 58, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu span {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 10px;
+  line-height: 10px;
   text-transform: uppercase;
   letter-spacing: normal;
-  margin-top: 5px;
+  margin-top: 2px;
+  align-self: center;
 }
 
-/* line 61, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 67, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
   position: relative;
-  width: 95%;
+  width: 100%;
   align-self: center;
   margin: 0 auto;
-  height: 70px;
 }
 
-/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 74, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text] {
-  font-size: 14px;
+  font-size: 11px;
   line-height: 20px;
   letter-spacing: normal;
   color: #555555;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset;
   border-radius: 2px;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  outline: 10px solid rgba(255, 255, 255, 0.2);
-  padding-top: 5px;
-  padding-bottom: 5px;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 40px;
 }
 
-/* line 91, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text]:focus {
   outline: none;
+  box-shadow: none;
 }
 
-/* line 96, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=submit] {
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 2;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: normal;
   color: #555555;
   background-color: transparent;
-  border: 3px solid red;
-  padding: 5px 2px;
+  padding: 1px 6px;
+  height: 36px;
+  border: none;
+  outline: none;
 }
 
-/* line 112, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -964,13 +968,13 @@ nav {
   text-align: center;
 }
 
-/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 141, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-footer {
+.main-footer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -981,7 +985,7 @@ footer {
 }
 
 /* line 12, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-footer a {
+.main-footer a {
   font-size: 13px;
   line-height: 22px;
   color: #ffffff;
@@ -1278,9 +1282,10 @@ footer a {
   background-color: #926fb1;
 }
 
-/* line 38, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 37, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 {
   border-bottom: .5px solid #ffffff;
+  display: none;
 }
 
 /* line 42, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
@@ -1705,6 +1710,62 @@ footer a {
   border-radius: 50%;
   margin-top: 0;
   border: none;
+}
+
+@media (max-width: 768px) {
+  /* line 6, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .client-footer,
+  .partner-footer {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 20, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .main-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  /* line 27, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .about,
+  .contact,
+  .website,
+  .social {
+    width: 50%;
+    border: 2px solid red;
+    align-self: flex-start;
+  }
+  /* line 37, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .news-3 {
+    display: none;
+  }
+  /* line 42, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  #direct-call {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 65, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .nav-2 {
+    display: block;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .news-3 {
+    display: inline-block;
+  }
+  /* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .about,
+  .contact,
+  .website,
+  .social {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

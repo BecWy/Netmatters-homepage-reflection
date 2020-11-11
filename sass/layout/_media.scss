@@ -1,0 +1,116 @@
+
+//UNDER 768PX
+
+//FOOTERS partner and client footers hidden for smaller screens. //DONE
+@media (max-width: 768px) {
+    .client-footer,
+    .partner-footer {
+        display: none;
+    }
+  }
+
+
+  //NAV approx. 603px logo stops growing. Max width of 300px?
+
+
+
+//FROM 768PX
+
+@media (min-width: 768px) {
+    .main-footer {
+        flex-direction: row; //started working on 2 and 4 column layouts for larger screens
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .about,
+    .contact,
+    .website,
+    .social {
+        width: 50%;
+        border: 2px solid red;
+        align-self: flex-start;
+    }
+
+    //LATEST 3rd news item hidden. //DONE
+    .news-3 {
+        display: none;
+    }
+
+    //NAV call button disappears. //DONE
+    #direct-call {
+        display: none;
+    }
+}
+
+
+//NAV search bar moves up
+
+//INTRO max width activated
+//INTRO left margin starts to expand
+
+//************LATEST switch to 2 column layout. Fixed width. 
+
+//FOOTERS need to set smaller logo size
+//************** FOOTERS main footer splits into 2 columns. //started working on 2 and 4 column layouts
+
+
+
+
+//FROM 992PX
+
+//NAV bar appears. //DONE
+@media (min-width: 992px) {
+        .nav-2 {
+            display: block;
+        }
+}
+
+
+//NAV support and contact buttons appear
+//NAV search bar becomes a button that animates on focus
+
+//BANNER text aligns left
+//BANNER margin-left starts expanding
+
+//CARD format 3 + 2
+
+//INTRO overlay added
+//INTRO margins reset and start to expland again
+
+//LATEST news items grow and margins expand
+
+//FOOTER client and partner logos grow
+
+
+
+
+//FROM 1260PX
+
+//LATEST 3rd news item added again. //DONE.
+@media (min-width: 1260px) {
+    .news-3 {
+        display: inline-block; 
+    }
+
+    //FOOTER main footer switches to 4 column layout. //started working on 2 and 4 column layouts
+    .about,
+    .contact,
+    .website,
+    .social {
+        width: 25%;
+    }
+}
+  
+//NAV search bar expands
+
+//BANNER margin left fixed width
+//BANNER - need to check where filter changes!!!!!!!!!!!
+
+// CARDS format 3 + 4
+
+//INTRO margins reset. Text moves left, max-width set on text.
+
+//LATEST news items resized
+
