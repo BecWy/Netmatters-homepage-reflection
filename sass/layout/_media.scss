@@ -1,8 +1,8 @@
 
 //UNDER 768PX
-
-//FOOTERS partner and client footers hidden for smaller screens. //DONE
 @media (max-width: 768px) {
+
+    //FOOTERS partner and client footers hidden for smaller screens. //DONE
     .client-footer,
     .partner-footer {
         display: none;
@@ -10,13 +10,10 @@
   }
 
 
-  //NAV approx. 603px logo stops growing. Max width of 300px?
-
-
-
 //FROM 768PX
-
 @media (min-width: 768px) {
+
+    //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
     .main-footer {
         flex-direction: row; //started working on 2 and 4 column layouts for larger screens
         flex-wrap: wrap;
@@ -42,6 +39,34 @@
     #direct-call {
         display: none;
     }
+
+    //CARD bottom 4 cards switch to 2 column layout. TO LOOK AT MARGINS/PADDING.
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-telecoms,
+    .card-web,
+    .card-cyber,
+    .card-training {
+        width: 45%;
+    }
+
+    //LATEST switch to 2 column layout. Fixed width. 
+    .latest {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .latest h2 {
+        display: block;
+        width: 100%;
+    }
+    .news {
+        width: 345px; //was 45%
+    }
 }
 
 
@@ -50,36 +75,58 @@
 //INTRO max width activated
 //INTRO left margin starts to expand
 
-//************LATEST switch to 2 column layout. Fixed width. 
-
 //FOOTERS need to set smaller logo size
-//************** FOOTERS main footer splits into 2 columns. //started working on 2 and 4 column layouts
 
 
 
 
 //FROM 992PX
 
-//NAV bar appears. //DONE
+
 @media (min-width: 992px) {
+
+        //NAV bar appears. //DONE
         .nav-2 {
             display: block;
         }
-}
+
+        //INTRO background image added. //DONE
+        .intro {
+            background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right top;
+        }
+
+        //BANNER text aligns left & image gradient changes
+        .banner {
+            align-items: flex-start;
+            text-align: left;
+            background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
+                        url("../../html-css-reflection/images/slides/slide-1.jpeg");
+            background-size: cover;
+        }
+
+        //CARD format 3 + 2 + 2. TO LOOK AT MARGINS/PADDING.
+        .card-software,
+        .card-it,
+        .card-marketing {
+            width: 30%;
+        }
+
+        //LATEST news items new width. TO EDIT MARGINS/SPACING
+        .news {
+            width: 455px;
+        }
+    }
 
 
 //NAV support and contact buttons appear
 //NAV search bar becomes a button that animates on focus
 
-//BANNER text aligns left
 //BANNER margin-left starts expanding
 
-//CARD format 3 + 2
+//INTRO margins reset and start to expand again
 
-//INTRO overlay added
-//INTRO margins reset and start to expland again
 
-//LATEST news items grow and margins expand
+//LATEST need to add animation-zoom
 
 //FOOTER client and partner logos grow
 
@@ -88,29 +135,42 @@
 
 //FROM 1260PX
 
-//LATEST 3rd news item added again. //DONE.
-@media (min-width: 1260px) {
-    .news-3 {
-        display: inline-block; 
-    }
 
-    //FOOTER main footer switches to 4 column layout. //started working on 2 and 4 column layouts
+@media (min-width: 1260px) {
+    
+
+    //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
     .about,
     .contact,
     .website,
     .social {
         width: 25%;
     }
+
+    // CARDS format 3 + 4. TO LOOK AT MARGINS/PADDING.
+    .card-telecoms,
+    .card-web,
+    .card-cyber,
+    .card-training {
+        width: 23%;
+    }
+
+    //LATEST 3rd news item added again. //DONE.
+    .news-3 {
+        display: inline-block; 
+    }
+
+    //LATEST news items resized for 3 columns
+    .news {
+        width: 31%;
+    }
 }
   
-//NAV search bar expands
+//NAV search bar expands - animation
 
 //BANNER margin left fixed width
-//BANNER - need to check where filter changes!!!!!!!!!!!
-
-// CARDS format 3 + 4
 
 //INTRO margins reset. Text moves left, max-width set on text.
 
-//LATEST news items resized
+
 

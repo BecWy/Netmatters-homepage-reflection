@@ -7,16 +7,22 @@ nav {
     height: 150px; 
     width: 100%;
     padding: 20px 15px;
+    border: 2px solid red;
 }
 
 
-#logo img {
+#logo {
     // width: 240px; //was 300px
-    border: 1px solid red;
-    // height: 44px;
-    // width: 75%;
+    border: 2px solid red;
+    max-width: 70%;
+    height: auto;
+    // max-width: 300px;
     // width: 300px;
-    max-width: 100%;
+    // max-width: 100%;
+}
+
+#logo img {
+    max-width: 90%;
 }
 
 #direct-call {
@@ -125,10 +131,9 @@ nav {
     background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
     url("../../html-css-reflection/images/slides/slide-1.jpeg");  
    
-   //desktop gradient
+   //desktop gradient in media query
 //    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
 //    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
-
 
    
     background-size: cover;
