@@ -32,13 +32,15 @@
 
 //CLIENT LOGOS
 #busseys {
-    width: 188px; 
-    height: 70px;
+    width: 159.8px; //this is 85% //larger setting is 188px; with -10px -10px after the url.
+    height: 59.5px; //this is 85% //larger setting is 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
+    background-size: 85%;
 }
 
 #busseys:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
+background-size: 90%;
 }
 
 #crane {

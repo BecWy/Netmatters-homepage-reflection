@@ -15,6 +15,7 @@
         right: 0px;
         z-index: 2;
     }
+
 }
 
 
@@ -68,16 +69,19 @@
     //NAV BAR order
     #menu {
         order: 2;
-        margin-left: 20px;
-        margin-right: 15px;
+        //margin-left: 20px;
+        //margin-right: 15px;
     }
 
     //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
+    
     .main-footer {
         flex-direction: row; //started working on 2 and 4 column layouts for larger screens
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-around;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .about,
@@ -85,8 +89,11 @@
     .website,
     .social {
         width: 50%;
-        border: 2px solid red;
         align-self: flex-start;
+    }
+
+    .about {
+        padding-top: 43px;
     }
 
     //LATEST 3rd news item hidden. //DONE
@@ -105,12 +112,32 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    
+    //makes sure all cards cover the exact same width
+    // .card-software,
+    // .card-it,
+    // .card-marketing, 
+    .card-telecoms,
+    .card-web,
+    .card-cyber,
+    .card-training {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .card-telecoms,
     .card-web,
     .card-cyber,
     .card-training {
         width: 45%;
+    }
+
+    .card-telecoms { //testing formatting
+        margin-left: auto;
+    }
+
+    .card-web {
+        margin-right: auto; //testing formatting
     }
 
     //LATEST switch to 2 column layout. Fixed width. 
@@ -126,6 +153,13 @@
     .news {
         width: 345px; //was 45%
     }
+
+    //FOOTER CLIENT LOGO SIZE ////trying to shrink logos
+    // .client-logo-parent {
+    //     max-width: 15%;
+    //     height: auto;
+    // }
+
 }
 
 
@@ -164,11 +198,16 @@
             padding-left: 4%; //was 15px. CAN I USE A MIN-MAX?
         }
 
+        
+
+
         //CARD format 3 + 2 + 2. TO LOOK AT MARGINS/PADDING.
         .card-software,
         .card-it,
         .card-marketing {
             width: 30%;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         //LATEST news items new width. TO EDIT MARGINS/SPACING
@@ -231,10 +270,17 @@
         padding-left: 40px;
     }
 
-    
+    //FOOTER top padding add so all 4 sections are the same
+
+    .website,
+    .social {
+        padding-top: 43px;
+    }
 }
   
 
 
 //NAV search bar expands - animation
 //INTRO margins reset. Text moves left, max-width set on text.
+//LATEST need equal height for all news items at all sizes
+//CARDS need to set fixed widths for medium and large.
