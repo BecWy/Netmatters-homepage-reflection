@@ -13,6 +13,17 @@
 //FROM 768PX
 @media (min-width: 768px) {
 
+    //NAV SEARCH BAR moves up- not accurate, testing
+    #search-bar {
+        width: 15%;
+        margin-left: 20px;
+    }
+
+    #menu {
+        order: 2;
+        margin-left: 20px;
+    }
+
     //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
     .main-footer {
         flex-direction: row; //started working on 2 and 4 column layouts for larger screens
@@ -70,11 +81,10 @@
 }
 
 
-//NAV search bar moves up
+
 
 //INTRO max width activated
 //INTRO left margin starts to expand
-
 //FOOTERS need to set smaller logo size
 
 
@@ -96,12 +106,14 @@
         }
 
         //BANNER text aligns left & image gradient changes
+        //BANNER margin-left starts expanding
         .banner {
             align-items: flex-start;
             text-align: left;
             background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
                         url("../../html-css-reflection/images/slides/slide-1.jpeg");
             background-size: cover;
+            padding-left: 4%; //was 15px. CAN I USE A MIN-MAX?
         }
 
         //CARD format 3 + 2 + 2. TO LOOK AT MARGINS/PADDING.
@@ -115,29 +127,30 @@
         .news {
             width: 455px;
         }
+
+        //NAV support and contact buttons appear
+        #support,
+        #contact {
+            display: inline-block;
+        }
+
+        #support {
+            margin-left: auto;
+        }
     }
 
 
-//NAV support and contact buttons appear
+
 //NAV search bar becomes a button that animates on focus
-
-//BANNER margin-left starts expanding
-
 //INTRO margins reset and start to expand again
-
-
 //LATEST need to add animation-zoom
-
 //FOOTER client and partner logos grow
 
 
 
 
 //FROM 1260PX
-
-
-@media (min-width: 1260px) {
-    
+@media (min-width: 1260px) {  
 
     //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
     .about,
@@ -164,13 +177,17 @@
     .news {
         width: 31%;
     }
+
+    //BANNER margin left fixed width
+    .banner {
+        padding-left: 40px;
+    }
+
+    
 }
   
+
+
 //NAV search bar expands - animation
-
-//BANNER margin left fixed width
-
 //INTRO margins reset. Text moves left, max-width set on text.
-
-
-
+//search bar blue glow focus
