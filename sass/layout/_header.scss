@@ -2,12 +2,11 @@
 nav {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     height: 150px; 
     width: 100%;
-    padding: 20px 15px;
+    // padding: 20px 15px;
 }
 
 
@@ -103,11 +102,12 @@ nav {
     width: 100%;
     align-self: center;
     margin: 0 auto; 
+    height: 47px;
 }
 
 #search-bar input[type=text] {
     //correct
-    font-size: 11px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: normal;
     color: #555555; //seems too dark?
@@ -130,17 +130,17 @@ nav {
 }
 
 #search-bar button[type=submit] {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 2;
+    // position: absolute;
+    // top: 0px;
+    // right: 0px;
+    // z-index: 2;
     font-size: 16px; //changed from original
     line-height: 16px; //changed from original
     letter-spacing: normal;
     color: #555555; //not right????
     background-color:transparent;
     padding: 1px 6px;
-    height: 36px;
+    height: 100%;
     border: none;
     outline: none;
 }
