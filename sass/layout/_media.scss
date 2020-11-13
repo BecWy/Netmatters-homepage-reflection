@@ -1,5 +1,5 @@
 
-//UNDER 768PX
+//UNDER 768PX --------------------------------------------------------------------------
 @media (max-width: 768px) {
 
     //FOOTERS partner and client footers hidden for smaller screens. //DONE
@@ -19,7 +19,7 @@
 }
 
 
-//FROM 768PX
+//FROM 768PX --------------------------------------------------------------------------------
 @media (min-width: 768px) {
 
 
@@ -96,6 +96,16 @@
         padding-top: 43px;
     }
 
+    //LATEST standardising title height so doesn't matter if title is 1 or 2 lines
+    .news-text > h3 {
+        height: 48px;
+    }
+
+    //LATEST standardising p height so doesn't matter if text is 2 r 3 lines
+    .news-text > p {
+        height: 66px;
+    }
+
     //LATEST 3rd news item hidden. //DONE
     .news-3 {
         display: none;
@@ -154,11 +164,7 @@
         width: 345px; //was 45%
     }
 
-    //FOOTER CLIENT LOGO SIZE ////trying to shrink logos
-    // .client-logo-parent {
-    //     max-width: 15%;
-    //     height: auto;
-    // }
+  
 
 }
 
@@ -172,7 +178,7 @@
 
 
 
-//FROM 992PX
+//FROM 992PX --------------------------------------------------------------------------------------
 
 
 @media (min-width: 992px) {
@@ -205,7 +211,7 @@
         .card-software,
         .card-it,
         .card-marketing {
-            width: 30%;
+            width: 370px;
             margin-left: 0;
             margin-right: 0;
         }
@@ -224,6 +230,48 @@
         // #support {
         //     margin-left: auto; //need to fix spacing before reactivating
         // }
+
+        //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.
+        #busseys {
+            width: 168.7px;
+            height: 62.8px;
+        } 
+
+        #crane {
+            width: 257.6px; 
+            height: 62.8px;
+        }
+
+        #beat { 
+            width: 64.6px; 
+            height: 62.8px;
+        }
+
+        #northern-diver {
+            width: 289px; 
+            height: 62.8px;
+        }
+
+        #microsoft {
+            width: 140.2px;
+            height: 85.3px;
+        } 
+
+        #future-50 {
+            width: 69.2px; 
+            height: 110.1px;
+        }
+
+        #qms { 
+            width: 85.2px; 
+            height: 99.4px;
+        }
+
+        #carbon-charter {
+            width: 200.2px; 
+            height: 80.1px;
+        }
+
     }
 
 
@@ -236,7 +284,7 @@
 
 
 
-//FROM 1260PX
+//FROM 1260PX -----------------------------------------------------------------------------
 @media (min-width: 1260px) {  
 
     //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
@@ -275,6 +323,85 @@
     .website,
     .social {
         padding-top: 43px;
+    }
+
+    //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
+    #busseys {
+        width: 188px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
+    }
+    
+    #busseys:hover {
+        background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
+    }
+    
+    #crane {
+        width: 287px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
+    }
+    
+    #crane:hover {
+        background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
+    }
+    
+    #beat { 
+        width: 72px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;    
+    }
+    
+    #beat:hover {
+        background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
+    }
+    
+    
+    #northern-diver {
+            width: 322px; 
+            height: 70px;
+            background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
+    }
+    
+    #northern-diver:hover {
+            background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
+    }
+    
+    //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
+    #microsoft {
+        width: 115px;
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
+        background-size: cover;
+    }
+
+    #future-50 {
+            width: 44px; 
+            height: 70px;
+            background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
+    }
+
+    #future-50:hover {
+        background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
+    }
+
+    #qms {
+        width: 60px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
+    }
+    #qms:hover {
+        background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
+    }
+
+    #carbon-charter {
+        width: 175px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
+    }
+
+    #carbon-charter:hover {
+        background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
     }
 }
   

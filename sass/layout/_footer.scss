@@ -31,48 +31,73 @@
 
 
 //CLIENT LOGOS
+
+//medium screens 768px
 #busseys {
-    width: 159.8px; //this is 85% //larger setting is 188px; with -10px -10px after the url.
-    height: 59.5px; //this is 85% //larger setting is 70px;
-    background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
-    background-size: 85%;
-}
+    width: 121.1px;
+    height: 45.1px;
+    display: inline-block;
+    background: url("../../html-css-reflection/images/external-branding/clients/busseys-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
 
 #busseys:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
-background-size: 90%;
+    background: url("../../html-css-reflection/images/external-branding/clients/busseys-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #crane {
-    width: 287px; 
-    height: 70px;
-    background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
+    width: 185px; 
+    height: 45px;
+    background: url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #crane:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
+    background: url("../../html-css-reflection/images/external-branding/clients/crane-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #beat { 
-    width: 72px; 
-    height: 70px;
-    background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;    
+    width: 46.4px; 
+    height: 45.1px;
+    background: url("../../html-css-reflection/images/external-branding/clients/beat-bw.jpeg");    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #beat:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
+    background: url("../../html-css-reflection/images/external-branding/clients/beat-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
 #northern-diver {
-        width: 322px; 
-        height: 70px;
-        background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
+    width: 207.5px; 
+    height: 45px;
+    background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #northern-diver:hover {
-        background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
-    }
+    background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 //PARTNER FOOTER
 .partner-footer {
@@ -98,41 +123,63 @@ background-size: 90%;
     background-size: cover;
 }
 
+
+//medium screens 768px
 #microsoft {
-    width: 115px;
-    height: 70px;
+    width: 87.6px;
+    height: 53.3px;
     background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
     background-size: cover;
 }
 
 #future-50 {
-        width: 44px; 
-        height: 70px;
-        background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
-    }
+    width: 33.5px; 
+    height: 53.3px;
+    background: url("../../html-css-reflection/images/external-branding/other/future-50-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 #future-50:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
+    background: url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #qms {
-    width: 60px; 
-    height: 70px;
-    background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
+    width: 45.7px; 
+    height: 53.3px;
+    background: url("../../html-css-reflection/images/external-branding/other/qms-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #qms:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
+    background: url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #carbon-charter {
-    width: 175px; 
-    height: 70px;
-    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
+    width: 133.3px; 
+    height: 53.3px;
+    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #carbon-charter:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
+    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
 
 
 //MAIN FOOTER
