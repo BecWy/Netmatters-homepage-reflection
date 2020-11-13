@@ -16,6 +16,11 @@
         z-index: 2;
     }
 
+    .news-image-parent {                  /////////////////////////////////animation
+        display: none;
+    }
+
+
 }
 
 
@@ -111,6 +116,11 @@
         display: none;
     }
 
+    //LATEST NEWS ITEMS BOTTOM MARGIN
+    .news {
+        margin-bottom: 40px;
+    }
+
     //NAV call button disappears. //DONE
     #direct-call {
         display: none;
@@ -120,20 +130,20 @@
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between;   ////////////check justify settings
     }
     
-    //makes sure all cards cover the exact same width
+    //makes sure all cards cover the exact same width /////////////check settings
     // .card-software,
     // .card-it,
     // .card-marketing, 
-    .card-telecoms,
-    .card-web,
-    .card-cyber,
-    .card-training {
-        margin-left: 0;
-        margin-right: 0;
-    }
+    // .card-telecoms,
+    // .card-web,
+    // .card-cyber,
+    // .card-training {
+    //     margin-left: 0;
+    //     margin-right: 0;
+    // }
 
     .card-telecoms,
     .card-web,
@@ -164,7 +174,9 @@
         width: 345px; //was 45%
     }
 
-  
+    .news-image-parent {                  /////////////////////////////////animation
+        display: none;
+    }
 
 }
 
@@ -173,8 +185,6 @@
 
 //INTRO max width activated
 //INTRO left margin starts to expand
-//FOOTERS need to set smaller logo size
-
 
 
 
@@ -272,6 +282,62 @@
             height: 80.1px;
         }
 
+
+        .news-image-parent {                  /////////////////////////////////animation
+            display: inline-block;
+            width: 455px;
+            height: 261.844px;
+            overflow: hidden;
+            border: 1px solid #d6d6d6;
+        }
+
+        .news-text {
+            border-top: none;
+            margin-top: -3px;
+        }
+
+
+        .news-1-image-child {           
+            width: 100%;
+            height: 100%;
+            background-image: url("../../html-css-reflection/images/latest/news-1.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-2-image-child {           
+            width: 100%;
+            height: 100%;
+            background-image: url("../../html-css-reflection/images/latest/news-2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .news-3-image-child {           
+            width: 100%;
+            height: 100%;
+            background-image: url("../../html-css-reflection/images/latest/news-3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-image-parent > .news-1-image-child,
+        .news-image-parent > .news-2-image-child,
+        .news-image-parent> .news-3-image-child {
+            transition: all .25s cubic-bezier(.215,.61,.355,1);
+        }
+
+        .news-image-parent:hover > .news-1-image-child,
+        .news-image-parent:hover > .news-2-image-child,
+        .news-image-parent:hover > .news-3-image-child {
+            transform: scale(1.075);
+        }
+
+        .news-1 > a > img,
+        .news-2 > a > img,
+        .news-3 > a > img {
+            display: none;
+        }
     }
 
 
@@ -279,7 +345,6 @@
 //NAV search bar becomes a button that animates on focus
 //INTRO margins reset and start to expand again
 //LATEST need to add animation-zoom
-//FOOTER client and partner logos grow
 
 
 
@@ -310,8 +375,17 @@
 
     //LATEST news items resized for 3 columns
     .news {
-        width: 31%;
+        width: 370px;
     }
+
+    //LATEST NEWS IMAGE ANIMATION
+    .news-image-parent {                  /////////////////////////////////animation
+        width: 370px;
+        height: 212.708px;
+        overflow: hidden;
+        border: 1px solid #d6d6d6;
+    }
+
 
     //BANNER margin left fixed width
     .banner {
@@ -409,5 +483,4 @@
 
 //NAV search bar expands - animation
 //INTRO margins reset. Text moves left, max-width set on text.
-//LATEST need equal height for all news items at all sizes
 //CARDS need to set fixed widths for medium and large.
