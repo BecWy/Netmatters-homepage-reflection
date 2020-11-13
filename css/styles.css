@@ -1287,118 +1287,162 @@ nav {
   padding-bottom: 43px;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-software:not(last-child) {
   color: #67809f;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-it:not(last-child) {
   color: #4183d7;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-marketing:not(last-child) {
   color: #2ecc71;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-telecoms:not(last-child) {
   color: #d64541;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-web:not(last-child) {
   color: #926fb1;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-cyber:not(last-child) {
   color: #f62459;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-training:not(last-child) {
   color: #926fb1;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover:not(last-child) > li > #nav-icon-software:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover:not(last-child) > li > #nav-icon-it:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover:not(last-child) > li > #nav-icon-marketing:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover:not(last-child) > li > #nav-icon-telecoms:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover:not(last-child) > li > #nav-icon-web:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover:not(last-child) > li > #nav-icon-cyber:not(last-child) {
   color: #ffffff;
 }
 
-/* line 21, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover:not(last-child) > li > #nav-icon-training:not(last-child) {
   color: #ffffff;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-software:hover:not(last-child) > .icon-parent > #nav-icon-software:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-it:hover:not(last-child) > .icon-parent > #nav-icon-it:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-marketing:hover:not(last-child) > .icon-parent > #nav-icon-marketing:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-telecoms:hover:not(last-child) > .icon-parent > #nav-icon-telecoms:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-web:hover:not(last-child) > .icon-parent > #nav-icon-web:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-cyber:hover:not(last-child) > .icon-parent > #nav-icon-cyber:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-training:hover:not(last-child) > .icon-parent > #nav-icon-training:not(last-child) {
+  color: #ffffff;
+}
+
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover:not(last-child) {
   background-color: #67809f;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover:not(last-child) {
   background-color: #4183d7;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover:not(last-child) {
   background-color: #2ecc71;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover:not(last-child) {
   background-color: #d64541;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover:not(last-child) {
   background-color: #926fb1;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover:not(last-child) {
   background-color: #f62459;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 41, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover:not(last-child) {
   background-color: #926fb1;
 }
 
-/* line 37, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 50, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 {
   border-bottom: .5px solid #ffffff;
-  display: none;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 98px;
+  margin: 0 auto;
+  background-color: #333645;
 }
 
-/* line 42, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 64, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 > ul {
   list-style-type: none;
   padding-left: 0;
@@ -1411,8 +1455,13 @@ nav {
   background-color: #333645;
 }
 
-/* line 56, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2 > ul > ul {
+/* line 78, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-web,
+.title-it,
+.title-telecoms,
+.title-software,
+.title-marketing,
+.title-cyber {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -1424,10 +1473,9 @@ nav {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
-  position: relative;
 }
 
-/* line 77, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 105, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web::before {
   content: "";
   position: absolute;
@@ -1437,7 +1485,7 @@ nav {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-/* line 86, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 114, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber::after {
   content: "";
   position: absolute;
@@ -1447,13 +1495,23 @@ nav {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 99, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 127, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 ul ul li * {
   margin: 0 0;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > li > i,
+/* line 132, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-web > *,
+.title-software > *,
+.title-it > *,
+.title-marketing > *,
+.title-telecoms > *,
+.title-cyber > * {
+  margin: 0 0;
+}
+
+/* line 143, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+#nav-icon-web,
 .title-software > li > i,
 .title-it > li > i,
 .title-marketing > li > i,
@@ -1464,8 +1522,8 @@ nav {
   padding-bottom: 10px;
 }
 
-/* line 116, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > li > p,
+/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-web > p,
 .title-software > li > p,
 .title-it > li > p,
 .title-marketing > li > p,
@@ -1477,8 +1535,8 @@ nav {
   font-weight: 400;
 }
 
-/* line 128, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > li > h1,
+/* line 166, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.title-web > h1,
 .title-software > li > h1,
 .title-it > li > h1,
 .title-marketing > li > h1,
@@ -1489,8 +1547,8 @@ nav {
   font-weight: 400;
 }
 
-/* line 140, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-web > ul,
+/* line 178, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-web,
 .nav-it > ul,
 .nav-telecoms > ul,
 .nav-software > ul,
@@ -1508,168 +1566,124 @@ nav {
   display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software > .nav-software:not(last-child) {
   background-color: #67809f;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it > .nav-it:not(last-child) {
   background-color: #4183d7;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing > .nav-marketing:not(last-child) {
   background-color: #2ecc71;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms > .nav-telecoms:not(last-child) {
   background-color: #d64541;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > .nav-web:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber > .nav-cyber:not(last-child) {
   background-color: #f62459;
   color: #ffffff;
+  display: none;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training > .nav-training:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
+  display: none;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover > .nav-software:not(last-child) {
   background-color: #67809f;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover > .nav-it:not(last-child) {
   background-color: #4183d7;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover > .nav-marketing:not(last-child) {
   background-color: #2ecc71;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover > .nav-telecoms:not(last-child) {
   background-color: #d64541;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover > .nav-web:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover > .nav-cyber:not(last-child) {
   background-color: #f62459;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 171, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover > .nav-training:not(last-child) {
   background-color: #926fb1;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
 }
 
-/* line 181, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2 {
-  padding-bottom: 0;
-  margin-bottom: 0;
+/* line 258, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-web,
+.nav-it,
+.nav-telecoms,
+.nav-software,
+.nav-marketing,
+.nav-cyber {
+  display: none;
 }
 
-/* line 186, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown ul {
-  list-style-type: none;
-  padding-left: 0;
+/* line 271, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-web {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 95%;
-  margin: 0 auto;
-}
-
-/* line 197, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown ul li {
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-software:not(last-child) {
-  background-color: #67809f;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-it:not(last-child) {
-  background-color: #4183d7;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-marketing:not(last-child) {
-  background-color: #2ecc71;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-telecoms:not(last-child) {
-  background-color: #d64541;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-web:not(last-child) {
-  background-color: #926fb1;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-cyber:not(last-child) {
-  background-color: #f62459;
-  color: #ffffff;
-  display: none;
-}
-
-/* line 205, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2-dropdown > .nav-training:not(last-child) {
-  background-color: #926fb1;
-  color: #ffffff;
-  display: none;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 248px;
+  border: 3px solid red;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */

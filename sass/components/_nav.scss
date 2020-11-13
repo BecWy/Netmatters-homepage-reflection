@@ -1,3 +1,10 @@
+
+//need to set each secondary nav to display:block
+//enable each one on hover over the applicable menu title
+//tool tips
+
+
+
 // .nav-software,
 // .nav-it,
 // .nav-marketing,
@@ -16,9 +23,15 @@
     }
 } 
 
-//ICON HOVER WHITE
+//ICON HOVER WHITE ////////////////////////////////////////need to remove li
 @each $theme, $color in $themes {
     .title-#{$theme}:hover:not(last-child) > li > #nav-icon-#{$theme}:not(last-child) {
+        color: #ffffff;
+    }
+} 
+
+@each $theme, $color in $themes { //////////////////////to check if this new code is working.
+    .title-#{$theme}:hover:not(last-child) > .icon-parent > #nav-icon-#{$theme}:not(last-child) {
         color: #ffffff;
     }
 } 
@@ -36,10 +49,7 @@
 // TITLE LIST - HIDDEN FOR SMALL SCREENS
 .nav-2 {
     border-bottom: .5px solid #ffffff;
-    display: none;
-}
-
-.nav-2 > ul {
+    flex-direction: row;
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -49,11 +59,28 @@
     height: 98px;
     margin: 0 auto;
     background-color: #333645;
-    //display: none; //HIDDEN
 }
 
-// WORKING TITLE BOXES
-.nav-2 > ul > ul {
+.nav-2 > ul { ////////////////////////////////need to work out what to do with this. Move relevant code up to above?
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 98px;
+    margin: 0 auto;
+    background-color: #333645;
+   
+}
+
+// // MAIN MENU BOXES /
+.title-web,
+.title-it,
+.title-telecoms,
+.title-software,
+.title-marketing,
+.title-cyber {
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -67,10 +94,11 @@
     border-left: 1px solid hsla(0,0%,100%,.1);
     border-right: 1px solid rgba(0,0,0,.25);
     text-transform: uppercase;
-    position: relative;
+    //position: relative;                               ////////////////TEST - switched off relative
     // margin-left: 0;
     // margin-right: 0;
 }
+
 
 
 //BOX PSEUDO-ELEMENTS FOR EXTRA SIDE BORDERS
@@ -95,14 +123,24 @@
 
 
 
-// WORKING TITLE BOX ITEMS
+// WORKING TITLE BOX ITEMS           /////////////may be able to delete once lists are removed?
 .nav-2 ul ul li * {
+    margin: 0 0;
+}
+
+//this is the updated code for the above. Can delete the above once all updated.
+.title-web > *,
+.title-software > *,
+.title-it > *,
+.title-marketing > *,
+.title-telecoms > *,
+.title-cyber > * {
     margin: 0 0;
 }
 
 
 //FOR THE TEXT
-.title-web > li > i,
+#nav-icon-web,             //////////////////////////////////////TEST
 .title-software > li > i,
 .title-it > li > i,
 .title-marketing > li > i,
@@ -113,7 +151,7 @@
     padding-bottom: 10px; //NOT WORKIMG?????
 }
 
-.title-web > li > p,
+.title-web > p,           ///////////////////////////////////TEST. SHOULD WORK?
 .title-software > li > p,
 .title-it > li > p,
 .title-marketing > li > p,
@@ -125,7 +163,7 @@
     font-weight: 400;
 }
 
-.title-web > li > h1,
+.title-web > h1, /////////////////////////////////////TEST. SHOULD WORK?
 .title-software > li > h1,
 .title-it > li > h1,
 .title-marketing > li > h1,
@@ -137,7 +175,7 @@
 } 
 
 
-.nav-web > ul,
+.nav-web,            /////////////////////////TEST
 .nav-it > ul,
 .nav-telecoms > ul,
 .nav-software > ul,
@@ -162,49 +200,86 @@
     .title-#{$theme} > .nav-#{$theme}:not(last-child) {
         background-color: $color;
         color: #ffffff;
-        // display: none; //HIDDEN
+        display: none; //HIDDEN ------------------------may have duplicate code at the bottom of this page atm
         
     }
 } 
 
-@each $theme, $color in $themes {
+@each $theme, $color in $themes { 
+    ///////////////////////////need to update to try and get the bar below
     .title-#{$theme}:hover > .nav-#{$theme}:not(last-child){
         background-color: $color;
         color: #ffffff;
-        display: inline-block;  
+        display: flex;  
     }
-} 
+}
 
 
 
 // WORKING BACKUP DROPDOWN LISTS. CURRENTLY HIDDEN
-.nav-2 {
-    padding-bottom: 0;
-    margin-bottom: 0;
+// .nav-2 {
+//     padding-bottom: 0;
+//     margin-bottom: 0;
+// }
+
+// .nav-2-dropdown ul {
+//     list-style-type: none;
+//     padding-left: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     width: 95%;
+//     margin: 0 auto;
+// }
+
+// // WORKING BACKUP DROPDOWN LIST ITEMS. CURRENTLY HIDDEN
+// .nav-2-dropdown ul li {
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     text-align: center;
+// }
+
+//WORKING BACKUP DROPDOWN LIST COLORS. CURRENTLY HIDDEN
+// @each $theme, $color in $themes {
+//     .nav-2-dropdown > .nav-#{$theme}:not(last-child) {
+//         background-color: $color;
+//         color: #ffffff;
+//         display: none;       //HIDDEN
+//    }
+// }
+
+// display: none; for all nav bars
+
+//trying to get secondary nav bars in a row   ///////////////////////TESTING SPACE
+// .title-web {
+//     position: relative;
+// }
+
+.nav-web,
+.nav-it,
+.nav-telecoms,
+.nav-software,
+.nav-marketing,
+.nav-cyber {
+    display: none;
 }
 
-.nav-2-dropdown ul {
-    list-style-type: none;
-    padding-left: 0;
+
+
+
+
+.nav-web {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 95%;
-    margin: 0 auto;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    //align-items: center;
+    //margin: 0 auto;
+    //left: -60px;
+    // right: 0;
+    top: 248px;
+    //bottom: -22px;
+    border: 3px solid red;
 }
-
-// WORKING BACKUP DROPDOWN LIST ITEMS. CURRENTLY HIDDEN
-.nav-2-dropdown ul li {
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-// WORKING BACKUP DROPDOWN LIST COLORS. CURRENTLY HIDDEN
-@each $theme, $color in $themes {
-    .nav-2-dropdown > .nav-#{$theme}:not(last-child) {
-        background-color: $color;
-        color: #ffffff;
-        display: none;       //HIDDEN
-    }
-} 
