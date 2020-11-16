@@ -240,4 +240,63 @@
 
 
 
+//TOOLTIPS /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.news {
+    position: relative;
+}
+
+.news .tooltip {
+    position: absolute;
+    z-index: 1;
+    right: 1px;
+    top: 20px;
+    
+}
+
+.news .tooltip h3 {
+    margin: 0 0;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #ffffff;
+    background-color: #926fb1;
+    padding: 5px 10px;
+}
+
+.news .tooltip-text {
+    display: none;
+  }
+
+.news .tooltip:hover .tooltip-text {
+    display: inline-block;
+}
+
+.news .tooltip .tooltip-text {
+    background-color: #333645;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 15px; 
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 2;
+    width: 180px;
+    top: -59px;
+    right: 50%;
+    margin-right: -90px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+//bottom arrow
+.news .tooltip .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333645 transparent transparent transparent;
+  }

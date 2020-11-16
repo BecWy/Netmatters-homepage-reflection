@@ -51,7 +51,7 @@
 }
 
 #crane {
-    width: 185px; 
+    width: 186px; 
     height: 45px;
     background: url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg");
     background-size: cover;
@@ -237,3 +237,47 @@
     padding-bottom: 43px;
 }
 
+
+
+//TOOLTIPS /////////////////////////////////////////////////////////////////////////////////////////////////////
+.client-footer .tooltip {
+    position: relative;
+}
+
+.client-footer .tooltip-text {
+    display: none;
+  }
+
+.client-footer .tooltip:hover .tooltip-text {
+    display: inline-block;
+}
+
+.client-footer .tooltip .tooltip-text {
+    background-color: #333645;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 22px; 
+    margin-bottom: 50px; //positions the tooltip on the footer line
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 5;
+    width: 260px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -130px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+//bottom arrow
+.client-footer .tooltip .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -36px;
+    border-width: 36px;
+    border-style: solid;
+    border-color: #333645 transparent transparent transparent;
+  }

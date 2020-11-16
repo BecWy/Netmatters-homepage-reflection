@@ -29,6 +29,17 @@ $themes: (
     'training': #926fb1,
 );
 
+$themes-secondary: (
+    'software': #526781,
+    'it': #286abd,
+    'marketing': #25a25a,
+    'telecoms': #bc2c28,
+    'web': #79539a,
+    'cyber':  #de093f,
+    'training': #79539a,
+);
+
+
 
 // ICONS
 @each $theme, $color in $themes {

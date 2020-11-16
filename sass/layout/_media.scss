@@ -20,6 +20,7 @@
         display: none;
     }
 
+    
 
 }
 
@@ -171,7 +172,7 @@
         width: 100%;
     }
     .news {
-        width: 345px; //was 45%
+        width: 345px //was 45%
     }
 
     .news-image-parent {                  /////////////////////////////////animation
@@ -195,7 +196,7 @@
 
         //NAV bar appears. //DONE
         .nav-2 {
-            display: block;
+            display: flex;
         }
 
         //INTRO background image added. //DONE
@@ -248,7 +249,7 @@
         } 
 
         #crane {
-            width: 257.6px; 
+            width: 260px; 
             height: 62.8px;
         }
 
@@ -344,13 +345,22 @@
 
 //NAV search bar becomes a button that animates on focus
 //INTRO margins reset and start to expand again
-//LATEST need to add animation-zoom
-
 
 
 
 //FROM 1260PX -----------------------------------------------------------------------------
 @media (min-width: 1260px) {  
+
+    //RESIZE NAV MENU BOXES
+    .title-web,
+    .title-it,
+    .title-telecoms,
+    .title-software,
+    .title-marketing,
+    .title-cyber { 
+        width: 192px;
+    }
+
 
     //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
     .about,
@@ -380,16 +390,10 @@
 
     //LATEST NEWS IMAGE ANIMATION
     .news-image-parent {                  /////////////////////////////////animation
-        width: 370px;
+        width: 370px; 
         height: 212.708px;
         overflow: hidden;
         border: 1px solid #d6d6d6;
-    }
-
-
-    //BANNER margin left fixed width
-    .banner {
-        padding-left: 40px;
     }
 
     //FOOTER top padding add so all 4 sections are the same
