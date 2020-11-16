@@ -23,12 +23,12 @@
     }
 } 
 
-//ICON HOVER WHITE ////////////////////////////////////////need to remove li
-@each $theme, $color in $themes {
-    .title-#{$theme}:hover:not(last-child) > li > #nav-icon-#{$theme}:not(last-child) {
-        color: #ffffff;
-    }
-} 
+// //ICON HOVER WHITE ////////////////////////////////////////
+// @each $theme, $color in $themes {
+//     .title-#{$theme}:hover:not(last-child) > li > #nav-icon-#{$theme}:not(last-child) {
+//         color: #ffffff;
+//     }
+// } 
 
 @each $theme, $color in $themes { //////////////////////to check if this new code is working.
     .title-#{$theme}:hover:not(last-child) > .icon-parent > #nav-icon-#{$theme}:not(last-child) {
@@ -47,19 +47,19 @@
 
 
 // TITLE LIST - HIDDEN FOR SMALL SCREENS
-.nav-2 {
-    border-bottom: .5px solid #ffffff;
-    flex-direction: row;
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 98px;
-    margin: 0 auto;
-    background-color: #333645;
-}
+// .nav-2 {
+//     border-bottom: .5px solid #ffffff;
+//     flex-direction: row;
+//     list-style-type: none;
+//     padding-left: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     width: 100%;
+//     height: 98px;
+//     margin: 0 auto;
+//     background-color: #333645;
+// }
 
 .nav-2 > ul { ////////////////////////////////need to work out what to do with this. Move relevant code up to above?
     list-style-type: none;
@@ -124,9 +124,9 @@
 
 
 // WORKING TITLE BOX ITEMS           /////////////may be able to delete once lists are removed?
-.nav-2 ul ul li * {
-    margin: 0 0;
-}
+// .nav-2 ul ul li * {
+//     margin: 0 0;
+// }
 
 //this is the updated code for the above. Can delete the above once all updated.
 .title-web > *,
@@ -141,46 +141,46 @@
 
 //FOR THE TEXT
 #nav-icon-web,             //////////////////////////////////////TEST
-.title-software > li > i,
-.title-it > li > i,
-.title-marketing > li > i,
-.title-telecoms > li > i,
-.title-cyber > li > i {
+#nav-icon-software,
+#nav-icon-it,
+#nav-icon-marketing,
+#nav-icon-telecoms,
+#nav-icon-cyber {
     font-size: 23px;
     line-height: 23px;
-    padding-bottom: 10px; //NOT WORKIMG?????
+    padding-bottom: 10px; //NOT WORKING?????
 }
 
-.title-web > p,           ///////////////////////////////////TEST. SHOULD WORK?
-.title-software > li > p,
-.title-it > li > p,
-.title-marketing > li > p,
-.title-telecoms > li > p,
-.title-cyber > li > p {
+.title-web > p,           ///////////////////////////////////
+.title-software > p,
+.title-it > p,
+.title-marketing > p,
+.title-telecoms > p,
+.title-cyber > p {
     padding-bottom: 1px;
     font-size: 10px;
     line-height: 10px;
     font-weight: 400;
 }
 
-.title-web > h1, /////////////////////////////////////TEST. SHOULD WORK?
-.title-software > li > h1,
-.title-it > li > h1,
-.title-marketing > li > h1,
-.title-telecoms > li > h1,
-.title-cyber > li > h1 {
+.title-web > h1, /////////////////////////////////////
+.title-software > h1,
+.title-it > h1,
+.title-marketing > h1,
+.title-telecoms > h1,
+.title-cyber > h1 {
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
 } 
 
 
-.nav-web,            /////////////////////////TEST
-.nav-it > ul,
-.nav-telecoms > ul,
-.nav-software > ul,
-.nav-marketing > ul,
-.nav-cyber > ul {
+.nav-web,     
+.nav-it,
+.nav-telecoms,
+.nav-software,
+.nav-marketing,
+.nav-cyber {
     list-style-type: none;
     padding-left: 0;
     text-align: center;
@@ -262,24 +262,11 @@
 .nav-marketing,
 .nav-cyber {
     display: none;
-}
-
-
-
-
-
-.nav-web {
     display: flex;
     flex-direction: row;
     width: 100vw;
     position: absolute;
     left: 0;
     right: 0;
-    //align-items: center;
-    //margin: 0 auto;
-    //left: -60px;
-    // right: 0;
     top: 248px;
-    //bottom: -22px;
-    border: 3px solid red;
 }

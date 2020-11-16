@@ -1322,41 +1322,6 @@ nav {
   color: #926fb1;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-software:hover:not(last-child) > li > #nav-icon-software:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-it:hover:not(last-child) > li > #nav-icon-it:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-marketing:hover:not(last-child) > li > #nav-icon-marketing:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-telecoms:hover:not(last-child) > li > #nav-icon-telecoms:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web:hover:not(last-child) > li > #nav-icon-web:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-cyber:hover:not(last-child) > li > #nav-icon-cyber:not(last-child) {
-  color: #ffffff;
-}
-
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-training:hover:not(last-child) > li > #nav-icon-training:not(last-child) {
-  color: #ffffff;
-}
-
 /* line 34, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover:not(last-child) > .icon-parent > #nav-icon-software:not(last-child) {
   color: #ffffff;
@@ -1427,21 +1392,6 @@ nav {
   background-color: #926fb1;
 }
 
-/* line 50, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2 {
-  border-bottom: .5px solid #ffffff;
-  flex-direction: row;
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 98px;
-  margin: 0 auto;
-  background-color: #333645;
-}
-
 /* line 64, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 > ul {
   list-style-type: none;
@@ -1495,11 +1445,6 @@ nav {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 127, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-2 ul ul li * {
-  margin: 0 0;
-}
-
 /* line 132, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > *,
 .title-software > *,
@@ -1512,11 +1457,11 @@ nav {
 
 /* line 143, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-web,
-.title-software > li > i,
-.title-it > li > i,
-.title-marketing > li > i,
-.title-telecoms > li > i,
-.title-cyber > li > i {
+#nav-icon-software,
+#nav-icon-it,
+#nav-icon-marketing,
+#nav-icon-telecoms,
+#nav-icon-cyber {
   font-size: 23px;
   line-height: 23px;
   padding-bottom: 10px;
@@ -1524,11 +1469,11 @@ nav {
 
 /* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > p,
-.title-software > li > p,
-.title-it > li > p,
-.title-marketing > li > p,
-.title-telecoms > li > p,
-.title-cyber > li > p {
+.title-software > p,
+.title-it > p,
+.title-marketing > p,
+.title-telecoms > p,
+.title-cyber > p {
   padding-bottom: 1px;
   font-size: 10px;
   line-height: 10px;
@@ -1537,11 +1482,11 @@ nav {
 
 /* line 166, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > h1,
-.title-software > li > h1,
-.title-it > li > h1,
-.title-marketing > li > h1,
-.title-telecoms > li > h1,
-.title-cyber > li > h1 {
+.title-software > h1,
+.title-it > h1,
+.title-marketing > h1,
+.title-telecoms > h1,
+.title-cyber > h1 {
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -1549,11 +1494,11 @@ nav {
 
 /* line 178, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-web,
-.nav-it > ul,
-.nav-telecoms > ul,
-.nav-software > ul,
-.nav-marketing > ul,
-.nav-cyber > ul {
+.nav-it,
+.nav-telecoms,
+.nav-software,
+.nav-marketing,
+.nav-cyber {
   list-style-type: none;
   padding-left: 0;
   text-align: center;
@@ -1672,10 +1617,6 @@ nav {
 .nav-marketing,
 .nav-cyber {
   display: none;
-}
-
-/* line 271, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.nav-web {
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -1683,7 +1624,6 @@ nav {
   left: 0;
   right: 0;
   top: 248px;
-  border: 3px solid red;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
