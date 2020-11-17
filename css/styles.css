@@ -1875,7 +1875,11 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 33, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 31, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  nav {
+    flex-wrap: nowrap;
+  }
+  /* line 36, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar {
     display: inline-block;
     display: flex;
@@ -1884,7 +1888,7 @@ nav {
     align-self: center;
     height: 56px;
   }
-  /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 46, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar input[type=text] {
     outline: none;
     border: 1px solid #cccccc;
@@ -1895,13 +1899,13 @@ nav {
     font-size: 14px;
     line-height: 20px;
   }
-  /* line 55, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 58, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar input[type=text]:focus {
     outline: 0;
     border: .5px solid #5bc0de;
     box-shadow: 0 0 8px rgba(91, 192, 222, 0.6);
   }
-  /* line 61, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 64, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar button[type=submit] {
     background-color: #999aa2;
     height: 56px;
@@ -1911,15 +1915,15 @@ nav {
     font-size: 23px;
     line-height: 23px;
   }
-  /* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 74, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar button[type=submit]:hover {
     background-color: #7e808a;
   }
-  /* line 76, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 79, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #menu {
     order: 2;
   }
-  /* line 84, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 87, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .main-footer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1928,7 +1932,7 @@ nav {
     padding-left: 2%;
     padding-right: 2%;
   }
-  /* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 96, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .about,
   .contact,
   .website,
@@ -1936,27 +1940,27 @@ nav {
     width: 50%;
     align-self: flex-start;
   }
-  /* line 101, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 104, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .about {
     padding-top: 43px;
   }
-  /* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text > h3 {
     height: 48px;
   }
-  /* line 111, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text > p {
     height: 66px;
   }
-  /* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     display: none;
   }
-  /* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 124, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #direct-call {
     display: none;
   }
-  /* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1965,7 +1969,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 138, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
@@ -1973,72 +1977,81 @@ nav {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 146, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 343px;
   }
-  /* line 150, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 153, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-cyber {
     margin-left: 0;
   }
-  /* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 158, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-web,
   .card-training {
     margin-right: 0;
   }
-  /* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 166, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     display: flex;
     flex-direction: row;
     width: 750px;
   }
-  /* line 170, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 173, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .latest h2 {
     display: block;
     width: 100%;
   }
-  /* line 174, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 177, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 345px;
   }
-  /* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 {
     margin-left: auto;
     margin-right: 15px;
   }
-  /* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 187, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2 {
     margin-left: 15px;
     margin-right: auto;
   }
-  /* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     display: none;
   }
-  /* line 193, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 196, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .posted-by {
     width: 308px;
   }
-  /* line 198, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .posted-by-text {
     width: 235px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 219, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 222, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .nav-2 {
     display: flex;
   }
-  /* line 224, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 227, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  #search {
+    display: none;
+  }
+  /* line 232, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  #search-bar button[type=submit] {
+    border-radius: 3px;
+    margin-left: 20px;
+  }
+  /* line 238, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .intro {
     background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right top;
   }
-  /* line 230, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 244, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner {
     align-items: flex-start;
     text-align: left;
@@ -2046,85 +2059,85 @@ nav {
     background-size: cover;
     padding-left: 4%;
   }
-  /* line 240, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 254, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     width: 940px;
   }
-  /* line 246, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 260, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
     width: 293.333px;
   }
-  /* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 266, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software {
     margin-left: 0;
   }
-  /* line 256, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 270, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-marketing {
     margin-right: 0;
   }
-  /* line 260, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 274, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 455px;
   }
-  /* line 269, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     width: 970px;
   }
-  /* line 273, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 287, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 455px;
   }
-  /* line 278, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 292, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #support,
   #contact {
     display: inline-block;
   }
-  /* line 288, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 302, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys {
     width: 168.7px;
     height: 62.8px;
   }
-  /* line 293, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 307, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane {
     width: 260px;
     height: 62.8px;
   }
-  /* line 298, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 312, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat {
     width: 64.6px;
     height: 62.8px;
   }
-  /* line 303, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 317, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver {
     width: 289px;
     height: 62.8px;
   }
-  /* line 308, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 322, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #microsoft {
     width: 140.2px;
     height: 85.3px;
   }
-  /* line 313, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 327, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50 {
     width: 69.2px;
     height: 110.1px;
   }
-  /* line 318, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 332, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms {
     width: 85.2px;
     height: 99.4px;
   }
-  /* line 323, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 337, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter {
     width: 200.2px;
     height: 80.1px;
   }
-  /* line 329, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 343, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     display: inline-block;
     width: 455px;
@@ -2132,12 +2145,12 @@ nav {
     overflow: hidden;
     border: 1px solid #d6d6d6;
   }
-  /* line 337, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 351, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text {
     border-top: none;
     margin-top: -3px;
   }
-  /* line 343, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 357, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1-image-child {
     width: 100%;
     height: 100%;
@@ -2145,7 +2158,7 @@ nav {
     background-size: cover;
     background-position: center;
   }
-  /* line 351, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 365, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2-image-child {
     width: 100%;
     height: 100%;
@@ -2153,7 +2166,7 @@ nav {
     background-size: cover;
     background-position: center;
   }
-  /* line 359, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 373, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3-image-child {
     width: 100%;
     height: 100%;
@@ -2161,19 +2174,19 @@ nav {
     background-size: cover;
     background-position: center;
   }
-  /* line 367, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 381, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent > .news-1-image-child,
   .news-image-parent > .news-2-image-child,
   .news-image-parent > .news-3-image-child {
     transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 373, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 387, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent:hover > .news-1-image-child,
   .news-image-parent:hover > .news-2-image-child,
   .news-image-parent:hover > .news-3-image-child {
     transform: scale(1.075);
   }
-  /* line 379, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 393, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 > a > img,
   .news-2 > a > img,
   .news-3 > a > img {
@@ -2182,7 +2195,15 @@ nav {
 }
 
 @media (min-width: 1260px) {
-  /* line 397, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 411, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  #search {
+    display: inline-block;
+  }
+  /* line 416, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  #search-bar button[type=submit] {
+    border-radius: 0px 3px 3px 0px;
+  }
+  /* line 421, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .title-web,
   .title-it,
   .title-telecoms,
@@ -2191,151 +2212,151 @@ nav {
   .title-cyber {
     width: 192px;
   }
-  /* line 408, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 432, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .about,
   .contact,
   .website,
   .social {
     width: 25%;
   }
-  /* line 416, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 440, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     width: 1170px;
   }
-  /* line 422, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 446, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
     width: 370px;
   }
-  /* line 428, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 452, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 270px;
   }
-  /* line 435, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 459, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-web {
     margin-right: auto;
   }
-  /* line 439, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 463, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-cyber {
     margin-left: auto;
   }
-  /* line 444, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 468, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     width: 1170px;
   }
-  /* line 449, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 473, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 370px;
   }
-  /* line 453, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 477, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 {
     margin-right: 15px;
     margin-left: 0;
   }
-  /* line 458, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 482, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2 {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 463, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 487, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     margin-left: 15px;
     margin-right: 0;
   }
-  /* line 469, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 493, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     display: inline-block;
   }
-  /* line 476, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 500, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     width: 370px;
     height: 212.708px;
     overflow: hidden;
     border: 1px solid #d6d6d6;
   }
-  /* line 485, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 509, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .website,
   .social {
     padding-top: 43px;
   }
-  /* line 491, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 515, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys {
     width: 188px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
   }
-  /* line 497, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 521, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
   }
-  /* line 501, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 525, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane {
     width: 287px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
   }
-  /* line 507, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 531, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
   }
-  /* line 511, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 535, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat {
     width: 72px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;
   }
-  /* line 517, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 541, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
   }
-  /* line 522, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 546, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver {
     width: 322px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
   }
-  /* line 528, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 552, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
   }
-  /* line 533, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 557, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #microsoft {
     width: 115px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
     background-size: cover;
   }
-  /* line 540, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 564, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50 {
     width: 44px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
   }
-  /* line 546, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 570, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50:hover {
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
   }
-  /* line 550, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 574, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms {
     width: 60px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
   }
-  /* line 555, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 579, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms:hover {
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
   }
-  /* line 559, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 583, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter {
     width: 175px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
   }
-  /* line 565, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 589, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter:hover {
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
   }

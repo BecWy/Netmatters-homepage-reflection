@@ -28,6 +28,9 @@
 //FROM 768PX --------------------------------------------------------------------------------
 @media (min-width: 768px) {
 
+    nav {
+        flex-wrap: nowrap;
+    }
 
     //NAV SEARCH BAR moves up- not accurate, testing. also settings for moving button to side
     #search-bar {
@@ -220,6 +223,17 @@
             display: flex;
         }
 
+        //hide search input
+        #search {
+            display: none;
+        }
+
+        //search button rounded corners
+        #search-bar button[type=submit] {
+            border-radius: 3px;
+            margin-left: 20px; //////////////////////////here for testing only, can be removed/changed
+        }
+
         //INTRO background image added. //DONE
         .intro {
             background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right top;
@@ -392,6 +406,16 @@
 
 //FROM 1260PX -----------------------------------------------------------------------------
 @media (min-width: 1260px) {  
+
+    //bring back search input
+    #search {
+        display: inline-block;
+    }
+
+    //re-square the search button inner corners
+    #search-bar button[type=submit] {
+        border-radius: 0px 3px 3px 0px;
+    }
 
     //RESIZE NAV MENU BOXES
     .title-web,
