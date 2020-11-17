@@ -132,6 +132,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;   ////////////check justify settings
+        width: 720px; ///////////maintain equal margins
+        margin-left: auto;
+        margin-right: auto;
     }
     
     //makes sure all cards cover the exact same width /////////////check settings
@@ -150,16 +153,27 @@
     .card-web,
     .card-cyber,
     .card-training {
-        width: 45%;
+        width: 343px;
     }
 
-    .card-telecoms { //testing formatting
-        margin-left: auto;
+    .card-telecoms,
+    .card-cyber {
+        margin-left: 0;
     }
 
-    .card-web {
-        margin-right: auto; //testing formatting
+    .card-web,
+    .card-training {
+        margin-right: 0;
     }
+
+
+    // .card-telecoms { //testing formatting
+    //     margin-left: auto;
+    // }
+
+    // .card-web {
+    //     margin-right: auto; //testing formatting
+    // }
 
     //LATEST switch to 2 column layout. Fixed width. 
     .latest {
@@ -215,17 +229,34 @@
             padding-left: 4%; //was 15px. CAN I USE A MIN-MAX?
         }
 
-        
+        //CARD formatting
+        .cards {
+            width: 940px; ///////////maintain equal margins
+        }
 
 
         //CARD format 3 + 2 + 2. TO LOOK AT MARGINS/PADDING.
         .card-software,
         .card-it,
         .card-marketing {
-            width: 370px;
+            width: 293.333px;
+        }
+
+        .card-software {
             margin-left: 0;
+        }
+
+        .card-marketing {
             margin-right: 0;
         }
+
+        .card-telecoms,
+        .card-web,
+        .card-cyber,
+        .card-training {
+            width: 455px;
+        }
+
 
         //LATEST news items new width. TO EDIT MARGINS/SPACING
         .news {
@@ -370,12 +401,32 @@
         width: 25%;
     }
 
+    //CARDS format
+    .cards {
+        width: 1170px; ///////////maintain equal margins
+    }
+
     // CARDS format 3 + 4. TO LOOK AT MARGINS/PADDING.
+
+    .card-software,
+    .card-it,
+    .card-marketing {
+        width: 370px;
+    }
+
     .card-telecoms,
     .card-web,
     .card-cyber,
     .card-training {
-        width: 23%;
+        width: 270px;
+    }
+
+    .card-web {
+        margin-right: auto;
+    }
+
+    .card-cyber {
+        margin-left: auto;
     }
 
     //LATEST 3rd news item added again. //DONE.
