@@ -117,11 +117,6 @@
         display: none;
     }
 
-    //LATEST NEWS ITEMS BOTTOM MARGIN
-    .news {
-        margin-bottom: 40px;
-    }
-
     //NAV call button disappears. //DONE
     #direct-call {
         display: none;
@@ -136,18 +131,14 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
-    //makes sure all cards cover the exact same width /////////////check settings
-    // .card-software,
-    // .card-it,
-    // .card-marketing, 
-    // .card-telecoms,
-    // .card-web,
-    // .card-cyber,
-    // .card-training {
-    //     margin-left: 0;
-    //     margin-right: 0;
-    // }
+
+    .card-software,
+    .card-it,
+    .card-marketing {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .card-telecoms,
     .card-web,
@@ -167,18 +158,13 @@
     }
 
 
-    // .card-telecoms { //testing formatting
-    //     margin-left: auto;
-    // }
-
-    // .card-web {
-    //     margin-right: auto; //testing formatting
-    // }
-
     //LATEST switch to 2 column layout. Fixed width. 
-    .latest {
+
+    .news-container {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        width: 750px;
+        
     }
 
     .latest h2 {
@@ -186,12 +172,33 @@
         width: 100%;
     }
     .news {
-        width: 345px //was 45%
+        width: 345px;
+        
+    }
+
+    .news-1 {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .news-2 {    
+        margin-left: 15px;
+        margin-right: auto;
     }
 
     .news-image-parent {                  /////////////////////////////////animation
         display: none;
     }
+
+    .posted-by {
+        width: 308px;
+    }
+
+
+    .posted-by-text {
+        width: 235px;
+    }
+
 
 }
 
@@ -259,6 +266,10 @@
 
 
         //LATEST news items new width. TO EDIT MARGINS/SPACING
+        .news-container {
+            width: 970px;
+        }
+        
         .news {
             width: 455px;
         }
@@ -429,15 +440,37 @@
         margin-left: auto;
     }
 
-    //LATEST 3rd news item added again. //DONE.
-    .news-3 {
-        display: inline-block; 
+    //LATEST
+    .news-container {
+        width: 1170px;
     }
 
     //LATEST news items resized for 3 columns
     .news {
         width: 370px;
     }
+
+    .news-1 {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    .news-2 {
+        margin-left: auto;//15px;
+        margin-right: auto; //15px;
+    }
+
+    .news-3 {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    //LATEST 3rd news item added again. //DONE.
+    .news-3 {
+        display: inline-block; 
+    }
+
+    
 
     //LATEST NEWS IMAGE ANIMATION
     .news-image-parent {                  /////////////////////////////////animation
@@ -538,4 +571,3 @@
 
 //NAV search bar expands - animation
 //INTRO margins reset. Text moves left, max-width set on text.
-//CARDS need to set fixed widths for medium and large.

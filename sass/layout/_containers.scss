@@ -46,7 +46,6 @@
     padding: 30px 30px;
     margin-top: 30px;
     width: 100%;
-    max-width: 710px;
     box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
     border-radius: 3px;
 }
@@ -125,6 +124,7 @@
     width: 100%; //each news section is narrower
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .latest > h2 { 
@@ -139,6 +139,9 @@
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
     padding-left: 15px;
     margin-top: 0; 
+    margin-bottom: 0;
+    align-self: flex-start;
+    width: 100%;
 }
 
 .latest > h2::after {
@@ -150,27 +153,16 @@
     border-bottom: 5px solid #333645;
 }
 
+.news-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
 .news {
     width: 95%;
     margin: 0px auto;  
-    padding: 10px 0;
+    padding: 15px 0px;
 }
-
-.news-1 {
-    margin-top: 20px;
-    margin-bottom: -10px;
-}
-
-.news-2 {
-    margin-top: 20px;
-    margin-bottom: -10px;
-}
-
-.news-3 {
-    margin-top: 20px;
-    margin-bottom: 40px; 
-}
-
 
 
 .news-text {
@@ -205,7 +197,6 @@
 .posted-by {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     border-top: 1px solid #d6d6d6;
     padding-top: 30px; 
     margin-top: 30px; 
@@ -222,8 +213,10 @@
 
 .posted-by-text p {
     color: #666666;
-    margin: 0 20px; 
-    //padding: 2px 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 0;
     font-size: 14px;
     line-height: 22px;
 }
@@ -234,7 +227,8 @@
 }
  
 .thumbnail {
-    height: 50px;
+    height: 47px;
+    width: 47px;
 }
 
 
