@@ -8,11 +8,40 @@
         display: none;
     }
   
+    //NAV HEIGHT
+    nav {
+        height: 168px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    //NAV logo
+    #logo {
+        width: 65%;
+    }
+
+    #logo img {
+        max-width: 100%;
+    }
+
+    //NAV spacing
+    #direct-call {
+        margin-left: auto;
+    }
+
+
+    //NAV SEARCH BAR width in small screens
+    #search-bar {
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+
+
     //NAV SEARCH BAR BUTTON absolute positioning - move button inside text input fpr small screens
     #search-bar button[type=submit] {
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 15px;
         z-index: 2;
     }
 
@@ -30,6 +59,18 @@
 
     nav {
         flex-wrap: nowrap;
+        width: 750px;
+        height: 110px;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 375px;
+        padding-right: 15px;
+    }
+
+    #logo img{
+        width: 345px;
     }
 
     //NAV SEARCH BAR moves up- not accurate, testing. also settings for moving button to side
@@ -40,6 +81,7 @@
         width: 240px;
         align-self: center;
         height: 56px;
+        margin-left: auto;
     }
 
     //NAV SEARCH BAR //remove box shadow & change border
@@ -218,6 +260,15 @@
 
 @media (min-width: 992px) {
 
+        nav {
+            width: 970px;
+        }
+
+        //increase logo size
+        #logo img {
+            width: 370px;
+        }
+
         //NAV bar appears. //DONE
         .nav-2 {
             display: flex;
@@ -228,10 +279,25 @@
             display: none;
         }
 
+        //change search bar container width to the size of the button
+        #search-bar {
+            width: 63px;
+            margin-left: 20px;
+        }
+
         //search button rounded corners
         #search-bar button[type=submit] {
             border-radius: 3px;
-            margin-left: 20px; //////////////////////////here for testing only, can be removed/changed
+        }
+
+        //NAV support and contact buttons appear
+        #support,
+        #contact {
+            display: inline-block;
+        }
+
+        #support {
+            margin-left: auto; 
         }
 
         //INTRO background image added. //DONE
@@ -288,15 +354,7 @@
             width: 455px;
         }
 
-        //NAV support and contact buttons appear
-        #support,
-        #contact {
-            display: inline-block;
-        }
-
-        // #support {
-        //     margin-left: auto; //need to fix spacing before reactivating
-        // }
+        
 
         //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.
         #busseys {
@@ -407,15 +465,29 @@
 //FROM 1260PX -----------------------------------------------------------------------------
 @media (min-width: 1260px) {  
 
+    nav {
+        width: 1200px;
+    }
+
     //bring back search input
     #search {
         display: inline-block;
+    }
+
+    #search-bar input[type=text] {
+        width: 240px;
+    }
+
+    #search-bar {
+        width: 303px;
     }
 
     //re-square the search button inner corners
     #search-bar button[type=submit] {
         border-radius: 0px 3px 3px 0px;
     }
+
+    
 
     //RESIZE NAV MENU BOXES
     .title-web,
