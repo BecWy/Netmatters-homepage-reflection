@@ -658,6 +658,12 @@ a {
 }
 
 /* line 53, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+.card a {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 58, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2 {
   position: relative;
   padding-bottom: 17px;
@@ -668,7 +674,7 @@ a {
   line-height: 19.8px;
 }
 
-/* line 63, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 68, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card h2::after {
   content: "";
   position: absolute;
@@ -678,26 +684,26 @@ a {
   border-bottom: 4px solid #333645;
 }
 
-/* line 72, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 77, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card:hover h2::after {
   border-bottom: 4px solid #ffffff;
 }
 
-/* line 77, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card p {
   margin-bottom: 13px;
   line-height: 22px;
   font-size: 13px;
 }
 
-/* line 83, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .card .fake-button {
   padding: 5px 15px;
   font-size: 17.008px;
   line-height: 35px;
 }
 
-/* line 89, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 94, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -710,7 +716,7 @@ a {
   background-color: #333645;
 }
 
-/* line 101, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro h1 {
   margin-top: -6px;
   margin-bottom: 28px;
@@ -720,7 +726,7 @@ a {
   font-weight: 400;
 }
 
-/* line 110, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 115, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p {
   margin-top: -6px;
   margin-bottom: 25px;
@@ -728,12 +734,12 @@ a {
   line-height: 30px;
 }
 
-/* line 117, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .intro p strong {
   font-weight: 600;
 }
 
-/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 128, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest {
   width: 100%;
   display: flex;
@@ -741,7 +747,7 @@ a {
   align-items: center;
 }
 
-/* line 130, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2 {
   position: relative;
   text-transform: uppercase;
@@ -759,7 +765,7 @@ a {
   width: 100%;
 }
 
-/* line 147, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 152, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .latest > h2::after {
   content: "";
   position: absolute;
@@ -769,20 +775,20 @@ a {
   border-bottom: 5px solid #333645;
 }
 
-/* line 156, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 161, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-container {
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
-/* line 161, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 166, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   width: 95%;
   margin: 0px auto;
   padding: 15px 0px;
 }
 
-/* line 168, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 173, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -794,12 +800,12 @@ a {
   margin-top: -4px;
 }
 
-/* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text > h3 {
   margin-top: 0;
 }
 
-/* line 183, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 188, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text h3 > a {
   font-size: 16px;
   line-height: 24px;
@@ -807,7 +813,7 @@ a {
   font-weight: 600;
 }
 
-/* line 190, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 195, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news-text p {
   margin-bottom: 25px;
   font-size: 13px;
@@ -815,7 +821,7 @@ a {
   color: #666666;
 }
 
-/* line 197, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 202, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -827,14 +833,14 @@ a {
   color: #666666;
 }
 
-/* line 208, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 213, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
   height: 50px;
 }
 
-/* line 214, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 219, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   color: #666666;
   margin-top: 0;
@@ -845,24 +851,24 @@ a {
   line-height: 22px;
 }
 
-/* line 224, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
 }
 
-/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 234, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .thumbnail {
   height: 47px;
   width: 47px;
 }
 
-/* line 240, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 245, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   position: relative;
 }
 
-/* line 244, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 249, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip {
   position: absolute;
   z-index: 1;
@@ -870,7 +876,7 @@ a {
   top: 20px;
 }
 
-/* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 257, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip h3 {
   margin: 0 0;
   text-transform: uppercase;
@@ -880,17 +886,17 @@ a {
   padding: 5px 10px;
 }
 
-/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 266, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip-text {
   display: none;
 }
 
-/* line 265, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 270, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip:hover .tooltip-text {
   display: inline-block;
 }
 
-/* line 269, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 274, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip .tooltip-text {
   background-color: #333645;
   color: #ffffff;
@@ -909,7 +915,7 @@ a {
   /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* line 288, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 293, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip .tooltip-text::after {
   content: " ";
   position: absolute;
@@ -1045,18 +1051,24 @@ nav {
 }
 
 /* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#support a:visited,
+#contact a:visited {
+  color: #ffffff;
+}
+
+/* line 118, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #contact {
   background-color: #999aa2;
   margin-left: 20px;
   width: 153px;
 }
 
-/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 124, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #contact:hover {
   background-color: #84858f;
 }
 
-/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 128, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
   position: relative;
   width: 100%;
@@ -1068,7 +1080,7 @@ nav {
   padding-right: 0;
 }
 
-/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 140, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text] {
   font-size: 14px;
   line-height: 20px;
@@ -1087,13 +1099,13 @@ nav {
   padding-right: 40px;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text]:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 164, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=submit] {
   font-size: 16px;
   line-height: 16px;
@@ -1106,7 +1118,7 @@ nav {
   outline: none;
 }
 
-/* line 175, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 180, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -1123,7 +1135,7 @@ nav {
   text-align: center;
 }
 
-/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 206, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
@@ -1458,76 +1470,76 @@ nav {
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-software:hover:not(last-child) > .icon-parent > #nav-icon-software:not(last-child) {
+.title-software:hover:not(last-child) .icon-parent > #nav-icon-software:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-it:hover:not(last-child) > .icon-parent > #nav-icon-it:not(last-child) {
+.title-it:hover:not(last-child) .icon-parent > #nav-icon-it:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-marketing:hover:not(last-child) > .icon-parent > #nav-icon-marketing:not(last-child) {
+.title-marketing:hover:not(last-child) .icon-parent > #nav-icon-marketing:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-telecoms:hover:not(last-child) > .icon-parent > #nav-icon-telecoms:not(last-child) {
+.title-telecoms:hover:not(last-child) .icon-parent > #nav-icon-telecoms:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web:hover:not(last-child) > .icon-parent > #nav-icon-web:not(last-child) {
+.title-web:hover:not(last-child) .icon-parent > #nav-icon-web:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-cyber:hover:not(last-child) > .icon-parent > #nav-icon-cyber:not(last-child) {
+.title-cyber:hover:not(last-child) .icon-parent > #nav-icon-cyber:not(last-child) {
   color: #ffffff;
 }
 
 /* line 11, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-training:hover:not(last-child) > .icon-parent > #nav-icon-training:not(last-child) {
+.title-training:hover:not(last-child) .icon-parent > #nav-icon-training:not(last-child) {
   color: #ffffff;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover:not(last-child) {
   background-color: #67809f;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover:not(last-child) {
   background-color: #4183d7;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover:not(last-child) {
   background-color: #2ecc71;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover:not(last-child) {
   background-color: #d64541;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover:not(last-child) {
   background-color: #926fb1;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover:not(last-child) {
   background-color: #f62459;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover:not(last-child) {
   background-color: #926fb1;
 }
 
-/* line 26, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 30, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-2 {
   border-bottom: .5px solid #ffffff;
   display: flex;
@@ -1544,13 +1556,13 @@ nav {
   display: none;
 }
 
-/* line 44, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web,
-.title-it,
-.title-telecoms,
-.title-software,
-.title-marketing,
-.title-cyber {
+/* line 46, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-2 a {
+  height: 98px;
+}
+
+/* line 51, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-box-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1562,54 +1574,39 @@ nav {
   text-transform: uppercase;
 }
 
-/* line 61, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > *,
-.title-software > *,
-.title-it > *,
-.title-marketing > *,
-.title-telecoms > *,
-.title-cyber > * {
+/* line 64, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-box-text > * {
   margin: 0 0;
 }
 
-/* line 95, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 93, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 #nav-icon-web,
 #nav-icon-software,
 #nav-icon-it,
 #nav-icon-marketing,
 #nav-icon-telecoms,
 #nav-icon-cyber {
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 20px;
   padding-bottom: 10px;
 }
 
-/* line 106, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > p,
-.title-software > p,
-.title-it > p,
-.title-marketing > p,
-.title-telecoms > p,
-.title-cyber > p {
+/* line 104, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-box-text > p {
   padding-bottom: 1px;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
 }
 
-/* line 118, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
-.title-web > h1,
-.title-software > h1,
-.title-it > h1,
-.title-marketing > h1,
-.title-telecoms > h1,
-.title-cyber > h1 {
+/* line 111, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.nav-box-text > h1 {
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
 }
 
-/* line 131, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .nav-web,
 .nav-it,
 .nav-telecoms,
@@ -1624,93 +1621,113 @@ nav {
   left: 0;
   right: 0;
   top: 97.333px;
-  text-align: center;
-  justify-content: space-between;
   line-height: 45px;
-  padding-left: 50px;
-  padding-right: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 138, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.secondary-nav-text {
+  width: 912px;
+  display: flex;
+  flex-direction: flex-row;
+  text-align: center;
+  justify-content: space-between;
+  letter-spacing: 0.4px;
+  margin: 0 auto;
+}
+
+/* line 148, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.secondary-nav-text a {
+  padding: 10px 0px;
+}
+
+/* line 152, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+.secondary-nav-text a,
+.secondary-nav-text a:visited {
+  color: #ffffff;
+}
+
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software > .nav-software:not(last-child) {
   background-color: #526781;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it > .nav-it:not(last-child) {
   background-color: #286abd;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing > .nav-marketing:not(last-child) {
   background-color: #25a25a;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms > .nav-telecoms:not(last-child) {
   background-color: #bc2c28;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > .nav-web:not(last-child) {
   background-color: #79539a;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber > .nav-cyber:not(last-child) {
   background-color: #de093f;
   color: #ffffff;
   display: none;
 }
 
-/* line 154, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training > .nav-training:not(last-child) {
   background-color: #79539a;
   color: #ffffff;
   display: none;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover > .nav-software:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover > .nav-it:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover > .nav-marketing:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover > .nav-telecoms:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover > .nav-web:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover > .nav-cyber:not(last-child) {
   display: flex;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover > .nav-training:not(last-child) {
   display: flex;
 }
@@ -2296,159 +2313,167 @@ nav {
     border-radius: 0px 3px 3px 0px;
   }
   /* line 493, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
-  .title-web,
-  .title-it,
-  .title-telecoms,
-  .title-software,
-  .title-marketing,
-  .title-cyber {
+  .nav-box-text {
     width: 192px;
   }
-  /* line 504, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 498, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .nav-web,
+  .nav-it,
+  .nav-telecoms,
+  .nav-software,
+  .nav-marketing,
+  .nav-cyber {
+    font-size: 16px;
+  }
+  /* line 507, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .secondary-nav-text {
+    width: 1152px;
+  }
+  /* line 512, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .about,
   .contact,
   .website,
   .social {
     width: 25%;
   }
-  /* line 512, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 520, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     width: 1170px;
   }
-  /* line 518, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 526, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
     width: 370px;
   }
-  /* line 524, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 532, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 270px;
   }
-  /* line 531, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 539, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-web {
     margin-right: auto;
   }
-  /* line 535, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 543, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-cyber {
     margin-left: auto;
   }
-  /* line 540, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 548, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     width: 1170px;
   }
-  /* line 545, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 553, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 370px;
   }
-  /* line 549, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 557, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 {
     margin-right: 15px;
     margin-left: 0;
   }
-  /* line 554, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 562, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2 {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 559, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 567, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     margin-left: 15px;
     margin-right: 0;
   }
-  /* line 565, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 573, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     display: inline-block;
   }
-  /* line 572, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 580, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     width: 370px;
     height: 212.708px;
     overflow: hidden;
     border: 1px solid #d6d6d6;
   }
-  /* line 581, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 589, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .website,
   .social {
     padding-top: 43px;
   }
-  /* line 587, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 595, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys {
     width: 188px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
   }
-  /* line 593, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 601, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
   }
-  /* line 597, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 605, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane {
     width: 287px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
   }
-  /* line 603, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 611, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
   }
-  /* line 607, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 615, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat {
     width: 72px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;
   }
-  /* line 613, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 621, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
   }
-  /* line 618, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 626, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver {
     width: 322px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
   }
-  /* line 624, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 632, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
   }
-  /* line 629, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 637, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #microsoft {
     width: 115px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
     background-size: cover;
   }
-  /* line 636, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 644, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50 {
     width: 44px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
   }
-  /* line 642, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 650, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50:hover {
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
   }
-  /* line 646, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 654, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms {
     width: 60px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
   }
-  /* line 651, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 659, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms:hover {
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
   }
-  /* line 655, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 663, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter {
     width: 175px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
   }
-  /* line 661, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 669, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter:hover {
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
   }

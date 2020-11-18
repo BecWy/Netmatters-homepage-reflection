@@ -490,15 +490,23 @@
     
 
     //RESIZE NAV MENU BOXES
-    .title-web,
-    .title-it,
-    .title-telecoms,
-    .title-software,
-    .title-marketing,
-    .title-cyber { 
+    .nav-box-text { 
         width: 192px;
     }
 
+    //NAV dropdowns font-size
+    .nav-web,
+    .nav-it,
+    .nav-telecoms,
+    .nav-software,
+    .nav-marketing,
+    .nav-cyber {
+        font-size: 16px;
+    }
+
+    .secondary-nav-text {
+        width: 1152px;
+    }
 
     //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
     .about,

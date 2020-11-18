@@ -7,11 +7,15 @@
 } 
 
 //hover white
-@each $theme, $color in $themes { //////////////////////to check if this new code is working.
-    .title-#{$theme}:hover:not(last-child) > .icon-parent > #nav-icon-#{$theme}:not(last-child) {
+@each $theme, $color in $themes {
+    .title-#{$theme}:hover:not(last-child) .icon-parent > #nav-icon-#{$theme}:not(last-child) {
         color: #ffffff;
     }
 } 
+
+
+
+
 
 //BOX HOVER BACKGROUND COLOR
 @each $theme, $color in $themes {
@@ -39,14 +43,12 @@
     display: none;
 }
 
+.nav-2 a{
+    height: 98px;
+}
 
 // NAV BAR PRIMARY OPTIONS
-.title-web,
-.title-it,
-.title-telecoms,
-.title-software,
-.title-marketing,
-.title-cyber {
+.nav-box-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,12 +60,8 @@
     text-transform: uppercase;
 }
 
-.title-web > *,
-.title-software > *,
-.title-it > *,
-.title-marketing > *,
-.title-telecoms > *,
-.title-cyber > * {
+
+.nav-box-text > * {
     margin: 0 0;
 }
 
@@ -98,29 +96,19 @@
 #nav-icon-marketing,
 #nav-icon-telecoms,
 #nav-icon-cyber {
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 20px; //23px in original code, but looks too big for these icons
+    line-height: 20px; //23px in original code, but looks too big for these icons
     padding-bottom: 10px;
 }
 
-.title-web > p, 
-.title-software > p,
-.title-it > p,
-.title-marketing > p,
-.title-telecoms > p,
-.title-cyber > p {
+.nav-box-text > p {
     padding-bottom: 1px;
     font-size: 10px;
     line-height: 10px;
     font-weight: 400;
 }
 
-.title-web > h1, 
-.title-software > h1,
-.title-it > h1,
-.title-marketing > h1,
-.title-telecoms > h1,
-.title-cyber > h1 {
+.nav-box-text > h1 {
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -141,12 +129,29 @@
     position: absolute; //position aligned to nav-2
     left: 0;
     right: 0;
-    top: 97.333px; 
+    top: 97.333px;  
+    line-height: 45px;
+    font-size: 13px; 
+    text-transform: uppercase;
+}
+
+.secondary-nav-text {
+    width: 912px;
+    display: flex;
+    flex-direction: flex-row;
     text-align: center;
     justify-content: space-between;
-    line-height: 45px;
-    padding-left: 50px;
-    padding-right: 50px;
+    letter-spacing: 0.4px;
+    margin: 0 auto;
+}
+
+.secondary-nav-text a {
+    padding: 10px 0px;
+}
+
+.secondary-nav-text a,
+.secondary-nav-text a:visited {
+    color: #ffffff;
 }
 
 //DROPDOWN NAV. colors
@@ -157,6 +162,7 @@
         display: none; //HIDDEN        
     }
 } 
+
 
 //DROPDOWN NAV. hover - display
 @each $theme, $color in $themes { 
