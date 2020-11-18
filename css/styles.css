@@ -952,11 +952,31 @@ nav {
   line-height: 26px;
   color: #333645;
   justify-content: center;
-  align-items: center;
-  border: 1px solid red;
+  padding-top: 16px;
 }
 
-/* line 36, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 32, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#direct-call i {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  position: relative;
+}
+
+/* line 41, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#direct-call i:hover::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  left: 0px;
+  bottom: -2px;
+  border-bottom: 3px solid #333645;
+  z-index: 2;
+}
+
+/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu {
   display: flex;
   flex-direction: column;
@@ -976,13 +996,18 @@ nav {
   justify-self: flex-end;
 }
 
-/* line 55, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#menu:hover {
+  background-color: #22242e;
+}
+
+/* line 75, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu i {
   font-size: 22px;
   line-height: 22px;
 }
 
-/* line 60, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu span {
   font-size: 11px;
   line-height: 12px;
@@ -991,7 +1016,7 @@ nav {
   margin-top: 4px;
 }
 
-/* line 68, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #support,
 #contact {
   padding: 5px 15px;
@@ -1008,30 +1033,30 @@ nav {
   display: none;
 }
 
-/* line 84, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 104, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #support {
   background-color: #4183d7;
   width: 145px;
 }
 
-/* line 89, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #support:hover {
   background-color: #2a6ec6;
 }
 
-/* line 93, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #contact {
   background-color: #999aa2;
   margin-left: 20px;
   width: 153px;
 }
 
-/* line 99, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #contact:hover {
   background-color: #84858f;
 }
 
-/* line 103, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
   position: relative;
   width: 100%;
@@ -1043,7 +1068,7 @@ nav {
   padding-right: 0;
 }
 
-/* line 115, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text] {
   font-size: 14px;
   line-height: 20px;
@@ -1062,13 +1087,13 @@ nav {
   padding-right: 40px;
 }
 
-/* line 134, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 154, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text]:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=submit] {
   font-size: 16px;
   line-height: 16px;
@@ -1081,7 +1106,7 @@ nav {
   outline: none;
 }
 
-/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 175, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -1098,7 +1123,7 @@ nav {
   text-align: center;
 }
 
-/* line 181, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 .banner h1 {
   margin-top: 0;
 }
@@ -1699,12 +1724,12 @@ nav {
 .button a {
   text-align: center;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 3px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-/* line 17, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .banner > .button a {
   padding: 5px 20px;
   font-size: 20px;
@@ -1716,13 +1741,13 @@ nav {
   font-weight: 400;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-.banner > .button:hover {
+/* line 25, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.banner > .button a:hover {
   background-color: #7e57a0;
   box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.125);
 }
 
-/* line 34, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 31, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .fake-button {
   text-align: center;
   display: inline-block;
@@ -1731,7 +1756,7 @@ nav {
   font-weight: 400;
 }
 
-/* line 42, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 39, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .intro .button a {
   padding: 5px 15px;
   font-size: 17px;
@@ -1741,18 +1766,18 @@ nav {
   color: #333645;
 }
 
-/* line 51, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 48, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .intro .button a:hover {
   opacity: .9;
 }
 
-/* line 55, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 52, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .news-text > .button {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 60, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 57, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .news-text .button a {
   padding: 5px 15px;
   font-size: 17px;
@@ -1763,7 +1788,12 @@ nav {
   font-weight: 400;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 67, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.news-text .button a:hover {
+  background-color: #7e57a0;
+}
+
+/* line 72, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button {
   display: flex;
   flex-direction: row;
@@ -1772,7 +1802,7 @@ nav {
   margin-top: 0;
 }
 
-/* line 81, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 80, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li {
   list-style-type: none;
   display: flex;
@@ -1785,7 +1815,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 94, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 93, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li a {
   padding: 12px 0;
   justify-content: center;
@@ -1797,22 +1827,22 @@ nav {
   padding: auto 15px;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 104, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter {
   margin-left: auto;
 }
 
-/* line 110, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #facebook a:hover {
   background-color: #3b5998;
 }
 
-/* line 114, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #linked-in:hover {
   background-color: #0077b5;
 }
 
-/* line 118, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 117, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter:hover {
   background-color: #00aced;
 }

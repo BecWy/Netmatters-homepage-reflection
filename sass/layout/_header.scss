@@ -20,17 +20,33 @@ nav {
 
 #direct-call {
     display: flex;
-    height: 70px; //44px;
-    width: 70px; //42px;
+    height: 70px;
+    width: 70px;
     font-size: 20px;
     line-height: 26px;
     color: #333645;
     justify-content: center;
-    align-items: center;
-    // padding: 5px 15px;
-    // padding-top: 10px;
-    border: 1px solid red;
+    padding-top: 16px;
+}
 
+#direct-call i {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+}
+
+#direct-call i:hover::after {
+        content: "";
+        position: absolute;
+        width: 32px;
+        left: 0px;
+        bottom: -2px;
+        border-bottom: 3px solid #333645;
+        z-index: 2;
+      
 }
 
 #menu {
@@ -50,6 +66,10 @@ nav {
     align-items: center;
     justify-content: center;
     justify-self: flex-end;
+}
+
+#menu:hover {
+    background-color: #22242e;
 }
 
 #menu i {
