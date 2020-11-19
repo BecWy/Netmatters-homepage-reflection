@@ -110,11 +110,6 @@ nav {
     background-color:#2a6ec6;
 }
 
-#support a:visited,
-#contact a:visited {
-    color: #ffffff;
-}
-
 #contact {
     background-color: #999aa2;
     margin-left: 20px;
@@ -162,19 +157,18 @@ nav {
 }
 
 #search-bar button[type=submit] {
-    // position: absolute;
-    // top: 0px;
-    // right: 0px;
-    // z-index: 2;
-    font-size: 16px; //changed from original
-    line-height: 16px; //changed from original
-    letter-spacing: normal;
-    color: #555555; //not right????
     background-color:transparent;
-    padding: 1px 6px;
-    height: 100%;
+    padding: 0 0;
     border: none;
-    outline: none;
+    outline: none;   
+}
+
+#search-bar button[type=submit] i {
+    height: 47px;
+    line-height: 47px;
+    width: 47px;
+    font-size: 20px;
+    color: #333645;
 }
 
 .banner {

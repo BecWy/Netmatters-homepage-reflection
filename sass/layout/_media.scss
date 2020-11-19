@@ -45,6 +45,12 @@
         z-index: 2;
     }
 
+    //NAC SEARCH BAR BUTTON aligns icon slightly closer to the right, without reducing <a> surface area
+    #search-bar button[type=submit] i {
+        text-align: right;
+        padding-right: 10px; 
+    }
+
     .news-image-parent {                  /////////////////////////////////animation
         display: none;
     }
@@ -105,12 +111,18 @@
 
     #search-bar button[type=submit] {
         background-color: #999aa2;
-        height: 56px;
-        color: #ffffff;
+        height: 56px;   
         border-radius: 0px 3px 3px 0px;
         width: 63px;
+    }
+
+
+    #search-bar button[type=submit] i {
+        color: #ffffff;
+        height: 56px;
+        line-height: 56px;
         font-size: 23px;
-        line-height: 23px;
+        width: 100%;
     }
 
     #search-bar button[type=submit]:hover {
@@ -120,8 +132,6 @@
     //NAV BAR order
     #menu {
         order: 2;
-        //margin-left: 20px;
-        //margin-right: 15px;
     }
 
     //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
@@ -145,6 +155,13 @@
 
     .about {
         padding-top: 43px;
+    }
+
+    //FOOTER CLIENT & PARTNER LOGO width
+    .footer-logos,
+    .partner-footer {
+        width: 720px;
+        margin: 0 auto;
     }
 
     //LATEST standardising title height so doesn't matter if title is 1 or 2 lines
@@ -354,9 +371,15 @@
             width: 455px;
         }
 
-        
+        //FOOTER CLIENT & PARTNER LOGO width
+        .footer-logos,
+        .partner-footer {
+            width: 940px;
+            margin: 0 auto;
+        }
 
         //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.
+        
         #busseys {
             width: 168.7px;
             height: 62.8px;
@@ -589,6 +612,13 @@
     .website,
     .social {
         padding-top: 43px;
+    }
+
+    //FOOTER CLIENT & PARTNER LOGO width
+    .footer-logos,
+    .partner-footer {
+        width: 1170px;
+        margin: 0 auto;
     }
 
     //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
