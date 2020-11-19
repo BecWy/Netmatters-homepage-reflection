@@ -178,7 +178,6 @@ nav {
     align-items: center;
     justify-content: center;
     height: 525px;
-
     background-color: #000000;
 
     //mobile/tablet gradient
@@ -188,8 +187,6 @@ nav {
    //desktop gradient in media query
 //    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
 //    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
-
-   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -197,6 +194,36 @@ nav {
     text-align: center; 
 }
 
-.banner h1 {
-    margin-top: 0;
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    //width: 100%; 
+    //align-items: center;
+    //justify-content: center;
+    //height: 525px;
+    //margin: 0 auto;
+    //text-align: center; 
 }
+
+
+.banner-container > h1 {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 48px;
+    line-height: 52.8px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 95%;
+}
+
+.banner-container > span {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    width: 95%;
+}
+

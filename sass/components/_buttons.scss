@@ -11,7 +11,7 @@
     font-weight: 600;
 }
 
-.banner > .button a {
+.banner-container > .button a {
     padding: 5px 20px;
     font-size: 20px;
     line-height: 50px;
@@ -22,7 +22,7 @@
     font-weight: 400;
 }
 
-.banner > .button a:hover {
+.banner-container > .button a:hover {
     background-color: #7e57a0;
     box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.125);
 }

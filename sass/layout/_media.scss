@@ -45,7 +45,7 @@
         z-index: 2;
     }
 
-    //NAC SEARCH BAR BUTTON aligns icon slightly closer to the right, without reducing <a> surface area
+    //NAV SEARCH BAR BUTTON aligns icon slightly closer to the right, without reducing <a> surface area
     #search-bar button[type=submit] i {
         text-align: right;
         padding-right: 10px; 
@@ -55,8 +55,16 @@
         display: none;
     }
 
-    
+    //BANNER width
+    .banner-container {
+        width: 100%;
+    }
 
+    //LATEST TITLE WIDTH
+    #latest-title {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -157,9 +165,17 @@
         padding-top: 43px;
     }
 
-    //FOOTER CLIENT & PARTNER LOGO width
+    //FOOTER width
+    .main-foot-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   
     .footer-logos,
-    .partner-footer {
+    .partner-footer,
+    .main-foot-cont {
         width: 720px;
         margin: 0 auto;
     }
@@ -182,6 +198,15 @@
     //NAV call button disappears. //DONE
     #direct-call {
         display: none;
+    }
+
+    //BANNER / INTRO /LATEST TITLE width
+    .banner-container,
+    .intro-container,
+    #latest-title {
+        width: 720px;
+        margin: 0 auto;
+        padding-left: 0;
     }
 
     //CARD bottom 4 cards switch to 2 column layout. TO LOOK AT MARGINS/PADDING.
@@ -330,8 +355,19 @@
             background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
                         url("../../html-css-reflection/images/slides/slide-1.jpeg");
             background-size: cover;
-            padding-left: 4%; //was 15px. CAN I USE A MIN-MAX?
         }
+
+        //BANNER /INTRO /LATEST TITLE WIDTH
+        .banner-container,
+        .intro-container,
+        #latest-title {
+            width: 940px;
+        }
+
+        .banner-container > h1,
+        .banner-container > span {
+            margin-left: 0;
+        } 
 
         //CARD formatting
         .cards {
@@ -371,9 +407,10 @@
             width: 455px;
         }
 
-        //FOOTER CLIENT & PARTNER LOGO width
+        //FOOTER width
         .footer-logos,
-        .partner-footer {
+        .partner-footer,
+        .main-foot-cont {
             width: 940px;
             margin: 0 auto;
         }
@@ -480,7 +517,7 @@
 
 
 
-//NAV search bar becomes a button that animates on focus
+
 //INTRO margins reset and start to expand again
 
 
@@ -529,6 +566,18 @@
 
     .secondary-nav-text {
         width: 1152px;
+    }
+
+    //BANNER/ INTRO TEXT/ LATEST TITLE WIDTH
+    .banner-container,
+    .intro-container,
+    #latest-title {
+        width: 1170px;
+    }
+
+    .intro-container > h1,
+    .intro-container > p {
+        width: 570px;
     }
 
     //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
@@ -614,9 +663,10 @@
         padding-top: 43px;
     }
 
-    //FOOTER CLIENT & PARTNER LOGO width
+    //FOOTER  width
     .footer-logos,
-    .partner-footer {
+    .partner-footer,
+    .main-foot-cont {
         width: 1170px;
         margin: 0 auto;
     }
@@ -703,5 +753,4 @@
   
 
 
-//NAV search bar expands - animation
 //INTRO margins reset. Text moves left, max-width set on text.
