@@ -198,12 +198,13 @@
     font-size: 14px;
     line-height: 20px;
     color: #666666;
+    width: 100%;
 }
 
 .posted-by-text {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    flex: 1 1;
 }   
 
 .posted-by-text p {
@@ -222,8 +223,12 @@
 }
  
 .thumbnail {
-    height: 47px;
-    width: 47px;
+    width: 47px; 
+    min-width: 47px;
+    flex: 0 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
 }
 
 

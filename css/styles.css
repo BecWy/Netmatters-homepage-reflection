@@ -823,16 +823,17 @@ a {
   font-size: 14px;
   line-height: 20px;
   color: #666666;
+  width: 100%;
 }
 
-/* line 203, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 204, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
-  height: 50px;
+  flex: 1 1;
 }
 
-/* line 209, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p {
   color: #666666;
   margin-top: 0;
@@ -843,24 +844,28 @@ a {
   line-height: 22px;
 }
 
-/* line 219, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 220, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
 }
 
-/* line 224, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 225, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .thumbnail {
-  height: 47px;
   width: 47px;
+  min-width: 47px;
+  flex: 0 0;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
 }
 
-/* line 235, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 240, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news {
   position: relative;
 }
 
-/* line 239, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 244, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip {
   position: absolute;
   z-index: 1;
@@ -868,7 +873,7 @@ a {
   top: 20px;
 }
 
-/* line 247, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip h3 {
   margin: 0 0;
   text-transform: uppercase;
@@ -878,17 +883,17 @@ a {
   padding: 5px 10px;
 }
 
-/* line 256, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip-text {
   display: none;
 }
 
-/* line 260, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 265, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip:hover .tooltip-text {
   display: inline-block;
 }
 
-/* line 264, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 269, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip .tooltip-text {
   background-color: #333645;
   color: #ffffff;
@@ -907,7 +912,7 @@ a {
   /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
+/* line 288, ../../../../Desktop/html-css-reflection/sass/layout/_containers.scss */
 .news .tooltip .tooltip-text::after {
   content: " ";
   position: absolute;
@@ -1944,6 +1949,9 @@ nav {
   border-radius: 50%;
   margin-top: 0;
   border: none;
+  justify-self: center;
+  align-self: center;
+  flex: 0 0;
 }
 
 @media (max-width: 767px) {
