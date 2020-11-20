@@ -307,7 +307,8 @@
 
         //INTRO background image added. //DONE
         .intro {
-            background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right top;
+            background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right bottom;
+            background-size: cover;
         }
 
         //BANNER text aligns left & image gradient changes
