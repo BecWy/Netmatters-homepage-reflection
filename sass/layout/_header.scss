@@ -6,17 +6,21 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    height: 150px; 
+    flex-wrap: nowrap;
+    height: 168px;
     width: 100%;
+    position: relative;
+    padding-bottom: 60px;
 }
-
 
 #logo {
     height: auto;
     padding-left: 15px;
 }
 
+#logo img {
+    max-width: 100%;
+}
 
 #direct-call {
     display: flex;
@@ -27,6 +31,7 @@ nav {
     color: #333645;
     justify-content: center;
     padding-top: 16px;
+    margin-left: auto;
 }
 
 #direct-call i {
@@ -49,13 +54,17 @@ nav {
       
 }
 
+#menu,
+#direct-call {
+    flex-shrink: 0;
+}
+
 #menu {
     display: flex;
     flex-direction: column;
     height: 56px;
     line-height: 46px;
     width: 63px; 
-    margin-left: 20px;
     margin-right: 15px;
     text-align: center;
     color: #ffffff;
@@ -197,6 +206,7 @@ nav {
 .banner-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     //width: 100%; 
     //align-items: center;
     //justify-content: center;

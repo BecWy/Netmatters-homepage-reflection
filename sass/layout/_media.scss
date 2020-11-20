@@ -1,34 +1,11 @@
 
-//UNDER 768PX --------------------------------------------------------------------------
-@media (max-width: 768px) {
+//UNDER 767PX --------------------------------------------------------------------------
+@media (max-width: 767px) {
 
-    //FOOTERS partner and client footers hidden for smaller screens. //DONE
-    .client-footer,
-    .partner-footer {
-        display: none;
+    #search-bar {
+        position: absolute;
+        bottom: 20px;
     }
-  
-    //NAV HEIGHT
-    nav {
-        height: 168px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    //NAV logo
-    #logo {
-        width: 65%;
-    }
-
-    #logo img {
-        max-width: 100%;
-    }
-
-    //NAV spacing
-    #direct-call {
-        margin-left: auto;
-    }
-
 
     //NAV SEARCH BAR width in small screens
     #search-bar {
@@ -51,20 +28,6 @@
         padding-right: 10px; 
     }
 
-    .news-image-parent {                  /////////////////////////////////animation
-        display: none;
-    }
-
-    //BANNER width
-    .banner-container {
-        width: 100%;
-    }
-
-    //LATEST TITLE WIDTH
-    #latest-title {
-        width: 95%;
-        margin: 0 auto;
-    }
 }
 
 
@@ -76,6 +39,7 @@
         width: 750px;
         height: 110px;
         margin: 0 auto;
+        padding-bottom: 0;
     }
 
     #logo {
@@ -140,6 +104,7 @@
     //NAV BAR order
     #menu {
         order: 2;
+        margin-left: 20px;
     }
 
     //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
@@ -173,6 +138,12 @@
         flex-wrap: wrap;
     }
    
+    //DISPLAY LOGO FOOTERS
+    .client-footer,
+    .partner-footer {
+        display: flex;
+}
+
     .footer-logos,
     .partner-footer,
     .main-foot-cont {
@@ -273,9 +244,6 @@
         margin-right: auto;
     }
 
-    .news-image-parent {                  /////////////////////////////////animation
-        display: none;
-    }
 
     .posted-by {
         width: 308px;
@@ -290,17 +258,10 @@
 }
 
 
+//FROM 993PX --------------------------------------------------------------------------------------
 
 
-//INTRO max width activated
-//INTRO left margin starts to expand
-
-
-
-//FROM 992PX --------------------------------------------------------------------------------------
-
-
-@media (min-width: 992px) {
+@media (min-width: 993px) {
 
         nav {
             width: 970px;
@@ -514,11 +475,6 @@
             display: none;
         }
     }
-
-
-
-
-//INTRO margins reset and start to expand again
 
 
 
@@ -752,5 +708,3 @@
 }
   
 
-
-//INTRO margins reset. Text moves left, max-width set on text.
