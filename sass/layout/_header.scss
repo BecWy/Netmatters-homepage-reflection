@@ -118,7 +118,7 @@ nav {
 }
 
 #support {
-    background-color:#4183d7;
+    background-color:$it-color1;
     width: 145px;
 }
 
@@ -209,7 +209,7 @@ nav {
     background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
     url("../../html-css-reflection/images/slides/slide-1.jpeg");  
    
-   //desktop gradient in media query
+   //desktop gradient located in media query
 //    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
 //    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
     background-size: cover;
@@ -223,14 +223,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    //width: 100%; 
-    //align-items: center;
-    //justify-content: center;
-    //height: 525px;
-    //margin: 0 auto;
-    //text-align: center; 
 }
-
 
 .banner-container > h1 {
     margin: 0 auto;

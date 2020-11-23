@@ -35,6 +35,18 @@
     height: 100%;
 }
 
+.card h2,
+.card p {
+    color: #333645;  
+}
+
+.card:hover h2,
+.card:hover p {
+    color: #ffffff;
+}
+
+
+
 .card h2 {
     position: relative;
     padding-bottom: 17px;
@@ -178,7 +190,7 @@
 .news-text h3 > a {
     font-size: 16px;
     line-height: 24px;
-    color: #926fb1;
+    color: $news-color1;
     font-weight: 600;
 }
 
@@ -254,7 +266,7 @@
     text-transform: uppercase;
     font-size: .75rem;
     color: #ffffff;
-    background-color: #926fb1;
+    background-color: $news-color1;
     padding: 5px 10px;
 }
 

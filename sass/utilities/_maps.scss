@@ -17,26 +17,26 @@
 
 
 
-// CARD THEMES
+// COLOR THEMES
 
 $themes: (
-    'software': #67809f,
-    'it': #4183d7,
-    'marketing': #2ecc71,
-    'telecoms': #d64541,
-    'web': #926fb1,
-    'cyber':  #f62459,
-    'training': #926fb1,
+    'software': $software-color1,
+    'it': $it-color1,
+    'marketing': $marketing-color1,
+    'telecoms': $telecoms-color1,
+    'web': $web-color1,
+    'cyber': $cyber-color1,
+    'training': $training-color1,
 );
 
 $themes-secondary: (
-    'software': #526781,
-    'it': #286abd,
-    'marketing': #25a25a,
-    'telecoms': #bc2c28,
-    'web': #79539a,
-    'cyber':  #de093f,
-    'training': #79539a,
+    'software': $software-color2,
+    'it': $it-color2,
+    'marketing': $marketing-color2,
+    'telecoms': $telecoms-color2,
+    'web': $web-color2,
+    'cyber': $cyber-color2,
+    'training': $training-color2,
 );
 
 
@@ -72,37 +72,6 @@ $themes-secondary: (
         background-color: #ffffff;
     }
 } 
-
-
-
-// TEXT
-.card h2,
-.card p {
-    color: #333645;  
-}
-
-// TEXT:HOVER
-.card:hover h2,
-.card:hover p {
-    color: #ffffff;
-}
-
-
-
-
-// // CARD
-// @each $theme, $color in $themes {
-//     .card-#{$theme} {
-//         background-color: #ffffff;
-//     }
-// } 
-
-// // CARD HOVER
-// @each $theme, $color in $themes {
-//     .card-#{$theme}:hover {
-//         background-color: $color;
-//     }
-// } 
 
 
 

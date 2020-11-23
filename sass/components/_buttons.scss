@@ -16,7 +16,7 @@
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-    background-color: #926fb1;
+    background-color: $web-color1;
     color: #ffffff;
     border-radius: 3px;
     font-weight: 400;
@@ -59,13 +59,13 @@
     font-size:	17px;
     line-height:	35px;
     color:	#ffffff;
-    background-color:	#926fb1;
+    background-color: $news-color1;
     border-radius:	3px;
     font-weight: 400;
 }
 
 .news-text .button a:hover {
-    background-color: #7e57a0;
+    background-color: $news-color2;
 }
 
 //SOCIAL BUTTONS
