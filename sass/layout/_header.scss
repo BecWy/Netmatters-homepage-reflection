@@ -137,15 +137,15 @@ nav {
 }
 
 #search-bar {
-    //position: relative;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
     width: 100%;
     align-self: center;
-    //margin: 0 auto; 
     height: 47px;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
-    padding-right: 0;
+    padding: 0 15px;
+    margin-top: 10px;
+
 }
 
 #search-bar input[type=text] {
@@ -172,20 +172,29 @@ nav {
     box-shadow: none;
 }
 
-#search-bar button[type=submit] {
+#search-bar button[type=button] {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    z-index: 2;
     background-color:transparent;
     padding: 0 0;
     border: none;
     outline: none;   
 }
 
-#search-bar button[type=submit] i {
+#search-bar button[type=button] i {
     height: 47px;
     line-height: 47px;
     width: 47px;
     font-size: 20px;
     color: #333645;
+    text-align: right;
+    padding-right: 10px; 
 }
+
+////////////////////////////////////////////////////
+
 
 .banner {
     display: flex;

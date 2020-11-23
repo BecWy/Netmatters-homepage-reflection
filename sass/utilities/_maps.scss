@@ -106,7 +106,7 @@ $themes-secondary: (
 
 
 
-// CARD MIXIN TEST HOVER
+// CARD MIXIN HOVER -------------------WORKS----------------------
 @mixin themes-bg-hov($map) {
     @each $theme, $color in $map {
         &-#{$theme}:hover {
@@ -115,7 +115,7 @@ $themes-secondary: (
     } 
 }
 
-.card {
+.card { //-------------------WORKS----------------------------------------
     @include themes-bg-hov($themes);
 }
 
