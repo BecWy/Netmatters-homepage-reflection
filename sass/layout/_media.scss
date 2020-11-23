@@ -1,6 +1,6 @@
 
 //FROM 768PX --------------------------------------------------------------------------------
-@media (min-width: 768px) {
+@media (min-width: $break-sm) {
 
     nav {
         flex-wrap: nowrap;
@@ -186,6 +186,14 @@
         width: 343px;
     }
 
+    .card-telecoms p,
+    .card-web p,
+    .card-cyber p,
+    .card-training p {
+        height: 66px;
+    }
+
+
     .card-telecoms,
     .card-cyber {
         margin-left: 0;
@@ -196,6 +204,20 @@
         margin-right: 0;
     }
 
+
+    // .card > p {
+    //     padding-top: 0;
+    //     padding-bottom: auto;
+    //     margin-top: 0;
+    //     margin-bottom: auto;
+    // }
+
+    // .card > button {
+    //     // padding-bottom: 0;
+    //     // padding-top: auto;
+    //     // margin-top: auto;
+    //     // margin-bottom: 0;
+    // }
 
     //LATEST switch to 2 column layout. Fixed width. 
 
@@ -242,7 +264,7 @@
 //FROM 993PX --------------------------------------------------------------------------------------
 
 
-@media (min-width: 993px) {
+@media (min-width: $break-med) {
 
         nav {
             width: 970px;
@@ -271,7 +293,7 @@
 
         //search button rounded corners
         #search-bar button[type=button] {
-            border-radius: 3px;
+            border-radius: $round-corner;
         }
 
         //NAV support and contact buttons appear
@@ -313,6 +335,10 @@
         } 
 
         //CARD formatting
+        // .card {
+        //     height: 297px;
+        // }
+
         .cards {
             width: 940px; ///////////maintain equal margins
         }
@@ -323,7 +349,15 @@
         .card-it,
         .card-marketing {
             width: 293.333px;
+            height: 356px;
         }
+
+        .card-software > p,
+        .card-it > p,
+        .card-marketing > p {
+            height: 110px;       
+        }
+
 
         .card-software {
             margin-left: 0;
@@ -340,6 +374,12 @@
             width: 455px;
         }
 
+        .card-telecoms p,
+        .card-web p,
+        .card-cyber p,
+        .card-training p {
+            height: 44px;
+        }
 
         //LATEST news items new width. TO EDIT MARGINS/SPACING
         .news-container {
@@ -461,7 +501,7 @@
 
 
 //FROM 1260PX -----------------------------------------------------------------------------
-@media (min-width: 1260px) {  
+@media (min-width: $break-lg) {  
 
     nav {
         width: 1200px;
@@ -537,6 +577,13 @@
     .card-it,
     .card-marketing {
         width: 370px;
+        height: 312px;
+    }
+
+    .card-software > p,
+    .card-it > p,
+    .card-marketing > p {
+        height: 66px;       
     }
 
     .card-telecoms,
@@ -544,6 +591,13 @@
     .card-cyber,
     .card-training {
         width: 270px;
+    }
+
+    .card-telecoms p,
+    .card-web p,
+    .card-cyber p,
+    .card-training p {
+        height: 66px;
     }
 
     .card-web {

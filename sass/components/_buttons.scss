@@ -1,14 +1,10 @@
 
-.button {
-    font-weight: bold;
-}
-
 .button a {
     text-align: center;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: $round-corner;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: $bold;
 }
 
 .banner-container > .button a {
@@ -18,8 +14,8 @@
     text-align: center;
     background-color: $web-color1;
     color: #ffffff;
-    border-radius: 3px;
-    font-weight: 400;
+    border-radius: $round-corner;
+    font-weight: $regular;
 }
 
 .banner-container > .button a:hover {
@@ -31,22 +27,24 @@
 .fake-button {
     text-align: center;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: $round-corner;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $regular;
 }
 
 .intro .button a {
     padding: 5px 15px;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: $regular;
     line-height: 35px;
     background-color: #ffffff;
     color: #333645;
+    border: 1px solid #ffffff;
 }
 
 .intro .button a:hover {
     opacity: .9;
+    border: 1px solid #e0e0e0;
 }
 
 .news-text > .button {
@@ -60,8 +58,8 @@
     line-height:	35px;
     color:	#ffffff;
     background-color: $news-color1;
-    border-radius:	3px;
-    font-weight: 400;
+    border-radius: $round-corner;
+    font-weight: $regular;
 }
 
 .news-text .button a:hover {
@@ -107,13 +105,13 @@
 
 //HOVER COLORS
 #facebook a:hover {
-    background-color: #3b5998;
+    background-color: $facebook;
 }
 
 #linked-in:hover {
-    background-color: #0077b5;
+    background-color: $linkedin;
 }
 
 #twitter:hover {
-    background-color: #00aced;
+    background-color: $twitter;
 }

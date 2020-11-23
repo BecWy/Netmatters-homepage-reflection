@@ -1,24 +1,13 @@
 
-// // COLOR MAP
-
-// $color: (
-//     'white': #ffffff,
-
-// );
-
-
 // // BREAKPOINTS
-
-// $breakpoints: (
-//     'sm': 768px,
-//     'med': 993px,
-//     'lg': 1278px,
-// );
-
+$breakpoints: (
+    'sm': $break-sm,
+    'med': $break-med,
+    'lg': $break-lg,
+);
 
 
 // COLOR THEMES
-
 $themes: (
     'software': $software-color1,
     'it': $it-color1,

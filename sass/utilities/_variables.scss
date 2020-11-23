@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////////////////////////////////////////////
 //COLORS
 
 //PRIMARY THEME COLORS
@@ -20,6 +21,9 @@
     $training-color2: #79539a; //may be wrong - see below news color
 
 //EXTERNAL BRAND COLORS
+    $facebook: #3b5998;
+    $twitter: #00aced;
+    $linkedin: #0077b5;
 
 
 //LATEST COLORS
@@ -27,3 +31,34 @@
     $news-color2: #7e57a0; //also used for web button in the banner????
     $news-color3: #735093; //border - need to add to buttons. MAY BE FOR THE ABOVE THEMES AS WELL
     //$careers-color1: ;
+
+//RANDOM COLORS TO LOG
+//CULTURE BUTTON HOVER & ACTIVE BG COLOR: #ebebeb
+//CULTURE BUTTON HOVER & ACTIVE BORDER COLOR: #e0e0e0;
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//BREAKPOINTS
+    $break-sm: 768px;
+    $break-med: 993px;
+    $break-lg: 1260px;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//TYPOGRAPHY
+    $bold: 600;
+    $regular: 400;
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//STYLING
+    $round-corner: 3px;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//TEXT CONTAINER WIDTHS //NOT IN USE YET
+    $width-xs: 95%;
+    $width-sm: 720px;   ///some elements have padding included, these are 750px. TO figure out. 4 are 720px, 2 are 750px. Main footer is different - to check. Nav different too.
+    $width-med: 940px; ///some elements have padding included, these are 970px. TO figure out. 5 are 940px, 2 are 970px. Main footer is different - to check. Nav different too.
+    $width-lg:1170px; //5 containers with this width. Nav, footer and one other are different.
+

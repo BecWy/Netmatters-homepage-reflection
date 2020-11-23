@@ -27,7 +27,7 @@
     margin-top: 30px;
     width: 100%;
     box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
-    border-radius: 3px;
+    border-radius: $round-corner;
 }
 
 .card a {
@@ -53,7 +53,7 @@
     margin-top: 0;
     margin-bottom: 11px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: $regular;
     line-height: 19.8px;
 }
 
@@ -101,7 +101,7 @@
     font-size: 36px;
     line-height: 40px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $regular;
 }
 
 .intro p {
@@ -111,7 +111,7 @@
 }
 
 .intro p strong {
-    font-weight: 600;
+    font-weight: $bold;
     line-height: 30px;
 }
 
@@ -132,7 +132,7 @@
     font-size: 20px;
     line-height: 24px;
     color: #333645;
-    font-weight: 600;
+    font-weight: $bold;
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
     margin-top: 0; 
     margin-bottom: 0;
@@ -191,7 +191,11 @@
     font-size: 16px;
     line-height: 24px;
     color: $news-color1;
-    font-weight: 600;
+    font-weight: $bold;
+}
+
+.news-text h3 > a:hover {
+    text-decoration: underline;
 }
 
 .news-text p {
@@ -231,7 +235,7 @@
 
 .posted-by-text p strong {
     color: #333645;
-    font-weight: 600;
+    font-weight: $bold;
 }
  
 .thumbnail {
