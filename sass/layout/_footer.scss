@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 894px;
     font-size: 16px;
     line-height: 22.8571px;
     color:	#ffffff;
@@ -13,6 +14,12 @@
     font-size: 13px;
     line-height: 22px;
     color:	#ffffff;
+}
+
+.main-foot-cont {
+    height: 100%;
+    padding-top: 47px;
+    padding-bottom: 43px;   
 }
 
 //CLIENT FOOTER //larger screens only
@@ -108,10 +115,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    height: 100%;
+    height: 188px;
     background-color: #ffffff;
 }
 
@@ -121,6 +129,7 @@
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/google-color.png");
     background-size: cover;
+    align-self: center;
 }
 
 
@@ -130,6 +139,7 @@
     height: 53.3px;
     background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
     background-size: cover;
+    align-self: center;
 }
 
 #future-50 {
@@ -139,6 +149,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 
 #future-50:hover {
@@ -146,6 +157,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 
 #qms {
@@ -155,12 +167,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 #qms:hover {
     background: url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 
 #carbon-charter {
@@ -170,6 +184,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 
 #carbon-charter:hover {
@@ -177,6 +192,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: center;
 }
 
 .client-footer,
@@ -221,8 +237,14 @@
 .website,
 .social {
     padding: 0px 15px;
-    margin-bottom: 15px;
 }
+
+.contact,
+.about,
+.website {
+    margin-bottom: 30px;
+}
+
 
 .contact ul,
 .about ul,
@@ -232,13 +254,13 @@
     padding-left: 0;
 }
 
-.contact {
-    padding-top: 43px;
-}
+// .contact {
+//     padding-top: 43px;
+// }
 
-.social {
-    padding-bottom: 43px;
-}
+// .social {
+//     padding-bottom: 43px;
+// }
 
 
 
@@ -264,13 +286,13 @@
     line-height: 22px; 
     margin-bottom: 50px; //positions the tooltip on the footer line
 
-    /* Position the tooltip text - see examples below! */
+    //Position the tooltip text
     position: absolute;
     z-index: 5;
     width: 260px;
     bottom: 100%;
     left: 50%;
-    margin-left: -130px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -130px; //Use half of the width (120/2 = 60), to center the tooltip
 }
 
 //bottom arrow
@@ -284,3 +306,28 @@
     border-style: solid;
     border-color: #333645 transparent transparent transparent;
   }
+
+.footer-logos .tooltip-text p {
+    margin-bottom: 0;
+}
+
+.footer-logos .tooltip-title {
+    font-size: 18px;
+    padding-bottom: 17px;
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-weight: $regular;
+    position: relative;
+}
+
+.footer-logos .tooltip-title::after {  //////////EXACT SAME SETTINGS AS THE CARDS - CREATE MIXIN
+    content: "";
+    position: absolute;
+    width: 30px;
+    top: 35px;
+    left: calc(50% - 15px);
+    border-bottom: 3px solid #ffffff;
+}
+
+
+    

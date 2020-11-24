@@ -94,15 +94,16 @@
         height: 589px;
     }
 
-    //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
+    //FOOTERS main footer splits into 2 columns.
     
     .main-footer {
-        flex-direction: row; //started working on 2 and 4 column layouts for larger screens
+        flex-direction: row; 
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-around;
         padding-left: 2%;
         padding-right: 2%;
+        height: 528px;
     }
 
     .about,
@@ -113,9 +114,9 @@
         align-self: flex-start;
     }
 
-    .about {
-        padding-top: 43px;
-    }
+    // .about {
+    //     padding-top: 43px;
+    // }
 
     //FOOTER width
     .main-foot-cont {
@@ -411,6 +412,11 @@
             margin: 0 auto;
         }
 
+        //FOOTER HEIGHT
+        .partner-footer {
+            height: 210px;
+        }
+
         //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.
         
         #busseys {
@@ -662,12 +668,16 @@
         overflow: hidden;
     }
 
-    //FOOTER top padding add so all 4 sections are the same
-
-    .website,
-    .social {
-        padding-top: 43px;
+    //FOOTER main height
+    .main-footer {
+        height: 309px;
     }
+
+    //FOOTER top padding add so all 4 sections are the same
+    // .website,
+    // .social {
+    //     padding-top: 43px;
+    // }
 
     //FOOTER  width
     .footer-logos,
@@ -676,6 +686,12 @@
         width: 1170px;
         margin: 0 auto;
     }
+
+    //FOOTER HEIGHT
+    .partner-footer {
+        height: 188px;
+    }
+
 
     //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
     #busseys {

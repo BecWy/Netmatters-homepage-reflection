@@ -64,7 +64,7 @@
     width: 30px;
     top: 35px;
     left: calc(50% - 15px);
-    border-bottom: 4px solid #333645;
+    border-bottom: 3.5px solid #333645;
 }
 
 .card:hover h2::after {
@@ -280,10 +280,19 @@
     text-transform: uppercase;
     font-size: .75rem;
     color: #ffffff;
-    background-color: $news-color1;
     padding: 5px 10px;
     font-weight: $bold;
 }
+
+.news-1 .tooltip h3 {
+    background-color: $news-color1;
+}
+
+.news-2 .tooltip h3,
+.news-3 .tooltip h3 {
+    background-color: $careers-color1;
+}
+
 
 .news .tooltip-text {
     display: none;
