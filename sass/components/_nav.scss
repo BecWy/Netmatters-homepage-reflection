@@ -65,27 +65,27 @@
     margin: 0 0;
 }
 
-//BOX PSEUDO-ELEMENTS FOR EXTRA SIDE BORDERS. DISABLED AS CAUSING HORIZONTAL SCROLL BAR
-// .title-web::before {
-//     content: "";
-//     position: absolute;
-//     height: 98px;
-//     left: -1.5px;   //needs to be -1.5px in chrome & edge, but -2.5px in IE? firefox is slightly different too
-//     top: 0;
-//     border-right: 1px solid rgba(0,0,0,.25);
-//     border: 3px solid turquoise;
-// }
+//BOX PSEUDO-ELEMENTS FOR EXTRA SIDE BORDERS. Relative to nav-2 - can't be relative to title-web and title-cyber as it affects the dropdown nav-bars.
+.nav-box-text {
+    position: relative;
+}
+.title-web .nav-box-text::before {
+    content: "";
+    position: absolute;
+    height: 98px;
+    left: -1.5px;
+    top: 0;
+    border-left: 0.5px solid rgba(0,0,0,.25);
+}
 
-
-// .title-cyber::after {
-//     content: "";
-//     position: absolute;
-//     height: 98px;
-//     right: -2px;  //similar issue to the above comment
-//     top: 0;
-//     border-left: 1px solid hsla(0,0%,100%,.1);
-//     border: 3px solid turquoise;
-// }
+    .title-cyber .nav-box-text::after {
+    content: "";
+    position: absolute;
+    height: 98px;
+    right: -1.5px;
+    top: 0;
+    border-right: 0.5px solid hsla(0,0%,100%,.1);
+}
 
 
 
