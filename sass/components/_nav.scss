@@ -28,7 +28,7 @@
 
 // NAV BAR - HIDDEN FOR SMALL SCREENS
 .nav-2 {
-    border-bottom: .5px solid #ffffff;
+    border-bottom: 1.25px solid rgba(255, 255, 255, 0.7);     // #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,7 +55,7 @@
     text-align: center;
     width: 154px;
     color: #ffffff;
-    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-left: 1px solid hsla(0,0,100%,.1);
     border-right: 1px solid rgba(0,0,0,.25);
     text-transform: uppercase;
 }
@@ -129,7 +129,7 @@
     position: absolute; //position aligned to nav-2
     left: 0;
     right: 0;
-    top: 97.333px;  
+    bottom: -44.5px; //height of the dropdown nav bars
     line-height: 45px;
     font-size: 13px; 
     text-transform: uppercase;

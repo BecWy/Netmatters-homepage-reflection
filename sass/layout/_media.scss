@@ -88,6 +88,12 @@
         margin-left: 20px;
     }
 
+
+    //BANNER HEIGHT
+    .banner {
+        height: 589px;
+    }
+
     //FOOTERS main footer splits into 2 columns. TO EDIT MARGINS/PADDING
     
     .main-footer {
@@ -225,9 +231,15 @@
         display: flex;
         flex-direction: row;
         width: 750px;
-        
+        margin-left: 0px;
+        margin-right: 0px;
     }
-
+    
+    #latest-title {
+        margin: 0 auto;
+    }
+        
+    
     .latest h2 {
         display: block;
         width: 100%;
@@ -320,6 +332,7 @@
             background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
                         url("../../html-css-reflection/images/slides/slide-1.jpeg");
             background-size: cover;
+            height: 490px;
         }
 
         //BANNER /INTRO /LATEST TITLE WIDTH
@@ -446,7 +459,6 @@
             width: 455px;
             height: 261.844px;
             overflow: hidden;
-            border: 1px solid #d6d6d6;
         }
 
         .news-text {
@@ -461,6 +473,7 @@
             background-image: url("../../html-css-reflection/images/latest/news-1.jpeg");
             background-size: cover;
             background-position: center;
+            border-radius: 3px 3px 0px 0px;
         }
 
         .news-2-image-child {           
@@ -469,6 +482,7 @@
             background-image: url("../../html-css-reflection/images/latest/news-2.jpeg");
             background-size: cover;
             background-position: center;
+            border-radius: 3px 3px 0px 0px;
         }
         
         .news-3-image-child {           
@@ -477,6 +491,7 @@
             background-image: url("../../html-css-reflection/images/latest/news-3.jpeg");
             background-size: cover;
             background-position: center;
+            border-radius: 3px 3px 0px 0px;
         }
 
         .news-image-parent > .news-1-image-child,
@@ -645,7 +660,6 @@
         width: 370px; 
         height: 212.708px;
         overflow: hidden;
-        border: 1px solid #d6d6d6;
     }
 
     //FOOTER top padding add so all 4 sections are the same

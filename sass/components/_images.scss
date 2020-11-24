@@ -1,15 +1,17 @@
-.news img {
+.news img { //////////////small sceens
     border-radius: 3px 3px 0px 0px;
+    border: 1px solid #ccc;
     width: 100%;
-    border: 1px solid #d6d6d6;
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.news-image-parent {
+.news-image-parent { //////////////larger screens
     border-radius: 3px 3px 0px 0px;
+    border: 1px solid #ccc;
+    max-width: 100%;
 }
 
 .thumbnail img {
