@@ -20,7 +20,6 @@
 
 .banner-container > .button a:hover {
     background-color: #7e57a0;
-    box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.125);
 }
 
 
@@ -132,4 +131,16 @@
 
 #twitter a:hover {
     background-color: $twitter;
+}
+
+
+//ACTIVE SETTINGS
+#support:active,
+#contact:active,
+#menu:active,
+.banner-container .button a:active, ////////////not working. already on hover????
+.fake-button:active,
+.intro-container .button a:active,
+.news-text .button a:active {
+    @include button-active-shadow;
 }

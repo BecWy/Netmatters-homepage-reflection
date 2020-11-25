@@ -183,6 +183,10 @@ nav {
     outline: none;   
 }
 
+#search-bar button[type=button]:hover {
+    cursor: pointer;
+}
+
 #search-bar button[type=button] i {
     height: 47px;
     line-height: 47px;

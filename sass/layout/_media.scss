@@ -55,7 +55,7 @@
     #search-bar input[type=text]:focus {
         outline: 0;
         border: .5px solid #5bc0de;
-        box-shadow: 0 0 8px rgba(91, 192, 222, .6);
+        box-shadow: rgba(91, 192, 222, .6) 0px 0px 8px 0px;
     }
 
     #search-bar button[type=button] {
