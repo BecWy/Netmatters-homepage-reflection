@@ -133,6 +133,7 @@
     line-height: 45px;
     font-size: 13px; 
     text-transform: uppercase;
+    z-index: 2; //prevents slight side border visibility in IE
 }
 
 .secondary-nav-text {

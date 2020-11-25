@@ -79,13 +79,14 @@
     list-style-type: none;   
     display: flex;
     flex-direction: column;
-    width: 45%; //or 211px in peeper; 
+    width: 50%;
+    //min-width: 50%;
+    //max-width: 344px; 
     // max-width: 250px; //value tbc - here for testing. To add for wider screens?
     text-align: center;
     margin-top: 30px; 
     margin-bottom: 0;
     height: 55px;
-    background-color: rgba(0, 0, 0, .25);
 }
 
 .social-button li a {      
@@ -97,10 +98,27 @@
     width: 100%;
     height: 100%;
     padding: auto 15px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+#facebook {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 15px;
 }
 
 #twitter {
-    margin-left: auto;
+    padding-left: 15px;
+}
+
+#linked-in {
+    padding-right: 15px;
+}
+
+#twitter,
+#linked-in {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 //HOVER COLORS
@@ -108,10 +126,10 @@
     background-color: $facebook;
 }
 
-#linked-in:hover {
+#linked-in a:hover {
     background-color: $linkedin;
 }
 
-#twitter:hover {
+#twitter a:hover {
     background-color: $twitter;
 }

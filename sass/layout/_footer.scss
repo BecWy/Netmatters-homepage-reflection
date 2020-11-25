@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 894px;
     font-size: 16px;
     line-height: 22.8571px;
     color:	#ffffff;
@@ -18,8 +17,11 @@
 
 .main-foot-cont {
     height: 100%;
+    width: 100%;
     padding-top: 47px;
     padding-bottom: 43px;   
+    display: flex;
+    flex-wrap: wrap;
 }
 
 //CLIENT FOOTER //larger screens only
@@ -237,6 +239,7 @@
 .website,
 .social {
     padding: 0px 15px;
+    width: 100%;
 }
 
 .contact,
@@ -252,8 +255,12 @@
 .social ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
+.social {
+    height: 190px;
+}
 // .contact {
 //     padding-top: 43px;
 // }

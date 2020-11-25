@@ -101,8 +101,8 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-around;
-        padding-left: 2%;
-        padding-right: 2%;
+        //padding-left: 2%;
+        //padding-right: 2%;
         height: 528px;
     }
 
@@ -110,10 +110,11 @@
     .contact,
     .website,
     .social {
-        width: 50%;
+        width: 375px;
         align-self: flex-start;
     }
 
+    
     // .about {
     //     padding-top: 43px;
     // }
@@ -124,6 +125,8 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 750px;
+        margin: 0 auto;
     }
    
     //DISPLAY LOGO FOOTERS
@@ -133,10 +136,14 @@
 }
 
     .footer-logos,
-    .partner-footer,
-    .main-foot-cont {
+    .partner-footer {
         width: 720px;
         margin: 0 auto;
+    }
+
+    //SOCIAL BUTTON WIDTH
+    .social-button li a {
+        width: 157.5px;
     }
 
     //LATEST standardising title height so doesn't matter if title is 1 or 2 lines
@@ -422,15 +429,27 @@
 
         //FOOTER width
         .footer-logos,
-        .partner-footer,
-        .main-foot-cont {
+        .partner-footer {
             width: 940px;
+            margin: 0 auto;
+        }
+
+        .main-foot-cont {
+            width: 970px;
             margin: 0 auto;
         }
 
         //FOOTER HEIGHT
         .partner-footer {
             height: 210px;
+        }
+
+        //main footer container widths
+        .contact,
+        .about,
+        .website,
+        .social {
+            width: 485px;
         }
 
         //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.
@@ -473,6 +492,12 @@
         #carbon-charter {
             width: 200.2px; 
             height: 80.1px;
+        }
+
+
+         //SOCIAL BUTTON WIDTH
+        .social-button li a {
+            width: 212.5px;
         }
 
 
@@ -711,9 +736,13 @@
 
     //FOOTER  width
     .footer-logos,
-    .partner-footer,
-    .main-foot-cont {
+    .partner-footer {
         width: 1170px;
+        margin: 0 auto;
+    }
+
+    .main-foot-cont {
+        width: 1200px;
         margin: 0 auto;
     }
 
@@ -800,6 +829,19 @@
 
     #carbon-charter:hover {
         background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
+    }
+
+    //main footer section widths
+    .contact,
+    .about,
+    .website,
+    .social {
+        width: 300px;
+    }
+
+     //SOCIAL BUTTON WIDTH
+     .social-button li a {
+        width: 120px;
     }
 }
   

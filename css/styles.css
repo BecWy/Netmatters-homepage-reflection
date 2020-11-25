@@ -1224,28 +1224,30 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 894px;
   font-size: 16px;
   line-height: 22.8571px;
   color: #ffffff;
   background-color: #333645;
 }
 
-/* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 12, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .main-footer a {
   font-size: 13px;
   line-height: 22px;
   color: #ffffff;
 }
 
-/* line 19, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .main-foot-cont {
   height: 100%;
+  width: 100%;
   padding-top: 47px;
   padding-bottom: 43px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* line 26, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer {
   display: flex;
   flex-direction: row;
@@ -1258,14 +1260,14 @@ nav {
   box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 38, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 40, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/* line 47, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 49, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #busseys {
   width: 121.1px;
   height: 45.1px;
@@ -1276,7 +1278,7 @@ nav {
   background-position: center;
 }
 
-/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 59, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #busseys:hover {
   background: url("../../html-css-reflection/images/external-branding/clients/busseys-color.png");
   background-size: cover;
@@ -1284,7 +1286,7 @@ nav {
   background-position: center;
 }
 
-/* line 64, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 66, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #crane {
   width: 186px;
   height: 45px;
@@ -1294,7 +1296,7 @@ nav {
   background-position: center;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 75, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #crane:hover {
   background: url("../../html-css-reflection/images/external-branding/clients/crane-color.png");
   background-size: cover;
@@ -1302,7 +1304,7 @@ nav {
   background-position: center;
 }
 
-/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #beat {
   width: 46.4px;
   height: 45.1px;
@@ -1312,7 +1314,7 @@ nav {
   background-position: center;
 }
 
-/* line 89, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 91, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #beat:hover {
   background: url("../../html-css-reflection/images/external-branding/clients/beat-color.png");
   background-size: cover;
@@ -1320,7 +1322,7 @@ nav {
   background-position: center;
 }
 
-/* line 96, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #northern-diver {
   width: 207.5px;
   height: 45px;
@@ -1330,7 +1332,7 @@ nav {
   background-position: center;
 }
 
-/* line 105, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 107, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #northern-diver:hover {
   background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png");
   background-size: cover;
@@ -1338,7 +1340,7 @@ nav {
   background-position: center;
 }
 
-/* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .partner-footer {
   display: flex;
   flex-direction: row;
@@ -1351,7 +1353,7 @@ nav {
   background-color: #ffffff;
 }
 
-/* line 127, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #google {
   width: 214px;
   height: 70px;
@@ -1360,7 +1362,7 @@ nav {
   align-self: center;
 }
 
-/* line 137, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #microsoft {
   width: 87.6px;
   height: 53.3px;
@@ -1369,7 +1371,7 @@ nav {
   align-self: center;
 }
 
-/* line 145, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 147, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #future-50 {
   width: 33.5px;
   height: 53.3px;
@@ -1380,7 +1382,7 @@ nav {
   align-self: center;
 }
 
-/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 157, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #future-50:hover {
   background: url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg");
   background-size: cover;
@@ -1389,7 +1391,7 @@ nav {
   align-self: center;
 }
 
-/* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 165, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #qms {
   width: 45.7px;
   height: 53.3px;
@@ -1400,7 +1402,7 @@ nav {
   align-self: center;
 }
 
-/* line 172, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 174, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #qms:hover {
   background: url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg");
   background-size: cover;
@@ -1409,7 +1411,7 @@ nav {
   align-self: center;
 }
 
-/* line 180, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #carbon-charter {
   width: 133.3px;
   height: 53.3px;
@@ -1420,7 +1422,7 @@ nav {
   align-self: center;
 }
 
-/* line 190, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #carbon-charter:hover {
   background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg");
   background-size: cover;
@@ -1429,13 +1431,13 @@ nav {
   align-self: center;
 }
 
-/* line 198, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 200, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer,
 .partner-footer {
   display: none;
 }
 
-/* line 205, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 207, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -1448,19 +1450,19 @@ nav {
   width: 95%;
 }
 
-/* line 217, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 219, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2 {
   margin-bottom: 26px;
 }
 
-/* line 223, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 225, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social > h2 {
   margin-bottom: 0;
 }
 
-/* line 227, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact li,
 .about li,
 .website li {
@@ -1468,46 +1470,53 @@ nav {
   line-height: 22px;
 }
 
-/* line 235, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 237, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website,
 .social {
   padding: 0px 15px;
+  width: 100%;
 }
 
-/* line 242, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 245, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website {
   margin-bottom: 30px;
 }
 
-/* line 249, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact ul,
 .about ul,
 .website ul,
 .social ul {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
-/* line 268, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.social {
+  height: 190px;
+}
+
+/* line 275, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip {
   position: relative;
 }
 
-/* line 272, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 279, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip-text {
   display: none;
 }
 
-/* line 276, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip:hover .tooltip-text {
   display: inline-block;
 }
 
-/* line 280, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 287, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip .tooltip-text {
   background-color: #333645;
   color: #ffffff;
@@ -1524,7 +1533,7 @@ nav {
   margin-left: -130px;
 }
 
-/* line 299, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 306, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip .tooltip-text::after {
   content: " ";
   position: absolute;
@@ -1537,12 +1546,12 @@ nav {
   border-color: #333645 transparent transparent transparent;
 }
 
-/* line 310, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 317, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-text p {
   margin-bottom: 0;
 }
 
-/* line 314, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 321, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title {
   font-size: 18px;
   padding-bottom: 17px;
@@ -1552,7 +1561,7 @@ nav {
   position: relative;
 }
 
-/* line 323, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 330, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title::after {
   content: "";
   position: absolute;
@@ -1777,9 +1786,10 @@ nav {
   line-height: 45px;
   font-size: 13px;
   text-transform: uppercase;
+  z-index: 2;
 }
 
-/* line 138, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 139, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .secondary-nav-text {
   width: 912px;
   display: flex;
@@ -1790,97 +1800,97 @@ nav {
   margin: 0 auto;
 }
 
-/* line 148, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 149, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .secondary-nav-text a {
   padding: 10px 0px;
 }
 
-/* line 152, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 153, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .secondary-nav-text a,
 .secondary-nav-text a:visited {
   color: #ffffff;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software > .nav-software:not(last-child) {
   background-color: #526781;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it > .nav-it:not(last-child) {
   background-color: #286abd;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing > .nav-marketing:not(last-child) {
   background-color: #25a25a;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms > .nav-telecoms:not(last-child) {
   background-color: #bc2c28;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web > .nav-web:not(last-child) {
   background-color: #79539a;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber > .nav-cyber:not(last-child) {
   background-color: #de093f;
   color: #ffffff;
   display: none;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training > .nav-training:not(last-child) {
   background-color: #79539a;
   color: #ffffff;
   display: none;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-software:hover > .nav-software:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-it:hover > .nav-it:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-marketing:hover > .nav-marketing:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-telecoms:hover > .nav-telecoms:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-web:hover > .nav-web:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-cyber:hover > .nav-cyber:not(last-child) {
   display: flex;
 }
 
-/* line 169, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
+/* line 170, ../../../../Desktop/html-css-reflection/sass/components/_nav.scss */
 .title-training:hover > .nav-training:not(last-child) {
   display: flex;
 }
@@ -1974,15 +1984,14 @@ nav {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
   height: 55px;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 91, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 92, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li a {
   padding: 12px 0;
   justify-content: center;
@@ -1992,25 +2001,45 @@ nav {
   width: 100%;
   height: 100%;
   padding: auto 15px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 102, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 104, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#facebook {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 15px;
+}
+
+/* line 110, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter {
-  margin-left: auto;
+  padding-left: 15px;
 }
 
-/* line 107, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 114, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#linked-in {
+  padding-right: 15px;
+}
+
+/* line 118, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#twitter,
+#linked-in {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* line 125, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #facebook a:hover {
   background-color: #3b5998;
 }
 
-/* line 111, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#linked-in:hover {
+/* line 129, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#linked-in a:hover {
   background-color: #0077b5;
 }
 
-/* line 115, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#twitter:hover {
+/* line 133, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#twitter a:hover {
   background-color: #00aced;
 }
 
@@ -2145,8 +2174,6 @@ nav {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
-    padding-left: 2%;
-    padding-right: 2%;
     height: 528px;
   }
   /* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
@@ -2154,45 +2181,50 @@ nav {
   .contact,
   .website,
   .social {
-    width: 50%;
+    width: 375px;
     align-self: flex-start;
   }
-  /* line 122, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .main-foot-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 750px;
+    margin: 0 auto;
   }
-  /* line 130, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 133, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .client-footer,
   .partner-footer {
     display: flex;
   }
-  /* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 138, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .footer-logos,
-  .partner-footer,
-  .main-foot-cont {
+  .partner-footer {
     width: 720px;
     margin: 0 auto;
   }
-  /* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 145, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .social-button li a {
+    width: 157.5px;
+  }
+  /* line 150, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text > h3 {
     height: 48px;
   }
-  /* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text > p {
     height: 66px;
   }
-  /* line 153, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     display: none;
   }
-  /* line 158, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 165, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #direct-call {
     display: none;
   }
-  /* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 170, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner-container,
   .intro-container,
   #latest-title {
@@ -2200,7 +2232,7 @@ nav {
     margin: 0 auto;
     padding-left: 0;
   }
-  /* line 172, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2209,7 +2241,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 181, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 188, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
@@ -2217,31 +2249,31 @@ nav {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 189, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 196, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 343px;
   }
-  /* line 196, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 203, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms p,
   .card-web p,
   .card-cyber p,
   .card-training p {
     height: 66px;
   }
-  /* line 204, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 211, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-cyber {
     margin-left: 0;
   }
-  /* line 209, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 216, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-web,
   .card-training {
     margin-right: 0;
   }
-  /* line 231, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 238, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     display: flex;
     flex-direction: row;
@@ -2249,48 +2281,48 @@ nav {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 239, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 246, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #latest-title {
     margin: 0 auto;
   }
-  /* line 244, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 251, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .latest h2 {
     display: block;
     width: 100%;
   }
-  /* line 248, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 255, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 345px;
   }
-  /* line 253, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 260, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 {
     margin-left: auto;
     margin-right: 15px;
   }
-  /* line 258, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 265, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2 {
     margin-left: 15px;
     margin-right: auto;
   }
-  /* line 264, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 271, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .posted-by {
     width: 308px;
   }
-  /* line 269, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 276, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .posted-by-text {
     width: 235px;
   }
-  /* line 275, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 282, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news .tooltip .tooltip-text {
     width: 176px;
     right: 50%;
     margin-right: -88px;
   }
-  /* line 281, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 288, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news .tooltip .tooltip-text > p {
     max-width: 113px;
   }
-  /* line 286, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 293, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news .tooltip .tooltip-text::after {
     left: 50%;
     margin-left: -5px;
@@ -2298,46 +2330,46 @@ nav {
 }
 
 @media (min-width: 993px) {
-  /* line 298, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 305, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   nav {
     width: 970px;
   }
-  /* line 303, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 310, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #logo img {
     width: 370px;
   }
-  /* line 308, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 315, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .nav-2 {
     display: flex;
   }
-  /* line 313, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 320, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search {
     display: none;
   }
-  /* line 318, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 325, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar {
     width: 63px;
     margin-left: 20px;
   }
-  /* line 324, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 331, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar button[type=button] {
     border-radius: 3px;
   }
-  /* line 329, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 336, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #support,
   #contact {
     display: inline-block;
   }
-  /* line 334, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 341, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #support {
     margin-left: auto;
   }
-  /* line 339, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 346, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .intro {
     background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right bottom;
     background-size: cover;
   }
-  /* line 346, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 353, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner {
     align-items: flex-start;
     text-align: left;
@@ -2345,128 +2377,143 @@ nav {
     background-size: cover;
     height: 490px;
   }
-  /* line 356, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 363, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner-container,
   .intro-container,
   #latest-title {
     width: 940px;
   }
-  /* line 362, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 369, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner-container > h1,
   .banner-container > span {
     margin-left: 0;
   }
-  /* line 372, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 379, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     width: 940px;
   }
-  /* line 378, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 385, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
     width: 293.333px;
     height: 356px;
   }
-  /* line 385, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 392, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software > p,
   .card-it > p,
   .card-marketing > p {
     height: 110px;
   }
-  /* line 392, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 399, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software {
     margin-left: 0;
   }
-  /* line 396, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 403, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-marketing {
     margin-right: 0;
   }
-  /* line 400, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 407, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 455px;
   }
-  /* line 407, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 414, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms p,
   .card-web p,
   .card-cyber p,
   .card-training p {
     height: 44px;
   }
-  /* line 415, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 422, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     width: 970px;
   }
-  /* line 419, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 426, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 455px;
   }
-  /* line 424, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 431, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .footer-logos,
-  .partner-footer,
-  .main-foot-cont {
+  .partner-footer {
     width: 940px;
     margin: 0 auto;
   }
-  /* line 432, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 437, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .main-foot-cont {
+    width: 970px;
+    margin: 0 auto;
+  }
+  /* line 443, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .partner-footer {
     height: 210px;
   }
-  /* line 438, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 448, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .contact,
+  .about,
+  .website,
+  .social {
+    width: 485px;
+  }
+  /* line 457, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys {
     width: 168.7px;
     height: 62.8px;
   }
-  /* line 443, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 462, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane {
     width: 260px;
     height: 62.8px;
   }
-  /* line 448, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 467, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat {
     width: 64.6px;
     height: 62.8px;
   }
-  /* line 453, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 472, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver {
     width: 289px;
     height: 62.8px;
   }
-  /* line 458, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 477, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #microsoft {
     width: 140.2px;
     height: 85.3px;
   }
-  /* line 463, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 482, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50 {
     width: 69.2px;
     height: 110.1px;
   }
-  /* line 468, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 487, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms {
     width: 85.2px;
     height: 99.4px;
   }
-  /* line 473, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 492, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter {
     width: 200.2px;
     height: 80.1px;
   }
-  /* line 479, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 499, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .social-button li a {
+    width: 212.5px;
+  }
+  /* line 504, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     display: inline-block;
     width: 455px;
     height: 261.844px;
     overflow: hidden;
   }
-  /* line 486, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 511, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-text {
     border-top: none;
     margin-top: -3px;
   }
-  /* line 492, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 517, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1-image-child {
     width: 100%;
     height: 100%;
@@ -2475,7 +2522,7 @@ nav {
     background-position: center;
     border-radius: 3px 3px 0px 0px;
   }
-  /* line 501, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 526, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2-image-child {
     width: 100%;
     height: 100%;
@@ -2484,7 +2531,7 @@ nav {
     background-position: center;
     border-radius: 3px 3px 0px 0px;
   }
-  /* line 510, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 535, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3-image-child {
     width: 100%;
     height: 100%;
@@ -2493,25 +2540,25 @@ nav {
     background-position: center;
     border-radius: 3px 3px 0px 0px;
   }
-  /* line 519, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 544, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent > .news-1-image-child,
   .news-image-parent > .news-2-image-child,
   .news-image-parent > .news-3-image-child {
     transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 525, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 550, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent:hover > .news-1-image-child,
   .news-image-parent:hover > .news-2-image-child,
   .news-image-parent:hover > .news-3-image-child {
     transform: scale(1.075);
   }
-  /* line 531, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 556, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 > a > img,
   .news-2 > a > img,
   .news-3 > a > img {
     display: none;
   }
-  /* line 538, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 563, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news .tooltip .tooltip-text {
     width: 200px;
     margin-right: -100px;
@@ -2519,31 +2566,31 @@ nav {
 }
 
 @media (min-width: 1260px) {
-  /* line 550, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 575, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   nav {
     width: 1200px;
   }
-  /* line 555, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 580, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search {
     display: inline-block;
   }
-  /* line 559, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 584, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar input[type=text] {
     width: 240px;
   }
-  /* line 563, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 588, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar {
     width: 303px;
   }
-  /* line 568, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 593, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #search-bar button[type=button] {
     border-radius: 0px 3px 3px 0px;
   }
-  /* line 575, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 600, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .nav-box-text {
     width: 192px;
   }
-  /* line 580, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 605, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .nav-web,
   .nav-it,
   .nav-telecoms,
@@ -2552,191 +2599,206 @@ nav {
   .nav-cyber {
     font-size: 16px;
   }
-  /* line 589, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 614, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .secondary-nav-text {
     width: 1152px;
   }
-  /* line 594, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 619, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .banner-container,
   .intro-container,
   #latest-title {
     width: 1170px;
   }
-  /* line 600, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 625, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .intro-container > h1,
   .intro-container > p {
     width: 570px;
   }
-  /* line 606, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 631, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .about,
   .contact,
   .website,
   .social {
     width: 25%;
   }
-  /* line 614, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 639, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .cards {
     width: 1170px;
   }
-  /* line 620, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 645, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software,
   .card-it,
   .card-marketing {
     width: 370px;
     height: 312px;
   }
-  /* line 627, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 652, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-software > p,
   .card-it > p,
   .card-marketing > p {
     height: 66px;
   }
-  /* line 633, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 658, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms,
   .card-web,
   .card-cyber,
   .card-training {
     width: 270px;
   }
-  /* line 640, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 665, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-telecoms p,
   .card-web p,
   .card-cyber p,
   .card-training p {
     height: 66px;
   }
-  /* line 647, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 672, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-web {
     margin-right: auto;
   }
-  /* line 651, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 676, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .card-cyber {
     margin-left: auto;
   }
-  /* line 656, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 681, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-container {
     width: 1170px;
   }
-  /* line 661, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 686, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news {
     width: 370px;
   }
-  /* line 665, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 690, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-1 {
     margin-right: 15px;
     margin-left: 0;
   }
-  /* line 670, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 695, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-2 {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 675, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 700, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     margin-left: 15px;
     margin-right: 0;
   }
-  /* line 681, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 706, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-3 {
     display: inline-block;
   }
-  /* line 688, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 713, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .news-image-parent {
     width: 370px;
     height: 212.708px;
     overflow: hidden;
   }
-  /* line 702, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 727, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .main-footer {
     height: 309px;
   }
-  /* line 713, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 738, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .footer-logos,
-  .partner-footer,
-  .main-foot-cont {
+  .partner-footer {
     width: 1170px;
     margin: 0 auto;
   }
-  /* line 721, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 744, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .main-foot-cont {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /* line 750, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   .partner-footer {
     height: 188px;
   }
-  /* line 727, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 756, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys {
     width: 188px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
   }
-  /* line 733, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 762, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #busseys:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
   }
-  /* line 737, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 766, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane {
     width: 287px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
   }
-  /* line 743, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 772, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #crane:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
   }
-  /* line 747, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 776, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat {
     width: 72px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;
   }
-  /* line 753, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 782, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #beat:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
   }
-  /* line 758, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 787, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver {
     width: 322px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
   }
-  /* line 764, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 793, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #northern-diver:hover {
     background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
   }
-  /* line 769, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 798, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #microsoft {
     width: 115px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
     background-size: cover;
   }
-  /* line 776, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 805, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50 {
     width: 44px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
   }
-  /* line 782, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 811, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #future-50:hover {
     background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
   }
-  /* line 786, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 815, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms {
     width: 60px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
   }
-  /* line 791, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 820, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #qms:hover {
     background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
   }
-  /* line 795, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 824, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter {
     width: 175px;
     height: 70px;
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
   }
-  /* line 801, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  /* line 830, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
   #carbon-charter:hover {
     background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
+  }
+  /* line 835, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .contact,
+  .about,
+  .website,
+  .social {
+    width: 300px;
+  }
+  /* line 843, ../../../../Desktop/html-css-reflection/sass/layout/_media.scss */
+  .social-button li a {
+    width: 120px;
   }
 }
 
