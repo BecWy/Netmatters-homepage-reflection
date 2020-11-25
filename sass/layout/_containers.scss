@@ -299,7 +299,7 @@
   }
 
 .news .tooltip:hover .tooltip-text {
-    display: inline-block;
+    display: flex;
 }
 
 .news .tooltip .tooltip-text {
@@ -307,25 +307,33 @@
     color: #ffffff;
     text-align: center;
     height: 51px;
-    padding: 0 5px;
-    font-size: 12px;
+    padding: 5px 10px;
+    font-size: 11.5px;
     line-height: 15px; 
+    justify-content: center;
+    align-items: center;
 
-    /* Position the tooltip text - see examples below! */
+    //positioning tooltip text
     position: absolute;
     z-index: 2;
-    width: 180px; //original is 196px for wide screens. small screens = 158px. med = 167px lg= 178px
+    width: 140px;
     top: -60px;
-    right: 50%;
-    margin-right: -90px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    right: -15px;          //50%;
+    margin-right: 0px; //Use half of the width (i.e. 120/2 = 60), to center the tooltip
+}
+
+.news .tooltip .tooltip-text > p {
+    max-width: 120px;
+    padding: 0 0;
+    margin: 0 0;
 }
 
 //bottom arrow
 .news .tooltip .tooltip-text::after {
     content: " ";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
+    top: 100%; // places it at the bottom of the tooltip
+    left: calc(50% + 20px);
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;

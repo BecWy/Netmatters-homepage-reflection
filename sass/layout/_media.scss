@@ -271,6 +271,22 @@
     }
 
 
+    //NEWS TOOLTIPS ----------------------------------
+    .news .tooltip .tooltip-text {
+        width: 176px;
+        right: 50%;
+        margin-right: -88px;
+    }
+
+    .news .tooltip .tooltip-text > p {
+        max-width: 113px; //////////////keeps all text visible
+    }
+    
+    //bottom arrow
+    .news .tooltip .tooltip-text::after {
+        left: 50%;
+        margin-left: -5px;
+    }
 }
 
 
@@ -517,6 +533,13 @@
         .news-3 > a > img {
             display: none;
         }
+
+        //NEWS TOOLTIPS 
+        .news .tooltip .tooltip-text {
+            width: 200px;
+            margin-right: -100px;
+        }
+
     }
 
 
@@ -667,6 +690,13 @@
         height: 212.708px;
         overflow: hidden;
     }
+
+    // //NEWS TOOLTIPS 
+    // .news .tooltip .tooltip-text {
+    //     width: 200px;
+    //     margin-right: -100px;
+    // }
+
 
     //FOOTER main height
     .main-footer {
