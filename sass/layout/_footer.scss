@@ -1,4 +1,4 @@
-
+//MAIN-FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .main-footer {
     display: flex;
     flex-direction: column;
@@ -24,186 +24,7 @@
     flex-wrap: wrap;
 }
 
-//CLIENT FOOTER //larger screens only
-.client-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-    background-color: $white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-.footer-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-//CLIENT LOGOS
-
-//medium screens 768px
-#busseys {
-    width: 121.1px;
-    height: 45.1px;
-    display: inline-block;
-    background: url("../../html-css-reflection/images/external-branding/clients/busseys-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} 
-
-#busseys:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/busseys-color.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#crane {
-    width: 186px; 
-    height: 45px;
-    background: url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#crane:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/crane-color.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#beat { 
-    width: 46.4px; 
-    height: 45.1px;
-    background: url("../../html-css-reflection/images/external-branding/clients/beat-bw.jpeg");    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#beat:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/beat-color.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#northern-diver {
-    width: 207.5px; 
-    height: 45px;
-    background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#northern-diver:hover {
-    background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-//PARTNER FOOTER
-.partner-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    height: 188px;
-    background-color: $white;
-}
-
-//PARTNER LOGOS
-#google {
-    width: 214px;
-    height: 70px;
-    background: url("../../html-css-reflection/images/external-branding/other/google-color.png");
-    background-size: cover;
-    align-self: center;
-}
-
-
-//medium screens 768px
-#microsoft {
-    width: 87.6px;
-    height: 53.3px;
-    background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
-    background-size: cover;
-    align-self: center;
-}
-
-#future-50 {
-    width: 33.5px; 
-    height: 53.3px;
-    background: url("../../html-css-reflection/images/external-branding/other/future-50-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-
-#future-50:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-
-#qms {
-    width: 45.7px; 
-    height: 53.3px;
-    background: url("../../html-css-reflection/images/external-branding/other/qms-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-#qms:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-
-#carbon-charter {
-    width: 133.3px; 
-    height: 53.3px;
-    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-bw.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-
-#carbon-charter:hover {
-    background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
-}
-
-.client-footer,
-.partner-footer {
-    display: none;
-}
-
-
-//MAIN FOOTER
+//Sub-sections
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -231,7 +52,6 @@
 .website li {
     font-size: 13px;
     line-height: 22px;
-
 }
 
 .contact,
@@ -248,7 +68,6 @@
     margin-bottom: 30px;
 }
 
-
 .contact ul,
 .about ul,
 .website ul,
@@ -261,17 +80,78 @@
 .social {
     height: 190px;
 }
-// .contact {
-//     padding-top: 43px;
-// }
-
-// .social {
-//     padding-bottom: 43px;
-// }
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//CLIENT FOOTER //larger screens only ////////////////////////////////////////////////////////////////////////////
 
-//TOOLTIPS /////////////////////////////////////////////////////////////////////////////////////////////////////
+.client-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+//CLIENT LOGOS ////////////////////
+
+//medium screens 768px
+#busseys {
+    width: 121.1px;
+    height: 45.1px;
+    display: inline-block;
+    background: $white url("../../html-css-reflection/images/external-branding/clients/busseys-bw.jpeg") no-repeat center;
+    background-size: cover;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/clients/busseys-color.png") no-repeat center;
+        background-size: cover;
+    }
+} 
+
+#crane {
+    width: 186px; 
+    height: 45px;
+    background: $white url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg") no-repeat center;
+    background-size: cover;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/clients/crane-color.png") no-repeat center;
+        background-size: cover;
+    }
+}
+
+#beat { 
+    width: 46.4px; 
+    height: 45.1px;
+    background: $white url("../../html-css-reflection/images/external-branding/clients/beat-bw.jpeg") no-repeat center;    
+    background-size: cover;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/clients/beat-color.png") no-repeat center;
+        background-size: cover;
+    }
+}
+
+#northern-diver {
+    width: 207.5px; 
+    height: 45px;
+    background: $white url("../../html-css-reflection/images/external-branding/clients/northern-diver-bw.jpeg") no-repeat center;
+    background-size: cover;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png") no-repeat center;
+        background-size: cover;
+    }
+}
+
+//TOOLTIPS /////////////////////////////////////
 .client-footer .tooltip {
     position: relative;
 }
@@ -327,7 +207,7 @@
     position: relative;
 }
 
-.footer-logos .tooltip-title::after {  //////////EXACT SAME SETTINGS AS THE CARDS - CREATE MIXIN
+.footer-logos .tooltip-title::after {  //////////EXACT SAME SETTINGS AS THE CARDS - CREATE MIXIN?
     content: "";
     position: absolute;
     width: 30px;
@@ -335,6 +215,88 @@
     left: calc(50% - 15px);
     border-bottom: 3px solid $white;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//PARTNER FOOTER ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+.partner-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 188px;
+    background-color: $white;
+}
+
+//PARTNER LOGOS ///////////////////////
+#google {
+    width: 214px;
+    height: 70px;
+    background: $white url("../../html-css-reflection/images/external-branding/other/google-color.png") no-repeat center;
+    background-size: cover;
+    align-self: center;
+}
+
+//medium screens 768px
+#microsoft {
+    width: 87.6px;
+    height: 53.3px;
+    background: $white url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg") no-repeat center;
+    background-size: cover;
+    align-self: center;
+}
+
+#future-50 {
+    width: 33.5px; 
+    height: 53.3px;
+    background: $white url("../../html-css-reflection/images/external-branding/other/future-50-bw.jpeg") no-repeat center;
+    background-size: cover;
+    align-self: center;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg") no-repeat center;
+        background-size: cover;
+        align-self: center;
+    }
+}
+
+#qms {
+    width: 45.7px; 
+    height: 53.3px;
+    background: $white url("../../html-css-reflection/images/external-branding/other/qms-bw.jpeg") no-repeat center;
+    background-size: cover;
+    align-self: center;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg") no-repeat center;
+        background-size: cover;
+        align-self: center;
+    }
+}
+
+#carbon-charter {
+    width: 133.3px; 
+    height: 53.3px;
+    background: $white url("../../html-css-reflection/images/external-branding/other/carbon-charter-bw.jpeg") no-repeat center;
+    background-size: cover;
+    align-self: center;
+    &:hover {
+        background: $white url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
+        background-size: cover;
+        align-self: center;
+    }
+}
+
+.client-footer,
+.partner-footer {
+    display: none;
+}
+
+
+
+
+
+
 
 
     

@@ -1611,196 +1611,6 @@ nav {
 }
 
 /* line 28, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.client-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-/* line 40, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.footer-logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/* line 49, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#busseys {
-  width: 121.1px;
-  height: 45.1px;
-  display: inline-block;
-  background: url("../../html-css-reflection/images/external-branding/clients/busseys-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 59, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#busseys:hover {
-  background: url("../../html-css-reflection/images/external-branding/clients/busseys-color.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 66, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#crane {
-  width: 186px;
-  height: 45px;
-  background: url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 75, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#crane:hover {
-  background: url("../../html-css-reflection/images/external-branding/clients/crane-color.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#beat {
-  width: 46.4px;
-  height: 45.1px;
-  background: url("../../html-css-reflection/images/external-branding/clients/beat-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 91, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#beat:hover {
-  background: url("../../html-css-reflection/images/external-branding/clients/beat-color.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#northern-diver {
-  width: 207.5px;
-  height: 45px;
-  background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 107, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#northern-diver:hover {
-  background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* line 116, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.partner-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-  height: 188px;
-  background-color: #fff;
-}
-
-/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#google {
-  width: 214px;
-  height: 70px;
-  background: url("../../html-css-reflection/images/external-branding/other/google-color.png");
-  background-size: cover;
-  align-self: center;
-}
-
-/* line 139, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#microsoft {
-  width: 87.6px;
-  height: 53.3px;
-  background: url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg");
-  background-size: cover;
-  align-self: center;
-}
-
-/* line 147, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#future-50 {
-  width: 33.5px;
-  height: 53.3px;
-  background: url("../../html-css-reflection/images/external-branding/other/future-50-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 157, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#future-50:hover {
-  background: url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 165, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#qms {
-  width: 45.7px;
-  height: 53.3px;
-  background: url("../../html-css-reflection/images/external-branding/other/qms-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 174, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#qms:hover {
-  background: url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 182, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#carbon-charter {
-  width: 133.3px;
-  height: 53.3px;
-  background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-bw.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-#carbon-charter:hover {
-  background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: center;
-}
-
-/* line 200, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.client-footer,
-.partner-footer {
-  display: none;
-}
-
-/* line 207, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2,
@@ -1813,19 +1623,19 @@ nav {
   width: 95%;
 }
 
-/* line 219, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 40, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact > h2,
 .about > h2,
 .website > h2 {
   margin-bottom: 26px;
 }
 
-/* line 225, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social > h2 {
   margin-bottom: 0;
 }
 
-/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact li,
 .about li,
 .website li {
@@ -1833,7 +1643,7 @@ nav {
   line-height: 22px;
 }
 
-/* line 237, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website,
@@ -1842,14 +1652,14 @@ nav {
   width: 100%;
 }
 
-/* line 245, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 65, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact,
 .about,
 .website {
   margin-bottom: 30px;
 }
 
-/* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .contact ul,
 .about ul,
 .website ul,
@@ -1859,27 +1669,104 @@ nav {
   margin-bottom: 0;
 }
 
-/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social {
   height: 190px;
 }
 
-/* line 275, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.client-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 100, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.footer-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#busseys {
+  width: 121.1px;
+  height: 45.1px;
+  display: inline-block;
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/busseys-bw.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 115, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#busseys:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/busseys-color.png") no-repeat center;
+  background-size: cover;
+}
+
+/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#crane {
+  width: 186px;
+  height: 45px;
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/crane-bw.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#crane:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/crane-color.png") no-repeat center;
+  background-size: cover;
+}
+
+/* line 132, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#beat {
+  width: 46.4px;
+  height: 45.1px;
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/beat-bw.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 137, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#beat:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/beat-color.png") no-repeat center;
+  background-size: cover;
+}
+
+/* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#northern-diver {
+  width: 207.5px;
+  height: 45px;
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/northern-diver-bw.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#northern-diver:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png") no-repeat center;
+  background-size: cover;
+}
+
+/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip {
   position: relative;
 }
 
-/* line 279, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip-text {
   display: none;
 }
 
-/* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip:hover .tooltip-text {
   display: inline-block;
 }
 
-/* line 287, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 167, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip .tooltip-text {
   background-color: #333645;
   color: #fff;
@@ -1896,7 +1783,7 @@ nav {
   margin-left: -130px;
 }
 
-/* line 306, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 186, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip .tooltip-text::after {
   content: " ";
   position: absolute;
@@ -1909,12 +1796,12 @@ nav {
   border-color: #333645 transparent transparent transparent;
 }
 
-/* line 317, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 197, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-text p {
   margin-bottom: 0;
 }
 
-/* line 321, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title {
   font-size: 18px;
   padding-bottom: 17px;
@@ -1924,7 +1811,7 @@ nav {
   position: relative;
 }
 
-/* line 330, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 210, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title::after {
   content: "";
   position: absolute;
@@ -1932,6 +1819,91 @@ nav {
   top: 35px;
   left: calc(50% - 15px);
   border-bottom: 3px solid #fff;
+}
+
+/* line 221, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.partner-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 188px;
+  background-color: #fff;
+}
+
+/* line 234, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#google {
+  width: 214px;
+  height: 70px;
+  background: #fff url("../../html-css-reflection/images/external-branding/other/google-color.png") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 243, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#microsoft {
+  width: 87.6px;
+  height: 53.3px;
+  background: #fff url("../../html-css-reflection/images/external-branding/other/microsoft-bw.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 251, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#future-50 {
+  width: 33.5px;
+  height: 53.3px;
+  background: #fff url("../../html-css-reflection/images/external-branding/other/future-50-bw.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 257, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#future-50:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 264, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#qms {
+  width: 45.7px;
+  height: 53.3px;
+  background: #fff url("../../html-css-reflection/images/external-branding/other/qms-bw.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 270, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#qms:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 277, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#carbon-charter {
+  width: 133.3px;
+  height: 53.3px;
+  background: #fff url("../../html-css-reflection/images/external-branding/other/carbon-charter-bw.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+#carbon-charter:hover {
+  background: #fff url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
+  background-size: cover;
+  align-self: center;
+}
+
+/* line 290, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.client-footer,
+.partner-footer {
+  display: none;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
