@@ -293,7 +293,57 @@
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MEDIA QUERIES TO NEST /////////////////////////////////////////////////////////////////////
 
+//FROM 768PX --------------------------------------------------------------------------------
+@media (min-width: $break-sm) {
+    //FOOTERS main footer splits into 2 columns.
+    .main-footer {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 528px;
+    }
+
+    .about,
+    .contact,
+    .website,
+    .social {
+        width: 375px;
+        align-self: flex-start;
+    }
+
+    //FOOTER width
+    .main-foot-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 750px;
+        margin: 0 auto;
+    }
+   
+    //DISPLAY LOGO FOOTERS
+    .client-footer,
+    .partner-footer {
+        display: flex;
+}
+
+    .footer-logos,
+    .partner-footer {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    //SOCIAL BUTTON WIDTH
+    .social-button li a {
+        width: 157.5px;
+    }
+
+}
 
 
 
