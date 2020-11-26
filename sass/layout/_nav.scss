@@ -1,32 +1,8 @@
 
-// ICON COLORS - static color
-@each $theme, $color in $themes {
-    #nav-icon-#{$theme}:not(last-child) {
-        color: $color;
-    }
-} 
+///////////////////////////////////////////////////////////////////////////////////////////
+//MAIN NAV BAR ///////////////////////////
 
-//hover white
-@each $theme, $color in $themes {
-    .title-#{$theme}:hover:not(last-child) .icon-parent > #nav-icon-#{$theme}:not(last-child) {
-        color: $white;
-    }
-} 
-
-
-
-
-
-//BOX HOVER BACKGROUND COLOR
-@each $theme, $color in $themes {
-    .title-#{$theme}:hover:not(last-child) {
-        background-color: $color;
-    }
-} 
-
-
-
-// NAV BAR - HIDDEN FOR SMALL SCREENS
+//BASE SETTINGS - nb nav bar is hidden for small screens
 .nav-2 {
     border-bottom: 1.25px solid rgba(255, 255, 255, 0.7);
     display: flex;
@@ -41,13 +17,12 @@
     background-color: $main-grey;
     position: relative; //position set to relative to align dropdown nav bars.
     display: none;
+    & a {
+        height: 98px;
+    }
 }
 
-.nav-2 a{
-    height: 98px;
-}
-
-// NAV BAR PRIMARY OPTIONS
+// MENU BOXES
 .nav-box-text {
     display: flex;
     flex-direction: column;
@@ -58,14 +33,19 @@
     border-left: 1px solid hsla(0,0,100%,.1);
     border-right: 1px solid rgba(0,0,0,.25);
     text-transform: uppercase;
+    & > * {
+        margin: 0 0;
+    }
 }
 
+//box hover bg color
+@each $theme, $color in $themes {
+    .title-#{$theme}:hover:not(last-child) {
+        background-color: $color;
+    }
+} 
 
-.nav-box-text > * {
-    margin: 0 0;
-}
-
-//BOX PSEUDO-ELEMENTS FOR EXTRA SIDE BORDERS. Relative to nav-2 - can't be relative to title-web and title-cyber as it affects the dropdown nav-bars.
+//Box pseudo borders. Can't be relative to title-web and title-cyber as it affects the dropdown nav-bars.
 .nav-box-text {
     position: relative;
 }
@@ -78,7 +58,7 @@
     border-left: 0.5px solid rgba(0,0,0,.25);
 }
 
-    .title-cyber .nav-box-text::after {
+.title-cyber .nav-box-text::after {
     content: "";
     position: absolute;
     height: 98px;
@@ -87,7 +67,20 @@
     border-right: 0.5px solid hsla(0,0%,100%,.1);
 }
 
+//NAV ICONS
+// Icon colors - base
+@each $theme, $color in $themes {
+    #nav-icon-#{$theme}:not(last-child) {
+        color: $color;
+    }
+} 
 
+// Icon colors - hover
+@each $theme, $color in $themes {
+    .title-#{$theme}:hover:not(last-child) .icon-parent > #nav-icon-#{$theme}:not(last-child) {
+        color: $white;
+    }
+} 
 
 //FOR THE TEXT
 #nav-icon-web, 
@@ -114,8 +107,8 @@
     font-weight: $regular;
 } 
 
-
-//DROPDOWN NAV BARS
+///////////////////////////////////////////////////////////////////////////////////////
+//DROPDOWN NAV BARS ////////////////////////////////////////////////////////////////////
 .nav-web,
 .nav-it,
 .nav-telecoms,
@@ -144,15 +137,13 @@
     justify-content: space-between;
     letter-spacing: 0.4px;
     margin: 0 auto;
-}
-
-.secondary-nav-text a {
-    padding: 10px 0px;
-}
-
-.secondary-nav-text a,
-.secondary-nav-text a:visited {
-    color: $white;
+        & a {
+            padding: 10px 0px;
+            color: $white;
+            &:visited {
+                color: $white;
+            }
+        }
 }
 
 //DROPDOWN NAV. colors
@@ -163,7 +154,6 @@
         display: none; //HIDDEN        
     }
 } 
-
 
 //DROPDOWN NAV. hover - display
 @each $theme, $color in $themes { 
