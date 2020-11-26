@@ -166,37 +166,37 @@
   background-color: #fff;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-software:hover {
   background-color: #67809f;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-it:hover {
   background-color: #4183d7;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-marketing:hover {
   background-color: #2ecc71;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-telecoms:hover {
   background-color: #d64541;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-web:hover {
   background-color: #926fb1;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-cyber:hover {
   background-color: #f62459;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-training:hover {
   background-color: #926fb1;
 }
@@ -584,11 +584,6 @@ template {
 /* line 8, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 a {
   text-decoration: none;
-}
-
-/* line 12, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
-.border-test {
-  border: solid 3px red;
 }
 
 /* line 4, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
@@ -1961,14 +1956,13 @@ nav {
   font-weight: 400;
 }
 
-/* line 22, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-.banner-container > .button a:hover,
-.banner-container > .button a:active {
+/* line 20, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.banner-container > .button a:hover, .banner-container > .button a:active {
   background-color: #7e57a0;
   border: 1px solid #735093;
 }
 
-/* line 29, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 28, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .fake-button {
   text-align: center;
   display: inline-block;
@@ -1977,7 +1971,7 @@ nav {
   font-weight: 400;
 }
 
-/* line 37, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 36, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .intro .button a {
   padding: 5px 15px;
   font-size: 17px;
@@ -1988,20 +1982,19 @@ nav {
   border: 1px solid #fff;
 }
 
-/* line 47, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-.intro .button a:hover,
-.intro .button a:active {
+/* line 44, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.intro .button a:hover, .intro .button a:active {
   background-color: #ebebeb;
   border: 1px solid #e0e0e0;
 }
 
-/* line 53, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 52, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .news-text > .button {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 58, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 57, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .news-text .button a {
   padding: 5px 15px;
   font-size: 17px;
@@ -2013,14 +2006,13 @@ nav {
   font-weight: 400;
 }
 
-/* line 69, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-.news-text .button a:hover,
-.news-text .button a:active {
+/* line 66, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+.news-text .button a:hover, .news-text .button a:active {
   background-color: #7e57a0;
   border-color: #735093;
 }
 
-/* line 76, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 75, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button {
   display: flex;
   flex-direction: row;
@@ -2029,7 +2021,7 @@ nav {
   margin-top: 0;
 }
 
-/* line 84, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 83, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li {
   list-style-type: none;
   display: flex;
@@ -2041,7 +2033,7 @@ nav {
   height: 55px;
 }
 
-/* line 95, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 94, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 .social-button li a {
   padding: 12px 0;
   justify-content: center;
@@ -2054,46 +2046,43 @@ nav {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 107, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 106, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #facebook {
   margin-left: 0;
   margin-right: 0;
   padding-right: 15px;
 }
 
-/* line 113, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 110, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#facebook a:hover {
+  background-color: #3b5998;
+}
+
+/* line 115, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #twitter {
   padding-left: 15px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
-/* line 117, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+#twitter a:hover {
+  background-color: #00aced;
+}
+
+/* line 124, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #linked-in {
   padding-right: 15px;
-}
-
-/* line 121, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#twitter,
-#linked-in {
   margin-left: 0;
   margin-right: auto;
 }
 
 /* line 128, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#facebook a:hover {
-  background-color: #3b5998;
-}
-
-/* line 132, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #linked-in a:hover {
   background-color: #0077b5;
 }
 
-/* line 136, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
-#twitter a:hover {
-  background-color: #00aced;
-}
-
-/* line 142, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
+/* line 135, ../../../../Desktop/html-css-reflection/sass/components/_buttons.scss */
 #support:active,
 #contact:active,
 #menu:active,

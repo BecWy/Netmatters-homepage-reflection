@@ -17,12 +17,11 @@
     color: $white;
     border-radius: $round-corner;
     font-weight: $regular;
-}
-
-.banner-container > .button a:hover,
-.banner-container > .button a:active {
-    background-color: $web-color2;
-    border: 1px solid $web-color3;
+    &:hover,
+    &:active {
+        background-color: $web-color2;
+        border: 1px solid $web-color3;
+    }
 }
 
 
@@ -42,13 +41,13 @@
     background-color: $culture-button-color1;
     color: $main-grey;
     border: 1px solid $culture-button-color1;
+    &:hover,
+    &:active {
+        background-color: $culture-button-color2;
+        border: 1px solid $culture-button-color3;
+    }
 }
 
-.intro .button a:hover,
-.intro .button a:active {
-    background-color: $culture-button-color2;
-    border: 1px solid $culture-button-color3;
-}
 
 .news-text > .button {
     padding-top: 0;
@@ -64,13 +63,13 @@
     border: 1px solid $web-color1;
     border-radius: $round-corner;
     font-weight: $regular;
+    &:hover,
+    &:active {
+        background-color: $web-color2;
+        border-color: $web-color3;
+    }
 }
 
-.news-text .button a:hover, 
-.news-text .button a:active {
-    background-color: $web-color2;
-    border-color: $web-color3;
-}
 
 //SOCIAL BUTTONS
 .social-button {
@@ -108,33 +107,27 @@
     margin-left: 0;
     margin-right: 0;
     padding-right: 15px;
+    & a:hover {
+        background-color: $facebook;
+    }
 }
 
 #twitter {
     padding-left: 15px;
+    margin-left: 0;
+    margin-right: auto;
+    & a:hover {
+        background-color: $twitter;
+    }
 }
 
 #linked-in {
     padding-right: 15px;
-}
-
-#twitter,
-#linked-in {
     margin-left: 0;
     margin-right: auto;
-}
-
-//HOVER COLORS
-#facebook a:hover {
-    background-color: $facebook;
-}
-
-#linked-in a:hover {
-    background-color: $linkedin;
-}
-
-#twitter a:hover {
-    background-color: $twitter;
+    & a:hover {
+        background-color: $linkedin;
+    }
 }
 
 
