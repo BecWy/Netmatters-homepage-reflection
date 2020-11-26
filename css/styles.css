@@ -1308,23 +1308,13 @@ a {
   border-color: #333645 transparent transparent transparent;
 }
 
-/* line 1, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-html {
-  position: relative;
-}
-
-/* line 5, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-body {
-  position: relative;
-}
-
-/* line 9, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 2, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 header {
   width: 100%;
   position: relative;
 }
 
-/* line 14, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 7, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 nav {
   display: flex;
   flex-direction: row;
@@ -1336,19 +1326,19 @@ nav {
   padding-bottom: 60px;
 }
 
-/* line 25, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #logo {
   height: auto;
   padding-left: 15px;
   flex: 1 1;
 }
 
-/* line 32, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 22, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #logo img {
   max-width: 100%;
 }
 
-/* line 36, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 27, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #direct-call {
   display: flex;
   height: 70px;
@@ -1361,7 +1351,7 @@ nav {
   margin-left: auto;
 }
 
-/* line 48, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 37, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #direct-call i {
   width: 32px;
   height: 32px;
@@ -1371,7 +1361,7 @@ nav {
   position: relative;
 }
 
-/* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 44, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #direct-call i:hover::after {
   content: "";
   position: absolute;
@@ -1382,7 +1372,7 @@ nav {
   z-index: 2;
 }
 
-/* line 69, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 56, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu {
   display: flex;
   flex-direction: column;
@@ -1402,20 +1392,19 @@ nav {
   justify-self: flex-end;
 }
 
-/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-#menu:hover,
-#menu:active {
+/* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#menu:hover, #menu:active {
   background-color: #22242e;
   border-color: #191a22;
 }
 
-/* line 94, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 78, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu i {
   font-size: 22px;
   line-height: 22px;
 }
 
-/* line 99, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 82, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #menu span {
   font-size: 11px;
   line-height: 12px;
@@ -1424,7 +1413,7 @@ nav {
   margin-top: 4px;
 }
 
-/* line 107, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 91, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #support,
 #contact {
   padding: 5px 13px;
@@ -1441,21 +1430,20 @@ nav {
   display: none;
 }
 
-/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 107, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #support {
   background-color: #4183d7;
   border: 1px solid #4183d7;
   width: 145px;
 }
 
-/* line 129, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-#support:hover,
-#support:active {
+/* line 111, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#support:hover, #support:active {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
 
-/* line 135, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 118, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #contact {
   background-color: #999aa2;
   border: 1px solid #999aa2;
@@ -1463,14 +1451,13 @@ nav {
   width: 153px;
 }
 
-/* line 142, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-#contact:hover,
-#contact:active {
+/* line 123, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+#contact:hover, #contact:active {
   background-color: #84858f;
   border-color: #797a85;
 }
 
-/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 130, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar {
   position: absolute;
   bottom: 20px;
@@ -1482,7 +1469,7 @@ nav {
   margin-top: 10px;
 }
 
-/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 141, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text] {
   font-size: 14px;
   line-height: 20px;
@@ -1501,13 +1488,13 @@ nav {
   padding-right: 40px;
 }
 
-/* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 157, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar input[type=text]:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* line 184, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=button] {
   position: absolute;
   top: 0px;
@@ -1519,12 +1506,12 @@ nav {
   outline: none;
 }
 
-/* line 195, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 172, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=button]:hover {
   cursor: pointer;
 }
 
-/* line 199, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+/* line 175, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
 #search-bar button[type=button] i {
   height: 47px;
   line-height: 47px;
@@ -1533,53 +1520,6 @@ nav {
   color: #333645;
   text-align: right;
   padding-right: 10px;
-}
-
-/* line 212, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-.banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 531px;
-  background-color: #000;
-  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.597543) 80%, rgba(0, 0, 0, 0.398664) 100%), url("../../html-css-reflection/images/slides/slide-1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* line 235, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-}
-
-/* line 241, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-.banner-container > h1 {
-  margin: 0 auto;
-  margin-bottom: 25px;
-  font-size: 48px;
-  line-height: 52.8px;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  width: 95%;
-}
-
-/* line 252, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-.banner-container > span {
-  margin: 0 auto;
-  margin-bottom: 35px;
-  font-size: 20px;
-  line-height: 36px;
-  color: #fff;
-  font-weight: 400;
-  width: 95%;
 }
 
 /* line 2, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
@@ -2073,6 +2013,53 @@ nav {
   margin-bottom: 17px;
   line-height: 58px;
   color: #fff;
+}
+
+/* line 3, ../../../../Desktop/html-css-reflection/sass/components/_slider.scss */
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 531px;
+  background-color: #000;
+  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.597543) 80%, rgba(0, 0, 0, 0.398664) 100%), url("../../html-css-reflection/images/slides/slide-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 26, ../../../../Desktop/html-css-reflection/sass/components/_slider.scss */
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+/* line 32, ../../../../Desktop/html-css-reflection/sass/components/_slider.scss */
+.banner-container > h1 {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 52.8px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+/* line 43, ../../../../Desktop/html-css-reflection/sass/components/_slider.scss */
+.banner-container > span {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 400;
+  width: 95%;
 }
 
 @media (min-width: 768px) {

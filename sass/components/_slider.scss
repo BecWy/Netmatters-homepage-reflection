@@ -1,3 +1,53 @@
 //SLIDER (BANNER) STYLES
 
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    height: 531px;
+    background-color: $black;
+
+    //mobile/tablet gradient
+    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
+    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
+   
+   //desktop gradient located in media query
+//    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
+//    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.banner-container > h1 {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 48px;
+    line-height: 52.8px;
+    color: $white;
+    font-weight: $regular;
+    text-transform: uppercase;
+    width: 95%;
+}
+
+.banner-container > span {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 36px;
+    color: $white;
+    font-weight: $regular;
+    width: 95%;
+}
+
 

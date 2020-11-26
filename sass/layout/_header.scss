@@ -1,10 +1,3 @@
-html {
-    position: relative;
-}
-
-body {
-    position: relative;
-}
 
 header {
     width: 100%;
@@ -26,11 +19,9 @@ nav {
     height: auto;
     padding-left: 15px;
     flex: 1 1;
-}
-
-
-#logo img {
-    max-width: 100%;
+    & img {
+        max-width: 100%;
+    }
 }
 
 #direct-call {
@@ -43,28 +34,24 @@ nav {
     justify-content: center;
     padding-top: 16px;
     margin-left: auto;
-}
-
-#direct-call i {
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    position: relative;
-}
-
-#direct-call i:hover::after {
-        content: "";
-        position: absolute;
+    & i {
         width: 32px;
-        left: 0px;
-        bottom: -2px;
-        border-bottom: 3px solid $main-grey;
-        z-index: 2;
-      
+        height: 32px;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        position: relative;
+        &:hover::after {
+            content: "";
+            position: absolute;
+            width: 32px;
+            left: 0px;
+            bottom: -2px;
+            border-bottom: 3px solid $main-grey;
+            z-index: 2;
+        }
+    }
 }
-
 
 #menu {
     display: flex;
@@ -83,25 +70,22 @@ nav {
     align-items: center;
     justify-content: center;
     justify-self: flex-end;
-}
-
-#menu:hover,
-#menu:active {
-    background-color: $menu-color2;
-    border-color: $menu-color3;
-}
-
-#menu i {
-    font-size: 22px;
-    line-height: 22px;
-}
-
-#menu span {
-    font-size: 11px;
-    line-height: 12px;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    margin-top: 4px;
+    &:hover,
+    &:active {
+        background-color: $menu-color2;
+        border-color: $menu-color3;
+    }
+    & i {
+        font-size: 22px;
+        line-height: 22px; 
+    }
+    & span {
+        font-size: 11px;
+        line-height: 12px;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        margin-top: 4px;
+    }
 }
 
 #support,
@@ -124,12 +108,11 @@ nav {
     background-color: $it-color1;
     border: 1px solid $it-color1;
     width: 145px;
-}
-
-#support:hover,
-#support:active {
-    background-color: $it-color2;
-    border-color: $it-color3;
+    &:hover,
+    &:active {
+        background-color: $it-color2;
+        border-color: $it-color3;
+    }
 }
 
 #contact {
@@ -137,12 +120,11 @@ nav {
     border: 1px solid $contact-color1;
     margin-left: 20px;
     width: 153px;
-}
-
-#contact:hover,
-#contact:active {
-    background-color: $contact-color2;
-    border-color: $contact-color3;
+    &:hover,
+    &:active {
+        background-color: $contact-color2;
+        border-color: $contact-color3; 
+    }
 }
 
 #search-bar {
@@ -154,11 +136,9 @@ nav {
     height: 47px;
     padding: 0 15px;
     margin-top: 10px;
-
 }
 
 #search-bar input[type=text] {
-    //correct
     font-size: 14px;
     line-height: 20px;
     letter-spacing: normal;
@@ -174,11 +154,10 @@ nav {
     padding-bottom: 8px; //was 5px originally
     padding-left: 15px; 
     padding-right: 40px; 
-}
-
-#search-bar input[type=text]:focus {
-    outline: none;
-    box-shadow: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 #search-bar button[type=button] {
@@ -190,72 +169,21 @@ nav {
     padding: 0 0;
     border: none;
     outline: none;   
+    &:hover {
+        cursor: pointer;
+    }
+    & i {
+        height: 47px;
+        line-height: 47px;
+        width: 47px;
+        font-size: 20px;
+        color: $main-grey;
+        text-align: right;
+        padding-right: 10px; 
+    }
 }
 
-#search-bar button[type=button]:hover {
-    cursor: pointer;
-}
-
-#search-bar button[type=button] i {
-    height: 47px;
-    line-height: 47px;
-    width: 47px;
-    font-size: 20px;
-    color: $main-grey;
-    text-align: right;
-    padding-right: 10px; 
-}
-
-////////////////////////////////////////////////////
 
 
-.banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%; 
-    align-items: center;
-    justify-content: center;
-    height: 531px;
-    background-color: $black;
 
-    //mobile/tablet gradient
-    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
-    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
-   
-   //desktop gradient located in media query
-//    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
-//    url("../../html-css-reflection/images/slides/slide-1.jpeg");  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    text-align: center; 
-}
-
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-}
-
-.banner-container > h1 {
-    margin: 0 auto;
-    margin-bottom: 25px;
-    font-size: 48px;
-    line-height: 52.8px;
-    color: $white;
-    font-weight: $regular;
-    text-transform: uppercase;
-    width: 95%;
-}
-
-.banner-container > span {
-    margin: 0 auto;
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 36px;
-    color: $white;
-    font-weight: $regular;
-    width: 95%;
-}
 
