@@ -87,3 +87,37 @@
     $width-med: 940px; ///some elements have padding included, these are 970px. TO figure out. 5 are 940px, 2 are 970px. Main footer is different - to check. Nav different too.
     $width-lg:1170px; //5 containers with this width. Nav, footer and one other are different.
 
+
+
+
+////////////////////MAPS///////////////////////////////////////////////////////
+
+// // BREAKPOINTS
+$breakpoints: (
+    'sm': $break-sm,
+    'med': $break-med,
+    'lg': $break-lg,
+);
+
+
+// COLOR THEMES
+$themes: (
+    'software': $software-color1,
+    'it': $it-color1,
+    'marketing': $marketing-color1,
+    'telecoms': $telecoms-color1,
+    'web': $web-color1,
+    'cyber': $cyber-color1,
+    'training': $training-color1,
+);
+
+$themes-secondary: (
+    'software': $software-color2,
+    'it': $it-color2,
+    'marketing': $marketing-color2,
+    'telecoms': $telecoms-color2,
+    'web': $web-color2,
+    'cyber': $cyber-color2,
+    'training': $training-color2,
+);
+

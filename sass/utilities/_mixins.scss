@@ -1,5 +1,70 @@
+//LOOPS////////////////////////////////////////////////
+// ICONS
+@each $theme, $color in $themes {
+     .icon-#{$theme} i {
+         background-color: $color;
+     }
+ } 
+ 
+ // ICONS:HOVER
+ @each $theme, $color in $themes {
+     .card-#{$theme}:hover .icon-#{$theme} i {
+         color: $color;
+         background-color: $white;
+     }
+ } 
+ 
+ // BUTTONS
+ @each $theme, $color in $themes {
+     .button-#{$theme} {
+         color: $white;
+         background-color: $color;
+         font-size: 16px;
+     }
+ } 
+
+ // BUTTONS:HOVER
+@each $theme, $color in $themes {
+     .card-#{$theme}:hover .button-#{$theme} {
+         color: $color;
+         background-color: $white;
+     }
+ } 
+ 
+
+///////////MIXINS///////////////////////////////
+
+
 
 // BUTTON:ACTIVE BOX SHADOW ------------------TESTING----------------------
 @mixin button-active-shadow {
      box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px 0px inset;
 }
+
+
+// CARD MIXIN HOVER -------------------WORKS----------------------
+@mixin themes-bg-hov($map) {
+     @each $theme, $color in $map {
+         &-#{$theme}:hover {
+             background-color: $color;
+         }
+     } 
+ }
+ 
+ .card { //-------------------WORKS----------------------------------------
+     @include themes-bg-hov($themes);
+ }
+ 
+ 
+ // // ICON & BUTTON MIXIN HOVER need to think about if this is useful
+ // @mixin themes-fg-hov($map) {
+ //     @each $theme, $color in $map {
+ //         &-#{$theme}:hover {
+ //             background-color: $color;
+ //         }
+ //     } 
+ // }
+ 
+ // .card > * {
+ //     @include themes-fg-hov($themes);
+ // }

@@ -4,23 +4,21 @@
 
 // Utilities
 @import 'utilities/variables',
-        'utilities/maps',
         'utilities/mixins',
-        'utilities/functions',
-        'utilities/helpers';
+        'utilities/functions';
         
 // Base Styles     
 @import 'base/normalize',
         'base/base';
 
 // Layout Styles
-@import 'layout/containers',
+@import 'layout/nav',
+        'layout/main',
         'layout/header',
         'layout/footer';
 
 // Component Styles
-@import 'components/nav',
-        'components/buttons',
+@import 'components/buttons',
         'components/icons',
         'components/slider';
 
