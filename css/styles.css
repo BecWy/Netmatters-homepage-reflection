@@ -919,7 +919,7 @@ a {
   align-items: center;
 }
 
-/* line 11, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 13, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .cards {
   max-width: 95%;
   margin-left: 15px;
@@ -932,7 +932,7 @@ a {
   padding-bottom: 50px;
 }
 
-/* line 23, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 25, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card {
   border: 1px solid #ccc;
   margin: 0 auto;
@@ -950,19 +950,24 @@ a {
   height: 100%;
 }
 
-/* line 39, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.card h2,
-.card p {
-  color: #333645;
-}
-
-/* line 44, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 38, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card:hover h2,
 .card:hover p {
   color: #fff;
 }
 
-/* line 51, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 42, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.card:hover h2::after {
+  border-bottom: 4px solid #fff;
+}
+
+/* line 47, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.card h2,
+.card p {
+  color: #333645;
+}
+
+/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card h2 {
   position: relative;
   padding-bottom: 17px;
@@ -973,7 +978,7 @@ a {
   line-height: 19.8px;
 }
 
-/* line 61, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 60, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card h2::after {
   content: "";
   position: absolute;
@@ -984,25 +989,20 @@ a {
 }
 
 /* line 70, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.card:hover h2::after {
-  border-bottom: 4px solid #fff;
-}
-
-/* line 75, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card p {
   margin-bottom: 13px;
   line-height: 22px;
   font-size: 13px;
 }
 
-/* line 81, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 76, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .card .fake-button {
   padding: 5px 15px;
   font-size: 17.008px;
   line-height: 35px;
 }
 
-/* line 87, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 85, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .intro {
   display: flex;
   flex-direction: column;
@@ -1015,7 +1015,7 @@ a {
   background-color: #333645;
 }
 
-/* line 99, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 97, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .intro h1 {
   margin-top: -6px;
   margin-bottom: 28px;
@@ -1025,20 +1025,20 @@ a {
   font-weight: 400;
 }
 
-/* line 108, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 106, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .intro p {
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 30px;
 }
 
-/* line 114, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 110, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .intro p strong {
   font-weight: 600;
   line-height: 30px;
 }
 
-/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 119, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .latest {
   width: 100%;
   display: flex;
@@ -1046,7 +1046,7 @@ a {
   align-items: center;
 }
 
-/* line 128, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 127, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .latest > h2 {
   position: relative;
   text-transform: uppercase;
@@ -1063,7 +1063,7 @@ a {
   width: 100%;
 }
 
-/* line 144, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 #latest-title {
   max-width: 95%;
   margin: 0 auto;
@@ -1073,7 +1073,7 @@ a {
   margin-right: 15px;
 }
 
-/* line 153, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 150, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 #latest-title::after {
   content: "";
   position: absolute;
@@ -1083,7 +1083,7 @@ a {
   border-bottom: 5px solid #333645;
 }
 
-/* line 162, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-container {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -1092,19 +1092,14 @@ a {
   margin-right: 15px;
 }
 
-/* line 170, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 168, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news {
   width: 100%;
   margin: 0px auto;
   padding: 15px 0px;
 }
 
-/* line 176, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news-image-parent {
-  display: none;
-}
-
-/* line 180, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 174, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-text {
   padding: 30px;
   font-size: 13px;
@@ -1116,25 +1111,25 @@ a {
   margin-top: -6px;
 }
 
-/* line 191, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 185, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-text > h3 {
   margin-top: 0;
 }
 
-/* line 195, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news-text h3 > a {
+/* line 187, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.news-text > h3 > a {
   font-size: 16px;
   line-height: 24px;
   color: #926fb1;
   font-weight: 600;
 }
 
-/* line 202, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news-text h3 > a:hover {
+/* line 192, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.news-text > h3 > a:hover {
   text-decoration: underline;
 }
 
-/* line 206, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 198, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-text p {
   margin-bottom: 25px;
   font-size: 13px;
@@ -1142,7 +1137,7 @@ a {
   color: #666;
 }
 
-/* line 213, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 205, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .posted-by {
   display: flex;
   flex-direction: row;
@@ -1155,14 +1150,14 @@ a {
   width: 100%;
 }
 
-/* line 225, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 217, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .posted-by-text {
   display: flex;
   flex-direction: column;
   flex: 1 1;
 }
 
-/* line 231, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 221, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .posted-by-text p {
   color: #666;
   margin-top: 0;
@@ -1173,23 +1168,13 @@ a {
   line-height: 22px;
 }
 
-/* line 241, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .posted-by-text p strong {
   color: #333645;
   font-weight: 600;
 }
 
-/* line 246, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.thumbnail {
-  width: 47px;
-  min-width: 47px;
-  flex: 0 0;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
-}
-
-/* line 257, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 237, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news img {
   border-radius: 3px 3px 0px 0px;
   border: 1px solid #ccc;
@@ -1200,14 +1185,25 @@ a {
   margin-right: 0px;
 }
 
-/* line 267, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 247, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-image-parent {
   border-radius: 3px 3px 0px 0px;
   border: 1px solid #ccc;
   max-width: 100%;
+  display: none;
 }
 
-/* line 273, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 254, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.thumbnail {
+  width: 47px;
+  min-width: 47px;
+  flex: 0 0;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .thumbnail img {
   height: 47px;
   width: 47px;
@@ -1219,12 +1215,12 @@ a {
   flex: 0 0;
 }
 
-/* line 289, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 276, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news {
   position: relative;
 }
 
-/* line 293, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 280, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news .tooltip {
   position: absolute;
   margin: 0 0;
@@ -1234,12 +1230,17 @@ a {
   top: 25px;
 }
 
-/* line 302, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 287, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news .tooltip:hover h3 {
   text-decoration: underline;
 }
 
-/* line 306, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 290, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.news .tooltip:hover .tooltip-text {
+  display: flex;
+}
+
+/* line 295, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news .tooltip h3 {
   margin: 0 0;
   text-transform: uppercase;
@@ -1249,29 +1250,20 @@ a {
   font-weight: 600;
 }
 
-/* line 315, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 304, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-1 .tooltip h3 {
   background-color: #926fb1;
 }
 
-/* line 319, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 308, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news-2 .tooltip h3,
 .news-3 .tooltip h3 {
   background-color: #4183d7;
 }
 
-/* line 325, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+/* line 313, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
 .news .tooltip-text {
   display: none;
-}
-
-/* line 329, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news .tooltip:hover .tooltip-text {
-  display: flex;
-}
-
-/* line 333, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news .tooltip .tooltip-text {
   background-color: #333645;
   color: #fff;
   text-align: center;
@@ -1289,15 +1281,15 @@ a {
   margin-right: 0px;
 }
 
-/* line 353, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news .tooltip .tooltip-text > p {
+/* line 331, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.news .tooltip-text > p {
   max-width: 120px;
   padding: 0 0;
   margin: 0 0;
 }
 
-/* line 360, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-.news .tooltip .tooltip-text::after {
+/* line 337, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+.news .tooltip-text::after {
   content: " ";
   position: absolute;
   top: 100%;

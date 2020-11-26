@@ -8,6 +8,8 @@
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////
+//CARDS ///////////////////////////////////////////////////////////////////////////////////
 .cards {
     max-width: 95%;
     margin-left: 15px;
@@ -29,24 +31,23 @@
     width: 100%;
     box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
     border-radius: $round-corner;
-}
-
-.card a {
-    width: 100%;
-    height: 100%;
+    & a {
+        width: 100%;
+        height: 100%;  
+    }
+    &:hover h2,
+    &:hover p {
+        color: $white;
+    }
+    &:hover h2::after {
+        border-bottom: 4px solid $white;
+    }
 }
 
 .card h2,
 .card p {
     color: $main-grey;  
 }
-
-.card:hover h2,
-.card:hover p {
-    color: $white;
-}
-
-
 
 .card h2 {
     position: relative;
@@ -56,21 +57,15 @@
     font-size: 18px;
     font-weight: $regular;
     line-height: 19.8px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            top: 35px;
+            left: calc(50% - 15px);
+            border-bottom: 3.5px solid $main-grey;
+        }
 }
-
-.card h2::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    top: 35px;
-    left: calc(50% - 15px);
-    border-bottom: 3.5px solid $main-grey;
-}
-
-.card:hover h2::after {
-    border-bottom: 4px solid $white;
-}
-
 
 .card p {
     margin-bottom: 13px;
@@ -83,6 +78,9 @@
     font-size: 17.008px;
     line-height: 35px;
 }
+
+//////////////////////////////////////////////////////////////////////////////////
+//INTRO ///////////////////////////////////////////////////////////////////////
 
 .intro {
     display: flex;
@@ -109,14 +107,14 @@
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 30px;
+    & strong {
+        font-weight: $bold;
+        line-height: 30px;
+    }
 }
 
-.intro p strong {
-    font-weight: $bold;
-    line-height: 30px;
-}
-
-//LATEST ------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////
+//LATEST ///////////////////////////////////////////////////////////////////////////
 
 .latest {
     width: 100%; //each news section is narrower
@@ -125,6 +123,7 @@
     align-items: center;
 }
 
+//News text
 .latest > h2 { 
     position: relative;
     text-transform: uppercase;
@@ -148,15 +147,14 @@
     position: relative;
     margin-left: 15px;
     margin-right: 15px;
-}
-
-#latest-title::after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    left: 0px;
-    bottom: -40px;
-    border-bottom: 5px solid $main-grey;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        left: 0px;
+        bottom: -40px;
+        border-bottom: 5px solid $main-grey;
+    }
 }
 
 .news-container {
@@ -173,10 +171,6 @@
     padding: 15px 0px;
 }
 
-.news-image-parent {                  //container for animation
-    display: none;
-}
-
 .news-text {
     padding: 30px; 
     font-size: 13px;
@@ -190,17 +184,15 @@
 
 .news-text > h3 {
     margin-top: 0; 
-}
-
-.news-text h3 > a {
-    font-size: 16px;
-    line-height: 24px;
-    color: $web-color1;
-    font-weight: $bold;
-}
-
-.news-text h3 > a:hover {
-    text-decoration: underline;
+    & > a {
+        font-size: 16px;
+        line-height: 24px;
+        color: $web-color1;
+        font-weight: $bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .news-text p {
@@ -226,34 +218,22 @@
     display: flex;
     flex-direction: column;
     flex: 1 1;
+    & p {
+        color: $grey-color3;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 20px;
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 22px;
+        & strong {
+            color: $main-grey;
+            font-weight: $bold;
+        }
+    }
 }   
-
-.posted-by-text p {
-    color: $grey-color3;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
-    margin-right: 0;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.posted-by-text p strong {
-    color: $main-grey;
-    font-weight: $bold;
-}
  
-.thumbnail {
-    width: 47px; 
-    min-width: 47px;
-    flex: 0 0;
-    justify-content: center;
-    align-items: center;
-    margin: auto 0;
-}
-
-
-//NEWS IMAGES //////////////////////////////////////////////////////////////////////////////
+//News images
 .news img { //////////////small sceens
     border-radius: 3px 3px 0px 0px;
     border: 1px solid $second-grey;
@@ -264,27 +244,34 @@
     margin-right: 0px;
 }
 
-.news-image-parent { //////////////larger screens
+.news-image-parent { //////////////larger screens only. //container for animation
     border-radius: 3px 3px 0px 0px;
     border: 1px solid $second-grey;
     max-width: 100%;
+    display: none;
 }
 
-.thumbnail img {
-    height: 47px;
-    width: 47px;
-    border-radius: 50%;
-    margin-top: 0;
-    border: none;
-    justify-self: center;
-    align-self: center;
+.thumbnail {
+    width: 47px; 
+    min-width: 47px;
     flex: 0 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    & img {
+        height: 47px;
+        width: 47px;
+        border-radius: 50%;
+        margin-top: 0;
+        border: none;
+        justify-self: center;
+        align-self: center;
+        flex: 0 0;
+    }
 }
 
 
-
-
-//TOOLTIPS /////////////////////////////////////////////////////////////////////////////////////////////////////
+//Tooltips
 
 .news {
     position: relative;
@@ -297,10 +284,12 @@
     z-index: 1;
     right: 0px;
     top: 25px;
-}
-
-.news .tooltip:hover h3 {
-    text-decoration: underline;
+    &:hover h3 {
+        text-decoration: underline;
+    }
+    &:hover .tooltip-text {
+        display: flex;
+    }
 }
 
 .news .tooltip h3 {
@@ -321,16 +310,8 @@
     background-color: $it-color1;
 }
 
-
 .news .tooltip-text {
     display: none;
-  }
-
-.news .tooltip:hover .tooltip-text {
-    display: flex;
-}
-
-.news .tooltip .tooltip-text {
     background-color: $main-grey;
     color: $white;
     text-align: center;
@@ -340,7 +321,6 @@
     line-height: 15px; 
     justify-content: center;
     align-items: center;
-
     //positioning tooltip text
     position: absolute;
     z-index: 2;
@@ -348,22 +328,21 @@
     top: -60px;
     right: -15px;          //50%;
     margin-right: 0px; //Use half of the width (i.e. 120/2 = 60), to center the tooltip
+    & > p {
+        max-width: 120px;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    //bottom arrow
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 100%; // places it at the bottom of the tooltip
+        left: calc(50% + 20px);
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $main-grey transparent transparent transparent;
+    }
 }
 
-.news .tooltip .tooltip-text > p {
-    max-width: 120px;
-    padding: 0 0;
-    margin: 0 0;
-}
-
-//bottom arrow
-.news .tooltip .tooltip-text::after {
-    content: " ";
-    position: absolute;
-    top: 100%; // places it at the bottom of the tooltip
-    left: calc(50% + 20px);
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: $main-grey transparent transparent transparent;
-  }
