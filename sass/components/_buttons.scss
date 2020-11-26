@@ -13,13 +13,16 @@
     line-height: 50px;
     text-align: center;
     background-color: $web-color1;
-    color: #ffffff;
+    border: 1px solid $web-color1;
+    color: $white;
     border-radius: $round-corner;
     font-weight: $regular;
 }
 
-.banner-container > .button a:hover {
-    background-color: #7e57a0;
+.banner-container > .button a:hover,
+.banner-container > .button a:active {
+    background-color: $web-color2;
+    border: 1px solid $web-color3;
 }
 
 
@@ -36,14 +39,15 @@
     font-size: 17px;
     font-weight: $regular;
     line-height: 35px;
-    background-color: #ffffff;
-    color: #333645;
-    border: 1px solid #ffffff;
+    background-color: $culture-button-color1;
+    color: $main-grey;
+    border: 1px solid $culture-button-color1;
 }
 
-.intro .button a:hover {
-    opacity: .9;
-    border: 1px solid #e0e0e0;
+.intro .button a:hover,
+.intro .button a:active {
+    background-color: $culture-button-color2;
+    border: 1px solid $culture-button-color3;
 }
 
 .news-text > .button {
@@ -55,14 +59,17 @@
     padding:	5px 15px;
     font-size:	17px;
     line-height:	35px;
-    color:	#ffffff;
-    background-color: $news-color1;
+    color: $white;
+    background-color: $web-color1;
+    border: 1px solid $web-color1;
     border-radius: $round-corner;
     font-weight: $regular;
 }
 
-.news-text .button a:hover {
-    background-color: $news-color2;
+.news-text .button a:hover, 
+.news-text .button a:active {
+    background-color: $web-color2;
+    border-color: $web-color3;
 }
 
 //SOCIAL BUTTONS
@@ -79,9 +86,6 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    //min-width: 50%;
-    //max-width: 344px; 
-    // max-width: 250px; //value tbc - here for testing. To add for wider screens?
     text-align: center;
     margin-top: 30px; 
     margin-bottom: 0;
@@ -97,7 +101,7 @@
     width: 100%;
     height: 100%;
     padding: auto 15px;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: $social-base;
 }
 
 #facebook {
@@ -138,7 +142,7 @@
 #support:active,
 #contact:active,
 #menu:active,
-.banner-container .button a:active, ////////////not working. already on hover????
+.banner-container .button a:active,
 .fake-button:active,
 .intro-container .button a:active,
 .news-text .button a:active {

@@ -29,7 +29,6 @@ $themes-secondary: (
 );
 
 
-
 // ICONS
 @each $theme, $color in $themes {
     .icon-#{$theme} i {
@@ -41,14 +40,14 @@ $themes-secondary: (
 @each $theme, $color in $themes {
     .card-#{$theme}:hover .icon-#{$theme} i {
         color: $color;
-        background-color: #ffffff;
+        background-color: $white;
     }
 } 
 
 // BUTTONS
 @each $theme, $color in $themes {
     .button-#{$theme} {
-        color: #ffffff;
+        color: $white;
         background-color: $color;
         font-size: 16px;
     }
@@ -58,7 +57,7 @@ $themes-secondary: (
 @each $theme, $color in $themes {
     .card-#{$theme}:hover .button-#{$theme} {
         color: $color;
-        background-color: #ffffff;
+        background-color: $white;
     }
 } 
 

@@ -9,7 +9,7 @@
 //hover white
 @each $theme, $color in $themes {
     .title-#{$theme}:hover:not(last-child) .icon-parent > #nav-icon-#{$theme}:not(last-child) {
-        color: #ffffff;
+        color: $white;
     }
 } 
 
@@ -28,7 +28,7 @@
 
 // NAV BAR - HIDDEN FOR SMALL SCREENS
 .nav-2 {
-    border-bottom: 1.25px solid rgba(255, 255, 255, 0.7);     // #ffffff;
+    border-bottom: 1.25px solid rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,7 +38,7 @@
     margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    background-color: #333645;
+    background-color: $main-grey;
     position: relative; //position set to relative to align dropdown nav bars.
     display: none;
 }
@@ -54,7 +54,7 @@
     justify-content: center;
     text-align: center;
     width: 154px;
-    color: #ffffff;
+    color: $white;
     border-left: 1px solid hsla(0,0,100%,.1);
     border-right: 1px solid rgba(0,0,0,.25);
     text-transform: uppercase;
@@ -152,14 +152,14 @@
 
 .secondary-nav-text a,
 .secondary-nav-text a:visited {
-    color: #ffffff;
+    color: $white;
 }
 
 //DROPDOWN NAV. colors
 @each $theme, $color in $themes-secondary {
     .title-#{$theme} > .nav-#{$theme}:not(last-child) {
         background-color: $color;
-        color: #ffffff;
+        color: $white;
         display: none; //HIDDEN        
     }
 } 

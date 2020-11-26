@@ -40,8 +40,8 @@
     //NAV SEARCH BAR //remove box shadow & change border
     #search-bar input[type=text] {
         outline: none;
-        border: 1px solid #cccccc;
-        background-color: #ffffff;
+        border: 1px solid $second-grey;
+        background-color: $white;
         border-radius: 0;
         height: 56px;
         width: 174px;
@@ -59,7 +59,7 @@
     }
 
     #search-bar button[type=button] {
-        background-color: #999aa2;
+        background-color: $search-button-color1;
         height: 56px;   
         border-radius: 0px 3px 3px 0px;
         width: 63px;
@@ -69,7 +69,7 @@
 
 
     #search-bar button[type=button] i {
-        color: #ffffff;
+        color: $white;
         height: 56px;
         line-height: 56px;
         font-size: 23px;
@@ -79,7 +79,7 @@
     }
 
     #search-bar button[type=button]:hover {
-        background-color: #7e808a;
+        background-color: $search-button-color2;
     }
 
     //NAV BAR order
@@ -344,7 +344,7 @@
 
         //INTRO background image added. //DONE
         .intro {
-            background: #333645 url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right bottom;
+            background: $main-grey url("../../html-css-reflection/images/internal-branding/logo-zoomed-transparent.png") no-repeat right bottom;
             background-size: cover;
         }
 

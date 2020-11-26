@@ -39,7 +39,7 @@ nav {
     width: 70px;
     font-size: 20px;
     line-height: 26px;
-    color: #333645;
+    color: $main-grey;
     justify-content: center;
     padding-top: 16px;
     margin-left: auto;
@@ -60,7 +60,7 @@ nav {
         width: 32px;
         left: 0px;
         bottom: -2px;
-        border-bottom: 3px solid #333645;
+        border-bottom: 3px solid $main-grey;
         z-index: 2;
       
 }
@@ -74,8 +74,9 @@ nav {
     width: 63px; 
     margin-right: 15px;
     text-align: center;
-    color: #ffffff;
-    background-color: #333645;
+    color: $white;
+    background-color: $menu-color1;
+    border: 1px solid $menu-color1;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: $round-corner;
@@ -84,8 +85,10 @@ nav {
     justify-self: flex-end;
 }
 
-#menu:hover {
-    background-color: #22242e;
+#menu:hover,
+#menu:active {
+    background-color: $menu-color2;
+    border-color: $menu-color3;
 }
 
 #menu i {
@@ -103,13 +106,13 @@ nav {
 
 #support,
 #contact {
-    padding: 5px 15px;
+    padding: 5px 13px;
     font-size: 18px;
     line-height: 46px;
     height: 56px;
     text-align:	center;
     border-radius: $round-corner;
-    color: #ffffff;
+    color: $white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -118,22 +121,28 @@ nav {
 }
 
 #support {
-    background-color:$it-color1;
+    background-color: $it-color1;
+    border: 1px solid $it-color1;
     width: 145px;
 }
 
-#support:hover {
-    background-color:#2a6ec6;
+#support:hover,
+#support:active {
+    background-color: $it-color2;
+    border-color: $it-color3;
 }
 
 #contact {
-    background-color: #999aa2;
+    background-color: $contact-color1;
+    border: 1px solid $contact-color1;
     margin-left: 20px;
     width: 153px;
 }
 
-#contact:hover {
-    background-color: #84858f;
+#contact:hover,
+#contact:active {
+    background-color: $contact-color2;
+    border-color: $contact-color3;
 }
 
 #search-bar {
@@ -192,7 +201,7 @@ nav {
     line-height: 47px;
     width: 47px;
     font-size: 20px;
-    color: #333645;
+    color: $main-grey;
     text-align: right;
     padding-right: 10px; 
 }
@@ -207,7 +216,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 531px;
-    background-color: #000000;
+    background-color: $black;
 
     //mobile/tablet gradient
     background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
@@ -234,7 +243,7 @@ nav {
     margin-bottom: 25px;
     font-size: 48px;
     line-height: 52.8px;
-    color: #ffffff;
+    color: $white;
     font-weight: $regular;
     text-transform: uppercase;
     width: 95%;
@@ -245,7 +254,7 @@ nav {
     margin-bottom: 35px;
     font-size: 20px;
     line-height: 36px;
-    color: #ffffff;
+    color: $white;
     font-weight: $regular;
     width: 95%;
 }
