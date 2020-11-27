@@ -10,15 +10,9 @@
     background-color: $black;
 
     //mobile/tablet gradient
-    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 80%, rgba(0,0,0,0.39866368910845584) 100%),
-    url("../images/slides/slide-1.jpeg");  
-   
-   //desktop gradient located in media query
-//    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4042659300048145) 35%, rgba(0,0,0,0) 100%),
-//    url("../images/slides/slide-1.jpeg");  
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 70%, rgba(0,0,0,0.39866368910845584) 100%),
+                url("../images/slides/slide-1.jpeg") no-repeat center;  
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0 auto;
     text-align: center; 
 }

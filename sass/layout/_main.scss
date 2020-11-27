@@ -186,14 +186,23 @@
     margin-top: 0; 
     & > a {
         font-size: 16px;
-        line-height: 24px;
-        color: $web-color1;
+        line-height: 24px;   
         font-weight: $bold;
         &:hover {
             text-decoration: underline;
         }
     }
 }
+
+.news-text-1 > h3 > a {
+    color: $web-color1;
+}
+
+.news-text-2 > h3 > a,
+.news-text-3 > h3 > a {
+    color: $it-color1;
+}
+
 
 .news-text p {
     margin-bottom: 25px; 
