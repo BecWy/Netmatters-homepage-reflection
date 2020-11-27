@@ -83,13 +83,8 @@
 } 
 
 //FOR THE TEXT
-#nav-icon-web, 
-#nav-icon-software,
-#nav-icon-it,
-#nav-icon-marketing,
-#nav-icon-telecoms,
-#nav-icon-cyber {
-    font-size: 20px; //23px in original code, but looks too big for these icons
+.nav-icon {
+    font-size: 20px; //23px in original code, but looks too big for these slightly different icons
     line-height: 20px; //23px in original code, but looks too big for these icons
     padding-bottom: 10px;
 }
@@ -109,12 +104,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////
 //DROPDOWN NAV BARS ////////////////////////////////////////////////////////////////////
-.nav-web,
-.nav-it,
-.nav-telecoms,
-.nav-software,
-.nav-marketing,
-.nav-cyber {
+.nav-dropdown {
     display: none;
     display: flex;
     flex-direction: row;
@@ -161,17 +151,3 @@
         display: flex;  
     }
 }
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////
-// MEDIA QUERIES TO NEST /////////////////////////////////////////////////////////////////////
-
-//FROM 768PX --------------------------------------------------------------------------------
-// @media (min-width: $break-sm) {
-
-
-
-
-// }
