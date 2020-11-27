@@ -359,6 +359,59 @@
 //FROM 768PX --------------------------------------------------------------------------------
 @media (min-width: $break-sm) {
 
+    //CARDS/////////////////////////////////////////////////////////////////////
+
+    //CARD bottom 4 cards switch to 2 column layout. TO LOOK AT MARGINS/PADDING.
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;   ////////////check justify settings
+        width: 720px; ///////////maintain equal margins
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-row-1 {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card-row-2 {
+        width: 343px;
+        & p {
+            height: 66px;
+        }
+    }
+
+    .card-telecoms,
+    .card-cyber {
+        margin-left: 0;
+    }
+
+    .card-web,
+    .card-training {
+        margin-right: 0;
+    }
+
+
+    //INTRO & LATEST ////////////////////////////////////////////////////////////////////////////
+    .intro-container,
+    #latest-title {
+        width: 720px;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    //LATEST switch to 2 column layout. Fixed width. 
+    .news-container {
+        display: flex;
+        flex-direction: row;
+        width: 750px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     //LATEST standardising title height so doesn't matter if title is 1 or 2 lines
     .news-text > h3 {
         height: 48px;
@@ -373,74 +426,13 @@
     .news-3 {
         display: none;
     }
-
-    .intro-container,
-    #latest-title {
-        width: 720px;
-        margin: 0 auto;
-        padding-left: 0;
-    }
-
-    //CARD bottom 4 cards switch to 2 column layout. TO LOOK AT MARGINS/PADDING.
-    .cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;   ////////////check justify settings
-        width: 720px; ///////////maintain equal margins
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .card-software,
-    .card-it,
-    .card-marketing {
-        width: 100%; 
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .card-telecoms,
-    .card-web,
-    .card-cyber,
-    .card-training {
-        width: 343px;
-    }
-
-    .card-telecoms p,
-    .card-web p,
-    .card-cyber p,
-    .card-training p {
-        height: 66px;
-    }
-
-    .card-telecoms,
-    .card-cyber {
-        margin-left: 0;
-    }
-
-    .card-web,
-    .card-training {
-        margin-right: 0;
-    }
-
-     //LATEST switch to 2 column layout. Fixed width. 
-
-     .news-container {
-        display: flex;
-        flex-direction: row;
-        width: 750px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    #latest-title {
-        margin: 0 auto;
-    }
-        
     
     .latest h2 {
         display: block;
         width: 100%;
+        & #latest-title {
+            margin: 0 auto;
+        }
     }
 
     .news {
@@ -462,7 +454,6 @@
         width: 308px;
     }
 
-
     .posted-by-text {
         width: 235px;
     }
@@ -472,16 +463,13 @@
         width: 176px;
         right: 50%;
         margin-right: -88px;
+        & > p {
+            max-width: 113px; //////////////keeps all text visible
+        }
+        //bottom arrow
+        &::after {
+            left: 50%;
+            margin-left: -5px;
+        }
     }
-
-    .news .tooltip .tooltip-text > p {
-        max-width: 113px; //////////////keeps all text visible
-    }
-    
-    //bottom arrow
-    .news .tooltip .tooltip-text::after {
-        left: 50%;
-        margin-left: -5px;
-    }
-
 }

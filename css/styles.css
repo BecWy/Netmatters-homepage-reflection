@@ -1301,26 +1301,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 363, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .news-text > h3 {
-    height: 48px;
-  }
-  /* line 368, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .news-text > p {
-    height: 66px;
-  }
-  /* line 373, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .news-3 {
-    display: none;
-  }
-  /* line 377, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .intro-container,
-  #latest-title {
-    width: 720px;
-    margin: 0 auto;
-    padding-left: 0;
-  }
-  /* line 385, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 365, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1329,39 +1310,38 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 394, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .card-software,
-  .card-it,
-  .card-marketing {
+  /* line 374, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .card-row-1 {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 402, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .card-telecoms,
-  .card-web,
-  .card-cyber,
-  .card-training {
+  /* line 380, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .card-row-2 {
     width: 343px;
   }
-  /* line 409, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  .card-telecoms p,
-  .card-web p,
-  .card-cyber p,
-  .card-training p {
+  /* line 382, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .card-row-2 p {
     height: 66px;
   }
-  /* line 416, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 387, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .card-telecoms,
   .card-cyber {
     margin-left: 0;
   }
-  /* line 421, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 392, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .card-web,
   .card-training {
     margin-right: 0;
   }
-  /* line 428, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 399, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .intro-container,
+  #latest-title {
+    width: 720px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  /* line 407, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news-container {
     display: flex;
     flex-direction: row;
@@ -1369,48 +1349,60 @@ a {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 436, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
-  #latest-title {
-    margin: 0 auto;
+  /* line 416, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .news-text > h3 {
+    height: 48px;
   }
-  /* line 441, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 421, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .news-text > p {
+    height: 66px;
+  }
+  /* line 426, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .news-3 {
+    display: none;
+  }
+  /* line 430, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .latest h2 {
     display: block;
     width: 100%;
   }
-  /* line 446, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 433, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  .latest h2 #latest-title {
+    margin: 0 auto;
+  }
+  /* line 438, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news {
     width: 345px;
   }
-  /* line 451, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 443, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news-1 {
     margin-left: auto;
     margin-right: 15px;
   }
-  /* line 456, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 448, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news-2 {
     margin-left: 15px;
     margin-right: auto;
   }
-  /* line 461, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 453, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .posted-by {
     width: 308px;
   }
-  /* line 466, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 457, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .posted-by-text {
     width: 235px;
   }
-  /* line 471, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 462, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news .tooltip .tooltip-text {
     width: 176px;
     right: 50%;
     margin-right: -88px;
   }
-  /* line 477, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 466, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news .tooltip .tooltip-text > p {
     max-width: 113px;
   }
-  /* line 482, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
+  /* line 470, ../../../../Desktop/html-css-reflection/sass/layout/_main.scss */
   .news .tooltip .tooltip-text::after {
     left: 50%;
     margin-left: -5px;
