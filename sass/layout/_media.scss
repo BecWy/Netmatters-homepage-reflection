@@ -318,7 +318,7 @@
             margin-left: auto; 
         }
 
-        
+
         //////////////////////////////////////////////////////////////////////////////////////////
         //NAV BAR/ NAV2///////////////////////////////////////////////////////////////////////////
         //Nav bar appears
@@ -528,6 +528,8 @@
 //FROM 1260PX -----------------------------------------------------------------------------
 @media (min-width: $break-lg) {  
 
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    //HEADER / NAV-1 ////////////////////////////////////////////////////////////////////////////
     nav {
         width: 1200px;
     }
@@ -550,20 +552,16 @@
         border-radius: 0px 3px 3px 0px;
     }
 
-    
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    //NAV-BAR / NAV-2 ////////////////////////////////////////////////////////////////////////
 
-    //RESIZE NAV MENU BOXES
+    //Resize nav menu boxes
     .nav-box-text { 
         width: 192px;
     }
 
-    //NAV dropdowns font-size
-    .nav-web,
-    .nav-it,
-    .nav-telecoms,
-    .nav-software,
-    .nav-marketing,
-    .nav-cyber {
+    //Nav dropdowns font-size
+    .nav-dropdown {
         font-size: 16px;
     }
 
@@ -571,58 +569,36 @@
         width: 1152px;
     }
 
-    //BANNER/ INTRO TEXT/ LATEST TITLE WIDTH
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    //BANNER/ INTRO TEXT/ LATEST TITLE WIDTH /////////////////////////////////////////////////////
     .banner-container,
     .intro-container,
     #latest-title {
         width: 1170px;
     }
 
-    .intro-container > h1,
-    .intro-container > p {
-        width: 570px;
-    }
-
-    //FOOTER main footer switches to 4 column layout. //TO EDIT MARGINS/PADDING
-    .about,
-    .contact,
-    .website,
-    .social {
-        width: 25%;
-    }
-
-    //CARDS format
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    //CARDS //////////////////////////////////////////////////////////////////////////////////
+    //Cards format
     .cards {
         width: 1170px; ///////////maintain equal margins
     }
 
-    // CARDS format 3 + 4. TO LOOK AT MARGINS/PADDING.
-
-    .card-software,
-    .card-it,
-    .card-marketing {
+    // Cards format 3 + 4.
+    .card-row-1 {
         width: 370px;
         height: 312px;
+        & > p {
+            height: 66px;       
+        }
     }
 
-    .card-software > p,
-    .card-it > p,
-    .card-marketing > p {
-        height: 66px;       
-    }
-
-    .card-telecoms,
-    .card-web,
-    .card-cyber,
-    .card-training {
+    .card-row-2 {
         width: 270px;
-    }
-
-    .card-telecoms p,
-    .card-web p,
-    .card-cyber p,
-    .card-training p {
-        height: 66px;
+        & >  p {
+            height: 66px;
+        }
     }
 
     .card-web {
@@ -633,12 +609,21 @@
         margin-left: auto;
     }
 
-    //LATEST
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //INTRO ///////////////////////////////////////////////////////////////////////////////
+    .intro-container > h1,
+    .intro-container > p {
+        width: 570px;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //LATEST ////////////////////////////////////////////////////////////////////////////
     .news-container {
         width: 1170px;
     }
 
-    //LATEST news items resized for 3 columns
+    //Latest news items resized for 3 columns
     .news {
         width: 370px;
     }
@@ -658,39 +643,31 @@
         margin-right: 0;
     }
 
-    //LATEST 3rd news item added again. //DONE.
+    //Latest 3rd news item added again.
     .news-3 {
         display: inline-block; 
     }
 
-    
-
-    //LATEST NEWS IMAGE ANIMATION
-    .news-image-parent {                  /////////////////////////////////animation
+    //Latest news image animation
+    .news-image-parent { 
         width: 370px; 
         height: 212.708px;
         overflow: hidden;
     }
 
-    // //NEWS TOOLTIPS 
-    // .news .tooltip .tooltip-text {
-    //     width: 200px;
-    //     margin-right: -100px;
-    // }
-
-
-    //FOOTER main height
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    //FOOTER /////////////////////////////////////////////////////////////////////////////
+    //Footer heights
     .main-footer {
         height: 309px;
     }
 
-    //FOOTER top padding add so all 4 sections are the same
-    // .website,
-    // .social {
-    //     padding-top: 43px;
-    // }
+    .partner-footer {
+        height: 188px;
+    }
 
-    //FOOTER  width
+    //Footer widths
     .footer-logos,
     .partner-footer {
         width: 1170px;
@@ -702,55 +679,44 @@
         margin: 0 auto;
     }
 
-    //FOOTER HEIGHT
-    .partner-footer {
-        height: 188px;
-    }
-
-
-    //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
+    //Footer client logos - SWITCH TO FULL SIZE IMAGE SPRITES
     #busseys {
         width: 188px; 
         height: 70px;
         background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -10px;
-    }
-    
-    #busseys:hover {
-        background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/clients/busseys-sprite.png") -10px -100px;
+        }
     }
     
     #crane {
         width: 287px; 
         height: 70px;
         background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -10px;
-    }
-    
-    #crane:hover {
-        background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/clients/crane-sprite.png") -10px -100px;
+        }
     }
     
     #beat { 
         width: 72px; 
         height: 70px;
         background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -10px -10px;    
-    }
-    
-    #beat:hover {
-        background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
-    }
-    
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/clients/beat-sprite.png") -102px -10px;
+        }
+    }  
     
     #northern-diver {
             width: 322px; 
             height: 70px;
             background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
+            &:hover {
+                background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
+        }
     }
     
-    #northern-diver:hover {
-            background: url("../../html-css-reflection/images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
-    }
-    
-    //FOOTER CLIENT LOGOS - FULL SIZE IMAGE SPRITES
+    //Footer client logos - SWITCH TO FULL SIZE IMAGE SPRITES
     #microsoft {
         width: 115px;
         height: 70px;
@@ -759,43 +725,38 @@
     }
 
     #future-50 {
-            width: 44px; 
-            height: 70px;
-            background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
-    }
-
-    #future-50:hover {
-        background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
+        width: 44px; 
+        height: 70px;
+        background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/other/future-50-sprite.png") -74px -10px;
+        }
     }
 
     #qms {
         width: 60px; 
         height: 70px;
         background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -10px -10px;
-    }
-    #qms:hover {
-        background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/other/qms-sprite.png") -90px -10px;
+        }
     }
 
     #carbon-charter {
         width: 175px; 
         height: 70px;
         background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
+        }
     }
 
-    #carbon-charter:hover {
-        background: url("../../html-css-reflection/images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
-    }
-
-    //main footer section widths
-    .contact,
-    .about,
-    .website,
-    .social {
+    //Main footer switches to 4 column layout 
+    .main-foot-section {
         width: 300px;
     }
 
-     //SOCIAL BUTTON WIDTH
+     //Social button width
      .social-button li a {
         width: 120px;
     }
