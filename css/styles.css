@@ -1645,11 +1645,11 @@ nav {
     width: 375px;
     padding-right: 15px;
   }
-  /* line 208, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 206, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #logo img {
     width: 345px;
   }
-  /* line 213, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 212, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #search-bar {
     display: inline-block;
     display: flex;
@@ -1665,7 +1665,7 @@ nav {
     margin-top: 0;
     margin: 0 auto;
   }
-  /* line 231, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 230, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #search-bar input[type=text] {
     outline: none;
     border: 1px solid #ccc;
@@ -1678,13 +1678,13 @@ nav {
     position: relative;
     right: 0;
   }
-  /* line 245, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 242, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #search-bar input[type=text]:focus {
     outline: 0;
     border: .5px solid #5bc0de;
     box-shadow: rgba(91, 192, 222, 0.6) 0px 0px 8px 0px;
   }
-  /* line 251, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 249, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #search-bar button[type=button] {
     background-color: #999aa2;
     height: 56px;
@@ -1693,7 +1693,11 @@ nav {
     position: relative;
     left: 0;
   }
-  /* line 260, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 256, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  #search-bar button[type=button]:hover {
+    background-color: #7e808a;
+  }
+  /* line 259, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #search-bar button[type=button] i {
     color: #fff;
     height: 56px;
@@ -1703,16 +1707,12 @@ nav {
     text-align: center;
     padding-right: 0;
   }
-  /* line 270, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
-  #search-bar button[type=button]:hover {
-    background-color: #7e808a;
-  }
-  /* line 275, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 271, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #menu {
     order: 2;
     margin-left: 20px;
   }
-  /* line 281, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
+  /* line 277, ../../../../Desktop/html-css-reflection/sass/layout/_header.scss */
   #direct-call {
     display: none;
   }
