@@ -40,7 +40,7 @@
 
 //box hover bg color
 @each $theme, $color in $themes {
-    .title-#{$theme}:hover:not(last-child) {
+    .title-#{$theme}:hover {
         background-color: $color;
     }
 } 
@@ -70,14 +70,14 @@
 //NAV ICONS
 // Icon colors - base
 @each $theme, $color in $themes {
-    #nav-icon-#{$theme}:not(last-child) {
+    #nav-icon-#{$theme} {
         color: $color;
     }
 } 
 
 // Icon colors - hover
 @each $theme, $color in $themes {
-    .title-#{$theme}:hover:not(last-child) .icon-parent > #nav-icon-#{$theme}:not(last-child) {
+    .title-#{$theme}:hover .icon-parent > #nav-icon-#{$theme} {
         color: $white;
     }
 } 
@@ -148,7 +148,7 @@
 
 //DROPDOWN NAV. colors
 @each $theme, $color in $themes-secondary {
-    .title-#{$theme} > .nav-#{$theme}:not(last-child) {
+    .title-#{$theme} > .nav-#{$theme} {
         background-color: $color;
         color: $white;
         display: none; //HIDDEN        
@@ -157,7 +157,7 @@
 
 //DROPDOWN NAV. hover - display
 @each $theme, $color in $themes { 
-    .title-#{$theme}:hover > .nav-#{$theme}:not(last-child){
+    .title-#{$theme}:hover > .nav-#{$theme} {
         display: flex;  
     }
 }

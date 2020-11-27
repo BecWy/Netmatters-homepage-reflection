@@ -166,37 +166,37 @@
   background-color: #fff;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-software:hover {
   background-color: #67809f;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-it:hover {
   background-color: #4183d7;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-marketing:hover {
   background-color: #2ecc71;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-telecoms:hover {
   background-color: #d64541;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-web:hover {
   background-color: #926fb1;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-cyber:hover {
   background-color: #f62459;
 }
 
-/* line 73, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
+/* line 46, ../../../../Desktop/html-css-reflection/sass/utilities/_mixins.scss */
 .card-training:hover {
   background-color: #926fb1;
 }
@@ -627,37 +627,37 @@ a {
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-software:hover:not(last-child) {
+.title-software:hover {
   background-color: #67809f;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-it:hover:not(last-child) {
+.title-it:hover {
   background-color: #4183d7;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-marketing:hover:not(last-child) {
+.title-marketing:hover {
   background-color: #2ecc71;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-telecoms:hover:not(last-child) {
+.title-telecoms:hover {
   background-color: #d64541;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-web:hover:not(last-child) {
+.title-web:hover {
   background-color: #926fb1;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-cyber:hover:not(last-child) {
+.title-cyber:hover {
   background-color: #f62459;
 }
 
 /* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-training:hover:not(last-child) {
+.title-training:hover {
   background-color: #926fb1;
 }
 
@@ -687,72 +687,72 @@ a {
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-software:not(last-child) {
+#nav-icon-software {
   color: #67809f;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-it:not(last-child) {
+#nav-icon-it {
   color: #4183d7;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-marketing:not(last-child) {
+#nav-icon-marketing {
   color: #2ecc71;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-telecoms:not(last-child) {
+#nav-icon-telecoms {
   color: #d64541;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-web:not(last-child) {
+#nav-icon-web {
   color: #926fb1;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-cyber:not(last-child) {
+#nav-icon-cyber {
   color: #f62459;
 }
 
 /* line 73, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-#nav-icon-training:not(last-child) {
+#nav-icon-training {
   color: #926fb1;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-software:hover:not(last-child) .icon-parent > #nav-icon-software:not(last-child) {
+.title-software:hover .icon-parent > #nav-icon-software {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-it:hover:not(last-child) .icon-parent > #nav-icon-it:not(last-child) {
+.title-it:hover .icon-parent > #nav-icon-it {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-marketing:hover:not(last-child) .icon-parent > #nav-icon-marketing:not(last-child) {
+.title-marketing:hover .icon-parent > #nav-icon-marketing {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-telecoms:hover:not(last-child) .icon-parent > #nav-icon-telecoms:not(last-child) {
+.title-telecoms:hover .icon-parent > #nav-icon-telecoms {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-web:hover:not(last-child) .icon-parent > #nav-icon-web:not(last-child) {
+.title-web:hover .icon-parent > #nav-icon-web {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-cyber:hover:not(last-child) .icon-parent > #nav-icon-cyber:not(last-child) {
+.title-cyber:hover .icon-parent > #nav-icon-cyber {
   color: #fff;
 }
 
 /* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-training:hover:not(last-child) .icon-parent > #nav-icon-training:not(last-child) {
+.title-training:hover .icon-parent > #nav-icon-training {
   color: #fff;
 }
 
@@ -827,86 +827,86 @@ a {
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-software > .nav-software:not(last-child) {
+.title-software > .nav-software {
   background-color: #566c88;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-it > .nav-it:not(last-child) {
+.title-it > .nav-it {
   background-color: #2a6ec6;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-marketing > .nav-marketing:not(last-child) {
+.title-marketing > .nav-marketing {
   background-color: #26ab5f;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-telecoms > .nav-telecoms:not(last-child) {
+.title-telecoms > .nav-telecoms {
   background-color: #c42e2a;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-web > .nav-web:not(last-child) {
+.title-web > .nav-web {
   background-color: #7e57a0;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-cyber > .nav-cyber:not(last-child) {
+.title-cyber > .nav-cyber {
   background-color: #e80a42;
   color: #fff;
   display: none;
 }
 
 /* line 151, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-training > .nav-training:not(last-child) {
+.title-training > .nav-training {
   background-color: #7e57a0;
   color: #fff;
   display: none;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-software:hover > .nav-software:not(last-child) {
+.title-software:hover > .nav-software {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-it:hover > .nav-it:not(last-child) {
+.title-it:hover > .nav-it {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-marketing:hover > .nav-marketing:not(last-child) {
+.title-marketing:hover > .nav-marketing {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-telecoms:hover > .nav-telecoms:not(last-child) {
+.title-telecoms:hover > .nav-telecoms {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-web:hover > .nav-web:not(last-child) {
+.title-web:hover > .nav-web {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-cyber:hover > .nav-cyber:not(last-child) {
+.title-cyber:hover > .nav-cyber {
   display: flex;
 }
 
 /* line 160, ../../../../Desktop/html-css-reflection/sass/layout/_nav.scss */
-.title-training:hover > .nav-training:not(last-child) {
+.title-training:hover > .nav-training {
   display: flex;
 }
 
@@ -1729,14 +1729,19 @@ nav {
   background-color: #333645;
 }
 
-/* line 12, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 10, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .main-footer a {
   font-size: 13px;
   line-height: 22px;
   color: #fff;
 }
 
-/* line 18, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 14, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 20, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .main-foot-cont {
   height: 100%;
   width: 100%;
@@ -1746,11 +1751,14 @@ nav {
   flex-wrap: wrap;
 }
 
-/* line 28, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact > h2,
-.about > h2,
-.website > h2,
-.social > h2 {
+/* line 30, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-foot-section {
+  padding: 0px 15px;
+  width: 100%;
+}
+
+/* line 33, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-foot-section > h2 {
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 0;
@@ -1759,58 +1767,40 @@ nav {
   width: 95%;
 }
 
-/* line 40, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact > h2,
-.about > h2,
-.website > h2 {
+/* line 43, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-foot-section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* line 45, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-foot-section:not(:last-child) > h2 {
   margin-bottom: 26px;
 }
 
-/* line 46, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.social {
+  height: 190px;
+}
+
+/* line 52, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .social > h2 {
   margin-bottom: 0;
 }
 
-/* line 50, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact li,
-.about li,
-.website li {
-  font-size: 13px;
-  line-height: 22px;
-}
-
 /* line 57, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact,
-.about,
-.website,
-.social {
-  padding: 0px 15px;
-  width: 100%;
-}
-
-/* line 65, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact,
-.about,
-.website {
-  margin-bottom: 30px;
-}
-
-/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.contact ul,
-.about ul,
-.website ul,
-.social ul {
+.main-foot-section > ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
 }
 
-/* line 80, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.social {
-  height: 190px;
+/* line 61, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.main-foot-section > ul > li {
+  font-size: 13px;
+  line-height: 22px;
 }
 
-/* line 88, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 71, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer {
   display: flex;
   flex-direction: row;
@@ -1823,14 +1813,14 @@ nav {
   box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 100, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 83, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 92, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #busseys {
   width: 121.1px;
   height: 45.1px;
@@ -1839,13 +1829,13 @@ nav {
   background-size: cover;
 }
 
-/* line 115, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 98, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #busseys:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/clients/busseys-color.png") no-repeat center;
   background-size: cover;
 }
 
-/* line 121, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 104, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #crane {
   width: 186px;
   height: 45px;
@@ -1853,13 +1843,13 @@ nav {
   background-size: cover;
 }
 
-/* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 109, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #crane:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/clients/crane-color.png") no-repeat center;
   background-size: cover;
 }
 
-/* line 132, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 115, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #beat {
   width: 46.4px;
   height: 45.1px;
@@ -1867,13 +1857,13 @@ nav {
   background-size: cover;
 }
 
-/* line 137, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 120, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #beat:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/clients/beat-color.png") no-repeat center;
   background-size: cover;
 }
 
-/* line 143, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 126, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #northern-diver {
   width: 207.5px;
   height: 45px;
@@ -1881,29 +1871,25 @@ nav {
   background-size: cover;
 }
 
-/* line 148, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 131, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #northern-diver:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/clients/northern-diver-color.png") no-repeat center;
   background-size: cover;
 }
 
-/* line 155, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 138, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip {
   position: relative;
 }
 
-/* line 159, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.client-footer .tooltip-text {
-  display: none;
-}
-
-/* line 163, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 140, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer .tooltip:hover .tooltip-text {
   display: inline-block;
 }
 
-/* line 167, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.client-footer .tooltip .tooltip-text {
+/* line 145, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.client-footer .tooltip-text {
+  display: none;
   background-color: #333645;
   color: #fff;
   text-align: center;
@@ -1919,8 +1905,8 @@ nav {
   margin-left: -130px;
 }
 
-/* line 186, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-.client-footer .tooltip .tooltip-text::after {
+/* line 164, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+.client-footer .tooltip-text::after {
   content: " ";
   position: absolute;
   top: 100%;
@@ -1932,12 +1918,12 @@ nav {
   border-color: #333645 transparent transparent transparent;
 }
 
-/* line 197, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 175, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-text p {
   margin-bottom: 0;
 }
 
-/* line 201, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 179, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title {
   font-size: 18px;
   padding-bottom: 17px;
@@ -1947,7 +1933,7 @@ nav {
   position: relative;
 }
 
-/* line 210, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 188, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .footer-logos .tooltip-title::after {
   content: "";
   position: absolute;
@@ -1957,7 +1943,7 @@ nav {
   border-bottom: 3px solid #fff;
 }
 
-/* line 221, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 199, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .partner-footer {
   display: flex;
   flex-direction: row;
@@ -1970,7 +1956,7 @@ nav {
   background-color: #fff;
 }
 
-/* line 234, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 212, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #google {
   width: 214px;
   height: 70px;
@@ -1979,7 +1965,7 @@ nav {
   align-self: center;
 }
 
-/* line 243, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 221, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #microsoft {
   width: 87.6px;
   height: 53.3px;
@@ -1988,7 +1974,7 @@ nav {
   align-self: center;
 }
 
-/* line 251, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 229, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #future-50 {
   width: 33.5px;
   height: 53.3px;
@@ -1997,14 +1983,14 @@ nav {
   align-self: center;
 }
 
-/* line 257, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 235, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #future-50:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/other/future-50-color.jpeg") no-repeat center;
   background-size: cover;
   align-self: center;
 }
 
-/* line 264, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 242, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #qms {
   width: 45.7px;
   height: 53.3px;
@@ -2013,14 +1999,14 @@ nav {
   align-self: center;
 }
 
-/* line 270, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 248, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #qms:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/other/qms-color.jpeg") no-repeat center;
   background-size: cover;
   align-self: center;
 }
 
-/* line 277, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 255, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #carbon-charter {
   width: 133.3px;
   height: 53.3px;
@@ -2029,21 +2015,21 @@ nav {
   align-self: center;
 }
 
-/* line 283, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 261, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 #carbon-charter:hover {
   background: #fff url("../../html-css-reflection/images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
   background-size: cover;
   align-self: center;
 }
 
-/* line 290, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+/* line 268, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
 .client-footer,
 .partner-footer {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 303, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  /* line 281, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
   .main-footer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2051,15 +2037,12 @@ nav {
     justify-content: space-around;
     height: 528px;
   }
-  /* line 311, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
-  .about,
-  .contact,
-  .website,
-  .social {
+  /* line 289, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  .main-foot-section {
     width: 375px;
     align-self: flex-start;
   }
-  /* line 320, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  /* line 295, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
   .main-foot-cont {
     display: flex;
     flex-direction: row;
@@ -2068,18 +2051,18 @@ nav {
     width: 750px;
     margin: 0 auto;
   }
-  /* line 330, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  /* line 305, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
   .client-footer,
   .partner-footer {
     display: flex;
   }
-  /* line 335, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  /* line 310, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
   .footer-logos,
   .partner-footer {
     width: 720px;
     margin: 0 auto;
   }
-  /* line 342, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
+  /* line 317, ../../../../Desktop/html-css-reflection/sass/layout/_footer.scss */
   .social-button li a {
     width: 157.5px;
   }

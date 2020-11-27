@@ -7,12 +7,14 @@
     line-height: 22.8571px;
     color: $white;
     background-color: $main-grey;
-}
-
-.main-footer a {
-    font-size: 13px;
-    line-height: 22px;
-    color: $white;
+    & a {
+        font-size: 13px;
+        line-height: 22px;
+        color: $white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .main-foot-cont {
@@ -25,60 +27,41 @@
 }
 
 //Sub-sections
-.contact > h2,
-.about > h2,
-.website > h2,
-.social > h2 {
-    text-transform: uppercase;
-    font-weight: $regular;
-    margin-top: 0;
-    font-size: 16px;
-    line-height: 17.6px;
-    width: 95%;
-}
-
-.contact > h2,
-.about > h2,
-.website > h2 {
-    margin-bottom: 26px;
-}
-
-.social > h2 {
-    margin-bottom: 0; //adjusted for social button top margin of 30px
-}
-
-.contact li,
-.about li,
-.website li {
-    font-size: 13px;
-    line-height: 22px;
-}
-
-.contact,
-.about,
-.website,
-.social {
+.main-foot-section {
     padding: 0px 15px;
     width: 100%;
+    & > h2 {
+        text-transform: uppercase;
+        font-weight: $regular;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 17.6px;
+        width: 95%;
+    }
 }
 
-.contact,
-.about,
-.website {
+.main-foot-section:not(:last-child) {
     margin-bottom: 30px;
-}
-
-.contact ul,
-.about ul,
-.website ul,
-.social ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
+    & > h2 {
+        margin-bottom: 26px;
+    }
 }
 
 .social {
     height: 190px;
+    & > h2 {
+        margin-bottom: 0; //adjusted for social button top margin of 30px
+    }
+}
+  
+.main-foot-section > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    & > li {
+        font-size: 13px;
+        line-height: 22px;
+    }
 }
 
 
@@ -154,17 +137,13 @@
 //TOOLTIPS /////////////////////////////////////
 .client-footer .tooltip {
     position: relative;
+    &:hover .tooltip-text {
+        display: inline-block;
+    }
 }
 
 .client-footer .tooltip-text {
     display: none;
-  }
-
-.client-footer .tooltip:hover .tooltip-text {
-    display: inline-block;
-}
-
-.client-footer .tooltip .tooltip-text {
     background-color: $main-grey;
     color: $white;
     text-align: center;
@@ -172,7 +151,6 @@
     font-size: 13px;
     line-height: 22px; 
     margin-bottom: 50px; //positions the tooltip on the footer line
-
     //Position the tooltip text
     position: absolute;
     z-index: 5;
@@ -183,7 +161,7 @@
 }
 
 //bottom arrow
-.client-footer .tooltip .tooltip-text::after {
+.client-footer .tooltip-text::after {
     content: " ";
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
@@ -308,10 +286,7 @@
         height: 528px;
     }
 
-    .about,
-    .contact,
-    .website,
-    .social {
+    .main-foot-section {
         width: 375px;
         align-self: flex-start;
     }
