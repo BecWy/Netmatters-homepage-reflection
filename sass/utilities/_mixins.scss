@@ -1,37 +1,3 @@
-//LOOPS////////////////////////////////////////////////
-// ICONS
-@each $theme, $color in $themes {
-     .icon-#{$theme} i {
-         background-color: $color;
-     }
- } 
- 
- // ICONS:HOVER
- @each $theme, $color in $themes {
-     .card-#{$theme}:hover .icon-#{$theme} i {
-         color: $color;
-         background-color: $white;
-     }
- } 
- 
- // BUTTONS
- @each $theme, $color in $themes {
-     .button-#{$theme} {
-         color: $white;
-         background-color: $color;
-         font-size: 16px;
-     }
- } 
-
- // BUTTONS:HOVER
-@each $theme, $color in $themes {
-     .card-#{$theme}:hover .button-#{$theme} {
-         color: $color;
-         background-color: $white;
-     }
- } 
- 
-
 ///////////MIXINS///////////////////////////////
 
 // BUTTON:ACTIVE BOX SHADOW ------------------WORKS----------------------
@@ -49,12 +15,10 @@
      } 
  }
  
- .card { //-------------------WORKS----------------------------------------
-     @include themes-bg-hov($themes);
- }
+
  
  
- // // ICON & BUTTON MIXIN HOVER need to think about if this is useful
+ // // ICON & BUTTON MIXIN HOVER need to think about if this is useful. Currently a loop.
  // @mixin themes-fg-hov($map) {
  //     @each $theme, $color in $map {
  //         &-#{$theme}:hover {
@@ -99,7 +63,7 @@
 //      }
 //    }
 
-//TO USE
+//EXAMPLE OF HOW TO USE THE ABOVE 
 // .sidebar {
 //      width: 33.33%;
 //      @include bp(sm) {

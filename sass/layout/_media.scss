@@ -413,6 +413,7 @@
         overflow: hidden;
         &:hover > .news-image-child {
             transform: scale(1.075);  
+            opacity: .8;
         }
     }
 
@@ -424,6 +425,7 @@
         margin: 0 0;
         border-radius: 3px 3px 0px 0px;
         transition: all .25s cubic-bezier(.215,.61,.355,1);
+        opacity: 1;
     }
 
     .news-1-image-child {           

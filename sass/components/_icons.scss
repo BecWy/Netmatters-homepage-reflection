@@ -8,4 +8,18 @@
     color: $white;
 }
 
+//LOOPS
+// ICONS - base
+@each $theme, $color in $themes {
+    .icon-#{$theme} i {
+        background-color: $color;
+    }
+} 
 
+//CARD ICONS:HOVER
+@each $theme, $color in $themes {
+    .card-#{$theme}:hover .icon-#{$theme} i {
+        color: $color;
+        background-color: $white;
+    }
+} 

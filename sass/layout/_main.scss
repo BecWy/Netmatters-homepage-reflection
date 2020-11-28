@@ -23,6 +23,7 @@
 }
 
 .card {
+    @include themes-bg-hov($themes);
     border: 1px solid $second-grey;
     margin: 0 auto;
     background-color: $white;

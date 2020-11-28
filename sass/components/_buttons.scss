@@ -1,4 +1,23 @@
+//LOOPS
+ // CARD BUTTONS
+ @each $theme, $color in $themes {
+    .button-#{$theme} {
+        color: $white;
+        background-color: $color;
+        font-size: 16px;
+    }
+} 
 
+// CARD BUTTONS:HOVER
+@each $theme, $color in $themes {
+    .card-#{$theme}:hover .button-#{$theme} {
+        color: $color;
+        background-color: $white;
+    }
+} 
+
+
+//STYLES
 .button a {
     text-align: center;
     display: inline-block;
