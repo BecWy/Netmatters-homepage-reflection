@@ -97,18 +97,7 @@
     //none for this screen size
 
 
-    ///////////////////////////////////////////////////////////////////////////////////////////
-    //SLIDER/ BANNER /////////////////////////////////////////////////////////////////////////////
-    //Banner height
-    .banner {
-       height: 589px;
-   }
 
-   .banner-container {
-       width: 720px;
-       margin: 0 auto;
-       padding-left: 0;
-   }
 
 
     ///////////////////////////////////////////////////////////////////////////////////////////
@@ -328,28 +317,12 @@
     }
     
 
-    /////////////////////////////////////////////////////////////////////////////////////////
-    //SLIDER/ BANNER ////////////////////////////////////////////////////////////////
-    //Banner text aligns left & image gradient changes
-    .banner {
-        align-items: flex-start;
-        text-align: left;
-        background: linear-gradient(270deg,transparent 25%,#000),
-                    url("../images/slides/slide-1.jpeg");
-        background-size: cover;
-        background-position: top center;
-        height: 490px;
-    }
-
-    .banner-container > h1,
-    .banner-container > span {
-        margin-left: 0;
-    } 
+    
 
 
     ///////////////////////////////////////////////////////////////////////////////////////////
     //BANNER /INTRO /LATEST TITLE WIDTH/////////////////////////////////////////////////////
-    .banner-container,
+    // .banner-container,
     .intro-container,
     #latest-title {
         width: 940px;
@@ -579,7 +552,7 @@
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     //BANNER/ INTRO TEXT/ LATEST TITLE WIDTH /////////////////////////////////////////////////////
-    .banner-container,
+    // .banner-container,
     .intro-container,
     #latest-title {
         width: 1170px;

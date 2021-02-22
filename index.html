@@ -6,8 +6,12 @@
         <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk</title>
         <link rel="icon" type="image/png" href="./images/internal-branding/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/58da4f92e2.js" crossorigin="anonymous"></script>       
-        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/58da4f92e2.js" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="js/slick/slick.css">
+        <link rel="stylesheet" href="js/slick/slick-theme.css">     
+        <link href="css/style.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     </head>
     <body>
         <header>
@@ -189,10 +193,41 @@
 
 
             <div class="banner">
-                <div class="banner-container">
-                    <h1>Web Design</h1>
-                    <span>For businesses looking to make a strong<br>and effective first impression.</span>
-                    <div class="button"><a href="https://www.netmatters.co.uk/web-design">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                <div class="banner-container slides">
+                        <div class="slide slide1">
+                            <div class="slide-container">
+                                <h1>Web Design</h1>
+                                <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                                <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <h1>IT Support</h1>
+                            <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                            <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="slide slide3">
+                            <h1>Telecoms Services</h1>
+                            <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                            <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="slide slide4">
+                            <h1>Bespoke Software</h1>
+                            <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                            <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="slide slide5">
+                            <h1>Digital Marketing</h1>
+                            <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                            <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                        <div class="slide slide6">
+                            <h1>Cyber Security</h1>
+                            <span>For businesses looking to make a strong<br>and effective first impression.</span>
+                            <div class="button"><a href="#">Find Out More &#8287;<i class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                                    
+                
                 </div>
             </div> <!-- end banner -->
         </header>
@@ -448,5 +483,20 @@
 
         </footer>
     
+        <!-- JavaScript files -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <!-- <script src="js/animsition/jquery.animsition.min.js"></script> -->
+        <!-- <script src="js/sticky/jquery.sticky.js"></script> -->  
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+          $('.slides').slick({
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: true        
+          });
+        </script>
     </body>
 </html>

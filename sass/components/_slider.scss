@@ -1,29 +1,12 @@
-//SLIDER (BANNER) STYLES
-
 .banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%; 
-    align-items: center;
-    justify-content: center;
+    background-color:magenta;
+}
+
+.slides {
     height: 531px;
-    background-color: $black;
-
-    //mobile/tablet gradient
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5975432409291841) 70%, rgba(0,0,0,0.39866368910845584) 100%),
-                url("../images/slides/slide-1.jpeg") no-repeat center;  
-    background-size: cover;
-    margin: 0 auto;
-    text-align: center; 
 }
 
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-}
-
-.banner-container > h1 {
+.slides h1 {
     margin: 0 auto;
     margin-bottom: 25px;
     font-size: 48px;
@@ -32,16 +15,26 @@
     font-weight: $regular;
     text-transform: uppercase;
     width: 95%;
+    }
+    
+.slides span {
+margin: 0 auto;
+margin-bottom: 35px;
+font-size: 20px;
+line-height: 36px;
+color: $white;
+font-weight: $regular;
+width: 95%;
 }
 
-.banner-container > span {
-    margin: 0 auto;
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 36px;
-    color: $white;
-    font-weight: $regular;
-    width: 95%;
-}
 
 
+
+/*Slick*/
+.slick-dots {
+    bottom: 20px;
+    }
+    
+    .slick-dots li button:before {
+    font-size: 16px;
+    }

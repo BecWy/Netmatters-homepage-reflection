@@ -26,7 +26,7 @@
     font-weight: $bold;
 }
 
-.banner-container > .button a {
+.slides .button a {
     padding: 5px 20px;
     font-size: 20px;
     line-height: 50px;
@@ -169,7 +169,7 @@
 #support:active,
 #contact:active,
 #menu:active,
-.banner-container .button a:active,
+.slides .button a:active,
 .fake-button:active,
 .intro-container .button a:active,
 .news-text .button a:active {
