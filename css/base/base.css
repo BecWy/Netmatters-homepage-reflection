@@ -1,13 +1,9 @@
-/* line 1, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 * {
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
   letter-spacing: 0.4px;
 }
 
-/* line 8, ../../../../Desktop/html-css-reflection/sass/base/base.scss */
 a {
   text-decoration: none;
 }
-
-/*# sourceMappingURL=base.css.map */
