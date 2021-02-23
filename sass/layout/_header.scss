@@ -88,8 +88,8 @@ nav {
     }
 }
 
-#support,
-#contact {
+.support-button,
+.contact-button {
     padding: 5px 13px;
     font-size: 18px;
     line-height: 46px;
@@ -104,7 +104,7 @@ nav {
     display: none; //hidden for small screens
 }
 
-#support {
+.support-button {
     background-color: $it-color1;
     border: 1px solid $it-color1;
     width: 145px;
@@ -115,7 +115,7 @@ nav {
     }
 }
 
-#contact {
+.contact-button {
     background-color: $contact-color1;
     border: 1px solid $contact-color1;
     margin-left: 20px;
@@ -127,7 +127,7 @@ nav {
     }
 }
 
-#search-bar {
+.search-bar {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -138,7 +138,8 @@ nav {
     margin-top: 10px;
 }
 
-#search-bar input[type=text] {
+
+.search-bar input[type=text] {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: normal;
@@ -160,7 +161,7 @@ nav {
     }
 }
 
-#search-bar button[type=button] {
+.search-bar button[type=button] {
     position: absolute;
     top: 0px;
     right: 15px;

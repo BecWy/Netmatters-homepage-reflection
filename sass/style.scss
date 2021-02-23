@@ -20,7 +20,10 @@
 // Component Styles
 @import 'components/buttons',
         'components/icons',
-        'components/slider',
-        'components/js';
+        'components/slider';
 
 @import 'layout/media';
+
+
+//JS class actions
+@import 'components/js';

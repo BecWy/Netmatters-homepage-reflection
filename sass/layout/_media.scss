@@ -22,7 +22,7 @@
     }
 
      //NAV SEARCH BAR moves up
-     #search-bar {
+     .search-bar {
         display: inline-block;
         display: flex;
         flex-direction: row;
@@ -40,7 +40,7 @@
     }
 
      //NAV SEARCH BAR //remove box shadow & change border
-     #search-bar input[type=text] {
+     .search-bar input[type=text] {
         outline: none;
         border: 1px solid $second-grey;
         background-color: $white;
@@ -59,7 +59,7 @@
         }
     }
 
-    #search-bar button[type=button] {
+    .search-bar button[type=button] {
         background-color: $search-button-color1;
         height: 56px;   
         border-radius: 0px 3px 3px 0px;
@@ -285,17 +285,32 @@
     }
 
     //show search input //hides on toggle, see js-classes.scss and searchbar.js
-    #search-bar input {
+    // .search-bar input[type=text] {
+    //     display: none;
+    // }
+
+    //show support and contact buttons. This also requires the search bar container to get narrower
+    .support-button,
+    .contact-button {
         display: inline-block;
+     }
+
+     .support {
+         margin-left: auto;
+     }
+
+    .search-bar {
+        width: 63px;
     }
+        
 
     //change search bar container width to the size of the button
-    #search-bar {
+    .search-bar {
         margin-left: 20px;
     }
 
     //search button rounded corners
-    #search-bar button[type=button] {
+    .search-bar button[type=button] {
         border-radius: $round-corner;
     }
 
@@ -509,31 +524,29 @@
     }
 
      //NAV support and contact buttons appear
-     #support,
-     #contact {
+     .support-button,
+     .contact-button {
          display: inline-block;
      }
  
-     #support {
+     .support {
          margin-left: auto; 
      }
 
 
     //bring back search input
-    #search-bar input {
+    .search-bar input[type=text] {
         display: inline-block;
-    }
-
-    #search-bar input[type=text] {
         width: 240px;
     }
 
-    #search-bar {
+
+    .search-bar {
         width: 303px;
     }
 
     //re-square the search button inner corners
-    #search-bar button[type=button] {
+    .search-bar button[type=button] {
         border-radius: 0px 3px 3px 0px;
     }
 
