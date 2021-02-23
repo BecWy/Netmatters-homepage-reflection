@@ -63,43 +63,22 @@
 }
 
 
-
-/*Slick*/
+////////////////////////////////////////////////////////////////////////////////
+/*Slick Carousel*/ /////////////////////////////////////////////////////////////
 .slick-dots {
-    bottom: 20px;
+    bottom: 50px; //gap between the dots and the bottom of the slides
     }
     
-.slick-dots li button:before { /////////////////////this is the outer circle around the dots
-    font-size: 16px;
-    border: 2px solid $white; 
-    border-radius: 50%;
+.slick-dots li button:before { 
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid transparent; //this is the outer circle around the dot, affects dot placement if the border is removed.
 }
 
-// #slick-slide-control00,
-// #slick-slide-control01,
-// #slick-slide-control02,
-// #slick-slide-control03,
-// #slick-slide-control04,
-// #slick-slide-control05 {
-//     width: 100%;
-//     height: 100%;
-// }
-
-
-////////////////////////////////////////////////////////
-//current settings in slick css files
-.slick-dots li button {
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
     opacity: 1; //I've been experimenting with this, was originally set to 1
@@ -108,14 +87,19 @@
 
 .slick-dots li button:before {
     opacity: .75; //I've updated this, was .25
-    color: $second-grey; //i've updated this (was black), need to move into code above
-    
+    color: $second-grey; //i've updated this (was black), need to move into code above 
 }
 
 .slick-dots li.slick-active button:before { ////////////////this is the button that is currently active
     opacity: 1; //i've updated this, was .75
-    color: $white; //i've updated this (was black), need to move into code above
+    color: $white; //i've updated this (was black)
+    border: 2px solid $white; //this is the outer circle around the dot
+    border-radius: 50%;
 }
+
+
+
+
 
 
 
