@@ -1,17 +1,41 @@
 .banner {
-    background-color:magenta;
-    height: 531px;
+    background-color: $black;
+    background-size: cover; 
 }
 
+.banner,
 .slides,
 .slide, 
 .slick-slide {
     height: 531px;
+    @media (min-width: $break-sm) {
+        height: 589px;
+    }
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%; //guess for the minute
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center; 
+    height: 100%;
+}
+
+.slides .button {
+    margin-bottom: 40px;
+    margin-top: auto;
 }
 
 .slide h1 {
     margin: 0 auto;
     margin-bottom: 25px;
+    margin-top: auto;
     font-size: 48px;
     line-height: 52.8px;
     color: $white;
@@ -65,6 +89,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 /*Slick Carousel*/ /////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
 .slick-dots {
     bottom: 50px; //gap between the dots and the bottom of the slides
     }
