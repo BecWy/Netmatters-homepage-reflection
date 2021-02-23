@@ -11,6 +11,9 @@
     @media (min-width: $break-sm) {
         height: 589px;
     }
+    @media (min-width: $break-med) {
+        height: 490px;
+    }
 }
 
 .slide-content {
@@ -25,11 +28,20 @@
     padding-bottom: 70px;
     text-align: center; 
     height: 100%;
+    max-width: 1170px;
+    @media (min-width: $break-med) {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 .slides .button {
     margin-bottom: 40px;
     margin-top: auto;
+    @media (min-width: $break-sm) {
+        margin-top: 0;
+        margin-bottom: auto;
+    }
 }
 
 .slide h1 {
@@ -42,7 +54,10 @@
     font-weight: $regular;
     text-transform: uppercase;
     width: 95%;
+    @media (min-width: $break-med) {
+        margin-left: 0;
     }
+}
     
 .slide span {
     margin: 0 auto;
@@ -52,6 +67,9 @@
     color: $white;
     font-weight: $regular;
     width: 95%;
+    @media (min-width: $break-med) {
+        margin-left: 0;
+    }
 }
 
 
@@ -85,6 +103,49 @@
             url("../images/slides/slide-6.jpeg") no-repeat center; 
     background-size: cover;
 }
+
+
+@media (min-width: $break-med) {
+    .slide1 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-1.jpeg") no-repeat center; 
+        background-size: cover;
+        background-position: top center;
+    }
+    .slide2 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-2.jpeg") no-repeat center; 
+        background-size: cover;
+        background-position: top center;
+    }
+    .slide3 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-3.jpeg") no-repeat center; 
+        background-size: cover;
+        background-position: top center;
+    }
+    .slide4 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-4.jpeg") no-repeat center;
+        background-size: cover;
+        background-position: top center; 
+    }
+    .slide5 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-5.jpeg") no-repeat center; 
+        background-size: cover;
+        background-position: top center;
+    }
+    .slide6 {
+        background: linear-gradient(270deg,transparent 25%,#000),
+                url("../images/slides/slide-6.jpeg") no-repeat center; 
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////

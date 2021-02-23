@@ -36,14 +36,10 @@
 
 
 //SLIDES
-
-.slides .button a {
-    &:hover,
-    &:active {
-        background-color: $web-color2;
-        border: 1px solid $web-color3;
-    }
+.slide .button {
+    border-radius: $round-corner;
 }
+
 
 @each $theme, $color in $themes {
     .slide .button-#{$theme} a {
@@ -54,15 +50,23 @@
         font-size: 20px;
         line-height: 50px;
         text-align: center;
-        border-radius: $round-corner;
         font-weight: $regular;
     }
 } 
 
+@each $theme, $color in $themes-secondary {
+    .slide .button-#{$theme} a:hover,
+    .slide .button-#{$theme} a:active {
+        background-color: $color;
+    }
+} 
 
-
-
-
+@each $theme, $color in $themes-tertiary {
+    .slide .button-#{$theme} a:hover,
+    .slide .button-#{$theme} a:active {
+        border: 1px solid $color;
+    }
+}
 
 .intro .button a {
     padding: 5px 15px;
