@@ -1,0 +1,19 @@
+//Only want to toggle in medium screens
+
+@media (min-width: $break-med) {
+
+    .toggle-show {
+        display: inline-block; // or maybe flex, to text.
+    }
+
+    .toggle-hide {
+        display: none;
+    }
+
+}
+
+
+//on toggle may need to change #search-bar width to 63px when the search input is hidden.
+// #search-bar {
+//     width: 63px;
+// }

@@ -275,6 +275,8 @@
     //HEADER/ NAV1 //////////////////////////////////////////////////////////////////////////
     nav {
         width: 970px;
+        margin: 0 auto;
+        
     }
 
     //increase logo size
@@ -282,14 +284,13 @@
         width: 370px;
     }
 
-    //hide search input
-    #search {
-        display: none;
+    //show search input //hides on toggle, see js-classes.scss and searchbar.js
+    #search-bar input {
+        display: inline-block;
     }
 
     //change search bar container width to the size of the button
     #search-bar {
-        width: 63px;
         margin-left: 20px;
     }
 
@@ -298,15 +299,7 @@
         border-radius: $round-corner;
     }
 
-    //NAV support and contact buttons appear
-    #support,
-    #contact {
-        display: inline-block;
-    }
-
-    #support {
-        margin-left: auto; 
-    }
+   
 
 
     //////////////////////////////////////////////////////////////////////////////////////////
@@ -515,8 +508,19 @@
         width: 1200px;
     }
 
+     //NAV support and contact buttons appear
+     #support,
+     #contact {
+         display: inline-block;
+     }
+ 
+     #support {
+         margin-left: auto; 
+     }
+
+
     //bring back search input
-    #search {
+    #search-bar input {
         display: inline-block;
     }
 
