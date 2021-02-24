@@ -5,13 +5,13 @@
 //Only want to toggle in medium screens
 
 @media (min-width: $break-med) and (max-width: $break-lg) {
-    //show search input
-    .toggle-show {
-        display: inline-block;
-        border-radius: 0;
-    }
+    //show search input --------- not needed (for now) all search toggle items are using toggle-hide
+    // .toggle-show {
+    //     display: inline-block;
+    //     border-radius: 0;
+    // }
 
-    //hide contact and support buttons
+    //hide contact and support buttons on toggle
     .toggle-hide {
         display: none;
     }
@@ -20,9 +20,7 @@
         display: none;
     }
     
-    // .show_inline_element {
-    //     display: inline-block;
-    // }
+    
 
     //edit search bar width
     .toggle-search-width {
@@ -35,11 +33,7 @@
     }
 }
 
-//on toggle may need to change #search-bar width to 63px when the search input is hidden.
-// #search-bar {
-//     width: 63px;
-    //width: 240px
-// }
+
 
 
 //////////////////////////////////////////////////////////
