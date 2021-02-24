@@ -207,8 +207,8 @@ nav {
     }
 }
 
-
-.search-bar input[type=text] {
+#search-bar-input {
+// .search-bar input[type=text] {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: normal;
@@ -248,15 +248,19 @@ nav {
         }
     }
     //displays on toggle, see js-classes.scss and searchbar.js
-    @media (min-width: $break-med) {  
-        display: none;
+    //@media (min-width: $break-med) - see js.scss, toggle. Set to display: none with a class.
+    @media (min-width: $break-med) { 
+        width: 300px;
     }
+    
     //bring back search input
     @media (min-width: $break-lg) { 
         display: inline-block;
         width: 240px;
     }
 }
+
+
 
 .search-bar button[type=button] {
     position: absolute;

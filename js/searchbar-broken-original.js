@@ -1,5 +1,6 @@
 const searchToggle = () => {
 
+
     const searchBar = document.querySelector("#search-bar");
     const searchButton = document.querySelector("#search-button");
     const searchInput = document.querySelector("#search-bar > input[type=text]"); //#search-bar input[type=text]

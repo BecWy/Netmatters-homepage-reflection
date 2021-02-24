@@ -1,10 +1,14 @@
+/////////////////////////////////////////
+//TOGGLE
+/////////////////////////////////////////////////////
+
 //Only want to toggle in medium screens
 
 @media (min-width: $break-med) and (max-width: $break-lg) {
     //show search input
     .toggle-show {
         display: inline-block;
-        width: 240px;
+        border-radius: 0;
     }
 
     //hide contact and support buttons
@@ -12,13 +16,21 @@
         display: none;
     }
 
+    .hide_element { 
+        display: none;
+    }
+    
+    // .show_inline_element {
+    //     display: inline-block;
+    // }
+
     //edit search bar width
     .toggle-search-width {
-        width: 303px;
-        border: 1px solid red;
+        width: 363px;
         button {
             margin-right: 0;
             margin-left: auto;
+            //border-radius: 0px $round-corner $round-corner 0px;
         }
     }
 }
@@ -28,3 +40,29 @@
 //     width: 63px;
     //width: 240px
 // }
+
+
+//////////////////////////////////////////////////////////
+//STICKY HEADER
+////////////////////////////
+
+
+//allow space for the fixed header
+body {
+    padding-top: 208px; // same as header height
+  }
+
+
+//header styles
+header {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    background-color: $white;
+    z-index: 100;
+}
+
+// we'll add this class using javascript
+.nav-up {
+    top: -208px; // same as header height. use variables in LESS/SASS
+  }
