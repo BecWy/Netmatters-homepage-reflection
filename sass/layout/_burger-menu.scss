@@ -1,6 +1,29 @@
 .burger-menu {
-    position: fixed;
+    display: block;
+    position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.
+    width: 238px;
     top: 0;
     right: 0;
-    background: $white;
+    height: 100%;
+    z-index: 999;
+}
+
+.burger-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    overflow-y: auto; //adds menu scroll functionality
+    //-webkit-overflow-scrolling: touch; //enables momentum scrolling on iOS - necessary for this?
+}
+
+.burger-menu ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.burger-menu li {
+    margin-left: 10px;
 }
