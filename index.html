@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     </head>
     <body>
-        <header>
+        <header class="nav-up">
             <nav> 
                 <a id="logo" href="#">
                     <img src="./images/internal-branding/logo.png" alt="Netmatters logo">
@@ -187,7 +187,15 @@
                 </div> <!-- end nav-cyber -->                     
             </div> <!-- end nav-2-->  
             
-            <div class="menu-open-overlay"></div>
+            <div class="cookies">
+                <h2>Cookies Policy</h2>
+                <p>We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p>
+                <p>You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p>
+                <button>Change Settings</button>
+                <button id="cookies-button">Accept Cookies</button>
+            </div>
+            <div class="menu-open-overlay cookie-open-overlay"></div>
+
             <div class="burger-menu menu-hide">  
                 
                 <div class="burger-menu-container">
@@ -687,5 +695,6 @@
         </script>
         <script src="./js/searchbar.js"></script>
         <script src="./js/burger-menu.js"></script>
+        <script src="./js/cookies.js"></script>
     </body>
 </html>

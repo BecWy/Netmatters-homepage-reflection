@@ -1,0 +1,9 @@
+.cookies {
+    position: absolute;
+    width: 600px;
+    height: 490px;
+    top: calc(50vh - 245px); //50% of the container height
+    left: calc(50vw - 300px); //50% of the container width
+    background-color: $white;
+    padding: 20px;
+}

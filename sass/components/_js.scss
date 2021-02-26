@@ -39,14 +39,10 @@
 
 
 //allow space for the fixed header
-body {
-    padding-top: 208px; // same as header height
-  }
-
 
 //header styles
 header {
-    position: fixed;
+    //position is controlled by sticky-header.js
     top: 0;
     transition: top 0.2s ease-in-out;
     background-color: $white;
@@ -54,23 +50,27 @@ header {
 }
 
 // we'll add this class using javascript
-.nav-up {
-    top: -208px; // same as header height. use variables in LESS/SASS
+.nav-up { //NOT the same as scroll up - this is when the nav displays
+    position: relative;
+    //top: -208px; // same as header height. use variables in LESS/SASS
   }
 
-
+.nav-down { //NOT the same as scroll down - this is when the nav displays
+    position: fixed;
+}
 
 //////////////////////////////////////////////////////////
 //BURGER MENU
 ////////////////////////////
 //show and hide burger menu on toggle
 .menu-hide {
-    display: none;
+    width: 0;
 }
 
 
 .menu-open-overlay {
     position: fixed;
+    display: none;
     left: 0;
     top: 0;
     height: 100vh;

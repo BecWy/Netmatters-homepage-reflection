@@ -30,6 +30,7 @@ const menuToggle = () => {
 function openNav() {
     burgerMenu.style.width = "238px";
     pageContent.style.marginLeft = "-238px";
+    overlay.style.display = "block";
     overlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
   }
   
@@ -37,6 +38,7 @@ function openNav() {
   function closeNav() {
     burgerMenu.style.width = "0";
     pageContent.style.marginLeft = "0";
+    overlay.style.display = "none";
     overlay.style.backgroundColor = "rgba(0,0,0, 0)";
   }
 

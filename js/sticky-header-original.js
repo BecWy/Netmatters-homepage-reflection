@@ -1,10 +1,19 @@
-//code adapted from:
+//code from:
 // https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
-//I have edited the code (both JS (minor changes) and SCSS (more changes)), but it is very similar to the original
+
+//I have edited the code slightly, but essentially it is as written - the vast majority is identical so it is best consider it as a plugin
+//allow space for the fixed header
+// body {
+//     padding-top: 208px; // same as header height
+//   }
+
+
+//NOTE have changed the css in experiements. will need to go back to the orignal css to get this working correctly
+
 
 //currently the related css can be found in js.scss, under STICKY HEADER
-const header = document.querySelector("header");
-const body = document.querySelector("body");
+const header = document.querySelector("header"); //i added this for experimenting
+const body = document.querySelector("body"); //i added this for experimenting
 
 const stickyHeader = () => {
     // Hide Header on on scroll down
@@ -33,18 +42,13 @@ const stickyHeader = () => {
         
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.    
-        if (st > lastScrollTop){ //my code
-        
-        //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
+        if (st > lastScrollTop && st > navbarHeight){ 
             // Scroll Down
-            body.style.paddingTop = "0px"; // my code, this is the same as the header height
-            $('header').removeClass('nav-down').addClass('nav-up'); //original code
+            $('header').removeClass('nav-down').addClass('nav-up'); 
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-               body.style.paddingTop = "208px"; // my code, this is the same as the header height
-                $('header').removeClass('nav-up').addClass('nav-down');
-                
+                $('header').removeClass('nav-up').addClass('nav-down');     
             }
         }
 
