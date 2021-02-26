@@ -1,40 +1,24 @@
-//on page load need to run an if statement, using local storage
-//if cookies are saved do not display
-//if cookies are not saved then do display
-
-//will need an event listener for the button
-//will need to change the value of cookiesSaved based on info from local storage.
-
 
 const myStorage = window.localStorage;
 const cookies = document.querySelector(".cookies");
 const cookiesButton = document.querySelector("#cookies-button");
-let cookiesSaved = false;
 
+document.addEventListener("DOMContentLoaded", ()=> {
+    const cookiesSaved = localStorage.getItem('cookiesAccepted');
+    //console.log(cookiesSaved); //this works, the value saves as true after the button is clicked.
 
-//CHECKS IF COOKIES ARE SAVED. DECIDES WHETHER TO DISPLAY THE COOKIES POP UP OR NOT
-//this works :)
-if (cookiesSaved) {
-    cookies.style.display = "none";
-} else {
-    cookies.style.display = "block";
-}
-
-if (myStorage.getItem('cookieSeen') != 'shown') {
-    cookiesSaved = true;
-}
+    //CHECKS IF COOKIES ARE SAVED. DECIDES WHETHER TO DISPLAY THE COOKIES POP UP OR NOT
+    if (cookiesSaved === 'yes') {
+        cookies.style.display = "none";
+        console.log("cookies already accepted"); //for testing purposes
+    } else {
+        cookies.style.display = "block";
+        console.log("user needs to accept cookies"); //for testing purposes
+    }
+})
 
 cookiesButton.addEventListener('click', () => {
-    myStorage.setItem('cookieSeen','shown')
+    //accesses the current domain's local Storage object and adds a data item to it.
+    myStorage.setItem('cookiesAccepted', 'yes')
     cookies.style.display = "none";
 });
-
-// if (myStorage.getItem(‘cookieSeen’) != ‘shown’) {
-//     cookiesSaved = true;
-//     // cookies.delay(2000).fadeIn();
-//     // myStorage.setItem(‘cookieSeen’,’shown’)
-//   };
-
-//   $(‘.close’).click(function() {
-//     $(‘.cookie-banner’).fadeOut();
-//   })
