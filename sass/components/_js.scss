@@ -16,9 +16,6 @@
         display: none;
     }
 
-    .hide_element { 
-        display: none;
-    }
     
     
 
@@ -60,3 +57,23 @@ header {
 .nav-up {
     top: -208px; // same as header height. use variables in LESS/SASS
   }
+
+
+
+//////////////////////////////////////////////////////////
+//BURGER MENU
+////////////////////////////
+//show and hide burger menu on toggle
+.menu-hide {
+    display: none;
+}
+
+
+.menu-open-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw; //z index is less than the burger menu, but higher than the rest of the page
+    z-index: 2;
+}

@@ -10,8 +10,8 @@ searchButton.addEventListener('click', () => {
 
 const searchToggle = () => {
 //function searchToggle() {
-    supportButton.classList.toggle("toggle-hide"); //this toggle is working, the class is being added. But the button isn't being displayed.
-    contactButton.classList.toggle("toggle-hide"); //this toggle is working, the class is being added. But the button isn't being displayed.
+    supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+    contactButton.classList.toggle("toggle-hide"); //displays/hides the button
     searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
     searchInput.classList.toggle("toggle-hide") // show element - this class is already added to the html
 }
