@@ -5,13 +5,13 @@ const menuButton = document.querySelector("#menu");
 const burgerMenu = document.querySelector(".burger-menu");
 const pageContent = document.querySelector("body");
 const main = document.querySelector("main");
-const overlay = document.querySelector(".menu-open-overlay");
+const menuOverlay = document.querySelector(".menu-open-overlay");
 
 menuButton.addEventListener('click', () => {
     menuToggle();
 })
 
-overlay.addEventListener('click', () => {
+menuOverlay.addEventListener('click', () => {
     menuToggle();
 })
 
@@ -30,16 +30,16 @@ const menuToggle = () => {
 function openNav() {
     burgerMenu.style.width = "238px";
     pageContent.style.marginLeft = "-238px";
-    overlay.style.display = "block";
-    overlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
+    menuOverlay.style.display = "block";
+    menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
   }
   
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
   function closeNav() {
     burgerMenu.style.width = "0";
     pageContent.style.marginLeft = "0";
-    overlay.style.display = "none";
-    overlay.style.backgroundColor = "rgba(0,0,0, 0)";
+    menuOverlay.style.display = "none";
+    menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
   }
 
 

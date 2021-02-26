@@ -6,5 +6,77 @@
     top: calc(50vh - 245px); //50% of the container height
     left: calc(50vw - 300px); //50% of the container width
     background-color: $white;
+    //padding: 20px;
+    z-index: 3; //needs to be higher than the overlay
+    border-radius: 5px;
+}
+
+.cookies p {
+    font-size: 16px;
+    color: $grey-color3;
+    margin-bottom: 25px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cookies h3 {
+    font-size: 26px;
+    color: $main-grey;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
     padding: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        //width: 600px;
+        left: 0;
+        bottom: 0px;
+        border-bottom: 1px solid $second-grey;
+        width: 100%;
+    }
+}
+
+.cookieButtons {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+        text-transform: uppercase;
+        width: 264px;
+        height: 47px;
+        padding: 5px 15px;
+        border-radius: $round-corner;
+        border: none;
+        color: $white;
+        font-size: 17px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        //width: 600px;
+        left: 0;
+        top: 0px;
+        border-top: 1px solid $second-grey;
+        width: 100%;
+    }
+}
+
+#cookies-settings-button {
+    background-color: $cookie-settings-color1;
+    &:hover,
+    &:active {
+        background-color: $cookie-settings-color2;
+    }
+}
+
+#cookies-button {
+    background-color: $web-color1;
+    &:hover,
+    &:active {
+        background-color: $web-color2;
+    }
 }

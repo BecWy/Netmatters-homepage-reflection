@@ -68,7 +68,8 @@ header {
 }
 
 
-.menu-open-overlay {
+.menu-open-overlay,
+.cookies-open-overlay {
     position: fixed;
     display: none;
     left: 0;
@@ -76,4 +77,8 @@ header {
     height: 100vh;
     width: 100vw; //z index is less than the burger menu, but higher than the rest of the page
     z-index: 2;
+}
+
+.cookies-open-overlay {
+    background-color: rgba(0,0,0, 0.7);
 }
