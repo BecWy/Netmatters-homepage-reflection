@@ -1,14 +1,24 @@
 .cookies {
     position: absolute;
     display: none;
-    width: 600px;
+    width: $width-xs;
     height: 490px;
-    top: calc(50vh - 245px); //50% of the container height
-    left: calc(50vw - 300px); //50% of the container width
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //top: calc(50vh - 50%);
+    //left: calc(50vh - 50%);
+    //transform: translate(-50%, -50%);
+    
     background-color: $white;
     //padding: 20px;
     z-index: 3; //needs to be higher than the overlay
     border-radius: 5px;
+    @media (min-width: $break-med) {
+        width: 600px;
+        top: calc(50vh - 245px); //50% of the container height
+        left: calc(50vw - 300px); //50% of the container width
+    }
 }
 
 .cookies p {
@@ -50,9 +60,14 @@
         height: 47px;
         padding: 5px 15px;
         border-radius: $round-corner;
-        border: none;
+        border: 1px solid transparent;
         color: $white;
         font-size: 17px;
+        outline: none;
+        cursor: pointer;
+        &:active {
+            box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%)
+        }
     }
     &::before {
         content: "";
@@ -70,6 +85,7 @@
     &:hover,
     &:active {
         background-color: $cookie-settings-color2;
+        border: 1px solid $cookie-settings-color3;
     }
 }
 
@@ -78,5 +94,6 @@
     &:hover,
     &:active {
         background-color: $web-color2;
+        border: 1px solid $web-color3;
     }
 }

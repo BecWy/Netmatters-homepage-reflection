@@ -3,6 +3,7 @@ const myStorage = window.localStorage;
 const cookies = document.querySelector(".cookies");
 const cookiesButton = document.querySelector("#cookies-button");
 const cookiesOverlay = document.querySelector(".cookies-open-overlay");
+const body = document.querySelector("body");
 
 document.addEventListener("DOMContentLoaded", ()=> {
     const cookiesSaved = localStorage.getItem('cookiesAccepted');
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         cookies.style.display = "block";
         cookiesOverlay.style.display = "block";
         console.log("user needs to accept cookies"); //for testing purposes
+        body.style.overflowY = "hidden";
     }
 })
 
@@ -26,4 +28,5 @@ cookiesButton.addEventListener('click', () => {
     console.log('cookies accepted'); //for testing purposes
     cookies.style.display = "none";
     cookiesOverlay.style.display = "none";
+    body.style.overflowY = "scroll";
 });

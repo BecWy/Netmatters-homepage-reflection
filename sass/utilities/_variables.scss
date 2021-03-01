@@ -51,6 +51,7 @@
 
     $cookie-settings-color1: #999aa2; //base
     $cookie-settings-color2: #7e808a; //hover
+    $cookie-settings-color3: #797a85; //hover and active border
 
     $menu-color1: #333645; //base
     $menu-color2: #22242e; //hover
@@ -86,7 +87,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //TEXT CONTAINER WIDTHS //NOT IN USE YET
-    $width-xs: 95%;
+    $width-xs: 95%; //using this for cookie popup
     $width-sm: 720px;   ///some elements have padding included, these are 750px. TO figure out. 4 are 720px, 2 are 750px. Main footer is different - to check. Nav different too.
     $width-med: 940px; ///some elements have padding included, these are 970px. TO figure out. 5 are 940px, 2 are 970px. Main footer is different - to check. Nav different too.
     $width-lg:1170px; //5 containers with this width. Nav, footer and one other are different.

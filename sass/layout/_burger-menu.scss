@@ -2,6 +2,14 @@ body {
     width: 100vw; //adding this avoids a delay in the body moving/resizing when the menu is open.
 }
 
+// body {
+//     width: 100%;
+// }
+
+// body {
+//     width: calc(100vw - (100vw - 100%)); //makes it the whole width, minus the scrollbar
+//   }
+
 .burger-menu {
     display: block;
     position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.

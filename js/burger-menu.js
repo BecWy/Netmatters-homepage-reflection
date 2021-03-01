@@ -22,9 +22,11 @@ const burgerMenu = () => {
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
             pageContent.style.overflowY = "hidden";
+            //pageContent.style.width = "calc(100vw - (100vw - 100%))";//"100vw";
             pageContent.style.transform = "translate(-238px, 0)"; //moving it the width of the burger menu    
             menuOverlay.style.display = "block";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
+            
             
         }
         
@@ -34,6 +36,7 @@ const burgerMenu = () => {
             menuOverlay.style.display = "none";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
             pageContent.style.overflowY = "auto";
+            //pageContent.style.width = "100%";
         }
 
 
