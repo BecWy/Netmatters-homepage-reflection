@@ -22,9 +22,7 @@ const burgerMenu = () => {
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
             pageContent.style.overflowY = "hidden";
-            burgerMenu.style.width = "238px";
             pageContent.style.transform = "translate(-238px, 0)"; //moving it the width of the burger menu    
-            //pageContent.style.marginLeft = "-238px";
             menuOverlay.style.display = "block";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
             
@@ -32,9 +30,7 @@ const burgerMenu = () => {
         
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
-            burgerMenu.style.width = "0";
             pageContent.style.transform = "none";
-            //pageContent.style.marginLeft = "0";
             menuOverlay.style.display = "none";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
             pageContent.style.overflowY = "auto";
