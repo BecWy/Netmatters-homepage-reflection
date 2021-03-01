@@ -1,10 +1,15 @@
+body {
+    width: 100vw; //adding this avoid a delay in the body moving/resizing when the menu is open.
+}
+
 .burger-menu {
     display: block;
     position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.
     width: 238px;
+    transform: translate(238px, 0); //keeps the burger menu to the right of the body content. 238px is the width of the burger menu (mobile version)
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     z-index: 999;
     a {
         color: $white;
@@ -19,7 +24,7 @@
     width: 100%;
     height: 100%;
     background-color: $menu-color1;
-    overflow-y: auto; //adds menu scroll functionality
+    overflow-y: scroll; //adds menu scroll functionality
     //-webkit-overflow-scrolling: touch; //enables momentum scrolling on iOS - necessary for this?
 }
 

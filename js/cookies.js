@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 cookiesButton.addEventListener('click', () => {
     //accesses the current domain's local Storage object and adds a data item to it.
     myStorage.setItem('cookiesAccepted', 'yes')
+    console.log('cookies accepted'); //for testing purposes
     cookies.style.display = "none";
     cookiesOverlay.style.display = "none";
 });
