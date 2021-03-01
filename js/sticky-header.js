@@ -43,9 +43,14 @@ const stickyHeader = () => {
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-               body.style.paddingTop = "208px"; // my code, this is the same as the header height
+                if(window.matchMedia('(min-width: 993px)').matches) {
+                    body.style.paddingTop = "208px"; //wider screen/ desktop header height
+                } else if(window.matchMedia('(min-width: 768px)').matches) {
+                    body.style.paddingTop = "110px"; //tablet header height
+                } else {
+                    body.style.paddingTop = "168px"; //mobile header height
+                }
                 $('header').removeClass('nav-up').addClass('nav-down');
-                
             }
         }
 
