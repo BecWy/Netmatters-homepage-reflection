@@ -29,9 +29,7 @@ body {
     background-color: $menu-color1;
     //overflow-y: scroll; //adds menu scroll functionality
     //-webkit-overflow-scrolling: touch; //enables momentum scrolling on iOS - necessary for this?
-    .mobile-menu-content,
-    .mobile-menu-content-2,
-    .mobile-menu-content-pre {
+    .mobile-menu-content {
         width: 216px;
         margin: 20px auto;
         @media (min-width: $break-med) {
@@ -41,21 +39,71 @@ body {
 
     .mobile-menu-content-pre {
         border-radius: $round-corner;
-        border: 1px solid white;
-        padding: 5px 0;
+        
+        width: 216px;
+        margin: 20px auto;
+        @media (min-width: $break-med) {
+            display: none;
+        }
+        .contact-cont {
+            height: 100%;
+            width: 100%;
+            border: 0.5px solid rgba(0,0,0,.45);
+            border-radius: $round-corner;
+            a {
+                height: 100%;
+                width: 100%;
+                display: block;
+                border: 1.5px solid hsla(0,0%,100%,.05);
+                border-radius: $round-corner;
+                ul {
+                    padding: 5px 0;
+                    margin: 0;
+                    list-style-type: none;
+                    width: 100%;
+                    height: 100%;
+                    h2 {
+                        font-size: 18px;
+                        font-weight: $regular;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }   
+    }       
+}
+
+
+.mobile-menu-content-2 {
+    width: 100%; //216px;
+    @media (min-width: $break-med) {
+        display: none;
+    }
+    .support-cont {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        margin: 0;      
         ul {
             padding: 0;
             margin: 0;
-            h2 {
-                font-size: 18px;
-                font-weight: $regular;
-            }
+            width: 100%;
         }
+        h2 {
+            font-size: 16px; //or 18
+            font-weight: $regular;
+            margin: 0;
+            padding: 0;
+            border-top: 0.5px solid rgba(0,0,0,.45);
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                padding: 17px 20px;
+                border-top: 1.5px solid hsla(0,0%,100%,.05);
+            }
+        }    
     }
-         
 }
 
 
@@ -71,16 +119,34 @@ body {
         width: 216px;
         border-radius: $round-corner;
         li {
-            padding: 12px 10px;
-            border: 1px solid white;
+            width: 100%;
+            height: 100%;
+            border-top: 0.5px solid rgba(0,0,0,.45);
+            display: block;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 12px 10px;
+                border-top: 1.5px solid hsla(0,0%,100%,.05);
+            }
+            &:first-child {
+                border: none;
+            }
+            &:first-child a {
+                border: none;
+            }
         }
 }
-
-
+//a top 1px solid hsla(0,0%,100%,.05)
+//li top 1px solid rgba(0,0,0,.45)
+// $nav-border-left: rgba(0,0,0,.25);
+// $nav-border-right: hsla(0,0%,100%,.1);
+// $nav-border-bottom: rgba(255, 255, 255, 0.7);
 
 
 .burger-menu-box {
-    border: 1px solid red;
+    border: 0.5px solid rgba(0,0,0,.45);
     border-radius: $round-corner;
     width: 216px; 
     height: 112px;
@@ -95,6 +161,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 1.5px solid hsla(0,0%,100%,.05);
+        border-radius: $round-corner;
     }
     p,
     h1 {
@@ -108,10 +176,12 @@ body {
         font-size: 18px;
         font-weight: $regular;
     }
-
 }
 
 
+
+
+   
 
 //wider screen version
 .wider-screen-menu-content {
@@ -129,25 +199,39 @@ body {
 .wider-screen-menu-content h2 {
     font-size: 16px;
     font-weight: $regular;
-    padding-left: 20px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border: 1px solid lightcoral;
     margin-bottom: 0;
     margin-top: 0;
+    border-top: 0.5px solid rgba(0,0,0,.45);
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border-top: 1.5px solid hsla(0,0%,100%,.05);
+    }
 }
 
 
 .wider-screen-menu-content li {
-    padding-left: 50px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border: 1px solid magenta;
     background-color: $menu-color2;
     width: 100%;
     font-size: 14px;
-    span {
+    border-top: 0.5px solid rgba(0,0,0,.45);
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
         padding-left: 50px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border-top: 1.5px solid hsla(0,0%,100%,.05);
+    }
+    span {
+        padding-left: 40px;
+        font-size: 9px;
+        line-height: 14px;
     }
 }
 
