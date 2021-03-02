@@ -1,24 +1,30 @@
+.cookies-outer-container {
+        position: fixed;
+        display: none;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
+        z-index: 2;
+        background-color: rgba(0,0,0, 0.7);
+        overflow-y: scroll;
+}
+
 .cookies {
     position: absolute;
     display: none;
-    width: $width-xs;
+    width: 90%;
+    max-width: 600px;
     height: 490px;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
-    //top: calc(50vh - 50%);
-    //left: calc(50vh - 50%);
-    //transform: translate(-50%, -50%);
+    //overflow-y: auto; for testing only atm
     
     background-color: $white;
     //padding: 20px;
     z-index: 3; //needs to be higher than the overlay
     border-radius: 5px;
-    @media (min-width: $break-med) {
-        width: 600px;
-        top: calc(50vh - 245px); //50% of the container height
-        left: calc(50vw - 300px); //50% of the container width
-    }
 }
 
 .cookies p {
@@ -52,11 +58,16 @@
     position: relative;
     padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    @media (min-width: $break-sm) {
+        flex-direction: row;
+    }
     button {
         text-transform: uppercase;
-        width: 264px;
+        width: calc(100% - 20px);
+        margin: 15px auto; //needs correcting at some point
         height: 47px;
         padding: 5px 15px;
         border-radius: $round-corner;
@@ -65,6 +76,10 @@
         font-size: 17px;
         outline: none;
         cursor: pointer;
+        @media (min-width: $break-sm) {
+            width: 264px;
+        }
+
         &:active {
             box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%)
         }
