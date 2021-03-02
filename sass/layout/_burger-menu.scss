@@ -1,10 +1,10 @@
-body {
-    width: 100vw; //adding this avoids a delay in the body moving/resizing when the menu is open.
-}
-
 // body {
-//     width: 100%;
+//     width: 100vw; //adding this avoids a delay in the body moving/resizing when the menu is open.
 // }
+
+body {
+    width: 100%;
+}
 
 // body {
 //     width: calc(100vw - (100vw - 100%)); //makes it the whole width, minus the scrollbar
@@ -14,11 +14,11 @@ body {
     display: block;
     position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.
     width: 238px;
-    transform: translate(238px, 0); //keeps the burger menu to the right of the body content. 238px is the width of the burger menu (mobile version)
+    //transform: translate(238px, 0); //keeps the burger menu to the right of the body content. 238px is the width of the burger menu (mobile version)
     top: 0;
     right: 0;
     height: 100vh;
-    z-index: 999;
+    z-index: -1;//999; was putting it over, but let's see what happens if it's underneath
     a {
         color: $white;
         text-transform: uppercase;

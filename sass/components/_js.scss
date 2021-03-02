@@ -80,7 +80,7 @@ header {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 100vw; //z index is less than the burger menu, but higher than the rest of the page
+    width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
     z-index: 2;
 }
 

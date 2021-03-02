@@ -8,6 +8,9 @@ const burgerMenu = () => {
     const pageContent = document.querySelector("body");
     const main = document.querySelector("main");
     const menuOverlay = document.querySelector(".menu-open-overlay");
+    const nav = document.querySelector("nav");
+    const nav2 = document.querySelector(".nav-2");
+    const footer = document.querySelector("footer");
 
     menuButton.addEventListener('click', () => {
         menuToggle();
@@ -21,9 +24,21 @@ const burgerMenu = () => {
 
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
+            //pageContent.style.width = "100%"; //"calc(100vw - (100vw - 100%))";//"100vw";
             pageContent.style.overflowY = "hidden";
-            //pageContent.style.width = "calc(100vw - (100vw - 100%))";//"100vw";
-            pageContent.style.transform = "translate(-238px, 0)"; //moving it the width of the burger menu    
+            
+            nav.style.transform = "translate(-238px, 0)";
+            nav2.style.transform = "translate(-238px, 0)";
+            main.style.transform = "translate(-238px, 0)";
+            footer.style.transform = "translate(-238px, 0)";
+
+            //pageContent.style.transform = "translate(-238px, 0)";//"translate(-238px, 0)"; //moving it the width of the burger menu 
+            
+            //burgerMenu.style.position = "fixed";
+            //burgerMenu.style.top = "0px";
+            //burgerMenu.style.right = "calc(100vw - 100%)";
+            //burgerMenu.style.display = "block";
+            
             menuOverlay.style.display = "block";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
             
@@ -33,10 +48,11 @@ const burgerMenu = () => {
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
             pageContent.style.transform = "none";
+            //burgerMenu.style.display = "none";
             menuOverlay.style.display = "none";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
             pageContent.style.overflowY = "auto";
-            //pageContent.style.width = "100%";
+            pageContent.style.width = "100%";
         }
 
 
