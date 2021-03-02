@@ -5,6 +5,7 @@ const burgerMenu = () => {
 
     const menuButton = document.querySelector("#menu");
     const burgerMenu = document.querySelector(".burger-menu");
+    const burgerMenuCont = document.querySelector(".burger-menu-container");
     const pageContent = document.querySelector("body");
     const main = document.querySelector("main");
     const menuOverlay = document.querySelector(".menu-open-overlay");
@@ -26,14 +27,19 @@ const burgerMenu = () => {
         function openNav() {
             //pageContent.style.width = "100%"; //"calc(100vw - (100vw - 100%))";//"100vw";
             pageContent.style.overflowY = "hidden";
+
+            burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality
+            burgerMenu.style.width = "calc(270px + (100vw - 100%))";
+            burgerMenu.style.display = "block";
             
-            nav.style.transform = "translate(-238px, 0)";
-            nav2.style.transform = "translate(-238px, 0)";
-            main.style.transform = "translate(-238px, 0)";
-            footer.style.transform = "translate(-238px, 0)";
+            nav.style.transform = "translate(-270px, 0)";
+            nav2.style.transform = "translate(-270px, 0)";
+            main.style.transform = "translate(-240px, 0)";
+            main.style.paddingRight = "calc(100vw - 100%)"; //keeps adjusting by the width of the scrollbar, added this to try and compensate
+            footer.style.transform = "translate(-270px, 0)";
+            menuOverlay.style.transform = "translate(-270px, 0)";
 
             //pageContent.style.transform = "translate(-238px, 0)";//"translate(-238px, 0)"; //moving it the width of the burger menu 
-            
             //burgerMenu.style.position = "fixed";
             //burgerMenu.style.top = "0px";
             //burgerMenu.style.right = "calc(100vw - 100%)";
@@ -47,12 +53,21 @@ const burgerMenu = () => {
         
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
         function closeNav() {
-            pageContent.style.transform = "none";
+            //pageContent.style.transform = "none";
             //burgerMenu.style.display = "none";
+            nav.style.transform = "none";
+            nav2.style.transform = "none";
+            main.style.transform = "none";
+            footer.style.transform = "none";
+            menuOverlay.style.transform = "none";
             menuOverlay.style.display = "none";
             menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
             pageContent.style.overflowY = "auto";
-            pageContent.style.width = "100%";
+            //pageContent.style.width = "100%";
+            burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality
+            burgerMenu.style.display = "none";
+            burgerMenu.style.width = "calc(270px - (100vw - 100%))";
+            main.style.paddingRight = "0px"; //keeps adjusting by the width of the scrollbar, added this to try and compensate
         }
 
 

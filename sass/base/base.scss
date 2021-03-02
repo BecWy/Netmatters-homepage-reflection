@@ -12,3 +12,10 @@ a {
 body {
     z-index: 0;
 }
+
+nav,
+.nav-2
+body,
+main {
+    z-index: 1;
+}
