@@ -1,10 +1,10 @@
 
-const myStorage = window.localStorage;
-const cookies = document.querySelector(".cookies");
-const cookiesButton = document.querySelector("#cookies-button");
-const cookiesOverlay = document.querySelector(".cookies-open-overlay");
-const cookiesOuter = document.querySelector(".cookies-outer-container");
-const body = document.querySelector("body");
+// const myStorage = window.localStorage;
+// const cookies = document.querySelector(".cookies");
+// const cookiesButton = document.querySelector("#cookies-button");
+// const cookiesOverlay = document.querySelector(".cookies-open-overlay");
+// const cookiesOuter = document.querySelector(".cookies-outer-container");
+// const body = document.querySelector("body");
 
 document.addEventListener("DOMContentLoaded", ()=> {
     const cookiesSaved = localStorage.getItem('cookiesAccepted');

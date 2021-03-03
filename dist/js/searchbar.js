@@ -1,0 +1,1 @@
+!function(){searchButton.addEventListener("click",(()=>{t()}));const t=()=>{supportButton.classList.toggle("toggle-hide"),contactButton.classList.toggle("toggle-hide"),searchBar.classList.toggle("toggle-search-width"),searchInput.classList.toggle("toggle-hide")}}();

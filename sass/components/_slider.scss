@@ -1,6 +1,12 @@
 .banner {
     background-color: $black;
     background-size: cover; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
 }
 
 .banner,

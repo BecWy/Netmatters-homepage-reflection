@@ -1,8 +1,8 @@
-const searchBar = document.querySelector("#search-bar");
-const searchButton = document.querySelector("#search-button");
-const searchInput = document.querySelector("#search-bar-input");
-const supportButton = document.querySelector("#support-button");
-const contactButton = document.querySelector("#contact-button");
+// const searchBar = document.querySelector("#search-bar");
+// const searchButton = document.querySelector("#search-button");
+// const searchInput = document.querySelector("#search-bar-input");
+// const supportButton = document.querySelector("#support-button");
+// const contactButton = document.querySelector("#contact-button");
 
 searchButton.addEventListener('click', () => {
     searchToggle()
