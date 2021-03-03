@@ -74,16 +74,51 @@ header {
 
 
 .menu-open-overlay,
-.cookies-open-overlay {
+.cookies-open-overlay { //not using the cookies one anymore
     position: fixed;
     display: none;
-    left: 0;
+    right: 0;
     top: 0;
     height: 100%;
     width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
     z-index: 2;
 }
 
-.cookies-open-overlay {
+.cookies-open-overlay { //not using the cookies one anymore
     background-color: rgba(0,0,0, 0.7);
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+//z indexes for burger menu
+///////////////////////////////////////////////////////////////////////////
+.burger-menu,
+.burger-menu > * {
+    z-index: -300;
+}
+
+// nav,
+// .nav-2,
+// .nav-container {
+//     z-index: 500;
+// }
+
+// main,
+// footer {
+//     z-index: 100;
+// }
+
+main,
+.main-content,
+.cards,
+.news-container,
+footer {
+    position: relative;
+}
+
+.main-content,
+footer,
+header,
+nav {
+    background-color: $white;
 }

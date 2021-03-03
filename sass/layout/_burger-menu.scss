@@ -5,22 +5,24 @@ body {
 
 
 .burger-menu {
-    display: none; //block;
+    display: block; //(removed none, needs to hide behind the other content)
     position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.
-    //width: 258px;
-    width: calc(268px - (100vw - 100%));
-    //transform: translate(238px, 0); //keeps the burger menu to the right of the body content. 238px is the width of the burger menu (mobile version)
+    width: calc(270px - (100vw - 100%)); //minus the scroll bar width
     top: 0;
     right: 0;
     height: 100vh;
-    z-index: -10000;//999; was putting it over, but let's see what happens if it's underneath
+    @media (min-width: $break-med) {
+        width: calc(350px - (100vw - 100%)); //minus the scroll bar width
+    }
     a {
         color: $white;
         text-transform: uppercase;
     }
+
 }
 
 .burger-menu-container {
+    //z-index: -10000;//needs to be underneath all other content, apart from the overlay
     position: absolute;
     top: 0;
     right: 0;
@@ -30,7 +32,6 @@ body {
     //overflow-y: scroll; //adds menu scroll functionality
     //-webkit-overflow-scrolling: touch; //enables momentum scrolling on iOS - necessary for this?
     .mobile-menu-content {
-        width: 216px;
         margin: 20px auto;
         @media (min-width: $break-med) {
             display: none;
