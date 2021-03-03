@@ -46,7 +46,6 @@ header {
     top: 0;
     transition: top 0.2s ease-in-out;
     background-color: $white;
-    z-index: 100;
 }
 
 // we'll add this class using javascript
@@ -75,13 +74,12 @@ header {
 
 .menu-open-overlay,
 .cookies-open-overlay { //not using the cookies one anymore
-    position: fixed;
-    display: none;
+    position: absolute;
+    display: block; 
     right: 0;
     top: 0;
     height: 100%;
     width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
-    z-index: 2;
 }
 
 .cookies-open-overlay { //not using the cookies one anymore
@@ -92,20 +90,9 @@ header {
 //////////////////////////////////////////////////////////////////////////
 //z indexes for burger menu
 ///////////////////////////////////////////////////////////////////////////
-.burger-menu,
-.burger-menu > * {
-    z-index: -300;
-}
-
-// nav,
-// .nav-2,
-// .nav-container {
-//     z-index: 500;
-// }
-
-// main,
-// footer {
-//     z-index: 100;
+// .burger-menu,
+// .burger-menu > * {
+//     z-index: -300;
 // }
 
 main,
@@ -122,3 +109,22 @@ header,
 nav {
     background-color: $white;
 }
+
+header {
+    z-index: 100;
+}
+
+.menu-open-overlay {
+    z-index: 0;
+}
+
+body {
+    z-index: 0;
+}
+
+// nav,
+// .nav-container,
+// .nav-2,
+// main {
+//     z-index: 1;
+// }

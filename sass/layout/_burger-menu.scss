@@ -6,6 +6,7 @@ body {
 
 .burger-menu {
     display: block; //(removed none, needs to hide behind the other content)
+    visibility: hidden;
     position: fixed; //the child (burger-menu-container) is set to position absolute, with overflow-y set to auto to enable scrolling.
     width: calc(270px - (100vw - 100%)); //minus the scroll bar width
     top: 0;
@@ -22,7 +23,6 @@ body {
 }
 
 .burger-menu-container {
-    //z-index: -10000;//needs to be underneath all other content, apart from the overlay
     position: absolute;
     top: 0;
     right: 0;
