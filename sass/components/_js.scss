@@ -87,6 +87,21 @@ header {
 }
 
 
+
+// .translate-left { ////////////////////////////////////doesn't work, don't know why. Was trying to streamline the JS for the burger menu, but will have to leave it as it is.
+//     transform: translate(-270px, 0);
+//     margin-left: -350px;
+//     @media (min-width: $break-med) {
+//         transform: translate(-350px, 0);
+//         margin-left: -350px;
+//     }
+// }
+//JS code I tried, this does successfully add the class, the elements just don't move
+// header.classList.add(".translate-left");
+// main.classList.add(".translate-left");
+// footer.classList.add(".translate-left");
+// menuOverlay.classList.add(".translate-left");
+
 //////////////////////////////////////////////////////////////////////////
 //z indexes for burger menu
 ///////////////////////////////////////////////////////////////////////////

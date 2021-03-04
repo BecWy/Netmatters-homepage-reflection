@@ -41,5 +41,14 @@ const app = () => {
 app();
 
 
-      
+// //not working properly
+// window.onresize = app();
 
+//not working properly
+// window.addEventListener('resize', () => {
+//     stickyHeader();
+//     burgerMenuJS();
+// });
+      
+//not working properly
+//window.addEventListener('resize', app);
