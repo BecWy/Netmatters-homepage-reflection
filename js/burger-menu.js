@@ -1,18 +1,18 @@
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
 
-const burgerMenuJS = () => {
+    const menuButton = document.querySelector("#menu");
+    const header = document.querySelector("header");
+    const burgerMenu = document.querySelector(".burger-menu");
+    const burgerMenuCont = document.querySelector(".burger-menu-container");
+    const body = document.querySelector("body");
+    const main = document.querySelector("main");
+    const menuOverlay = document.querySelector(".menu-open-overlay");
+    //const nav = document.querySelector("nav");
+    //const nav2 = document.querySelector(".nav-2");
+    const footer = document.querySelector("footer");
 
-    // const menuButton = document.querySelector("#menu");
-    // const header = document.querySelector("header");
-    // const burgerMenu = document.querySelector(".burger-menu");
-    // const burgerMenuCont = document.querySelector(".burger-menu-container");
-    // const body = document.querySelector("body");
-    // const main = document.querySelector("main");
-    // const menuOverlay = document.querySelector(".menu-open-overlay");
-    // //const nav = document.querySelector("nav");
-    // //const nav2 = document.querySelector(".nav-2");
-    // const footer = document.querySelector("footer");
+export const burgerMenuJS = () => {
 
     menuButton.addEventListener('click', () => {
         menuToggle();
@@ -76,7 +76,7 @@ const burgerMenuJS = () => {
 
 }
 
-burgerMenuJS();
+//burgerMenuJS();
 
 
 

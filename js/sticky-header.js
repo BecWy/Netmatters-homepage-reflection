@@ -3,11 +3,10 @@
 //I have edited the code (both JS (minor changes) and SCSS (more changes)), but it is very similar to the original
 
 //currently the related css can be found in js.scss, under STICKY HEADER
+const header = document.querySelector("header");
+const body = document.querySelector("body");
 
-const stickyHeader = () => {
-    // const header = document.querySelector("header");
-    // const body = document.querySelector("body");
-    
+const stickyHeader = () => { 
     // Hide Header on on scroll down
     let didScroll;
     let lastScrollTop = 0;
