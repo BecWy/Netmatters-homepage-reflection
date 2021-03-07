@@ -86,57 +86,83 @@ var searchbarJS = function searchbarJS() {
 //currently the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var body = document.querySelector("body");
+var bodyCont = document.querySelector(".body-container");
+scrollTop = bodyCont.scrollTop;
+console.log("This is the scroll top in pixels: ".concat(scrollTop));
 
-var stickyHeader = function stickyHeader() {
-  // Hide Header on on scroll down
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5; //the minumum amount they have to scroll to trigger a response?
-
-  var navbarHeight = $('header').outerHeight();
-  $(window).scroll(function (event) {
-    didScroll = true;
-  });
-  setInterval(function () {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
-
-  function hasScrolled() {
-    var st = $(this).scrollTop(); // Make sure they scroll more than delta
-
-    if (Math.abs(lastScrollTop - st) <= delta) return; // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.    
-
-    if (st > lastScrollTop) {
-      //my code
-      //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
-      // Scroll Down
-      body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
-
-      $('header').removeClass('nav-down').addClass('nav-up'); //original code
-    } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        if (window.matchMedia('(min-width: 993px)').matches) {
-          body.style.paddingTop = "208px"; //wider screen/ desktop header height
-        } else if (window.matchMedia('(min-width: 768px)').matches) {
-          body.style.paddingTop = "110px"; //tablet header height
-        } else {
-          body.style.paddingTop = "168px"; //mobile header height
-        }
-
-        $('header').removeClass('nav-up').addClass('nav-down');
-      }
-    }
-
-    lastScrollTop = st;
-  }
+bodyCont.onscroll = function () {
+  myFunction();
 };
 
-stickyHeader();
+function myFunction() {
+  //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (bodyCont.scrollTop > 50) {
+    header.className = "nav-down";
+  } else {
+    header.className = "nav-up";
+  }
+} // window.onscroll = function() {myFunction()};
+// function myFunction() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     header.className = "nav-down";
+//   } else {
+//     header.className = "nav-up";
+//   }
+// }
+// bodyCont.addEventListener('scroll', () => {
+//    // if(e === true) {
+//         header.classList.remove('nav-down');
+//         header.classList.add('nav-up');
+//     //}
+// })
+// const stickyHeader = () => { 
+//     // Hide Header on on scroll down
+//     let didScroll;
+//     let lastScrollTop = 0;
+//     const delta = 5;  //the minumum amount they have to scroll to trigger a response?
+//     //let navbarHeight = $('header').outerHeight();
+//     //$(window).scroll(function(event){
+//     bodyCont.scroll(function(event){
+//         didScroll = true;
+//     });
+//     setInterval(function() {
+//         if (didScroll) {
+//             hasScrolled();
+//             didScroll = false;
+//         }
+//     }, 250);
+//     function hasScrolled() {
+//         //let st = $(this).scrollTop();
+//         let st = bodyCont.scrollTop();
+//         // Make sure they scroll more than delta
+//         if(Math.abs(lastScrollTop - st) <= delta)
+//             return;
+//         // If they scrolled down and are past the navbar, add class .nav-up.
+//         // This is necessary so you never see what is "behind" the navbar.    
+//         if (st > lastScrollTop){ //my code
+//         //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
+//             // Scroll Down
+//             //body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
+//             bodyCont.style.paddingTop = "0px"; //same as above, but using the body-container instead of body
+//             $('header').removeClass('nav-down').addClass('nav-up'); //original code
+//         } else {
+//             // Scroll Up
+//             if(st + bodyCont.height() < body.height()) {
+//                 if(window.matchMedia('(min-width: 993px)').matches) {
+//                     body.style.paddingTop = "208px"; //wider screen/ desktop header height
+//                 } else if(window.matchMedia('(min-width: 768px)').matches) {
+//                     //body.style.paddingTop = "110px"; //tablet header height
+//                     bodyCont.style.paddingTop = "110px";
+//                 } else {
+//                     //body.style.paddingTop = "168px"; //mobile header height
+//                 }   bodyCont.style.paddingTop = "168px";
+//                 $('header').removeClass('nav-up').addClass('nav-down');
+//             }
+//         }
+//         lastScrollTop = st;
+//     }
+// }
+// stickyHeader();
 
 /***/ }),
 /* 4 */
@@ -177,32 +203,32 @@ var burgerMenuJS = function burgerMenuJS() {
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 
   var openNav = function openNav() {
-    body.style.overflowY = "hidden";
+    //body.style.overflowY = "hidden";
     burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality
 
     burgerMenu.style.transition = "all 1s ease-out 0s";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
-    menuOverlay.style.zIndex = "800"; //bodyCont.style.transition = "all 1s ease-out";
+    menuOverlay.style.zIndex = "800";
+    bodyCont.style.transition = "all 1s ease-out"; // header.style.transition = "all 1s ease-out";
+    // main.style.transition = "all 1s ease-out";
+    // footer.style.transition = "all 1s ease-out";
 
-    header.style.transition = "all 1s ease-out";
-    main.style.transition = "all 1s ease-out";
-    footer.style.transition = "all 1s ease-out";
     menuOverlay.style.transition = "all 1s ease-out";
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       //wide screens
-      //bodyCont.style.transform = "translateX(-350px)";
-      //bodyCont.style.marginLeft = "-350px";
-      header.style.transform = "translateX(-350px)";
-      main.style.transform = "translateX(-350px)";
-      footer.style.transform = "translateX(-350px)";
+      bodyCont.style.transform = "translateX(-350px)"; //bodyCont.style.marginLeft = "-350px";
+      // header.style.transform = "translateX(-350px)";
+      // main.style.transform = "translateX(-350px)";
+      // footer.style.transform = "translateX(-350px)";
+
       menuOverlay.style.transform = "translateX(-350px)";
     } else {
       //small screens
-      //bodyCont.style.transform = "translateX(-270px)";
-      header.style.transform = "translateX(-270px)";
-      main.style.transform = "translateX(-270px)";
-      footer.style.transform = "translateX(-270px)";
+      bodyCont.style.transform = "translateX(-270px)"; // header.style.transform = "translateX(-270px)";
+      // main.style.transform = "translateX(-270px)";
+      // footer.style.transform = "translateX(-270px)";
+
       menuOverlay.style.transform = "translateX(-270px)";
     }
   };
@@ -212,16 +238,17 @@ var burgerMenuJS = function burgerMenuJS() {
   var closeNav = function closeNav() {
     burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
     //header.style.transform = "none";
-    //bodyCont.style.transform = "translateX(0px)";
 
-    header.style.transform = "translateX(0px)";
-    main.style.transform = "translateX(0px)";
-    footer.style.transform = "translateX(0px)";
+    bodyCont.style.transform = "translateX(0px)"; // header.style.transform = "translateX(0px)";
+    // main.style.transform = "translateX(0px)";
+    // footer.style.transform = "translateX(0px)";
+
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
-    menuOverlay.style.zIndex = "0";
-    body.style.overflowY = "auto";
-    burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
+    menuOverlay.style.zIndex = "0"; //body.style.overflowY = "auto";
+
+    burgerMenuCont.style.overflowY = "scroll"; //scroll bar remains visible, but sits behind the bodyCont scroll bar
+    //burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
   }; // const hideScroll = () => {
   //     //bodyCont.style.transition = "all 1s ease-out 3s";
   //     bodyCont.style.overflowY = "hidden";
@@ -311,8 +338,8 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _searchbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sticky_header_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _burger_menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 //////////////////////////////////////////////////////////////////////////////////////////
 //all document query selectors
@@ -347,7 +374,7 @@ var app = function app() {
   (0,_burger_menu_js__WEBPACK_IMPORTED_MODULE_3__.burgerMenuJS)();
   (0,_cookies_js__WEBPACK_IMPORTED_MODULE_0__.cookiesJS)();
   (0,_searchbar_js__WEBPACK_IMPORTED_MODULE_1__.searchbarJS)();
-  (0,_sticky_header_js__WEBPACK_IMPORTED_MODULE_2__.stickyHeader)();
+  (0,_sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__.stickyHeader)();
 };
 
 app(); // //not working properly

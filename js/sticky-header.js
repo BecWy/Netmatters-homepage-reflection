@@ -5,6 +5,7 @@
 //currently the related css can be found in js.scss, under STICKY HEADER
 const header = document.querySelector("header");
 const body = document.querySelector("body");
+const bodyCont = document.querySelector(".body-container");
 
 const stickyHeader = () => { 
     // Hide Header on on scroll down
@@ -25,7 +26,8 @@ const stickyHeader = () => {
     }, 250);
 
     function hasScrolled() {
-        let st = $(this).scrollTop();
+        //let st = $(this).scrollTop();
+        let st = bodyCont.scrollTop();
         
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
@@ -37,7 +39,8 @@ const stickyHeader = () => {
         
         //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
             // Scroll Down
-            body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
+            //body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
+            bodyCont.style.paddingTop = "0px"; //same as above, but using the body-container instead of body
             $('header').removeClass('nav-down').addClass('nav-up'); //original code
         } else {
             // Scroll Up
@@ -45,10 +48,11 @@ const stickyHeader = () => {
                 if(window.matchMedia('(min-width: 993px)').matches) {
                     body.style.paddingTop = "208px"; //wider screen/ desktop header height
                 } else if(window.matchMedia('(min-width: 768px)').matches) {
-                    body.style.paddingTop = "110px"; //tablet header height
+                    //body.style.paddingTop = "110px"; //tablet header height
+                    bodyCont.style.paddingTop = "110px";
                 } else {
-                    body.style.paddingTop = "168px"; //mobile header height
-                }
+                    //body.style.paddingTop = "168px"; //mobile header height
+                }   bodyCont.style.paddingTop = "168px";
                 $('header').removeClass('nav-up').addClass('nav-down');
             }
         }
