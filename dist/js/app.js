@@ -86,7 +86,8 @@ var searchbarJS = function searchbarJS() {
 //currently the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var body = document.querySelector("body");
-var bodyCont = document.querySelector(".body-container");
+var bodyCont = document.querySelector(".body-container"); //THIS SECTION WORKS WITH ADDING/REMOVING CLASSES ON SCROLL & SCROLL DIRECTION!!!!!!!!!! Just need to sort out the classes
+
 scrollTop = bodyCont.scrollTop;
 console.log("This is the scroll top in pixels: ".concat(scrollTop));
 
@@ -94,75 +95,22 @@ bodyCont.onscroll = function () {
   myFunction();
 };
 
+var previous = 0;
+
 function myFunction() {
   //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  if (bodyCont.scrollTop > 50) {
-    header.className = "nav-down";
+  if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
+    //header.className = "nav-hide";
+    header.classList.remove("nav-show");
+    header.classList.add("nav-hide");
   } else {
-    header.className = "nav-up";
+    //header.className = "nav-show";
+    header.classList.remove("nav-hide");
+    header.classList.add("nav-show");
   }
-} // window.onscroll = function() {myFunction()};
-// function myFunction() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     header.className = "nav-down";
-//   } else {
-//     header.className = "nav-up";
-//   }
-// }
-// bodyCont.addEventListener('scroll', () => {
-//    // if(e === true) {
-//         header.classList.remove('nav-down');
-//         header.classList.add('nav-up');
-//     //}
-// })
-// const stickyHeader = () => { 
-//     // Hide Header on on scroll down
-//     let didScroll;
-//     let lastScrollTop = 0;
-//     const delta = 5;  //the minumum amount they have to scroll to trigger a response?
-//     //let navbarHeight = $('header').outerHeight();
-//     //$(window).scroll(function(event){
-//     bodyCont.scroll(function(event){
-//         didScroll = true;
-//     });
-//     setInterval(function() {
-//         if (didScroll) {
-//             hasScrolled();
-//             didScroll = false;
-//         }
-//     }, 250);
-//     function hasScrolled() {
-//         //let st = $(this).scrollTop();
-//         let st = bodyCont.scrollTop();
-//         // Make sure they scroll more than delta
-//         if(Math.abs(lastScrollTop - st) <= delta)
-//             return;
-//         // If they scrolled down and are past the navbar, add class .nav-up.
-//         // This is necessary so you never see what is "behind" the navbar.    
-//         if (st > lastScrollTop){ //my code
-//         //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
-//             // Scroll Down
-//             //body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
-//             bodyCont.style.paddingTop = "0px"; //same as above, but using the body-container instead of body
-//             $('header').removeClass('nav-down').addClass('nav-up'); //original code
-//         } else {
-//             // Scroll Up
-//             if(st + bodyCont.height() < body.height()) {
-//                 if(window.matchMedia('(min-width: 993px)').matches) {
-//                     body.style.paddingTop = "208px"; //wider screen/ desktop header height
-//                 } else if(window.matchMedia('(min-width: 768px)').matches) {
-//                     //body.style.paddingTop = "110px"; //tablet header height
-//                     bodyCont.style.paddingTop = "110px";
-//                 } else {
-//                     //body.style.paddingTop = "168px"; //mobile header height
-//                 }   bodyCont.style.paddingTop = "168px";
-//                 $('header').removeClass('nav-up').addClass('nav-down');
-//             }
-//         }
-//         lastScrollTop = st;
-//     }
-// }
-// stickyHeader();
+
+  previous = bodyCont.scrollTop;
+}
 
 /***/ }),
 /* 4 */

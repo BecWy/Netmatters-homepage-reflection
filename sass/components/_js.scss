@@ -50,17 +50,18 @@ header {
 }
 
 // we'll add this class using javascript
-.nav-up { //NOT the same as scroll up - this is when the nav displays
+.nav-hide { //for scrolling down
     position: relative;
     top: 0;
     left: 0;
     //top: -208px; // same as header height. use variables in LESS/SASS
   }
 
-.nav-down { //NOT the same as scroll down - this is when the nav displays
-    position: fixed;
+.nav-show { //for scrolling up
+    position: sticky; //doesn't work in IE NEED TO CHANGE
     top: 0;
     left: 0;
+    z-index: 20000;
 }
 
 //////////////////////////////////////////////////////////
