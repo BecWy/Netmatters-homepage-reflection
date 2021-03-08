@@ -102,30 +102,14 @@ var burgerMenuJS = function burgerMenuJS() {
 
   var closeNav = function closeNav() {
     burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
-    //header.style.transform = "none";
 
-    bodyCont.style.transform = "translateX(0px)"; // header.style.transform = "translateX(0px)";
-    // main.style.transform = "translateX(0px)";
-    // footer.style.transform = "translateX(0px)";
+    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header
 
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
-    menuOverlay.style.zIndex = "0"; //body.style.overflowY = "auto";
-
+    menuOverlay.style.zIndex = "0";
     burgerMenuCont.style.overflowY = "scroll"; //scroll bar remains visible, but sits behind the bodyCont scroll bar
-    //burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
-  }; // const hideScroll = () => {
-  //     //bodyCont.style.transition = "all 1s ease-out 3s";
-  //     bodyCont.style.overflowY = "hidden";
-  // }
-  //no longer needed, due to changes above
-  // burgerMenu.classList.toggle("menu-hide"); //default setting is hide, already added to the html
-  // if (burgerMenu.classList.contains("menu-hide")) {
-  //     closeNav();
-  // } else {
-  //     openNav();
-  // }
-
+  };
 };
 /******/ })()
 ;

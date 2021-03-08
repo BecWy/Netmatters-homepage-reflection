@@ -66,14 +66,37 @@ var searchbarJS = function searchbarJS() {
   });
 
   var searchToggle = function searchToggle() {
-    supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+    if (supportButton.classList.contains("toggle-hide")) {
+      supportButton.classList.remove("toggle-hide");
+    } else {
+      supportButton.classList.add("toggle-hide");
+    }
 
-    contactButton.classList.toggle("toggle-hide"); //displays/hides the button
+    if (contactButton.classList.contains("toggle-hide")) {
+      contactButton.classList.remove("toggle-hide");
+    } else {
+      contactButton.classList.add("toggle-hide");
+    }
 
-    searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
+    if (searchBar.classList.contains("toggle-search-width")) {
+      searchBar.classList.remove("toggle-search-width");
+    } else {
+      searchBar.classList.add("toggle-search-width");
+    }
 
-    searchInput.classList.toggle("toggle-hide"); // show element - this class is already added to the html
-  };
+    if (searchInput.classList.contains("toggle-hide")) {
+      searchInput.classList.remove("toggle-hide");
+    } else {
+      searchInput.classList.add("toggle-hide");
+    }
+  }; //Works absolutely fine.... except for IE
+  // const searchToggle = () => {
+  //     supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+  //     contactButton.classList.toggle("toggle-hide"); //displays/hides the button
+  //     searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
+  //     searchInput.classList.toggle("toggle-hide") // show element - this class is already added to the html
+  // }
+
 };
 
 /***/ }),
@@ -185,30 +208,14 @@ var burgerMenuJS = function burgerMenuJS() {
 
   var closeNav = function closeNav() {
     burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
-    //header.style.transform = "none";
 
-    bodyCont.style.transform = "translateX(0px)"; // header.style.transform = "translateX(0px)";
-    // main.style.transform = "translateX(0px)";
-    // footer.style.transform = "translateX(0px)";
+    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header
 
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
-    menuOverlay.style.zIndex = "0"; //body.style.overflowY = "auto";
-
+    menuOverlay.style.zIndex = "0";
     burgerMenuCont.style.overflowY = "scroll"; //scroll bar remains visible, but sits behind the bodyCont scroll bar
-    //burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
-  }; // const hideScroll = () => {
-  //     //bodyCont.style.transition = "all 1s ease-out 3s";
-  //     bodyCont.style.overflowY = "hidden";
-  // }
-  //no longer needed, due to changes above
-  // burgerMenu.classList.toggle("menu-hide"); //default setting is hide, already added to the html
-  // if (burgerMenu.classList.contains("menu-hide")) {
-  //     closeNav();
-  // } else {
-  //     openNav();
-  // }
-
+  };
 };
 
 /***/ })
