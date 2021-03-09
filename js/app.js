@@ -28,7 +28,7 @@
 
 import { cookiesJS } from "./cookies.js"
 import { searchbarJS } from "./searchbar.js"
-import { stickyHeader } from "./sticky-header-expt.js"
+import { stickyHeader } from "./sticky-header.js"
 import { burgerMenuJS } from "./burger-menu.js"
 
 const app = () => {

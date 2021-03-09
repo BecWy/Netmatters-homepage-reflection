@@ -1,65 +1,68 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
-//code adapted from:
-// https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
-//I have edited the code (both JS (minor changes) and SCSS (more changes)), but it is very similar to the original
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "stickyHeader": function() { return /* binding */ stickyHeader; }
+/* harmony export */ });
 //currently the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var body = document.querySelector("body");
 var bodyCont = document.querySelector(".body-container");
-
 var stickyHeader = function stickyHeader() {
-  // Hide Header on on scroll down
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5; //the minumum amount they have to scroll to trigger a response?
+  bodyCont.onscroll = function () {
+    sticky();
+  };
 
-  var navbarHeight = $('header').outerHeight();
-  $(window).scroll(function (event) {
-    didScroll = true;
-  });
-  setInterval(function () {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
+  var previous = 0;
 
-  function hasScrolled() {
-    //let st = $(this).scrollTop();
-    var st = bodyCont.scrollTop(); // Make sure they scroll more than delta
-
-    if (Math.abs(lastScrollTop - st) <= delta) return; // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.    
-
-    if (st > lastScrollTop) {
-      //my code
-      //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
-      // Scroll Down
-      //body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
-      bodyCont.style.paddingTop = "0px"; //same as above, but using the body-container instead of body
-
-      $('header').removeClass('nav-down').addClass('nav-up'); //original code
+  function sticky() {
+    //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
+      //header.className = "nav-hide";
+      header.classList.remove("nav-show");
+      header.classList.add("nav-hide");
     } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        if (window.matchMedia('(min-width: 993px)').matches) {
-          body.style.paddingTop = "208px"; //wider screen/ desktop header height
-        } else if (window.matchMedia('(min-width: 768px)').matches) {
-          //body.style.paddingTop = "110px"; //tablet header height
-          bodyCont.style.paddingTop = "110px";
-        } else {//body.style.paddingTop = "168px"; //mobile header height
-        }
-
-        bodyCont.style.paddingTop = "168px";
-        $('header').removeClass('nav-up').addClass('nav-down');
-      }
+      //header.className = "nav-show";
+      header.classList.remove("nav-hide");
+      header.classList.add("nav-show");
     }
 
-    lastScrollTop = st;
+    previous = bodyCont.scrollTop;
   }
 };
-
-stickyHeader();
 /******/ })()
 ;

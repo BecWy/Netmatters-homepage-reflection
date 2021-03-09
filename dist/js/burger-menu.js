@@ -40,15 +40,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu");
-var header = document.querySelector("header");
+var menuButton = document.querySelector("#menu"); //const header = document.querySelector("header");
+
 var burgerMenu = document.querySelector(".burger-menu");
-var burgerMenuCont = document.querySelector(".burger-menu-container");
-var body = document.querySelector("body");
-var bodyCont = document.querySelector(".body-container");
-var main = document.querySelector("main");
-var menuOverlay = document.querySelector(".menu-open-overlay");
-var footer = document.querySelector("footer");
+var burgerMenuCont = document.querySelector(".burger-menu-container"); //const body = document.querySelector("body");
+
+var bodyCont = document.querySelector(".body-container"); //const main = document.querySelector("main");
+
+var menuOverlay = document.querySelector(".menu-open-overlay"); //const footer = document.querySelector("footer");
+
 var burgerMenuJS = function burgerMenuJS() {
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();

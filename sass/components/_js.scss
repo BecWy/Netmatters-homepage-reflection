@@ -45,8 +45,10 @@
 header {
     //position is controlled by sticky-header.js
     top: 0;
+    left: 0;
     transition: top 0.2s ease-in-out;
     background-color: $white;
+    //width: 100%;
 }
 
 // we'll add this class using javascript
@@ -58,7 +60,7 @@ header {
   }
 
 .nav-show { //for scrolling up
-    position: sticky; //doesn't work in IE NEED TO CHANGE
+    position: sticky;//fixed; //sticky doesn't work in IE
     top: 0;
     left: 0;
     z-index: 20000;
@@ -105,7 +107,7 @@ html::-webkit-scrollbar {
 
 .body-container {
    overflow-y: scroll;
-   overflow-x: hidden;
+   //overflow-x: hidden;
    border: 5px solid red;
    width: 100vw;
    height: 100vh;
@@ -114,7 +116,7 @@ html::-webkit-scrollbar {
    //width: calc(100% + (100vw - 100%));
 }
 
-// .body-container::-webkit-scrollbar {
+// .-container::-webkit-scrollbar {
 //     width: 10px;  /* Remove scrollbar space /
 //     //background: transparent;  // Optional: just make scrollbar invisible */
 // }

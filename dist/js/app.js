@@ -1,10 +1,10 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "cookiesJS": function() { return /* binding */ cookiesJS; }
@@ -50,7 +50,6 @@ var cookiesJS = function cookiesJS() {
 /* 2 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "searchbarJS": function() { return /* binding */ searchbarJS; }
@@ -101,60 +100,58 @@ var searchbarJS = function searchbarJS() {
 
 /***/ }),
 /* 3 */
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-//code adapted from:
-// https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
-//I have edited the code (both JS (minor changes) and SCSS (more changes)), but it is very similar to the original
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "stickyHeader": function() { return /* binding */ stickyHeader; }
+/* harmony export */ });
 //currently the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var body = document.querySelector("body");
-var bodyCont = document.querySelector(".body-container"); //THIS SECTION WORKS WITH ADDING/REMOVING CLASSES ON SCROLL & SCROLL DIRECTION!!!!!!!!!! Just need to sort out the classes
+var bodyCont = document.querySelector(".body-container");
+var stickyHeader = function stickyHeader() {
+  bodyCont.onscroll = function () {
+    sticky();
+  };
 
-scrollTop = bodyCont.scrollTop;
-console.log("This is the scroll top in pixels: ".concat(scrollTop));
+  var previous = 0;
 
-bodyCont.onscroll = function () {
-  myFunction();
-};
+  function sticky() {
+    //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
+      //header.className = "nav-hide";
+      header.classList.remove("nav-show");
+      header.classList.add("nav-hide");
+    } else {
+      //header.className = "nav-show";
+      header.classList.remove("nav-hide");
+      header.classList.add("nav-show");
+    }
 
-var previous = 0;
-
-function myFunction() {
-  //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
-    //header.className = "nav-hide";
-    header.classList.remove("nav-show");
-    header.classList.add("nav-hide");
-  } else {
-    //header.className = "nav-show";
-    header.classList.remove("nav-hide");
-    header.classList.add("nav-show");
+    previous = bodyCont.scrollTop;
   }
-
-  previous = bodyCont.scrollTop;
-}
+};
 
 /***/ }),
 /* 4 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "burgerMenuJS": function() { return /* binding */ burgerMenuJS; }
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu");
-var header = document.querySelector("header");
+var menuButton = document.querySelector("#menu"); //const header = document.querySelector("header");
+
 var burgerMenu = document.querySelector(".burger-menu");
-var burgerMenuCont = document.querySelector(".burger-menu-container");
-var body = document.querySelector("body");
-var bodyCont = document.querySelector(".body-container");
-var main = document.querySelector("main");
-var menuOverlay = document.querySelector(".menu-open-overlay");
-var footer = document.querySelector("footer");
+var burgerMenuCont = document.querySelector(".burger-menu-container"); //const body = document.querySelector("body");
+
+var bodyCont = document.querySelector(".body-container"); //const main = document.querySelector("main");
+
+var menuOverlay = document.querySelector(".menu-open-overlay"); //const footer = document.querySelector("footer");
+
 var burgerMenuJS = function burgerMenuJS() {
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
@@ -245,18 +242,6 @@ var burgerMenuJS = function burgerMenuJS() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -287,14 +272,12 @@ var burgerMenuJS = function burgerMenuJS() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _searchbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var _sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var _burger_menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 //////////////////////////////////////////////////////////////////////////////////////////
 //all document query selectors
@@ -329,7 +312,7 @@ var app = function app() {
   (0,_burger_menu_js__WEBPACK_IMPORTED_MODULE_3__.burgerMenuJS)();
   (0,_cookies_js__WEBPACK_IMPORTED_MODULE_0__.cookiesJS)();
   (0,_searchbar_js__WEBPACK_IMPORTED_MODULE_1__.searchbarJS)();
-  (0,_sticky_header_expt_js__WEBPACK_IMPORTED_MODULE_2__.stickyHeader)();
+  (0,_sticky_header_js__WEBPACK_IMPORTED_MODULE_2__.stickyHeader)();
 };
 
 app(); // //not working properly

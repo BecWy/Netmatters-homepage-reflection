@@ -2,14 +2,14 @@
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
 
     const menuButton = document.querySelector("#menu");
-    const header = document.querySelector("header");
+    //const header = document.querySelector("header");
     const burgerMenu = document.querySelector(".burger-menu");
     const burgerMenuCont = document.querySelector(".burger-menu-container");
-    const body = document.querySelector("body");
+    //const body = document.querySelector("body");
     const bodyCont = document.querySelector(".body-container");
-    const main = document.querySelector("main");
+    //const main = document.querySelector("main");
     const menuOverlay = document.querySelector(".menu-open-overlay");
-    const footer = document.querySelector("footer");
+    //const footer = document.querySelector("footer");
 
 export const burgerMenuJS = () => {
 
