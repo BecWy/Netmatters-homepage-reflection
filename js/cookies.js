@@ -13,13 +13,12 @@ export const cookiesJS = () => {
         //Checks if cookies are saved. Decides whether to display the cookies popup or not.
         if (cookiesSaved === 'yes') {
             cookies.style.display = "none";
-            cookiesOuter.style.display = "none"; //was overlay
+            cookiesOuter.style.display = "none"; 
             console.log("cookies already accepted"); //for testing purposes
         } else {
             cookies.style.display = "block";
-            cookiesOuter.style.display = "block"; //was overlay
+            cookiesOuter.style.display = "flex";//was "block"; 
             console.log("user needs to accept cookies"); //for testing purposes
-            body.style.overflowY = "hidden";
             cookiesOuter.style.overflowY = "auto";
         }
     })

@@ -1,28 +1,50 @@
+// .cookies-test-container {
+//     height: 100vh;
+//     width: 100vw;
+// }
+
 .cookies-outer-container {
         position: fixed;
         display: none;
+        justify-content: center;
+        align-items: center;
         left: 0;
         top: 0;
-        height: 100%;
-        width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow-y: scroll;
+        height: 800px;
+        width: 100vw;//100vw; //z index is less than the burger menu, but higher than the rest of the page
         z-index: 2;
         background-color: rgba(0,0,0, 0.7);
-        //overflow-y: scroll;
+        @media (min-width: $break-sm) {
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+        }
 }
 
 .cookies {
-    position: absolute;
+    //position: absolute;
     display: none;
     width: 90%;
     max-width: 600px;
-    height: 505px;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+
+    //margin-top: 20px;
+    //margin-bottom: 20px;
+    //padding-top: 20px;
+    //padding-bottom: 20px;
+
+    //top: 50vh;
+    //left: 50vw;
+    //transform: translate(-50%, -50%);
     background-color: $white;
     //padding: 20px;
     z-index: 3; //needs to be higher than the overlay
     border-radius: 5px;
+    @media (min-width: $break-sm) {
+        height: 505px;
+    }
 }
 
 .cookies p {
