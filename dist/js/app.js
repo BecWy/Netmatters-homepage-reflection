@@ -12,7 +12,6 @@ __webpack_require__.r(__webpack_exports__);
 var myStorage = window.localStorage;
 var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
-var cookiesOverlay = document.querySelector(".cookies-open-overlay");
 var cookiesOuter = document.querySelector(".cookies-outer-container");
 var body = document.querySelector("body");
 var cookiesJS = function cookiesJS() {
@@ -32,6 +31,7 @@ var cookiesJS = function cookiesJS() {
       console.log("user needs to accept cookies"); //for testing purposes
 
       body.style.overflowY = "hidden";
+      cookiesOuter.style.overflowY = "auto";
     }
   });
   cookiesButton.addEventListener('click', function () {
@@ -40,9 +40,8 @@ var cookiesJS = function cookiesJS() {
     console.log('cookies accepted'); //for testing purposes
 
     cookies.style.display = "none";
+    cookiesOuter.style.overflowY = "hidden";
     cookiesOuter.style.display = "none"; //was overlay
-
-    body.style.overflowY = "scroll";
   });
 };
 

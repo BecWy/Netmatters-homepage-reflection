@@ -7,7 +7,7 @@
         width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
         z-index: 2;
         background-color: rgba(0,0,0, 0.7);
-        overflow-y: scroll;
+        //overflow-y: scroll;
 }
 
 .cookies {
@@ -15,12 +15,10 @@
     display: none;
     width: 90%;
     max-width: 600px;
-    height: 490px;
+    height: 505px;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
-    //overflow-y: auto; for testing only atm
-    
     background-color: $white;
     //padding: 20px;
     z-index: 3; //needs to be higher than the overlay
@@ -57,6 +55,7 @@
 .cookieButtons {
     position: relative;
     padding: 20px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,7 +88,7 @@
         position: absolute;
         //width: 600px;
         left: 0;
-        top: 0px;
+        top: 10px;
         border-top: 1px solid $second-grey;
         width: 100%;
     }
@@ -97,6 +96,7 @@
 
 #cookies-settings-button {
     background-color: $cookie-settings-color1;
+    margin: 0;
     &:hover,
     &:active {
         background-color: $cookie-settings-color2;
@@ -106,6 +106,7 @@
 
 #cookies-button {
     background-color: $web-color1;
+    margin: 0;
     &:hover,
     &:active {
         background-color: $web-color2;
