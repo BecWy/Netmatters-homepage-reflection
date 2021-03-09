@@ -48,7 +48,7 @@ header {
     left: 0;
     transition: top 0.2s ease-in-out;
     background-color: $white;
-    //width: 100%;
+    width: 100%;
 }
 
 // we'll add this class using javascript
@@ -60,7 +60,7 @@ header {
   }
 
 .nav-show { //for scrolling up
-    position: sticky;//fixed; //sticky doesn't work in IE
+    position: sticky;//fixed; //sticky doesn't work in IE, but fixed makes the header too wide - it covers the scroll.
     top: 0;
     left: 0;
     z-index: 20000;
@@ -107,15 +107,31 @@ html::-webkit-scrollbar {
 
 .body-container {
    overflow-y: scroll;
-   //overflow-x: hidden;
+   overflow-x: hidden;
    border: 5px solid red;
    width: 100vw;
    height: 100vh;
    z-index: 1;
    background-color: $white;
-   //width: calc(100% + (100vw - 100%));
+//    &::-webkit-scrollbar {
+//     width: 20px; 
+//     }
 }
 
+
+
+// .body-container::-webkit-scrollbar {
+//     width: 1em;
+//   }
+   
+// .body-container::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//   }
+   
+// .body-container::-webkit-scrollbar-thumb {
+//     background-color: darkgrey;
+//     outline: 1px solid slategrey;
+//   }
 // .-container::-webkit-scrollbar {
 //     width: 10px;  /* Remove scrollbar space /
 //     //background: transparent;  // Optional: just make scrollbar invisible */
