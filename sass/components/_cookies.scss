@@ -1,21 +1,11 @@
-// .cookies-test-container {
-//     height: 100vh;
-//     width: 100vw;
-// }
-
 .cookies-outer-container {
         position: fixed;
-        display: none;
-        justify-content: center;
-        align-items: center;
         left: 0;
         top: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
         overflow-y: scroll;
-        height: 800px;
+        height: 100vh;
         width: 100vw;//100vw; //z index is less than the burger menu, but higher than the rest of the page
-        z-index: 2;
+        z-index: 6;
         background-color: rgba(0,0,0, 0.7);
         @media (min-width: $break-sm) {
             width: 100vw;
@@ -25,25 +15,27 @@
 }
 
 .cookies {
-    //position: absolute;
+    position: relative;
     display: none;
     width: 90%;
-    max-width: 600px;
-
-    //margin-top: 20px;
-    //margin-bottom: 20px;
-    //padding-top: 20px;
-    //padding-bottom: 20px;
-
-    //top: 50vh;
-    //left: 50vw;
-    //transform: translate(-50%, -50%);
+    margin: 30px auto;
+    //margin: 30px 5%;
     background-color: $white;
-    //padding: 20px;
-    z-index: 3; //needs to be higher than the overlay
     border-radius: 5px;
     @media (min-width: $break-sm) {
         height: 505px;
+        width: 600px;
+        //margin: 30px auto;
+        // top: 50vh;
+        // transform: translate(0, -50%);
+        @media (max-height: 565px) {
+            margin: 30px auto;
+        }
+        @media (min-height: 566px) {
+            top: 50vh;
+            transform: translate(0, -50%);
+            margin: 0 auto;
+        }
     }
 }
 
@@ -129,9 +121,13 @@
 #cookies-button {
     background-color: $web-color1;
     margin: 0;
+    margin-top: 25px;
     &:hover,
     &:active {
         background-color: $web-color2;
         border: 1px solid $web-color3;
+    }
+    @media (min-width: $break-sm) {
+        margin-top: 0;
     }
 }

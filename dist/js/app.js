@@ -25,7 +25,7 @@ var cookiesJS = function cookiesJS() {
       console.log("cookies already accepted"); //for testing purposes
     } else {
       cookies.style.display = "block";
-      cookiesOuter.style.display = "flex"; //was "block"; 
+      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need to scroll
 
       console.log("user needs to accept cookies"); //for testing purposes
 
@@ -39,7 +39,7 @@ var cookiesJS = function cookiesJS() {
 
     cookies.style.display = "none";
     cookiesOuter.style.overflowY = "hidden";
-    cookiesOuter.style.display = "none"; //was overlay
+    cookiesOuter.style.display = "none";
   });
 };
 
