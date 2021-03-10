@@ -246,10 +246,9 @@ body {
 .burger-menu-telecoms:hover,
 .burger-menu-software:hover,
 .burger-menu-marketing:hover,
-.burger-menu-cyber:hover,
- {
+.burger-menu-cyber:hover {
     > .burger-menu-box {
-        background-color: white;
+        background-color: #3D404E;
     }
         
 }
@@ -257,5 +256,5 @@ body {
 .wider-screen-menu-content ul:hover,
 .support-cont ul:hover,
 .contact-cont ul:hover {
-    background-color: white;
+    background-color: #3D404E;
 }
