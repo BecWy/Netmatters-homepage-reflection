@@ -141,7 +141,6 @@ body {
 // $nav-border-right: hsla(0,0%,100%,.1);
 // $nav-border-bottom: rgba(255, 255, 255, 0.7);
 
-
 .burger-menu-box {
     border: 0.5px solid rgba(0,0,0,.45);
     border-radius: $round-corner;
@@ -239,3 +238,24 @@ body {
         color: $color;
     }
 } 
+
+
+//HOVER
+.burger-menu-web:hover,
+.burger-menu-it:hover,
+.burger-menu-telecoms:hover,
+.burger-menu-software:hover,
+.burger-menu-marketing:hover,
+.burger-menu-cyber:hover,
+ {
+    > .burger-menu-box {
+        background-color: white;
+    }
+        
+}
+
+.wider-screen-menu-content ul:hover,
+.support-cont ul:hover,
+.contact-cont ul:hover {
+    background-color: white;
+}

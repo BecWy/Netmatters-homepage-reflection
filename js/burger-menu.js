@@ -11,7 +11,8 @@
     const menuOverlay = document.querySelector(".menu-open-overlay");
     //const footer = document.querySelector("footer");
 
-export const burgerMenuJS = () => {
+export const burgerMenuJS = () => { //re-activate when switch back to the app js file after testing
+//const burgerMenuJS = () => { // this line is for testing only
 
     document.addEventListener('DOMContentLoaded', () => {
         closeNav();
@@ -77,6 +78,6 @@ export const burgerMenuJS = () => {
 }
 
 
-
+burgerMenuJS();
 
 

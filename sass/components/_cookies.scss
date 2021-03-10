@@ -19,15 +19,11 @@
     display: none;
     width: 90%;
     margin: 30px auto;
-    //margin: 30px 5%;
     background-color: $white;
     border-radius: 5px;
     @media (min-width: $break-sm) {
         height: 505px;
         width: 600px;
-        //margin: 30px auto;
-        // top: 50vh;
-        // transform: translate(0, -50%);
         @media (max-height: 565px) {
             margin: 30px auto;
         }
@@ -58,7 +54,6 @@
     &::after {
         content: "";
         position: absolute;
-        //width: 600px;
         left: 0;
         bottom: 0px;
         border-bottom: 1px solid $second-grey;
@@ -80,7 +75,7 @@
     button {
         text-transform: uppercase;
         width: calc(100% - 20px);
-        margin: 15px auto; //needs correcting at some point
+        margin: 15px auto; 
         height: 47px;
         padding: 5px 15px;
         border-radius: $round-corner;
@@ -100,7 +95,6 @@
     &::before {
         content: "";
         position: absolute;
-        //width: 600px;
         left: 0;
         top: 10px;
         border-top: 1px solid $second-grey;

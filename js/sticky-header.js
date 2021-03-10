@@ -4,7 +4,8 @@ const header = document.querySelector("header");
 const body = document.querySelector("body");
 const bodyCont = document.querySelector(".body-container");
 
-export const stickyHeader = () => {
+export const stickyHeader = () => { //re-activate when switch back to the app js file after testing
+//const stickyHeader = () => { // this line is for testing only
   bodyCont.onscroll = function() {sticky()};
   let previous = 0;
 
@@ -22,3 +23,5 @@ export const stickyHeader = () => {
     previous = bodyCont.scrollTop;
   }
 }
+
+stickyHeader();

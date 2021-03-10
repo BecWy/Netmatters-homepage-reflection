@@ -4,7 +4,8 @@ const searchInput = document.querySelector("#search-bar-input");
 const supportButton = document.querySelector("#support-button");
 const contactButton = document.querySelector("#contact-button");
 
-export const searchbarJS = () => {
+export const searchbarJS = () => { //re-activate when switch back to the app js file after testing
+//const searchbarJS = () => {    // this line is for testing only
     searchButton.addEventListener('click', () => {
         searchToggle()
     })
@@ -35,7 +36,6 @@ export const searchbarJS = () => {
         }
     }
 
-    
 
     //Works absolutely fine.... except for IE
     // const searchToggle = () => {
@@ -45,4 +45,6 @@ export const searchbarJS = () => {
     //     searchInput.classList.toggle("toggle-hide") // show element - this class is already added to the html
     // }
 }
+
+searchbarJS();
 

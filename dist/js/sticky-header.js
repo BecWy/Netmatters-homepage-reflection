@@ -43,6 +43,8 @@ var header = document.querySelector("header");
 var body = document.querySelector("body");
 var bodyCont = document.querySelector(".body-container");
 var stickyHeader = function stickyHeader() {
+  //re-activate when switch back to the app js file after testing
+  //const stickyHeader = () => { // this line is for testing only
   bodyCont.onscroll = function () {
     sticky();
   };
@@ -64,5 +66,6 @@ var stickyHeader = function stickyHeader() {
     previous = bodyCont.scrollTop;
   }
 };
+stickyHeader();
 /******/ })()
 ;

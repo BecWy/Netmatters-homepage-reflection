@@ -44,6 +44,8 @@ var searchInput = document.querySelector("#search-bar-input");
 var supportButton = document.querySelector("#support-button");
 var contactButton = document.querySelector("#contact-button");
 var searchbarJS = function searchbarJS() {
+  //re-activate when switch back to the app js file after testing
+  //const searchbarJS = () => {    // this line is for testing only
   searchButton.addEventListener('click', function () {
     searchToggle();
   });
@@ -81,5 +83,6 @@ var searchbarJS = function searchbarJS() {
   // }
 
 };
+searchbarJS();
 /******/ })()
 ;

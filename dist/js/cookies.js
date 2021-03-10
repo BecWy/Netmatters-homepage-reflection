@@ -41,12 +41,13 @@ __webpack_require__.r(__webpack_exports__);
 var myStorage = window.localStorage;
 var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
-var cookiesOuter = document.querySelector(".cookies-outer-container");
-var body = document.querySelector("body");
+var cookiesOuter = document.querySelector(".cookies-outer-container"); //const bodyCont = document.querySelector("body-container");
+
 var cookiesJS = function cookiesJS() {
+  //re-activate when switch back to the app js file after testing
+  //const cookiesJS = () => { // this line is for testing only
   document.addEventListener("DOMContentLoaded", function () {
-    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //console.log(cookiesSaved); //this works, the value saves as true after the button is clicked.
-    //Checks if cookies are saved. Decides whether to display the cookies popup or not.
+    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //Checks if cookies are saved. Decides whether to display the cookies popup or not.
 
     if (cookiesSaved === 'yes') {
       cookies.style.display = "none";
@@ -54,11 +55,11 @@ var cookiesJS = function cookiesJS() {
       console.log("cookies already accepted"); //for testing purposes
     } else {
       cookies.style.display = "block";
-      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need to scroll
+      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
 
       console.log("user needs to accept cookies"); //for testing purposes
 
-      cookiesOuter.style.overflowY = "auto";
+      cookiesOuter.style.overflowY = "auto"; //bodyCont.style.overflowY = "hidden"
     }
   });
   cookiesButton.addEventListener('click', function () {
@@ -71,5 +72,6 @@ var cookiesJS = function cookiesJS() {
     cookiesOuter.style.display = "none";
   });
 };
+cookiesJS();
 /******/ })()
 ;

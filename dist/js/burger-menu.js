@@ -50,6 +50,8 @@ var bodyCont = document.querySelector(".body-container"); //const main = documen
 var menuOverlay = document.querySelector(".menu-open-overlay"); //const footer = document.querySelector("footer");
 
 var burgerMenuJS = function burgerMenuJS() {
+  //re-activate when switch back to the app js file after testing
+  //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
   }); // window.addEventListener('resize', () => { //not working
@@ -111,5 +113,6 @@ var burgerMenuJS = function burgerMenuJS() {
     burgerMenuCont.style.overflowY = "scroll"; //scroll bar remains visible, but sits behind the bodyCont scroll bar
   };
 };
+burgerMenuJS();
 /******/ })()
 ;
