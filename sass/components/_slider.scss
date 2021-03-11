@@ -175,8 +175,8 @@
     border: 2px solid transparent; //this is the outer circle around the dot, affects dot placement if the border is removed.
 }
 
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.slick-dots li button:hover:before {
+//.slick-dots li button:focus:before {
     opacity: 1; //I've been experimenting with this, was originally set to 1
     color: $grey-color3; //i've added this to try and get the grey on hover
 }
