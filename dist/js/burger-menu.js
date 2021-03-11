@@ -40,16 +40,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu");
-var header = document.querySelector("header");
-var burgerMenu = document.querySelector(".burger-menu");
+var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu");
+
 var burgerMenuCont = document.querySelector(".burger-menu-container");
-var body = document.querySelector("body");
 var bodyCont = document.querySelector(".body-container");
-var main = document.querySelector("main");
 var menuOverlay = document.querySelector(".menu-open-overlay");
-var footer = document.querySelector("footer");
 var burgerMenuJS = function burgerMenuJS() {
+  //re-activate when switch back to the app js file after testing
+  //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
   }); // window.addEventListener('resize', () => { //not working
@@ -61,39 +59,24 @@ var burgerMenuJS = function burgerMenuJS() {
   });
   menuOverlay.addEventListener('click', function () {
     closeNav();
-  }); // bodyCont.addEventListener('animationend', () => {
-  //     hideScroll();
-  // })
-
+  });
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 
   var openNav = function openNav() {
-    body.style.overflowY = "hidden";
-    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality
+    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality  
 
-    burgerMenu.style.transition = "all 1s ease-out 0s";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
-    menuOverlay.style.zIndex = "800"; //bodyCont.style.transition = "all 1s ease-out";
-
-    header.style.transition = "all 1s ease-out";
-    main.style.transition = "all 1s ease-out";
-    footer.style.transition = "all 1s ease-out";
-    menuOverlay.style.transition = "all 1s ease-out";
+    menuOverlay.style.zIndex = "800";
+    bodyCont.style.transition = "all .5s ease-out";
+    menuOverlay.style.transition = "all .5s ease-out";
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       //wide screens
-      //bodyCont.style.transform = "translateX(-350px)";
-      //bodyCont.style.marginLeft = "-350px";
-      header.style.transform = "translateX(-350px)";
-      main.style.transform = "translateX(-350px)";
-      footer.style.transform = "translateX(-350px)";
+      bodyCont.style.transform = "translateX(-350px)";
       menuOverlay.style.transform = "translateX(-350px)";
     } else {
       //small screens
-      //bodyCont.style.transform = "translateX(-270px)";
-      header.style.transform = "translateX(-270px)";
-      main.style.transform = "translateX(-270px)";
-      footer.style.transform = "translateX(-270px)";
+      bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
     }
   };
@@ -101,30 +84,16 @@ var burgerMenuJS = function burgerMenuJS() {
 
 
   var closeNav = function closeNav() {
-    burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
-    //header.style.transform = "none";
-    //bodyCont.style.transform = "translateX(0px)";
+    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
 
-    header.style.transform = "translateX(0px)";
-    main.style.transform = "translateX(0px)";
-    footer.style.transform = "translateX(0px)";
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
     menuOverlay.style.zIndex = "0";
-    body.style.overflowY = "auto";
-    burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
-  }; // const hideScroll = () => {
-  //     //bodyCont.style.transition = "all 1s ease-out 3s";
-  //     bodyCont.style.overflowY = "hidden";
-  // }
-  //no longer needed, due to changes above
-  // burgerMenu.classList.toggle("menu-hide"); //default setting is hide, already added to the html
-  // if (burgerMenu.classList.contains("menu-hide")) {
-  //     closeNav();
-  // } else {
-  //     openNav();
-  // }
-
+    setTimeout(function () {
+      burgerMenuCont.scrollTop = 0;
+    }, 1000);
+  };
 };
+burgerMenuJS();
 /******/ })()
 ;

@@ -1,30 +1,38 @@
 .cookies-outer-container {
         position: fixed;
-        display: none;
         left: 0;
         top: 0;
-        height: 100%;
-        width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
-        z-index: 2;
-        background-color: rgba(0,0,0, 0.7);
         overflow-y: scroll;
+        height: 100vh;
+        width: 100vw;//100vw; //z index is less than the burger menu, but higher than the rest of the page
+        z-index: 6;
+        background-color: rgba(0,0,0, 0.7);
+        @media (min-width: $break-sm) {
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+        }
 }
 
 .cookies {
-    position: absolute;
+    position: relative;
     display: none;
     width: 90%;
-    max-width: 600px;
-    height: 490px;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    //overflow-y: auto; for testing only atm
-    
+    margin: 30px auto;
     background-color: $white;
-    //padding: 20px;
-    z-index: 3; //needs to be higher than the overlay
     border-radius: 5px;
+    @media (min-width: $break-sm) {
+        height: 505px;
+        width: 600px;
+        @media (max-height: 565px) {
+            margin: 30px auto;
+        }
+        @media (min-height: 566px) {
+            top: 50vh;
+            transform: translate(0, -50%);
+            margin: 0 auto;
+        }
+    }
 }
 
 .cookies p {
@@ -46,7 +54,6 @@
     &::after {
         content: "";
         position: absolute;
-        //width: 600px;
         left: 0;
         bottom: 0px;
         border-bottom: 1px solid $second-grey;
@@ -57,6 +64,7 @@
 .cookieButtons {
     position: relative;
     padding: 20px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,7 +75,7 @@
     button {
         text-transform: uppercase;
         width: calc(100% - 20px);
-        margin: 15px auto; //needs correcting at some point
+        margin: 15px auto; 
         height: 47px;
         padding: 5px 15px;
         border-radius: $round-corner;
@@ -87,9 +95,8 @@
     &::before {
         content: "";
         position: absolute;
-        //width: 600px;
         left: 0;
-        top: 0px;
+        top: 10px;
         border-top: 1px solid $second-grey;
         width: 100%;
     }
@@ -97,6 +104,7 @@
 
 #cookies-settings-button {
     background-color: $cookie-settings-color1;
+    margin: 0;
     &:hover,
     &:active {
         background-color: $cookie-settings-color2;
@@ -106,9 +114,14 @@
 
 #cookies-button {
     background-color: $web-color1;
+    margin: 0;
+    margin-top: 25px;
     &:hover,
     &:active {
         background-color: $web-color2;
         border: 1px solid $web-color3;
+    }
+    @media (min-width: $break-sm) {
+        margin-top: 0;
     }
 }

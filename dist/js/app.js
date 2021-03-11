@@ -1,10 +1,10 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "cookiesJS": function() { return /* binding */ cookiesJS; }
@@ -12,26 +12,25 @@ __webpack_require__.r(__webpack_exports__);
 var myStorage = window.localStorage;
 var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
-var cookiesOverlay = document.querySelector(".cookies-open-overlay");
-var cookiesOuter = document.querySelector(".cookies-outer-container");
-var body = document.querySelector("body");
+var cookiesOuter = document.querySelector(".cookies-outer-container"); //const bodyCont = document.querySelector("body-container");
+
 var cookiesJS = function cookiesJS() {
+  //re-activate when switch back to the app js file after testing
+  //const cookiesJS = () => { // this line is for testing only
   document.addEventListener("DOMContentLoaded", function () {
-    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //console.log(cookiesSaved); //this works, the value saves as true after the button is clicked.
-    //Checks if cookies are saved. Decides whether to display the cookies popup or not.
+    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //Checks if cookies are saved. Decides whether to display the cookies popup or not.
 
     if (cookiesSaved === 'yes') {
       cookies.style.display = "none";
-      cookiesOuter.style.display = "none"; //was overlay
-
+      cookiesOuter.style.display = "none";
       console.log("cookies already accepted"); //for testing purposes
     } else {
       cookies.style.display = "block";
-      cookiesOuter.style.display = "block"; //was overlay
+      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
 
       console.log("user needs to accept cookies"); //for testing purposes
 
-      body.style.overflowY = "hidden";
+      cookiesOuter.style.overflowY = "auto"; //bodyCont.style.overflowY = "hidden"
     }
   });
   cookiesButton.addEventListener('click', function () {
@@ -40,17 +39,16 @@ var cookiesJS = function cookiesJS() {
     console.log('cookies accepted'); //for testing purposes
 
     cookies.style.display = "none";
-    cookiesOuter.style.display = "none"; //was overlay
-
-    body.style.overflowY = "scroll";
+    cookiesOuter.style.overflowY = "hidden";
+    cookiesOuter.style.display = "none";
   });
 };
+cookiesJS();
 
 /***/ }),
 /* 2 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "searchbarJS": function() { return /* binding */ searchbarJS; }
@@ -61,9 +59,11 @@ var searchInput = document.querySelector("#search-bar-input");
 var supportButton = document.querySelector("#support-button");
 var contactButton = document.querySelector("#contact-button");
 var searchbarJS = function searchbarJS() {
+  //re-activate when switch back to the app js file after testing
+  //const searchbarJS = () => {    // this line is for testing only
   searchButton.addEventListener('click', function () {
     searchToggle();
-  });
+  }); //Works absolutely fine.... except for IE
 
   var searchToggle = function searchToggle() {
     supportButton.classList.toggle("toggle-hide"); //displays/hides the button
@@ -73,92 +73,87 @@ var searchbarJS = function searchbarJS() {
     searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
 
     searchInput.classList.toggle("toggle-hide"); // show element - this class is already added to the html
-  };
-};
+  }; // const searchToggle = () => {
+  //     if(supportButton.classList.contains("toggle-hide")) {
+  //         supportButton.classList.remove("toggle-hide");
+  //     } else {
+  //         supportButton.classList.add("toggle-hide");
+  //     } 
+  //     if(contactButton.classList.contains("toggle-hide")) {
+  //         contactButton.classList.remove("toggle-hide");
+  //     } else {
+  //         contactButton.classList.add("toggle-hide");
+  //     }
+  //     if(searchBar.classList.contains("toggle-search-width")) {
+  //         searchBar.classList.remove("toggle-search-width");
+  //     } else {
+  //         searchBar.classList.add("toggle-search-width");
+  //     }
+  //     if(searchInput.classList.contains("toggle-hide")) {
+  //         searchInput.classList.remove("toggle-hide");
+  //     } else {
+  //         searchInput.classList.add("toggle-hide");
+  //     }
+  // }
+
+}; //searchbarJS(); for testing purposes only - this breaks it if it's set to export.
 
 /***/ }),
 /* 3 */
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-//code adapted from:
-// https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
-//I have edited the code (both JS (minor changes) and SCSS (more changes)), but it is very similar to the original
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "stickyHeader": function() { return /* binding */ stickyHeader; }
+/* harmony export */ });
 //currently the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var body = document.querySelector("body");
-
+var bodyCont = document.querySelector(".body-container");
 var stickyHeader = function stickyHeader() {
-  // Hide Header on on scroll down
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5; //the minumum amount they have to scroll to trigger a response?
+  //re-activate when switch back to the app js file after testing
+  //const stickyHeader = () => { // this line is for testing only
+  bodyCont.onscroll = function () {
+    sticky();
+  };
 
-  var navbarHeight = $('header').outerHeight();
-  $(window).scroll(function (event) {
-    didScroll = true;
-  });
-  setInterval(function () {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
+  var previous = 0;
 
-  function hasScrolled() {
-    var st = $(this).scrollTop(); // Make sure they scroll more than delta
-
-    if (Math.abs(lastScrollTop - st) <= delta) return; // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.    
-
-    if (st > lastScrollTop) {
-      //my code
-      //if (st > lastScrollTop && st > navbarHeight){ ///this is the original code
-      // Scroll Down
-      body.style.paddingTop = "0px"; // my code, this is the same as the header height. Removed - now added on scroll up
-
-      $('header').removeClass('nav-down').addClass('nav-up'); //original code
+  function sticky() {
+    //   if (bodyCont.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
+      //header.className = "nav-hide";
+      header.classList.remove("nav-show");
+      header.classList.add("nav-hide");
     } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        if (window.matchMedia('(min-width: 993px)').matches) {
-          body.style.paddingTop = "208px"; //wider screen/ desktop header height
-        } else if (window.matchMedia('(min-width: 768px)').matches) {
-          body.style.paddingTop = "110px"; //tablet header height
-        } else {
-          body.style.paddingTop = "168px"; //mobile header height
-        }
-
-        $('header').removeClass('nav-up').addClass('nav-down');
-      }
+      //header.className = "nav-show";
+      header.classList.remove("nav-hide");
+      header.classList.add("nav-show");
     }
 
-    lastScrollTop = st;
+    previous = bodyCont.scrollTop;
   }
 };
-
 stickyHeader();
 
 /***/ }),
 /* 4 */
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "burgerMenuJS": function() { return /* binding */ burgerMenuJS; }
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu");
-var header = document.querySelector("header");
-var burgerMenu = document.querySelector(".burger-menu");
+var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu");
+
 var burgerMenuCont = document.querySelector(".burger-menu-container");
-var body = document.querySelector("body");
 var bodyCont = document.querySelector(".body-container");
-var main = document.querySelector("main");
 var menuOverlay = document.querySelector(".menu-open-overlay");
-var footer = document.querySelector("footer");
 var burgerMenuJS = function burgerMenuJS() {
+  //re-activate when switch back to the app js file after testing
+  //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
   }); // window.addEventListener('resize', () => { //not working
@@ -170,39 +165,24 @@ var burgerMenuJS = function burgerMenuJS() {
   });
   menuOverlay.addEventListener('click', function () {
     closeNav();
-  }); // bodyCont.addEventListener('animationend', () => {
-  //     hideScroll();
-  // })
-
+  });
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 
   var openNav = function openNav() {
-    body.style.overflowY = "hidden";
-    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality
+    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality  
 
-    burgerMenu.style.transition = "all 1s ease-out 0s";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
-    menuOverlay.style.zIndex = "800"; //bodyCont.style.transition = "all 1s ease-out";
-
-    header.style.transition = "all 1s ease-out";
-    main.style.transition = "all 1s ease-out";
-    footer.style.transition = "all 1s ease-out";
-    menuOverlay.style.transition = "all 1s ease-out";
+    menuOverlay.style.zIndex = "800";
+    bodyCont.style.transition = "all .5s ease-out";
+    menuOverlay.style.transition = "all .5s ease-out";
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       //wide screens
-      //bodyCont.style.transform = "translateX(-350px)";
-      //bodyCont.style.marginLeft = "-350px";
-      header.style.transform = "translateX(-350px)";
-      main.style.transform = "translateX(-350px)";
-      footer.style.transform = "translateX(-350px)";
+      bodyCont.style.transform = "translateX(-350px)";
       menuOverlay.style.transform = "translateX(-350px)";
     } else {
       //small screens
-      //bodyCont.style.transform = "translateX(-270px)";
-      header.style.transform = "translateX(-270px)";
-      main.style.transform = "translateX(-270px)";
-      footer.style.transform = "translateX(-270px)";
+      bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
     }
   };
@@ -210,31 +190,17 @@ var burgerMenuJS = function burgerMenuJS() {
 
 
   var closeNav = function closeNav() {
-    burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
-    //header.style.transform = "none";
-    //bodyCont.style.transform = "translateX(0px)";
+    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
 
-    header.style.transform = "translateX(0px)";
-    main.style.transform = "translateX(0px)";
-    footer.style.transform = "translateX(0px)";
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
     menuOverlay.style.zIndex = "0";
-    body.style.overflowY = "auto";
-    burgerMenuCont.style.overflowY = "hidden"; //removes menu scroll functionality 
-  }; // const hideScroll = () => {
-  //     //bodyCont.style.transition = "all 1s ease-out 3s";
-  //     bodyCont.style.overflowY = "hidden";
-  // }
-  //no longer needed, due to changes above
-  // burgerMenu.classList.toggle("menu-hide"); //default setting is hide, already added to the html
-  // if (burgerMenu.classList.contains("menu-hide")) {
-  //     closeNav();
-  // } else {
-  //     openNav();
-  // }
-
+    setTimeout(function () {
+      burgerMenuCont.scrollTop = 0;
+    }, 1000);
+  };
 };
+burgerMenuJS();
 
 /***/ })
 /******/ 	]);
@@ -263,18 +229,6 @@ var burgerMenuJS = function burgerMenuJS() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -305,14 +259,12 @@ var burgerMenuJS = function burgerMenuJS() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cookies_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _searchbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sticky_header_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _burger_menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 //////////////////////////////////////////////////////////////////////////////////////////
 //all document query selectors
@@ -346,8 +298,8 @@ __webpack_require__.r(__webpack_exports__);
 var app = function app() {
   (0,_burger_menu_js__WEBPACK_IMPORTED_MODULE_3__.burgerMenuJS)();
   (0,_cookies_js__WEBPACK_IMPORTED_MODULE_0__.cookiesJS)();
-  (0,_searchbar_js__WEBPACK_IMPORTED_MODULE_1__.searchbarJS)();
   (0,_sticky_header_js__WEBPACK_IMPORTED_MODULE_2__.stickyHeader)();
+  (0,_searchbar_js__WEBPACK_IMPORTED_MODULE_1__.searchbarJS)();
 };
 
 app(); // //not working properly

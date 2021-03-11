@@ -45,22 +45,25 @@
 header {
     //position is controlled by sticky-header.js
     top: 0;
+    left: 0;
     transition: top 0.2s ease-in-out;
     background-color: $white;
+    width: 100%;
 }
 
 // we'll add this class using javascript
-.nav-up { //NOT the same as scroll up - this is when the nav displays
+.nav-hide { //for scrolling down
     position: relative;
     top: 0;
     left: 0;
     //top: -208px; // same as header height. use variables in LESS/SASS
   }
 
-.nav-down { //NOT the same as scroll down - this is when the nav displays
-    position: fixed;
+.nav-show { //for scrolling up
+    position: sticky;//fixed; //sticky doesn't work in IE, but fixed makes the header too wide - it covers the scroll.
     top: 0;
     left: 0;
+    z-index: 20000;
 }
 
 //////////////////////////////////////////////////////////
@@ -91,23 +94,45 @@ header {
 ///////////////////////
 // attempted scroll bar fixes
 ////////////////////////
-// html {
-//     overflow-y: hidden;
-//     overflow-x: hidden;
-// }
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
+}
 
-// html::-webkit-scrollbar {
-//     width: 0px;  /* Remove scrollbar space /
-//     //background: transparent;  // Optional: just make scrollbar invisible */
-// }
+html::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space /
+    //background: transparent;  // Optional: just make scrollbar invisible */
+}
 
-// .body-container {
-//    overflow-y: scroll;
-//    overflow-x: hidden;
-//    //width: calc(100% + (100vw - 100%));
-// }
+.body-container {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   //border: 5px solid red;
+   width: 100vw;
+   height: 100vh;
+   z-index: 1;
+   background-color: $white;
+//    &::-webkit-scrollbar {
+//     width: 20px; 
+//     }
+}
+
+
 
 // .body-container::-webkit-scrollbar {
+//     width: 1em;
+//   }
+   
+// .body-container::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//   }
+   
+// .body-container::-webkit-scrollbar-thumb {
+//     background-color: darkgrey;
+//     outline: 1px solid slategrey;
+//   }
+// .-container::-webkit-scrollbar {
 //     width: 10px;  /* Remove scrollbar space /
 //     //background: transparent;  // Optional: just make scrollbar invisible */
 // }
@@ -138,7 +163,7 @@ header {
 // }
 
 body,
-//.body-container,
+.body-container,
 main,
 .main-content,
 .cards,
@@ -151,7 +176,8 @@ footer {
 .main-content,
 footer,
 header,
-nav {
+nav,
+.nav-container {
     background-color: $white;
 }
 
@@ -164,12 +190,12 @@ header {
 }
 
 body {
-    z-index: 0;
+    z-index: 1;
 }
 
-// nav,
-// .nav-container,
-// .nav-2,
-// main {
-//     z-index: 1;
-// }
+nav,
+.nav-container,
+.nav-2,
+main {
+    z-index: 1;
+}
