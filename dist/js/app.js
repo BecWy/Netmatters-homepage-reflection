@@ -12,12 +12,13 @@ __webpack_require__.r(__webpack_exports__);
 var myStorage = window.localStorage;
 var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
-var cookiesOuter = document.querySelector(".cookies-outer-container");
-var body = document.querySelector("body");
+var cookiesOuter = document.querySelector(".cookies-outer-container"); //const bodyCont = document.querySelector("body-container");
+
 var cookiesJS = function cookiesJS() {
+  //re-activate when switch back to the app js file after testing
+  //const cookiesJS = () => { // this line is for testing only
   document.addEventListener("DOMContentLoaded", function () {
-    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //console.log(cookiesSaved); //this works, the value saves as true after the button is clicked.
-    //Checks if cookies are saved. Decides whether to display the cookies popup or not.
+    var cookiesSaved = localStorage.getItem('cookiesAccepted'); //Checks if cookies are saved. Decides whether to display the cookies popup or not.
 
     if (cookiesSaved === 'yes') {
       cookies.style.display = "none";
@@ -25,11 +26,11 @@ var cookiesJS = function cookiesJS() {
       console.log("cookies already accepted"); //for testing purposes
     } else {
       cookies.style.display = "block";
-      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need to scroll
+      cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
 
       console.log("user needs to accept cookies"); //for testing purposes
 
-      cookiesOuter.style.overflowY = "auto";
+      cookiesOuter.style.overflowY = "auto"; //bodyCont.style.overflowY = "hidden"
     }
   });
   cookiesButton.addEventListener('click', function () {
@@ -42,6 +43,7 @@ var cookiesJS = function cookiesJS() {
     cookiesOuter.style.display = "none";
   });
 };
+cookiesJS();
 
 /***/ }),
 /* 2 */
@@ -57,6 +59,8 @@ var searchInput = document.querySelector("#search-bar-input");
 var supportButton = document.querySelector("#support-button");
 var contactButton = document.querySelector("#contact-button");
 var searchbarJS = function searchbarJS() {
+  //re-activate when switch back to the app js file after testing
+  //const searchbarJS = () => {    // this line is for testing only
   searchButton.addEventListener('click', function () {
     searchToggle();
   });
@@ -94,6 +98,7 @@ var searchbarJS = function searchbarJS() {
   // }
 
 };
+searchbarJS();
 
 /***/ }),
 /* 3 */
@@ -108,6 +113,8 @@ var header = document.querySelector("header");
 var body = document.querySelector("body");
 var bodyCont = document.querySelector(".body-container");
 var stickyHeader = function stickyHeader() {
+  //re-activate when switch back to the app js file after testing
+  //const stickyHeader = () => { // this line is for testing only
   bodyCont.onscroll = function () {
     sticky();
   };
@@ -129,6 +136,7 @@ var stickyHeader = function stickyHeader() {
     previous = bodyCont.scrollTop;
   }
 };
+stickyHeader();
 
 /***/ }),
 /* 4 */
@@ -140,16 +148,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu"); //const header = document.querySelector("header");
+var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu");
 
-var burgerMenu = document.querySelector(".burger-menu");
-var burgerMenuCont = document.querySelector(".burger-menu-container"); //const body = document.querySelector("body");
-
-var bodyCont = document.querySelector(".body-container"); //const main = document.querySelector("main");
-
-var menuOverlay = document.querySelector(".menu-open-overlay"); //const footer = document.querySelector("footer");
-
+var burgerMenuCont = document.querySelector(".burger-menu-container");
+var bodyCont = document.querySelector(".body-container");
+var menuOverlay = document.querySelector(".menu-open-overlay");
 var burgerMenuJS = function burgerMenuJS() {
+  //re-activate when switch back to the app js file after testing
+  //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
   }); // window.addEventListener('resize', () => { //not working
@@ -161,39 +167,24 @@ var burgerMenuJS = function burgerMenuJS() {
   });
   menuOverlay.addEventListener('click', function () {
     closeNav();
-  }); // bodyCont.addEventListener('animationend', () => {
-  //     hideScroll();
-  // })
-
+  });
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 
   var openNav = function openNav() {
-    //body.style.overflowY = "hidden";
-    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality
+    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality  
 
-    burgerMenu.style.transition = "all 1s ease-out 0s";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
     menuOverlay.style.zIndex = "800";
-    bodyCont.style.transition = "all 1s ease-out"; // header.style.transition = "all 1s ease-out";
-    // main.style.transition = "all 1s ease-out";
-    // footer.style.transition = "all 1s ease-out";
-
-    menuOverlay.style.transition = "all 1s ease-out";
+    bodyCont.style.transition = "all .5s ease-out";
+    menuOverlay.style.transition = "all .5s ease-out";
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       //wide screens
-      bodyCont.style.transform = "translateX(-350px)"; //bodyCont.style.marginLeft = "-350px";
-      // header.style.transform = "translateX(-350px)";
-      // main.style.transform = "translateX(-350px)";
-      // footer.style.transform = "translateX(-350px)";
-
+      bodyCont.style.transform = "translateX(-350px)";
       menuOverlay.style.transform = "translateX(-350px)";
     } else {
       //small screens
-      bodyCont.style.transform = "translateX(-270px)"; // header.style.transform = "translateX(-270px)";
-      // main.style.transform = "translateX(-270px)";
-      // footer.style.transform = "translateX(-270px)";
-
+      bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
     }
   };
@@ -201,16 +192,17 @@ var burgerMenuJS = function burgerMenuJS() {
 
 
   var closeNav = function closeNav() {
-    burgerMenu.style.transition = "all 1s ease-out 3s"; //doesn't disappear until covered by the main content again
-
-    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header
+    bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
 
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
     menuOverlay.style.zIndex = "0";
-    burgerMenuCont.style.overflowY = "scroll"; //scroll bar remains visible, but sits behind the bodyCont scroll bar
+    setTimeout(function () {
+      burgerMenuCont.scrollTop = 0;
+    }, 1000);
   };
 };
+burgerMenuJS();
 
 /***/ })
 /******/ 	]);
