@@ -48,41 +48,39 @@ var searchbarJS = function searchbarJS() {
   //const searchbarJS = () => {    // this line is for testing only
   searchButton.addEventListener('click', function () {
     searchToggle();
-  });
+  }); //Works absolutely fine.... except for IE
 
   var searchToggle = function searchToggle() {
-    if (supportButton.classList.contains("toggle-hide")) {
-      supportButton.classList.remove("toggle-hide");
-    } else {
-      supportButton.classList.add("toggle-hide");
-    }
+    supportButton.classList.toggle("toggle-hide"); //displays/hides the button
 
-    if (contactButton.classList.contains("toggle-hide")) {
-      contactButton.classList.remove("toggle-hide");
-    } else {
-      contactButton.classList.add("toggle-hide");
-    }
+    contactButton.classList.toggle("toggle-hide"); //displays/hides the button
 
-    if (searchBar.classList.contains("toggle-search-width")) {
-      searchBar.classList.remove("toggle-search-width");
-    } else {
-      searchBar.classList.add("toggle-search-width");
-    }
+    searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
 
-    if (searchInput.classList.contains("toggle-hide")) {
-      searchInput.classList.remove("toggle-hide");
-    } else {
-      searchInput.classList.add("toggle-hide");
-    }
-  }; //Works absolutely fine.... except for IE
-  // const searchToggle = () => {
-  //     supportButton.classList.toggle("toggle-hide"); //displays/hides the button
-  //     contactButton.classList.toggle("toggle-hide"); //displays/hides the button
-  //     searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
-  //     searchInput.classList.toggle("toggle-hide") // show element - this class is already added to the html
+    searchInput.classList.toggle("toggle-hide"); // show element - this class is already added to the html
+  }; // const searchToggle = () => {
+  //     if(supportButton.classList.contains("toggle-hide")) {
+  //         supportButton.classList.remove("toggle-hide");
+  //     } else {
+  //         supportButton.classList.add("toggle-hide");
+  //     } 
+  //     if(contactButton.classList.contains("toggle-hide")) {
+  //         contactButton.classList.remove("toggle-hide");
+  //     } else {
+  //         contactButton.classList.add("toggle-hide");
+  //     }
+  //     if(searchBar.classList.contains("toggle-search-width")) {
+  //         searchBar.classList.remove("toggle-search-width");
+  //     } else {
+  //         searchBar.classList.add("toggle-search-width");
+  //     }
+  //     if(searchInput.classList.contains("toggle-hide")) {
+  //         searchInput.classList.remove("toggle-hide");
+  //     } else {
+  //         searchInput.classList.add("toggle-hide");
+  //     }
   // }
 
-};
-searchbarJS();
+}; //searchbarJS(); for testing purposes only - this breaks it if it's set to export.
 /******/ })()
 ;

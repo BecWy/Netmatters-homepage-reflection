@@ -34,11 +34,12 @@ import { burgerMenuJS } from "./burger-menu.js"
 const app = () => {
     burgerMenuJS();
     cookiesJS();
-    searchbarJS();
     stickyHeader();
+    searchbarJS();
 }
 
 app();
+
 
 
 // //not working properly
