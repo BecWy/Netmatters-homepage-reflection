@@ -1,0 +1,201 @@
+
+/////////////////////////////////////////
+//TOGGLE
+/////////////////////////////////////////////////////
+
+//Only want to toggle in medium screens
+
+@media (min-width: $break-med) and (max-width: $break-lg) {
+    //show search input --------- not needed (for now) all search toggle items are using toggle-hide
+    // .toggle-show {
+    //     display: inline-block;
+    //     border-radius: 0;
+    // }
+
+    //hide contact and support buttons on toggle
+    .toggle-hide {
+        display: none;
+    }
+
+    
+    
+
+    //edit search bar width
+    .toggle-search-width {
+        width: 363px;
+        button {
+            margin-right: 0;
+            margin-left: auto;
+            //border-radius: 0px $round-corner $round-corner 0px;
+        }
+    }
+}
+
+
+
+
+//////////////////////////////////////////////////////////
+//STICKY HEADER
+////////////////////////////
+
+
+//allow space for the fixed header
+
+//header styles
+header {
+    //position is controlled by sticky-header.js
+    top: 0;
+    left: 0;
+    transition: top 0.2s ease-in-out;
+    background-color: $white;
+    width: 100%;
+}
+
+// we'll add this class using javascript
+.nav-hide { //for scrolling down
+    position: relative;
+    top: 0;
+    left: 0;
+    //top: -208px; // same as header height. use variables in LESS/SASS
+  }
+
+.nav-show { //for scrolling up
+    position: sticky;//fixed; //sticky doesn't work in IE, but fixed makes the header too wide - it covers the scroll.
+    top: 0;
+    left: 0;
+    z-index: 20000;
+}
+
+//////////////////////////////////////////////////////////
+//BURGER MENU
+////////////////////////////
+//show and hide burger menu on toggle
+// .menu-hide {
+//     //width: 0;
+//     //transform: translate(238px, 0);
+// }
+
+
+.menu-open-overlay {
+//.cookies-open-overlay { //not using the cookies one anymore
+    position: absolute;
+    display: block; 
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;//100vw; //z index is less than the burger menu, but higher than the rest of the page
+}
+
+.cookies-open-overlay { //not using the cookies one anymore
+    background-color: rgba(0,0,0, 0.7);
+}
+
+
+///////////////////////
+// attempted scroll bar fixes
+////////////////////////
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space /
+    //background: transparent;  // Optional: just make scrollbar invisible */
+}
+
+.body-container {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   //border: 5px solid red;
+   width: 100vw;
+   height: 100vh;
+   z-index: 1;
+   background-color: $white;
+//    &::-webkit-scrollbar {
+//     width: 20px; 
+//     }
+}
+
+
+
+// .body-container::-webkit-scrollbar {
+//     width: 1em;
+//   }
+   
+// .body-container::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//   }
+   
+// .body-container::-webkit-scrollbar-thumb {
+//     background-color: darkgrey;
+//     outline: 1px solid slategrey;
+//   }
+// .-container::-webkit-scrollbar {
+//     width: 10px;  /* Remove scrollbar space /
+//     //background: transparent;  // Optional: just make scrollbar invisible */
+// }
+
+
+
+
+// .translate-left { ////////////////////////////////////doesn't work, don't know why. Was trying to streamline the JS for the burger menu, but will have to leave it as it is.
+//     transform: translate(-270px, 0);
+//     margin-left: -350px;
+//     @media (min-width: $break-med) {
+//         transform: translate(-350px, 0);
+//         margin-left: -350px;
+//     }
+// }
+//JS code I tried, this does successfully add the class, the elements just don't move
+// header.classList.add(".translate-left");
+// main.classList.add(".translate-left");
+// footer.classList.add(".translate-left");
+// menuOverlay.classList.add(".translate-left");
+
+//////////////////////////////////////////////////////////////////////////
+//z indexes for burger menu
+///////////////////////////////////////////////////////////////////////////
+// .burger-menu,
+// .burger-menu > * {
+//     z-index: -300;
+// }
+
+body,
+.body-container,
+main,
+.main-content,
+.cards,
+.news-container,
+footer {
+    position: relative;
+}
+
+.body-container,
+.main-content,
+footer,
+header,
+nav,
+.nav-container {
+    background-color: $white;
+}
+
+header {
+    z-index: 100;
+}
+
+.menu-open-overlay {
+    z-index: 0;
+}
+
+body {
+    z-index: 1;
+}
+
+nav,
+.nav-container,
+.nav-2,
+main {
+    z-index: 1;
+}

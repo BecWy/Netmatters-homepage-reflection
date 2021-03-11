@@ -20,6 +20,10 @@
     & a {
         height: 98px;
     }
+    @media (min-width: $break-med) {
+        //Nav bar appears
+        display: flex;
+    }
 }
 
 // MENU BOXES

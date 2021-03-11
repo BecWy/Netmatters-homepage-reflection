@@ -13,13 +13,19 @@
 
 // Layout Styles
 @import 'layout/nav',
-        'layout/main',
         'layout/header',
+        'layout/burger-menu',
+        'layout/main',     
         'layout/footer';
 
 // Component Styles
 @import 'components/buttons',
         'components/icons',
-        'components/slider';
+        'components/slider',
+        'components/cookies.scss';
 
 @import 'layout/media';
+
+
+//JS class actions
+@import 'components/js';

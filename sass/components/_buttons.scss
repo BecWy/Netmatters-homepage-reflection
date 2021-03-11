@@ -26,30 +26,46 @@
     font-weight: $bold;
 }
 
-.banner-container > .button a {
-    padding: 5px 20px;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    background-color: $web-color1;
-    border: 1px solid $web-color1;
-    color: $white;
-    border-radius: $round-corner;
-    font-weight: $regular;
-    &:hover,
-    &:active {
-        background-color: $web-color2;
-        border: 1px solid $web-color3;
-    }
-}
-
-
 .fake-button {
     text-align: center;
     display: inline-block;
     border-radius: $round-corner;
     text-transform: uppercase;
     font-weight: $regular;
+}
+
+
+//SLIDES
+.slide .button {
+    border-radius: $round-corner;
+}
+
+
+@each $theme, $color in $themes {
+    .slide .button-#{$theme} a {
+        color: $white;
+        background-color: $color;
+        border: 1px solid $color;
+        padding: 5px 20px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        font-weight: $regular;
+    }
+} 
+
+@each $theme, $color in $themes-secondary {
+    .slide .button-#{$theme} a:hover,
+    .slide .button-#{$theme} a:active {
+        background-color: $color;
+    }
+} 
+
+@each $theme, $color in $themes-tertiary {
+    .slide .button-#{$theme} a:hover,
+    .slide .button-#{$theme} a:active {
+        border: 1px solid $color;
+    }
 }
 
 .intro .button a {
@@ -166,10 +182,10 @@
 
 
 //ACTIVE SETTINGS
-#support:active,
-#contact:active,
+.support-button:active,
+.contact-button:active,
 #menu:active,
-.banner-container .button a:active,
+.slides .button a:active,
 .fake-button:active,
 .intro-container .button a:active,
 .news-text .button a:active {
