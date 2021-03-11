@@ -2,15 +2,9 @@
 header {
     width: 100%;
     position: relative;
-    background-color: $white;
 }
 
 nav {
-    width: 100%;
-}
-
-.nav-container {
-    background-color: $white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,39 +13,14 @@ nav {
     width: 100%;
     position: relative;
     padding-bottom: 60px;
-    @media (min-width: $break-sm) {
-        flex-wrap: nowrap;
-        width: 750px;
-        height: 110px;
-        margin: 0 auto;
-        padding-bottom: 0;
-    }
-    @media (min-width: $break-med) {
-        width: 970px;
-        margin: 0 auto;
-    }
-    @media (min-width: $break-lg) { 
-        width: 1200px;
-    }
 }
 
 #logo {
     height: auto;
     padding-left: 15px;
     flex: 1 1;
-    @media (min-width: $break-sm) {
-        width: 375px;
-        padding-right: 15px;
-    }
-}
-
-#logo img {
-    max-width: 100%;
-    @media (min-width: $break-sm) {
-        width: 345px;
-    }
-    @media (min-width: $break-med) {
-        width: 370px;
+    & img {
+        max-width: 100%;
     }
 }
 
@@ -81,9 +50,6 @@ nav {
             border-bottom: 3px solid $main-grey;
             z-index: 2;
         }
-    }
-    @media (min-width: $break-sm) {
-        display: none;
     }
 }
 
@@ -120,14 +86,10 @@ nav {
         letter-spacing: normal;
         margin-top: 4px;
     }
-    @media (min-width: $break-sm) {
-        order: 2;
-        margin-left: 20px;
-    }
 }
 
-.support-button,
-.contact-button {
+#support,
+#contact {
     padding: 5px 13px;
     font-size: 18px;
     line-height: 46px;
@@ -135,19 +97,14 @@ nav {
     text-align:	center;
     border-radius: $round-corner;
     color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-transform: uppercase;
     display: none; //hidden for small screens
-    @media (min-width: $break-med) {
-        //hide on toggle, see js-classes.scss and searchbar.js
-        display: inline-block;
-    }
-    @media (min-width: $break-lg) {
-        //Making certain the buttons are displayed after toggle in the previous screen size.
-        display: inline-block;
-    }
 }
 
-.support-button {
+#support {
     background-color: $it-color1;
     border: 1px solid $it-color1;
     width: 145px;
@@ -156,12 +113,9 @@ nav {
         background-color: $it-color2;
         border-color: $it-color3;
     }
-    // @media (min-width: $break-med) { //doesn't seem to be necessary.
-    //     margin-left: auto;
-    // }
 }
 
-.contact-button {
+#contact {
     background-color: $contact-color1;
     border: 1px solid $contact-color1;
     margin-left: 20px;
@@ -173,7 +127,7 @@ nav {
     }
 }
 
-.search-bar {
+#search-bar {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -182,36 +136,9 @@ nav {
     height: 47px;
     padding: 0 15px;
     margin-top: 10px;
-    @media (min-width: $break-sm) {
-        //NAV SEARCH BAR moves up
-        display: inline-block;
-        display: flex;
-        flex-direction: row;
-        width: 240px;
-        align-self: center;
-        justify-self: center;
-        height: 56px;
-        margin-left: auto;
-        //ADDITIONS FROM MEDIA QUERY CHANGES
-        position: relative;
-        bottom: 0;
-        padding: 0 0; //not working?
-        margin-top: 0; //to increase?
-        margin: 0 auto;
-    }
-    @media (min-width: $break-med) {
-        //container gets narrower when the support and contact buttons are displayed, and expands on toggle to accommodate the search input
-        width: 63px;
-        margin-left: 20px;
-    }
-    @media (min-width: $break-lg) { 
-        //return to wider container for large screens
-        width: 303px;
-    }
 }
 
-#search-bar-input {
-// .search-bar input[type=text] {
+#search-bar input[type=text] {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: normal;
@@ -231,41 +158,9 @@ nav {
         outline: none;
         box-shadow: none;
     }
-    //SEARCH BAR //remove box shadow & change border
-    @media (min-width: $break-sm) {
-        outline: none;
-        border: 1px solid $second-grey;
-        background-color: $white;
-        border-radius: 0;
-        height: 56px;
-        width: 174px;
-        font-size: 14px;
-        line-height: 20px;
-        position: relative;
-        right: 0;
-        //NAV SEARCH BAR focus blue
-        &:focus {
-            outline: 0;
-            border: .5px solid #5bc0de;
-            box-shadow: rgba(91, 192, 222, .6) 0px 0px 8px 0px;
-        }
-    }
-    //displays on toggle, see js-classes.scss and searchbar.js
-    //@media (min-width: $break-med) - see js.scss, toggle. Set to display: none with a class.
-    @media (min-width: $break-med) { 
-        width: 300px;
-    }
-    
-    //bring back search input
-    @media (min-width: $break-lg) { 
-        display: inline-block;
-        width: 240px;
-    }
 }
 
-
-
-.search-bar button[type=button] {
+#search-bar button[type=button] {
     position: absolute;
     top: 0px;
     right: 15px;
@@ -285,33 +180,6 @@ nav {
         color: $main-grey;
         text-align: right;
         padding-right: 10px; 
-    }
-    @media (min-width: $break-sm) {
-        background-color: $search-button-color1;
-        height: 56px;   
-        border-radius: 0px 3px 3px 0px;
-        width: 63px;
-        position: relative;
-        left: 0;
-        &:hover {
-            background-color: $search-button-color2;
-        }
-        & i {
-            color: $white;
-            height: 56px;
-            line-height: 56px;
-            font-size: 23px;
-            width: 100%;
-            text-align: center;
-            padding-right: 0;
-        }
-    }
-    @media (min-width: $break-med) {
-        border-radius: $round-corner;
-    }
-    //re-square the search button inner corners
-    @media (min-width: $break-lg) {  
-        border-radius: 0px 3px 3px 0px;
     }
 }
 

@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  letter-spacing: 0.4px;
+}
+
+a {
+  text-decoration: none;
+}

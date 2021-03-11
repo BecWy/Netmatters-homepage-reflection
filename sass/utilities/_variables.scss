@@ -49,15 +49,9 @@
     $search-button-color1: #999aa2; //base
     $search-button-color2: #7e808a; //hover
 
-    $cookie-settings-color1: #999aa2; //base
-    $cookie-settings-color2: #7e808a; //hover
-    $cookie-settings-color3: #797a85; //hover and active border
-
-    $menu-color1: #333645; //base  
-    $menu-color2: #22242e; //hover  //$color: #262834 
+    $menu-color1: #333645; //base
+    $menu-color2: #22242e; //hover
     $menu-color3: #191a22; //hover and active border
-    $menu-color4: #3D404E; //hover on the side menu
-    
 
     $culture-button-color1: #fff; //base
     $culture-button-color2: #ebebeb; //hover
@@ -89,7 +83,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //TEXT CONTAINER WIDTHS //NOT IN USE YET
-    $width-xs: 95%; //using this for cookie popup
+    $width-xs: 95%;
     $width-sm: 720px;   ///some elements have padding included, these are 750px. TO figure out. 4 are 720px, 2 are 750px. Main footer is different - to check. Nav different too.
     $width-med: 940px; ///some elements have padding included, these are 970px. TO figure out. 5 are 940px, 2 are 970px. Main footer is different - to check. Nav different too.
     $width-lg:1170px; //5 containers with this width. Nav, footer and one other are different.
@@ -127,15 +121,5 @@ $themes-secondary: (
     'web': $web-color2,
     'cyber': $cyber-color2,
     'training': $training-color2,
-);
-
-$themes-tertiary: (
-    'software': $software-color3,
-    'it': $it-color3,
-    'marketing': $marketing-color3,
-    'telecoms': $telecoms-color3,
-    'web': $web-color3,
-    'cyber': $cyber-color3,
-    'training': $training-color3,
 );
 
