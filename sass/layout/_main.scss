@@ -21,6 +21,20 @@
     justify-content: center; 
     padding-top: 20px;
     padding-bottom: 50px;
+    @media (min-width: $break-sm) {  
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;   ////////////check justify settings
+        width: 720px; ///////////maintain equal margins
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: $break-med) {
+        width: 940px;
+    }
+    @media (min-width: $break-lg) { 
+        width: 1170px; ///////////maintain equal margins
+    }
 }
 
 .card {
@@ -81,6 +95,88 @@
     line-height: 35px;
 }
 
+//formatting specifically for each breakpoint
+
+.card-row-1 {
+    @media (min-width: $break-sm) {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (min-width: $break-med) {
+        width: 293.333px;
+        height: 356px;
+        & > p {
+            height: 110px; 
+        }
+    }
+    @media (min-width: $break-lg) {  
+        width: 370px;
+        height: 312px;
+        & > p {
+            height: 66px;       
+        }
+    }
+}
+
+
+
+
+.card-row-2 {
+    @media (min-width: $break-sm) {
+        width: 343px;
+        & p {
+            height: 66px;
+        }
+    }
+    @media (min-width: $break-med) {
+        width: 455px;
+        & > p {
+            height: 44px;
+        }
+    }
+    @media (min-width: $break-lg) {  
+        width: 270px;
+        & >  p {
+            height: 66px;
+        } 
+    }
+    
+}
+
+@media (min-width: $break-sm) {
+    .card-telecoms,
+    .card-cyber {
+        margin-left: 0;
+    }
+
+    .card-web,
+    .card-training {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: $break-med) {
+    .card-software {
+        margin-left: 0;
+    }
+
+    .card-marketing {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: $break-lg) {  
+    .card-web {
+        margin-right: auto;
+    }
+
+    .card-cyber {
+        margin-left: auto;
+    }
+}
+
+
 //////////////////////////////////////////////////////////////////////////////////
 //INTRO ///////////////////////////////////////////////////////////////////////
 
@@ -94,6 +190,10 @@
     line-height: 30px;
     color: $white;
     background-color: $main-grey;
+    @media (min-width: $break-med) {
+        background: $main-grey url("../images/internal-branding/logo-zoomed-transparent.png") no-repeat right bottom;
+        background-size: cover;
+    }
 }
 
 .intro h1 {
@@ -112,6 +212,28 @@
     & strong {
         font-weight: $bold;
         line-height: 30px;
+    }
+}
+
+.intro-container,
+#latest-title {
+    @media (min-width: $break-sm) {
+        width: 720px;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    @media (min-width: $break-med) {
+        width: 940px;
+    }
+    @media (min-width: $break-lg) {  
+        width: 1170px;
+    }
+}
+
+@media (min-width: $break-lg) {  
+    .intro-container > h1,
+    .intro-container > p {
+        width: 570px;
     }
 }
 

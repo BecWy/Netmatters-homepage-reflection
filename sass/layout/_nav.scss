@@ -40,6 +40,9 @@
     & > * {
         margin: 0 0;
     }
+    @media (min-width: $break-lg) {  
+        width: 192px;
+    }
 }
 
 //box hover bg color
@@ -121,23 +124,29 @@
     font-size: 13px; 
     text-transform: uppercase;
     z-index: 2; //prevents slight side border visibility in IE
+    @media (min-width: $break-lg) {  
+        font-size: 16px;
+    }
 }
 
 .secondary-nav-text {
     width: 924px; //the same width as the 6 menu boxes 
     display: flex;
-    flex-direction: flex-row;
+    flex-direction: row;
     text-align: center;
     justify-content: space-between;
     letter-spacing: 0.4px;
     margin: 0 auto;
-        & a {
-            padding: 10px 0px;
+    & a {
+        padding: 10px 0px;
+        color: $white;
+        &:visited {
             color: $white;
-            &:visited {
-                color: $white;
-            }
         }
+    }
+    @media (min-width: $break-lg) {  
+        width: 1152px;
+    }
 }
 
 //DROPDOWN NAV. colors
