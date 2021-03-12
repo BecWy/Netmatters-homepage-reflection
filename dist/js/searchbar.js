@@ -55,10 +55,13 @@ var searchbarJS = function searchbarJS() {
 
     contactButton.classList.toggle("toggle-hide"); //displays/hides the button
 
-    searchBar.classList.toggle("toggle-search-width"); //expands the width of the search container 
+    searchBar.classList.toggle("toggle-search-width"); //expands the width of the searchbar container 
 
-    searchInput.classList.toggle("toggle-hide"); // show element - this class is already added to the html
-  }; // const searchToggle = () => {
+    searchInput.classList.toggle("toggle-hide"); //displays/hides the search input
+  }; //this also works absolutely fine... except for IE
+  //I wrote this as an alternative to the above because I thought that maybe IE had a problem with .toggle
+  //but the issue is something else, which I've not been able to identify. Has to be something in the css?
+  // const searchToggle = () => {
   //     if(supportButton.classList.contains("toggle-hide")) {
   //         supportButton.classList.remove("toggle-hide");
   //     } else {
