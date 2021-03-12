@@ -94,7 +94,7 @@ var burgerMenuJS = function burgerMenuJS() {
     menuOverlay.style.zIndex = "0";
     setTimeout(function () {
       burgerMenuCont.scrollTop = 0;
-    }, 1000);
+    }, 600);
   };
 }; //burgerMenuJS(); //for use when testing this as a separate file
 /******/ })()

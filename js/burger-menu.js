@@ -54,7 +54,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         menuOverlay.style.transform = "translateX(0px)";
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
         menuOverlay.style.zIndex = "0";
-        setTimeout(function(){ burgerMenuCont.scrollTop = 0; }, 1000);
+        setTimeout(function(){ burgerMenuCont.scrollTop = 0; }, 600);
     }
 }
 

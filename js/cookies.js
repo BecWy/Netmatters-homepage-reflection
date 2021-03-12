@@ -3,7 +3,6 @@ const myStorage = window.localStorage;
 const cookies = document.querySelector(".cookies");
 const cookiesButton = document.querySelector("#cookies-button");
 const cookiesOuter = document.querySelector(".cookies-outer-container");
-//const bodyCont = document.querySelector("body-container");
 
 export const cookiesJS = () => {  //re-activate when switch back to the app js file after testing
 //const cookiesJS = () => { // this line is for testing only
@@ -15,24 +14,25 @@ export const cookiesJS = () => {  //re-activate when switch back to the app js f
         if (cookiesSaved === 'yes') {
             cookies.style.display = "none";
             cookiesOuter.style.display = "none"; 
-            console.log("cookies already accepted"); //for testing purposes
+            //console.log("cookies already accepted"); //for testing purposes
         } else {
             cookies.style.display = "block";
             cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
-            console.log("user needs to accept cookies"); //for testing purposes
+            //console.log("user needs to accept cookies"); //for testing purposes
             cookiesOuter.style.overflowY = "auto";
-            //bodyCont.style.overflowY = "hidden"
         }
     });
     
+    //when cookies are accepted by the user
     cookiesButton.addEventListener('click', () => {
         //accesses the current domain's local Storage object and adds a data item to it.
         myStorage.setItem('cookiesAccepted', 'yes')
-        console.log('cookies accepted'); //for testing purposes
+        //console.log('cookies accepted'); //for testing purposes
+        //hides the popup
         cookies.style.display = "none";
         cookiesOuter.style.overflowY = "hidden";
         cookiesOuter.style.display = "none";  
     });
 }
 
-cookiesJS();
+//cookiesJS(); for when testing this as a separate file
