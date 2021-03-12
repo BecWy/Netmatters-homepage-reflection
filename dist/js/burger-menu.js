@@ -50,12 +50,7 @@ var burgerMenuJS = function burgerMenuJS() {
   //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
-  }); //I want to find a way to make the viewport resize transition smoother. 
-  //This is most problematic when the menu is open, so maybe automatically closing it on resize is smart? Not sure
-  // window.addEventListener('resize', () => { //not working
-  //     closeNav();
-  // })
-  //When the burger menu icon is clicked the side menu is revealed
+  }); //When the burger menu icon is clicked the side menu is revealed
 
   menuButton.addEventListener('click', function () {
     openNav();
@@ -63,6 +58,27 @@ var burgerMenuJS = function burgerMenuJS() {
 
   menuOverlay.addEventListener('click', function () {
     closeNav();
+  }); //is the menu open
+
+  var menuOpen = false; //When the menu is open and the page is resized, this updates the distance the page content translates to the left
+
+  window.addEventListener('resize', function () {
+    //for wide screens with the menu open translate the page content by the correct distance
+    if (window.matchMedia('(min-width: 993px)').matches && menuOpen === true) {
+      bodyCont.style.transform = "translateX(-350px)";
+      menuOverlay.style.transform = "translateX(-350px)";
+      bodyCont.style.transition = "none";
+      menuOverlay.style.transition = "none"; //for small screens with the menu open translate the page content by the correct distance
+    } else if (menuOpen === true) {
+      //small screens
+      bodyCont.style.transform = "translateX(-270px)";
+      menuOverlay.style.transform = "translateX(-270px)";
+      bodyCont.style.transition = "none";
+      menuOverlay.style.transition = "none"; //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
+    } else {
+      bodyCont.style.transition = "none";
+      menuOverlay.style.transition = "none";
+    }
   }); //pushes the page content to the left, revealing the sidebar below
 
   var openNav = function openNav() {
@@ -83,6 +99,8 @@ var burgerMenuJS = function burgerMenuJS() {
       bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
     }
+
+    menuOpen = true;
   }; //moves the page content back to the right, covering the sidebar
 
 
@@ -92,9 +110,12 @@ var burgerMenuJS = function burgerMenuJS() {
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
     menuOverlay.style.zIndex = "0";
+    bodyCont.style.transition = "all .5s ease-out";
+    menuOverlay.style.transition = "all .5s ease-out";
     setTimeout(function () {
       burgerMenuCont.scrollTop = 0;
     }, 600);
+    menuOpen = false;
   };
 }; //burgerMenuJS(); //for use when testing this as a separate file
 /******/ })()

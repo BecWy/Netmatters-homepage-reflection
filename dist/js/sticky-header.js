@@ -39,8 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "stickyHeader": function() { return /* binding */ stickyHeader; }
 /* harmony export */ });
 //currently the related css can be found in js.scss, under STICKY HEADER
-var header = document.querySelector("header");
-var body = document.querySelector("body");
+var header = document.querySelector("header"); //const body = document.querySelector("body"); //not currently used
+
 var bodyCont = document.querySelector(".body-container");
 var stickyHeader = function stickyHeader() {
   //re-activate when switch back to the app js file after testing
@@ -63,7 +63,8 @@ var stickyHeader = function stickyHeader() {
     else {
         //header.className = "nav-show";
         header.classList.remove("nav-hide");
-        header.classList.add("nav-show");
+        header.classList.add("nav-show"); //stickybits(document.querySelector("header")); //Plugin I tried to help with IE - doesn't work
+        //Stickyfill.add(header); //Plugin I tried to help with IE - doesn't work
       } //set the current value as the new previous value so that it can be used in the next comparison.
 
 

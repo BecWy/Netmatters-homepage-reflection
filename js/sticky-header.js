@@ -1,7 +1,7 @@
 
 //currently the related css can be found in js.scss, under STICKY HEADER
 const header = document.querySelector("header");
-const body = document.querySelector("body");
+//const body = document.querySelector("body"); //not currently used
 const bodyCont = document.querySelector(".body-container");
 
 export const stickyHeader = () => { //re-activate when switch back to the app js file after testing
@@ -25,6 +25,8 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
       //header.className = "nav-show";
       header.classList.remove("nav-hide");
       header.classList.add("nav-show");
+      //stickybits(document.querySelector("header")); //Plugin I tried to help with IE - doesn't work
+      //Stickyfill.add(header); //Plugin I tried to help with IE - doesn't work
     }
 
       //set the current value as the new previous value so that it can be used in the next comparison.

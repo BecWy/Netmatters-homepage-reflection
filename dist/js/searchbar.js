@@ -39,7 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "searchbarJS": function() { return /* binding */ searchbarJS; }
 /* harmony export */ });
 var searchBar = document.querySelector("#search-bar");
-var searchButton = document.querySelector("#search-button");
+var searchButton = document.querySelector("#submit");
 var searchInput = document.querySelector("#search-bar-input");
 var supportButton = document.querySelector("#support-button");
 var contactButton = document.querySelector("#contact-button");
@@ -48,7 +48,7 @@ var searchbarJS = function searchbarJS() {
   //const searchbarJS = () => {    // this line is for testing only
   searchButton.addEventListener('click', function () {
     searchToggle();
-  }); //Works absolutely fine.... except for IE
+  });
 
   var searchToggle = function searchToggle() {
     supportButton.classList.toggle("toggle-hide"); //displays/hides the button
@@ -58,32 +58,7 @@ var searchbarJS = function searchbarJS() {
     searchBar.classList.toggle("toggle-search-width"); //expands the width of the searchbar container 
 
     searchInput.classList.toggle("toggle-hide"); //displays/hides the search input
-  }; //this also works absolutely fine... except for IE
-  //I wrote this as an alternative to the above because I thought that maybe IE had a problem with .toggle
-  //but the issue is something else, which I've not been able to identify. Has to be something in the css?
-  // const searchToggle = () => {
-  //     if(supportButton.classList.contains("toggle-hide")) {
-  //         supportButton.classList.remove("toggle-hide");
-  //     } else {
-  //         supportButton.classList.add("toggle-hide");
-  //     } 
-  //     if(contactButton.classList.contains("toggle-hide")) {
-  //         contactButton.classList.remove("toggle-hide");
-  //     } else {
-  //         contactButton.classList.add("toggle-hide");
-  //     }
-  //     if(searchBar.classList.contains("toggle-search-width")) {
-  //         searchBar.classList.remove("toggle-search-width");
-  //     } else {
-  //         searchBar.classList.add("toggle-search-width");
-  //     }
-  //     if(searchInput.classList.contains("toggle-hide")) {
-  //         searchInput.classList.remove("toggle-hide");
-  //     } else {
-  //         searchInput.classList.add("toggle-hide");
-  //     }
-  // }
-
+  };
 }; //searchbarJS(); for testing purposes only - this breaks it if it's set to export.
 /******/ })()
 ;
