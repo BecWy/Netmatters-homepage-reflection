@@ -1,30 +1,5 @@
-//////////////////////////////////////////////////////////////////////////////////////////
-//all document query selectors
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-// //General
-// const menuButton = document.querySelector("#menu");
-// const header = document.querySelector("header");
-// const burgerMenu = document.querySelector(".burger-menu");
-// const burgerMenuCont = document.querySelector(".burger-menu-container");
-// const body = document.querySelector("body");
-// const main = document.querySelector("main");
-// const menuOverlay = document.querySelector(".menu-open-overlay");
-// const footer = document.querySelector("footer");
-
-// //specifically for the cookies popup
-// const myStorage = window.localStorage;
-// const cookies = document.querySelector(".cookies");
-// const cookiesButton = document.querySelector("#cookies-button");
-// const cookiesOverlay = document.querySelector(".cookies-open-overlay");
-// const cookiesOuter = document.querySelector(".cookies-outer-container");
-
-// //specifically for the search bar toggle
-// const searchBar = document.querySelector("#search-bar");
-// const searchButton = document.querySelector("#search-button");
-// const searchInput = document.querySelector("#search-bar-input");
-// const supportButton = document.querySelector("#support-button");
-// const contactButton = document.querySelector("#contact-button");
+//This file imports all of my other JS files
+//jQuery and plugins are separate to avoid any potential conflicts/issues.
 
 import { cookiesJS } from "./cookies.js"
 import { searchbarJS } from "./searchbar.js"
@@ -40,16 +15,18 @@ const app = () => {
 
 app();
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//I need to find a way to make the display update whenever the viewport is resized. 
+//Or something along those lines.
 
-
-// //not working properly
+// //doesn't work
 // window.onresize = app();
 
-//not working properly
+// //doesn't work
 // window.addEventListener('resize', () => {
 //     stickyHeader();
 //     burgerMenuJS();
 // });
       
-//not working properly
+// //doesn't work
 //window.addEventListener('resize', app);

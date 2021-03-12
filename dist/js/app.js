@@ -146,7 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //Used this page to learn how to push the content offscreen 
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
-var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu");
+var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
 
 var burgerMenuCont = document.querySelector(".burger-menu-container");
 var bodyCont = document.querySelector(".body-container");
@@ -156,23 +156,27 @@ var burgerMenuJS = function burgerMenuJS() {
   //const burgerMenuJS = () => { // this line is for testing only
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
-  }); // window.addEventListener('resize', () => { //not working
+  }); //I want to find a way to make the viewport resize transition smoother. 
+  //This is most problematic when the menu is open, so maybe automatically closing it on resize is smart? Not sure
+  // window.addEventListener('resize', () => { //not working
   //     closeNav();
   // })
+  //When the burger menu icon is clicked the side menu is revealed
 
   menuButton.addEventListener('click', function () {
     openNav();
-  });
+  }); //when the overlay over the main page content is clicked the side menu is hidden.
+
   menuOverlay.addEventListener('click', function () {
     closeNav();
-  });
-  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+  }); //pushes the page content to the left, revealing the sidebar below
 
   var openNav = function openNav() {
-    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality  
+    burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll
 
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
-    menuOverlay.style.zIndex = "800";
+    menuOverlay.style.zIndex = "800"; //makes the overlay cover the main page content, adding the semi-transparent layer and preventing the main content from being scrolled or clicked on.
+
     bodyCont.style.transition = "all .5s ease-out";
     menuOverlay.style.transition = "all .5s ease-out";
 
@@ -185,8 +189,7 @@ var burgerMenuJS = function burgerMenuJS() {
       bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
     }
-  };
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  }; //moves the page content back to the right, covering the sidebar
 
 
   var closeNav = function closeNav() {
@@ -199,8 +202,7 @@ var burgerMenuJS = function burgerMenuJS() {
       burgerMenuCont.scrollTop = 0;
     }, 1000);
   };
-};
-burgerMenuJS();
+}; //burgerMenuJS(); //for use when testing this as a separate file
 
 /***/ })
 /******/ 	]);
@@ -266,30 +268,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _searchbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _sticky_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var _burger_menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
-//////////////////////////////////////////////////////////////////////////////////////////
-//all document query selectors
-//////////////////////////////////////////////////////////////////////////////////////////////
-// //General
-// const menuButton = document.querySelector("#menu");
-// const header = document.querySelector("header");
-// const burgerMenu = document.querySelector(".burger-menu");
-// const burgerMenuCont = document.querySelector(".burger-menu-container");
-// const body = document.querySelector("body");
-// const main = document.querySelector("main");
-// const menuOverlay = document.querySelector(".menu-open-overlay");
-// const footer = document.querySelector("footer");
-// //specifically for the cookies popup
-// const myStorage = window.localStorage;
-// const cookies = document.querySelector(".cookies");
-// const cookiesButton = document.querySelector("#cookies-button");
-// const cookiesOverlay = document.querySelector(".cookies-open-overlay");
-// const cookiesOuter = document.querySelector(".cookies-outer-container");
-// //specifically for the search bar toggle
-// const searchBar = document.querySelector("#search-bar");
-// const searchButton = document.querySelector("#search-button");
-// const searchInput = document.querySelector("#search-bar-input");
-// const supportButton = document.querySelector("#support-button");
-// const contactButton = document.querySelector("#contact-button");
+//This file imports all of my other JS files
+//jQuery and plugins are separate to avoid any potential conflicts/issues.
 
 
 
@@ -302,14 +282,17 @@ var app = function app() {
   (0,_searchbar_js__WEBPACK_IMPORTED_MODULE_1__.searchbarJS)();
 };
 
-app(); // //not working properly
+app(); ////////////////////////////////////////////////////////////////////////////////////////////
+//I need to find a way to make the display update whenever the viewport is resized. 
+//Or something along those lines.
+// //doesn't work
 // window.onresize = app();
-//not working properly
+// //doesn't work
 // window.addEventListener('resize', () => {
 //     stickyHeader();
 //     burgerMenuJS();
 // });
-//not working properly
+// //doesn't work
 //window.addEventListener('resize', app);
 }();
 /******/ })()

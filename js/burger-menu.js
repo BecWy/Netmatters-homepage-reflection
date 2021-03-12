@@ -2,7 +2,7 @@
 // https://www.w3schools.com/howto/howto_js_off-canvas.asp
 
     const menuButton = document.querySelector("#menu");
-    //const burgerMenu = document.querySelector(".burger-menu");
+    //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
     const burgerMenuCont = document.querySelector(".burger-menu-container");
     const bodyCont = document.querySelector(".body-container");
     const menuOverlay = document.querySelector(".menu-open-overlay");
@@ -14,38 +14,41 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         closeNav();
     })
 
+    //I want to find a way to make the viewport resize transition smoother. 
+    //This is most problematic when the menu is open, so maybe automatically closing it on resize is smart? Not sure
     // window.addEventListener('resize', () => { //not working
     //     closeNav();
     // })
 
+    //When the burger menu icon is clicked the side menu is revealed
     menuButton.addEventListener('click', () => {
         openNav();
     })
 
+    //when the overlay over the main page content is clicked the side menu is hidden.
     menuOverlay.addEventListener('click', () => {
         closeNav();
     })
 
 
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+  //pushes the page content to the left, revealing the sidebar below
     const openNav = () => {
-        burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll functionality  
+        burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
-        menuOverlay.style.zIndex = "800";
+        menuOverlay.style.zIndex = "800"; //makes the overlay cover the main page content, adding the semi-transparent layer and preventing the main content from being scrolled or clicked on.
         bodyCont.style.transition = "all .5s ease-out";
         menuOverlay.style.transition = "all .5s ease-out";    
 
         if(window.matchMedia('(min-width: 993px)').matches) { //wide screens
             bodyCont.style.transform = "translateX(-350px)";
-            menuOverlay.style.transform = "translateX(-350px)";
-            
+            menuOverlay.style.transform = "translateX(-350px)"; 
         } else {  //small screens
             bodyCont.style.transform = "translateX(-270px)";
             menuOverlay.style.transform = "translateX(-270px)";  
         }          
     }
     
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    //moves the page content back to the right, covering the sidebar
     const closeNav = () => {
         bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
         menuOverlay.style.transform = "translateX(0px)";
@@ -56,6 +59,6 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
 }
 
 
-burgerMenuJS();
+//burgerMenuJS(); //for use when testing this as a separate file
 
 
