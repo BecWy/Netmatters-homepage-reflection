@@ -6,6 +6,7 @@
     const burgerMenuCont = document.querySelector(".burger-menu-container");
     const bodyCont = document.querySelector(".body-container");
     const menuOverlay = document.querySelector(".menu-open-overlay");
+    const header = document.querySelector("header");
 
 export const burgerMenuJS = () => { //re-activate when switch back to the app js file after testing
 //const burgerMenuJS = () => { // this line is for testing only
@@ -36,16 +37,19 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-350px)"; 
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
+            header.style.transition = "none";
         //for small screens with the menu open translate the page content by the correct distance
         } else if (menuOpen === true) {  //small screens
             bodyCont.style.transform = "translateX(-270px)"; 
             menuOverlay.style.transform = "translateX(-270px)"; 
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
+            header.style.transition = "none";
         //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
         } else {
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
+            header.style.transition = "none";
         }
     })
 
@@ -55,14 +59,18 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
         menuOverlay.style.zIndex = "800"; //makes the overlay cover the main page content, adding the semi-transparent layer and preventing the main content from being scrolled or clicked on.
         bodyCont.style.transition = "all .5s ease-out";
-        menuOverlay.style.transition = "all .5s ease-out";    
+        menuOverlay.style.transition = "all .5s ease-out"; 
+        header.style.transition = "all .5s ease-out"; 
+        //header.style.paddingTop = bodyCont.scrollTop;
 
         if(window.matchMedia('(min-width: 993px)').matches) { //wide screens
             bodyCont.style.transform = "translateX(-350px)";
-            menuOverlay.style.transform = "translateX(-350px)"; 
+            menuOverlay.style.transform = "translateX(-350px)";
+            header.style.transform =  "translateX(-350px)";
         } else {  //small screens
             bodyCont.style.transform = "translateX(-270px)";
-            menuOverlay.style.transform = "translateX(-270px)";  
+            menuOverlay.style.transform = "translateX(-270px)";
+            header.style.transform = "translateX(-270px)";  
         }  
         menuOpen = true;        
     }
@@ -70,6 +78,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
     //moves the page content back to the right, covering the sidebar
     const closeNav = () => {
         bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
+        header.style.transform = "none"; //just in case the note above impacts on this too
         menuOverlay.style.transform = "translateX(0px)";
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
         menuOverlay.style.zIndex = "0";

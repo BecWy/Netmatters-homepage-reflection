@@ -45,6 +45,7 @@ var menuButton = document.querySelector("#menu"); //const burgerMenu = document.
 var burgerMenuCont = document.querySelector(".burger-menu-container");
 var bodyCont = document.querySelector(".body-container");
 var menuOverlay = document.querySelector(".menu-open-overlay");
+var header = document.querySelector("header");
 var burgerMenuJS = function burgerMenuJS() {
   //re-activate when switch back to the app js file after testing
   //const burgerMenuJS = () => { // this line is for testing only
@@ -68,16 +69,19 @@ var burgerMenuJS = function burgerMenuJS() {
       bodyCont.style.transform = "translateX(-350px)";
       menuOverlay.style.transform = "translateX(-350px)";
       bodyCont.style.transition = "none";
-      menuOverlay.style.transition = "none"; //for small screens with the menu open translate the page content by the correct distance
+      menuOverlay.style.transition = "none";
+      header.style.transition = "none"; //for small screens with the menu open translate the page content by the correct distance
     } else if (menuOpen === true) {
       //small screens
       bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
       bodyCont.style.transition = "none";
-      menuOverlay.style.transition = "none"; //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
+      menuOverlay.style.transition = "none";
+      header.style.transition = "none"; //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
     } else {
       bodyCont.style.transition = "none";
       menuOverlay.style.transition = "none";
+      header.style.transition = "none";
     }
   }); //pushes the page content to the left, revealing the sidebar below
 
@@ -89,15 +93,18 @@ var burgerMenuJS = function burgerMenuJS() {
 
     bodyCont.style.transition = "all .5s ease-out";
     menuOverlay.style.transition = "all .5s ease-out";
+    header.style.transition = "all .5s ease-out"; //header.style.paddingTop = bodyCont.scrollTop;
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       //wide screens
       bodyCont.style.transform = "translateX(-350px)";
       menuOverlay.style.transform = "translateX(-350px)";
+      header.style.transform = "translateX(-350px)";
     } else {
       //small screens
       bodyCont.style.transform = "translateX(-270px)";
       menuOverlay.style.transform = "translateX(-270px)";
+      header.style.transform = "translateX(-270px)";
     }
 
     menuOpen = true;
@@ -106,6 +113,8 @@ var burgerMenuJS = function burgerMenuJS() {
 
   var closeNav = function closeNav() {
     bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
+
+    header.style.transform = "none"; //just in case the note above impacts on this too
 
     menuOverlay.style.transform = "translateX(0px)";
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";

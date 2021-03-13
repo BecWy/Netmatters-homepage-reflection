@@ -54,8 +54,8 @@ header {
 
 //Shows the header when the user is scrolling up. This class is added and removed in the JS
 .nav-show {
-    position: -webkit-sticky;
-    position: sticky;//fixed; //sticky doesn't work in IE, but fixed makes the header too wide - it covers the scroll.
+    //position: -webkit-sticky;
+    position: fixed; //sticky doesn't work in IE, but fixed makes the header too wide - it covers the scroll.
     z-index: 20000;
 }
 
