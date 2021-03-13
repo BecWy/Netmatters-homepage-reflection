@@ -1,36 +1,46 @@
-//Used this page to learn how to push the content offscreen 
-// https://www.w3schools.com/howto/howto_js_off-canvas.asp
 
-    const menuButton = document.querySelector("#menu");
-    //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
-    const burgerMenuCont = document.querySelector(".burger-menu-container");
-    const bodyCont = document.querySelector(".body-container");
-    const menuOverlay = document.querySelector(".menu-open-overlay");
-    const header = document.querySelector("header");
+const menuButton = document.querySelector("#menu");
+//const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
+const burgerMenuCont = document.querySelector(".burger-menu-container");
+const bodyCont = document.querySelector(".body-container");
+const menuOverlay = document.querySelector(".menu-open-overlay");
+const header = document.querySelector("header");
+let bodyContWidth = document.querySelector(".body-container").clientWidth; //this is the width of the body container. It is used as a comparison for the header, to make sure that the header width is always the same as the body width. Position fixed in IE will make the header cover the scroll bar otherwise
+//for IE purposes. Returns the value of the header's css position - sticky or fixed
+const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+//console.log(`the header position is ${headerPosition}`); for testing
 
 export const burgerMenuJS = () => { //re-activate when switch back to the app js file after testing
 //const burgerMenuJS = () => { // this line is for testing only
 
     document.addEventListener('DOMContentLoaded', () => {
         closeNav();
+        bodyContWidth = document.querySelector(".body-container").clientWidth;
+        header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
     })
 
     //When the burger menu icon is clicked the side menu is revealed
     menuButton.addEventListener('click', () => {
         openNav();
+        bodyContWidth = document.querySelector(".body-container").clientWidth;
+        header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
     })
 
     //when the overlay over the main page content is clicked the side menu is hidden.
     menuOverlay.addEventListener('click', () => {
         closeNav();
+        bodyContWidth = document.querySelector(".body-container").clientWidth;
+        header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
     })
 
     //is the menu open
     let menuOpen = false;
 
 
-    //When the menu is open and the page is resized, this updates the distance the page content translates to the left
+    //When the page is resized, this updates the distance the page content translates to the left
     window.addEventListener('resize', () => {
+        bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
+        header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
         //for wide screens with the menu open translate the page content by the correct distance
         if(window.matchMedia('(min-width: 993px)').matches && menuOpen === true) { 
             bodyCont.style.transform = "translateX(-350px)"; 
@@ -38,6 +48,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
             header.style.transition = "none";
+            //header.style.transform = "none"
         //for small screens with the menu open translate the page content by the correct distance
         } else if (menuOpen === true) {  //small screens
             bodyCont.style.transform = "translateX(-270px)"; 
@@ -45,11 +56,13 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
             header.style.transition = "none";
+            //header.style.transform = "none"
         //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
         } else {
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
             header.style.transition = "none";
+            //header.style.transform = "none"
         }
     })
 
@@ -66,11 +79,22 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         if(window.matchMedia('(min-width: 993px)').matches) { //wide screens
             bodyCont.style.transform = "translateX(-350px)";
             menuOverlay.style.transform = "translateX(-350px)";
-            header.style.transform =  "translateX(-350px)";
+            //if the browser is IE and therefore the position setting is fixed instead of sticky
+            if(headerPosition !== "sticky") { 
+                header.style.transform =  "translateX(-350px)";
+            }
+            
         } else {  //small screens
             bodyCont.style.transform = "translateX(-270px)";
             menuOverlay.style.transform = "translateX(-270px)";
-            header.style.transform = "translateX(-270px)";  
+            header.style.transform = "translateX(-270px)"; 
+            //if the browser is IE and therefore the position setting is fixed instead of sticky
+            if(headerPosition !== "sticky") { 
+                //console.log(`header position is ${headerPosition}`) testing
+                header.style.transform =  "translateX(-270px)";
+            } else if(headerPosition === "sticky"){
+                header.style.transform = "none";
+            }
         }  
         menuOpen = true;        
     }
@@ -78,7 +102,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
     //moves the page content back to the right, covering the sidebar
     const closeNav = () => {
         bodyCont.style.transform = "none"; //IMPORTANT - has to be set to none otherwise it interferes with the position:fixed needed for the sticky header. It's a weird quirk - if the element you want to position has any ancestor with a transform property it won't position correctly.
-        header.style.transform = "none"; //just in case the note above impacts on this too
+        header.style.transform = "none"; //if the translate was applied on open nav (aka in IE) then it is now removed.
         menuOverlay.style.transform = "translateX(0px)";
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
         menuOverlay.style.zIndex = "0";

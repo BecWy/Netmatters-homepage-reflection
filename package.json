@@ -17,8 +17,5 @@
   },
   "homepage": "https://github.com/BecWy/html-css-reflection#readme",
   "devDependencies": {},
-  "dependencies": {
-    "stickybits": "^3.7.9",
-    "stickyfilljs": "^2.1.0"
-  }
+  "dependencies": {}
 }
