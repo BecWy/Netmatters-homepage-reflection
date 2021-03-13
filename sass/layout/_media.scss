@@ -12,54 +12,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-sm) {
 
-
-    /////////////////////////////////////////////////////////////////////////////////////////
-    //LATEST ////////////////////////////////////////////////////////////////////////////
-    //Latest switch to 2 column layout. Fixed width. 
-    .news-container {
-        display: flex;
-        flex-direction: row;
-        width: 750px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    //Latest standardising title height so doesn't matter if title is 1 or 2 lines
-    .news-text > h3 {
-        height: 48px;
-    }
-
-    //Latest standardising p height so doesn't matter if text is 2 r 3 lines
-    .news-text > p {
-        height: 66px;
-    }
-
-    //Latest 3rd news item hidden
-    .news-3 {
-        display: none;
-    }
-    
     .latest h2 {
         display: block;
         width: 100%;
         & #latest-title {
             margin: 0 auto;
         }
-    }
-
-    .news {
-        width: 345px;
-        
-    }
-
-    .news-1 {
-        margin-left: auto;
-        margin-right: 15px;
-    }
-
-    .news-2 {    
-        margin-left: 15px;
-        margin-right: auto;
     }
 
     .posted-by {
@@ -137,16 +95,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-med) {
    
-    ///////////////////////////////////////////////////////////////////////////////////////////
-    //LATEST ////////////////////////////////////////////////////////////////////////////////
-    //News items new width
-    .news-container {
-        width: 970px;
-    }
-    
-    .news {
-        width: 455px;
-    }
 
     .news-image-parent {  //for animation
         display: inline-block;
@@ -277,38 +225,6 @@
 //FROM 1260PX -----------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-lg) {  
-
-
-    /////////////////////////////////////////////////////////////////////////////////////////
-    //LATEST ////////////////////////////////////////////////////////////////////////////
-    .news-container {
-        width: 1170px;
-    }
-
-    //Latest news items resized for 3 columns
-    .news {
-        width: 370px;
-    }
-
-    .news-1 {
-        margin-right: 15px;
-        margin-left: 0;
-    }
-
-    .news-2 {
-        margin-left: auto;//15px;
-        margin-right: auto; //15px;
-    }
-
-    .news-3 {
-        margin-left: 15px;
-        margin-right: 0;
-    }
-
-    //Latest 3rd news item added again.
-    .news-3 {
-        display: inline-block; 
-    }
 
     //Latest news image animation
     .news-image-parent { 
