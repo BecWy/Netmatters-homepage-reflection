@@ -5,7 +5,6 @@ import { cookiesJS } from "./cookies.js"
 import { searchbarJS } from "./searchbar.js"
 import { stickyHeader } from "./sticky-header.js"
 import { burgerMenuJS } from "./burger-menu.js"
-import stickybits from "stickybits"
 
 const app = () => {
     burgerMenuJS();
@@ -16,20 +15,10 @@ const app = () => {
 
 app();
 
-//stickybits(document.querySelector("header"), { scrollEl: document.querySelector(".body-container") });
+// let bodyContWidth = document.querySelector(".body-container").clientWidth;
+// console.log(`The bodyCont width is ${bodyContWidth}`);
+// document.querySelector("header").style.width = `${bodyContWidth}px`;
+// console.log(`The header width is ${bodyContWidth}`);
 
-////////////////////////////////////////////////////////////////////////////////////////////
-//I need to find a way to make the display update whenever the viewport is resized. 
-//Or something along those lines.
 
-// //doesn't work
-// window.onresize = app();
 
-// //doesn't work
-// window.addEventListener('resize', () => {
-//     stickyHeader();
-//     burgerMenuJS();
-// });
-      
-// //doesn't work
-//window.addEventListener('resize', app);
