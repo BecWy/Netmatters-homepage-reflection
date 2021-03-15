@@ -10,11 +10,23 @@ const bodyCont = document.querySelector(".body-container");
   // console.log(`The bodyCont width is ${bodyCont.clientWidth}`);
   // header.style.width = bodyCont.clientWidth;
 
-
+  const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+  //console.log(`the header position is ${headerPosition}`); //for testing
+  let internetExplorer = false;
 
 
 export const stickyHeader = () => { //re-activate when switch back to the app js file after testing
 //const stickyHeader = () => { // this line is for testing only
+
+  if(headerPosition === "sticky") {
+    internetExplorer = false;
+    console.log("the browser is modern and supports sticky");
+    
+  } else {
+    internetExplorer = true;
+    console.log("the browser is old and does not support sticky");
+  }
+
 
 //when the body content is scrolls the sticky function is run
   bodyCont.onscroll = function() {sticky()};
@@ -27,19 +39,22 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
     if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) {
       header.classList.remove("nav-show");
       header.classList.add("nav-hide");
+      if(internetExplorer === true) {
+        bodyCont.style.paddingTop = "0px";
+      }
     } 
-    //if there is no change - i.e. the burger menu is open
-      // else if (bodyCont.scrollTop === previous){
-      //   if () {
-          
-      //   }
-      // }
+
       //Scrolling up - display the top nav
       else {
       header.classList.remove("nav-hide");
       header.classList.add("nav-show");
-      //stickybits(document.querySelector("header")); //Plugin I tried to help with IE - doesn't work
-      //Stickyfill.add(header); //Plugin I tried to help with IE - doesn't work
+      if(internetExplorer === true && window.matchMedia('(min-width: 993px)').matches) {
+        bodyCont.style.paddingTop = "208px";
+      } else if(internetExplorer === true && window.matchMedia('(min-width: 768px)').matches) {
+        bodyCont.style.paddingTop = "110px";
+      } else if(internetExplorer === true) { 
+        bodyCont.style.paddingTop = "168px";
+      }
     }
 
       //set the current value as the new previous value so that it can be used in the next comparison.
