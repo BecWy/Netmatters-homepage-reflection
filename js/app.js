@@ -11,14 +11,18 @@ const app = () => {
     cookiesJS();
     stickyHeader();
     searchbarJS();
+    slickSettings();
+}
+
+const slickSettings = () => { 
+    $('.slides').slick({
+        fade: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: true,
+        pauseOnFocus: false       
+    });
 }
 
 app();
-
-// let bodyContWidth = document.querySelector(".body-container").clientWidth;
-// console.log(`The bodyCont width is ${bodyContWidth}`);
-// document.querySelector("header").style.width = `${bodyContWidth}px`;
-// console.log(`The header width is ${bodyContWidth}`);
-
-
-

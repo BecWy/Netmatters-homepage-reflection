@@ -3,6 +3,8 @@ const myStorage = window.localStorage;
 const cookies = document.querySelector(".cookies");
 const cookiesButton = document.querySelector("#cookies-button");
 const cookiesOuter = document.querySelector(".cookies-outer-container");
+const bodyCont = document.querySelector(".body-container");
+
 
 export const cookiesJS = () => {  //re-activate when switch back to the app js file after testing
 //const cookiesJS = () => { // this line is for testing only
@@ -20,6 +22,7 @@ export const cookiesJS = () => {  //re-activate when switch back to the app js f
             cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
             //console.log("user needs to accept cookies"); //for testing purposes
             cookiesOuter.style.overflowY = "auto";
+            bodyCont.style.overflowY = "hidden"; //hide the scrollbar on the body container div (needed for IE)
         }
     });
     
@@ -32,6 +35,21 @@ export const cookiesJS = () => {  //re-activate when switch back to the app js f
         cookies.style.display = "none";
         cookiesOuter.style.overflowY = "hidden";
         cookiesOuter.style.display = "none";  
+        bodyCont.style.overflowY = "scroll"; //show the scrollbar on the body container div when the popup closes
+        //for internet explorer
+        const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+        let internetExplorer = false;
+        if(headerPosition === "sticky") {
+            internetExplorer = false;
+          } else {
+            internetExplorer = true;
+          }
+          if(internetExplorer === true) {
+            let bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
+            console.log(`The body cont width is ${bodyContWidth}`);
+            let header = document.querySelector("header");
+            header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+        }
     });
 }
 

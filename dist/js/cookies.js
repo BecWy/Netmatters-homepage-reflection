@@ -42,6 +42,7 @@ var myStorage = window.localStorage;
 var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
 var cookiesOuter = document.querySelector(".cookies-outer-container");
+var bodyCont = document.querySelector(".body-container");
 var cookiesJS = function cookiesJS() {
   //re-activate when switch back to the app js file after testing
   //const cookiesJS = () => { // this line is for testing only
@@ -57,6 +58,7 @@ var cookiesJS = function cookiesJS() {
       //console.log("user needs to accept cookies"); //for testing purposes
 
       cookiesOuter.style.overflowY = "auto";
+      bodyCont.style.overflowY = "hidden"; //hide the scrollbar on the body container div (needed for IE)
     }
   }); //when cookies are accepted by the user
 
@@ -68,6 +70,27 @@ var cookiesJS = function cookiesJS() {
     cookies.style.display = "none";
     cookiesOuter.style.overflowY = "hidden";
     cookiesOuter.style.display = "none";
+    bodyCont.style.overflowY = "scroll"; //show the scrollbar on the body container div when the popup closes
+    //for internet explorer
+
+    var headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+    var internetExplorer = false;
+
+    if (headerPosition === "sticky") {
+      internetExplorer = false;
+    } else {
+      internetExplorer = true;
+    }
+
+    if (internetExplorer === true) {
+      var bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
+
+      console.log("The body cont width is ".concat(bodyContWidth));
+
+      var _header = document.querySelector("header");
+
+      _header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+    }
   });
 }; //cookiesJS(); for when testing this as a separate file
 /******/ })()
