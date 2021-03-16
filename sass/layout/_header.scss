@@ -109,21 +109,45 @@ nav {
         background-color: $menu-color2;
         border-color: $menu-color3;
     }
-    & i {
-        font-size: 22px;
-        line-height: 22px; 
-    }
-    & span {
-        font-size: 11px;
-        line-height: 12px;
-        text-transform: uppercase;
-        letter-spacing: normal;
-        margin-top: 4px;
-    }
+    // & i { //replaced with the hamburger plugin
+    //     font-size: 22px;
+    //     line-height: 22px; 
+    // }
     @media (min-width: $break-sm) {
         order: 2;
         margin-left: 20px;
     }
+}
+
+#burger-icon-text {
+    font-size: 11px;
+        line-height: 12px;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        margin-bottom: 6px;
+}
+
+.hamburger {
+    border: none;
+    outline: none;
+    height: 80%;
+    padding: 8px;
+    //sets static icon color to white
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: $white;
+        width: 33px;
+        height: 3px;
+    }
+    .hamburger-box {
+        width: 33px;
+    }
+}
+
+//sets active icon color to white. Has to be high specificity to override original color
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: $white;
 }
 
 .support-button,

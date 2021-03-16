@@ -7,6 +7,7 @@ const menuButton = document.querySelector("#menu");
 const burgerMenuCont = document.querySelector(".burger-menu-container");
 const bodyCont = document.querySelector(".body-container");
 const menuOverlay = document.querySelector(".menu-open-overlay");
+const burgerIcon = document.querySelector(".hamburger");
 const header = document.querySelector("header");
 let bodyContWidth = document.querySelector(".body-container").clientWidth; //this is the width of the body container. It is used as a comparison for the header, to make sure that the header width is always the same as the body width. Position fixed in IE will make the header cover the scroll bar otherwise
 
@@ -89,6 +90,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         menuOverlay.style.zIndex = "800"; //makes the overlay cover the main page content, adding the semi-transparent layer and preventing the main content from being scrolled or clicked on.
         bodyCont.style.transition = "all .5s ease-out";
         menuOverlay.style.transition = "all .5s ease-out"; 
+        burgerIcon.classList.add("is-active"); //hamburger animation
         
         if(internetExplorer === true) {
             header.style.transition = "all .5s ease-out"; 
@@ -126,7 +128,8 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0)";
         menuOverlay.style.zIndex = "0";
         bodyCont.style.transition = "all .5s ease-out";
-        menuOverlay.style.transition = "all .5s ease-out";   
+        menuOverlay.style.transition = "all .5s ease-out"; 
+        burgerIcon.classList.remove("is-active"); //hamburger animation  
         if(internetExplorer === true) { 
             header.style.transition = "all .5s ease-out"; 
             header.style.transform = "none"; //if the translate was applied on open nav (aka in IE) then it is now removed.

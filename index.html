@@ -9,9 +9,8 @@
         <script src="https://kit.fontawesome.com/58da4f92e2.js" crossorigin="anonymous"></script>  
         <link rel="stylesheet" href="js/slick/slick.css">
         <link rel="stylesheet" href="js/slick/slick-theme.css">     
+        <link href="dist/css/hamburgers.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
     </head>
     <body>
 
@@ -222,8 +221,13 @@
                         </a>
                     
                         <a id="menu" href="#">                  
-                            <i class="fas fa-bars"></i>
-                            <span>Menu</span>                   
+                            <!-- <i class="fas fa-bars"></i> -->
+                            <button class="hamburger hamburger--spin" type="button">
+                                <span class="hamburger-box">
+                                <span class="hamburger-inner" id="hamburger-inner-id"></span>
+                                </span>
+                            </button> 
+                            <span id="burger-icon-text">Menu</span>                   
                         </a>
 
                         <a id="support-button" class="support-button" href="#">                     

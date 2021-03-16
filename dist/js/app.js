@@ -216,6 +216,7 @@ var menuButton = document.querySelector("#menu"); //const burgerMenu = document.
 var burgerMenuCont = document.querySelector(".burger-menu-container");
 var bodyCont = document.querySelector(".body-container");
 var menuOverlay = document.querySelector(".menu-open-overlay");
+var burgerIcon = document.querySelector(".hamburger");
 var header = document.querySelector("header");
 var bodyContWidth = document.querySelector(".body-container").clientWidth; //this is the width of the body container. It is used as a comparison for the header, to make sure that the header width is always the same as the body width. Position fixed in IE will make the header cover the scroll bar otherwise
 //for IE purposes. Returns the value of the header's css position - sticky or fixed
@@ -296,6 +297,7 @@ var burgerMenuJS = function burgerMenuJS() {
 
     bodyCont.style.transition = "all .5s ease-out";
     menuOverlay.style.transition = "all .5s ease-out";
+    burgerIcon.classList.add("is-active"); //hamburger animation
 
     if (internetExplorer === true) {
       header.style.transition = "all .5s ease-out"; //header.style.paddingTop = bodyCont.scrollTop;
@@ -335,6 +337,7 @@ var burgerMenuJS = function burgerMenuJS() {
     menuOverlay.style.zIndex = "0";
     bodyCont.style.transition = "all .5s ease-out";
     menuOverlay.style.transition = "all .5s ease-out";
+    burgerIcon.classList.remove("is-active"); //hamburger animation  
 
     if (internetExplorer === true) {
       header.style.transition = "all .5s ease-out";
