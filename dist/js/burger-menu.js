@@ -38,6 +38,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "burgerMenuJS": function() { return /* binding */ burgerMenuJS; }
 /* harmony export */ });
+//also includes some code relating to the sticky header, particularly when viewport is resized
 var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
 
 var burgerMenuCont = document.querySelector(".burger-menu-container");

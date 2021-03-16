@@ -1,3 +1,6 @@
+//also includes some code relating to the sticky header, particularly when viewport is resized
+
+
 
 const menuButton = document.querySelector("#menu");
 //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case

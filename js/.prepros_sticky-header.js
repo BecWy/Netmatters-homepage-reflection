@@ -59,20 +59,18 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
 
     //Scrolling down - hide the top nav
     //modern browsers
-    
-    //condition 1: WORKS when I want the header to behave relatively, when less than the header height has been scrolled
-    else if (bodyCont.scrollTop < header.offsetHeight && internetExplorer !== true && bodyCont.scrollTop >= previous && (bodyCont.scrollTop - previous) > 10) {  
-      header.classList.remove("nav-show");
+      else if (internetExplorer !== true && bodyCont.scrollTop >= previous && (bodyCont.scrollTop - previous) > 10) {
+    //if (bodyCont.scrollTop > 50 && bodyCont.scrollTop > previous) { //former version
+        //header.style.animation = "slide 1s backwards";
+        //header.classList.add("slide-up");
+        header.style.transition = "all .5s ease-out"; 
+        header.style.transform =  "translateY(-208px)";
+        setTimeout(function(){ 
+          header.classList.remove("nav-show");
           header.classList.add("nav-hide");
-      }
-        else if(internetExplorer !== true && bodyCont.scrollTop >= previous && (bodyCont.scrollTop - previous) > 10) {
-          header.style.transition = "all .5s ease-out"; 
-          header.style.transform =  "translateY(-208px)";
-          //setTimeout(function(){ 
-            header.classList.remove("nav-show");
-            header.classList.add("nav-hide");
-          //}, 500);
-        } 
+        }, 1000);
+        
+      } 
     //internet explorer
       else if(internetExplorer === true && bodyCont.scrollTop >= previous && (bodyCont.scrollTop - previous) > 15) { //meeds to wait longer before scrolling because it's glitchy
         header.classList.remove("nav-show");
@@ -86,12 +84,10 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
       else if(internetExplorer !== true && bodyCont.scrollTop < previous && (previous - bodyCont.scrollTop) > 10) {
         //header.style.animation = "slide 1s forwards";
         //header.classList.add("slide-down");
-        header.style.transition = "all .5s ease-out"; 
-        header.style.transform =  "translateY(0px)";
-        //setTimeout(function(){ 
+        setTimeout(function(){ 
           header.classList.remove("nav-hide");
           header.classList.add("nav-show");
-        //}, 1000);
+        }, 1000);
       }
       //internet explorer
       else if(internetExplorer === true && bodyCont.scrollTop < previous && (previous - bodyCont.scrollTop) > 20) { //meeds to wait longer before scrolling because it's glitchy
