@@ -30,7 +30,10 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
 
 
   //when the body content is scrolled the sticky function is run
-  bodyCont.onscroll = function() {sticky()};
+  bodyCont.onscroll = function() {
+    sticky();
+  };
+
   let previous = 0; //this is the previous value of scrolltop. It is used to compare with the new value of scrolltop.
 
   //when the page is loaded the sticky function is run
@@ -41,7 +44,7 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
 
 
 
-  function sticky() {
+  const sticky = () => {
   //compares the current value of scrolltop with the previous value of scrolltop to determine the scroll direction.
      
     //if scrolltop is 0
