@@ -64,6 +64,9 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
     //sticky code for modern browsers
     const stickyRegular = () => {
         scrollDirection();
+        let headerHeight = header.clientHeight;
+        let windowHeight = window.innerHeight;
+
         //if scrolltop is 0
         if(bodyCont.scrollTop === 0) {
             header.classList.remove("nav-hide");
@@ -75,9 +78,12 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
         //controls the behaviour when less than the header height is scrolled
         //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
         //when scrolling up want it to stay fixed right up to the very top
-        else if(bodyCont.scrollTop < header.clientHeight && scrollUp === false) { //also try window.innerHeight & header.clientHeight
+        else if(bodyCont.scrollTop < headerHeight && scrollDown === true) { //also try window.innerHeight & header.clientHeight
             header.classList.remove("nav-show");
             header.classList.add("nav-hide");
+            //set the current value as the new previous value so that it can be used in the next comparison.
+            previousScrollDirection = "down";
+            //console.log("scrolling shorter than the window innerheight");
         }
 
         //Condition 2
@@ -97,8 +103,19 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
         } 
 
         //SCROLLING UP - display the top nav
-        //only want to run if the scroll direction changes
-        else if(previousScrollDirection !== "up" && scrollUp === true) { //removed condition - no longer needed now change of direction is taken into account? && (previousScrollTop - bodyCont.scrollTop) > 10
+        //only want to run if the scroll direction changes and the header isn't already visible
+        //condition 1
+        //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
+        else if(bodyCont.scrollTop < headerHeight) { //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
+            //header.classList.remove("nav-hide");
+            //header.classList.add("nav-show");
+            //set the current value as the new previous value so that it can be used in the next comparison.
+            console.log("scrolling up shorter than the header height");
+            previousScrollDirection = "up";
+        }
+
+        //condition 2
+        else if(previousScrollDirection !== "up" && scrollUp === true) { 
             //header.style.animation = "slide 1s forwards";
             //header.classList.add("slide-down");
             header.style.transition = "all .5s ease-out"; 
@@ -107,10 +124,11 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
             header.classList.add("nav-show");
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";
-            // console.log("change direction"); //testing
+            //console.log("change direction"); //testing
         }
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;
+        //console.log("this fucntion is working?")
     }
 
     //sticky code for older browsers, including IE
@@ -145,7 +163,7 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
 
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "down";
-            console.log("change direction");
+            //console.log("change direction");
         }
 
         //SCROLLING UP - display the top nav
@@ -165,7 +183,7 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
             header.style.transform =  "translateY(0px)";
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";
-            console.log("change direction");
+            //console.log("change direction");
         } 
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;

@@ -159,28 +159,26 @@ var stickyHeader = function stickyHeader() {
 
 
   var stickyRegular = function stickyRegular() {
-    scrollDirection(); //if scrolltop is 0
+    scrollDirection();
+    var headerHeight = header.clientHeight;
+    var windowHeight = window.innerHeight; //if scrolltop is 0
 
     if (bodyCont.scrollTop === 0) {
       header.classList.remove("nav-hide");
       header.classList.add("nav-show");
-    } //Scrolling down - hide the top nav        
-    //needs reworking
-    //condition 1: WORKS when I want the header to behave relatively, when less than the header height has been scrolled
-    //only want to run if the scroll direction changes
-    // else if (previousScrollDirection !== "down" && bodyCont.scrollTop < header.offsetHeight && scrollDown === true) {  //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
-    // else if (previousScrollDirection !== "down" && bodyCont.scrollTop < window.innerHeight && scrollDown === true) {  //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10 
-    //     header.classList.remove("nav-show");
-    //     header.classList.add("nav-hide");
-    //     //set the current value as the new previous value so that it can be used in the next comparison.
-    //     previousScrollDirection = "down";
-    //     //console.log("change direction"); //testing
-    // }
-    else if (bodyCont.scrollTop < header.clientHeight && scrollUp === false) {
+    } //SCROLLING DOWN - hide the top nav        
+    //Condition 1
+    //controls the behaviour when less than the header height is scrolled
+    //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
+    //when scrolling up want it to stay fixed right up to the very top
+    else if (bodyCont.scrollTop < headerHeight && scrollDown === true) {
         //also try window.innerHeight & header.clientHeight
         header.classList.remove("nav-show");
-        header.classList.add("nav-hide");
-      } //when more than the header height has been scrolled down
+        header.classList.add("nav-hide"); //set the current value as the new previous value so that it can be used in the next comparison.
+
+        previousScrollDirection = "down"; //console.log("scrolling shorter than the window innerheight");
+      } //Condition 2
+      //when more than the header height has been scrolled down
       //only want to run if the scroll direction changes and have scrolled past the image carousel
       else if (previousScrollDirection !== "down" && scrollDown === true) {
           //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
@@ -193,22 +191,31 @@ var stickyHeader = function stickyHeader() {
           }, 500); //set the current value as the new previous value so that it can be used in the next comparison.
 
           previousScrollDirection = "down"; //console.log("change direction"); //testing
-        } //Scrolling up - display the top nav
-        //only want to run if the scroll direction changes
-        else if (previousScrollDirection !== "up" && scrollUp === true) {
-            //removed condition - no longer needed now change of direction is taken into account? && (previousScrollTop - bodyCont.scrollTop) > 10
-            //header.style.animation = "slide 1s forwards";
-            //header.classList.add("slide-down");
-            header.style.transition = "all .5s ease-out";
-            header.style.transform = "translateY(0px)";
-            header.classList.remove("nav-hide");
-            header.classList.add("nav-show"); //set the current value as the new previous value so that it can be used in the next comparison.
+        } //SCROLLING UP - display the top nav
+        //only want to run if the scroll direction changes and the header isn't already visible
+        //condition 1
+        //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
+        else if (bodyCont.scrollTop < headerHeight) {
+            //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
+            //header.classList.remove("nav-hide");
+            //header.classList.add("nav-show");
+            //set the current value as the new previous value so that it can be used in the next comparison.
+            console.log("scrolling up shorter than the header height");
+            previousScrollDirection = "up";
+          } //condition 2
+          else if (previousScrollDirection !== "up" && scrollUp === true) {
+              //header.style.animation = "slide 1s forwards";
+              //header.classList.add("slide-down");
+              header.style.transition = "all .5s ease-out";
+              header.style.transform = "translateY(0px)";
+              header.classList.remove("nav-hide");
+              header.classList.add("nav-show"); //set the current value as the new previous value so that it can be used in the next comparison.
 
-            previousScrollDirection = "up"; // console.log("change direction"); //testing
-          } //set the current value as the new previous value so that it can be used in the next comparison.
+              previousScrollDirection = "up"; //console.log("change direction"); //testing
+            } //set the current value as the new previous value so that it can be used in the next comparison.
 
 
-    previousScrollTop = bodyCont.scrollTop;
+    previousScrollTop = bodyCont.scrollTop; //console.log("this fucntion is working?")
   }; //sticky code for older browsers, including IE
 
 
@@ -226,7 +233,7 @@ var stickyHeader = function stickyHeader() {
       } else if (internetExplorer === true) {
         bodyCont.style.paddingTop = "168px";
       }
-    } //Scrolling down - hide the top nav
+    } //SCROLLING DOWN - hide the top nav
     //only want to run if scroll direction has changed
     else if (previousScrollDirection !== "down" && scrollDown === true) {
         //header slides up
@@ -239,9 +246,8 @@ var stickyHeader = function stickyHeader() {
           header.classList.add("nav-hide");
         }, 500); //set the current value as the new previous value so that it can be used in the next comparison.
 
-        previousScrollDirection = "down";
-        console.log("change direction");
-      } //Scrolling up - display the top nav
+        previousScrollDirection = "down"; //console.log("change direction");
+      } //SCROLLING UP - display the top nav
       //only want to run if scroll direction has changed
       else if (previousScrollDirection !== "up" && scrollUp === true) {
           header.classList.remove("nav-hide");
@@ -259,8 +265,7 @@ var stickyHeader = function stickyHeader() {
           header.style.transition = "all .5s ease-out";
           header.style.transform = "translateY(0px)"; //set the current value as the new previous value so that it can be used in the next comparison.
 
-          previousScrollDirection = "up";
-          console.log("change direction");
+          previousScrollDirection = "up"; //console.log("change direction");
         } //set the current value as the new previous value so that it can be used in the next comparison.
 
 
