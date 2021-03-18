@@ -94,6 +94,7 @@ nav {
     line-height: 46px;
     width: 63px; 
     margin-right: 15px;
+    //padding: none;
     text-align: center;
     color: $white;
     background-color: $menu-color1;
@@ -124,14 +125,14 @@ nav {
         line-height: 12px;
         text-transform: uppercase;
         letter-spacing: normal;
-        margin-bottom: 6px;
+        margin-top: 6px;
 }
 
 .hamburger {
     border: none;
     outline: none;
     height: 80%;
-    padding: 8px;
+    padding: 5px;
     //sets static icon color to white
     .hamburger-inner,
     .hamburger-inner::before,
@@ -142,6 +143,7 @@ nav {
     }
     .hamburger-box {
         width: 33px;
+        margin-top: 2px;
     }
 }
 
