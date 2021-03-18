@@ -39,7 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "burgerMenuJS": function() { return /* binding */ burgerMenuJS; }
 /* harmony export */ });
 //also includes some code relating to the sticky header, particularly when viewport is resized
-var menuButton = document.querySelector("#menu"); //const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
+var menuButton = document.querySelector("#menu");
+var burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
 
 var burgerMenuCont = document.querySelector(".burger-menu-container");
 var bodyCont = document.querySelector(".body-container");
@@ -118,6 +119,10 @@ var burgerMenuJS = function burgerMenuJS() {
   }); //pushes the page content to the left, revealing the sidebar below
 
   var openNav = function openNav() {
+    if (internetExplorer === true) {
+      burgerMenu.style.display = "block";
+    }
+
     burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll
 
     menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
@@ -178,6 +183,10 @@ var burgerMenuJS = function burgerMenuJS() {
 
     setTimeout(function () {
       burgerMenuCont.scrollTop = 0;
+
+      if (internetExplorer === true) {
+        burgerMenu.style.display = "none";
+      }
     }, 600);
     menuOpen = false;
   };

@@ -3,7 +3,7 @@
 
 
 const menuButton = document.querySelector("#menu");
-//const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
+const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
 const burgerMenuCont = document.querySelector(".burger-menu-container");
 const bodyCont = document.querySelector(".body-container");
 const menuOverlay = document.querySelector(".menu-open-overlay");
@@ -85,6 +85,9 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
 
   //pushes the page content to the left, revealing the sidebar below
     const openNav = () => {
+        if(internetExplorer === true) {
+            burgerMenu.style.display = "block";
+        }
         burgerMenuCont.style.overflowY = "scroll"; //adds menu scroll
         menuOverlay.style.backgroundColor = "rgba(0,0,0, 0.4)";
         menuOverlay.style.zIndex = "800"; //makes the overlay cover the main page content, adding the semi-transparent layer and preventing the main content from being scrolled or clicked on.
@@ -118,7 +121,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
                 header.style.transform = "none";
             }
         }  
-        menuOpen = true;        
+        menuOpen = true;     
     }
     
     //moves the page content back to the right, covering the sidebar
@@ -136,7 +139,12 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
             header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
         }
-        setTimeout(function(){ burgerMenuCont.scrollTop = 0; }, 600);
+        setTimeout(function(){ 
+            burgerMenuCont.scrollTop = 0; 
+            if(internetExplorer === true) {
+                burgerMenu.style.display = "none";
+            } 
+        }, 600);
         menuOpen = false;
     }
 }
