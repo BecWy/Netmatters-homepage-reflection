@@ -3,7 +3,7 @@
 
 
 const menuButton = document.querySelector("#menu");
-const burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
+const burgerMenu = document.querySelector(".burger-menu"); 
 const burgerMenuCont = document.querySelector(".burger-menu-container");
 const bodyCont = document.querySelector(".body-container");
 const menuOverlay = document.querySelector(".menu-open-overlay");

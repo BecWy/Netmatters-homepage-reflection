@@ -43,6 +43,7 @@ var cookies = document.querySelector(".cookies");
 var cookiesButton = document.querySelector("#cookies-button");
 var cookiesOuter = document.querySelector(".cookies-outer-container");
 var bodyCont = document.querySelector(".body-container");
+var header = document.querySelector("header");
 var cookiesJS = function cookiesJS() {
   //re-activate when switch back to the app js file after testing
   //const cookiesJS = () => { // this line is for testing only
@@ -73,7 +74,7 @@ var cookiesJS = function cookiesJS() {
     bodyCont.style.overflowY = "scroll"; //show the scrollbar on the body container div when the popup closes
     //for internet explorer
 
-    var headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+    var headerPosition = window.getComputedStyle(header, null).getPropertyValue("position").toLowerCase();
     var internetExplorer = false;
 
     if (headerPosition === "sticky") {
@@ -84,12 +85,9 @@ var cookiesJS = function cookiesJS() {
 
     if (internetExplorer === true) {
       var bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
+      //console.log(`The body cont width is ${bodyContWidth}`);
 
-      console.log("The body cont width is ".concat(bodyContWidth));
-
-      var _header = document.querySelector("header");
-
-      _header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+      header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
     }
   });
 }; //cookiesJS(); for when testing this as a separate file

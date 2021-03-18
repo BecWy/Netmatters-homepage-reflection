@@ -40,8 +40,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //also includes some code relating to the sticky header, particularly when viewport is resized
 var menuButton = document.querySelector("#menu");
-var burgerMenu = document.querySelector(".burger-menu"); //not needed currently, but left it here just in case
-
+var burgerMenu = document.querySelector(".burger-menu");
 var burgerMenuCont = document.querySelector(".burger-menu-container");
 var bodyCont = document.querySelector(".body-container");
 var menuOverlay = document.querySelector(".menu-open-overlay");
