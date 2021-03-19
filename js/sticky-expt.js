@@ -64,42 +64,37 @@ const stickyHeader = () => { // this line is for testing only
     //sticky code for modern browsers
     const stickyRegular = () => {
         scrollDirection();
-        let headerHeight = header.clientHeight;
-        let windowHeight = window.innerHeight;
+        //let headerHeight = header.clientHeight; swapped to using 500px from the top of the page instead
+        //let windowHeight = window.innerHeight; swapped to using 500px from the top of the page instead
 
+        //CONDITION 1
         //if scrolltop is 0
         if(bodyCont.scrollTop === 0) {
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
         }
 
-        //SCROLLING DOWN - hide the top nav        
-        //Condition 1
-        //controls the behaviour when less than the header height is scrolled
+        //CONDITIONS 2 & 3
+        //if scroll is less than 500px from the top of the page
+
         //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
-        //when scrolling up want it to stay fixed right up to the very top
+        //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500 && scrollDown === true) { //also try window.innerHeight & header.clientHeight
             header.classList.remove("nav-show");
             header.classList.add("nav-hide");
-            //set the current value as the new previous value so that it can be used in the next comparison.
-            //previousScrollDirection = "down";
-            //console.log("scrolling shorter than the window innerheight");
+            console.log("scroll down below 500px");
         }
 
-        // //TEST CONDITION (similar to number 3)
-        // else if(bodyCont.scrollTop < 500 && scrollDown === false) { //also try window.innerHeight & header.clientHeight
-        //     //header.classList.remove("nav-hide");
-        //     //header.classList.add("nav-show");
-        //     //set the current value as the new previous value so that it can be used in the next comparison.
-        //     previousScrollDirection = "up";
-        //     //console.log("scrolling shorter than the window innerheight");
-        // }
+        //when scrolling up want it to stay fixed right up to the very top
+        //don't set previous scroll direction - don't want it to interfere with previous and next scroll
+        else if(bodyCont.scrollTop < 500) { //also try window.innerHeight & header.clientHeight
+            header.style.transition = "none"; 
+            console.log("do nothing");
+        }
 
-
-
-        //Condition 2
-        //when more than the header height has been scrolled down
-         //only want to run if the scroll direction changes and have scrolled past the image carousel
+        //CONDITION 4
+        //when more than 500PX has been scrolled down keep/make the header relatively positioned
+         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "down" && scrollDown === true) { //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
             header.style.transition = "all .2s ease-out"; 
             header.style.transform =  "translateY(-208px)";
@@ -113,22 +108,10 @@ const stickyHeader = () => { // this line is for testing only
             //console.log("change direction"); //testing
         } 
 
-        //SCROLLING UP - display the top nav
-        //only want to run if the scroll direction changes and the header isn't already visible
-        //condition 1
-        //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
-        // else if(bodyCont.scrollTop < 600) { //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
-        //     //header.classList.remove("nav-hide");
-        //     //header.classList.add("nav-show");
-        //     //set the current value as the new previous value so that it can be used in the next comparison.
-        //     //console.log("scrolling up shorter than the header height");
-        //     previousScrollDirection = "up";
-        // }
-
-        //condition 2
+        //CONDITION 5
+        //Scrolling up - display the top nav
+        //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) { 
-            //header.style.animation = "slide 1s forwards";
-            //header.classList.add("slide-down");
             header.style.transition = "all .2s ease-out"; 
             header.style.transform =  "translateY(0px)";
             header.classList.remove("nav-hide");
@@ -139,7 +122,7 @@ const stickyHeader = () => { // this line is for testing only
         }
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;
-        //console.log("this fucntion is working?")
+        //console.log("this function is working?")
     }
 
 
@@ -152,22 +135,48 @@ const stickyHeader = () => { // this line is for testing only
     //sticky code for older browsers, including IE
     const stickyIE = () => {
         scrollDirection();
+        
+        //CONDITION 1
         //if scrolltop is 0
         if(bodyCont.scrollTop === 0) {
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
             //on page load in Internet Explorer top padding is added to the body container so that the header doens't overlap the carousel
-            if(internetExplorer === true && window.matchMedia('(min-width: 993px)').matches) {
+            if(window.matchMedia('(min-width: 993px)').matches) {
                 bodyCont.style.paddingTop = "208px";
-            } else if(internetExplorer === true && window.matchMedia('(min-width: 768px)').matches) {
+            } else if(window.matchMedia('(min-width: 768px)').matches) {
                 bodyCont.style.paddingTop = "110px";
-            } else if(internetExplorer === true) { 
+            } else { 
                 bodyCont.style.paddingTop = "168px";
             }
         }
-        
-        //SCROLLING DOWN - hide the top nav
-        //only want to run if scroll direction has changed
+
+
+        //CONDITIONS 2 & 3
+        //if scroll is less than 500px from the top of the page
+
+        //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
+        //don't set previous scroll direction - don't want it to interfere with previous and next scroll
+        else if(bodyCont.scrollTop < 500 && scrollDown === true) { //also try window.innerHeight & header.clientHeight
+            header.classList.remove("nav-show");
+            header.classList.add("nav-hide");
+            header.style.transition = "none"; 
+            bodyCont.style.transition = "none";
+            bodyCont.style.paddingTop = "0px";
+            console.log("scroll down below 500px");
+        }
+
+        //when scrolling up want it to stay fixed right up to the very top
+        //don't set previous scroll direction - don't want it to interfere with previous and next scroll
+        else if(bodyCont.scrollTop < 500) { //also try window.innerHeight & header.clientHeight
+            header.style.transition = "none"; 
+            console.log("do nothing");
+        }
+
+
+        //CONDITION 4
+        //when more than 500PX has been scrolled down keep/make the header relatively positioned
+         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "down" && scrollDown === true) { 
             //header slides up
             header.style.transition = "all .2s ease-out"; 
@@ -184,8 +193,10 @@ const stickyHeader = () => { // this line is for testing only
             //console.log("change direction");
         }
 
-        //SCROLLING UP - display the top nav
-        //only want to run if scroll direction has changed
+
+        //CONDITION 5
+        //Scrolling up - display the top nav
+        //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) {
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
@@ -197,7 +208,7 @@ const stickyHeader = () => { // this line is for testing only
                 bodyCont.style.paddingTop = "168px";
             }    
             //header slides down - WORKS
-            header.style.transition = "all .5s ease-out"; 
+            header.style.transition = "all .2s ease-out"; 
             header.style.transform =  "translateY(0px)";
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";

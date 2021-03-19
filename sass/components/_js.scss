@@ -37,18 +37,6 @@
 //STICKY HEADER
 //////////////////////////////////////////////////////////////////////////
 
-//transition keyframes//////////////////////////////////////////
-//header slides down/up (down = forwards and up = backwards)
-@keyframes slide{
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-
 //header styles
 header {
     //position is controlled by sticky-header.js
@@ -62,7 +50,6 @@ header {
 //Hides the header when the user is scrolling down. This class is added and removed in the JS
 .nav-hide {
     position: relative;
-    //animation: slide 1s backwards;
   }
 
 //Shows the header when the user is scrolling up. This class is added and removed in the JS
@@ -72,16 +59,6 @@ header {
     position: fixed; //sticky doesn't work in IE
     //Browsers that DO support position:sticky will use this
     position: sticky; //sticky works in all modern browsers
-    //animation: slide 1s forwards;
-}
-
-//animation classes for slide down and slide up
-.slide-down {
-    animation: slide 1s forwards;
-}
-
-.slide-up {
-    animation: slide 1s backwards;
 }
 
 

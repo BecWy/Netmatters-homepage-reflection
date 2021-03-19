@@ -177,7 +177,10 @@ var burgerMenuJS = function burgerMenuJS() {
     } else {
       bodyCont.style.transition = "none";
       menuOverlay.style.transition = "none";
-      header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+
+      if (internetExplorer === true) {
+        header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+      }
     }
   }); //pushes the page content to the left, revealing the sidebar below
 
@@ -210,14 +213,11 @@ var burgerMenuJS = function burgerMenuJS() {
     } else {
       //small screens
       bodyCont.style.transform = "translateX(-270px)";
-      menuOverlay.style.transform = "translateX(-270px)";
-      header.style.transform = "translateX(-270px)"; //if the browser is IE and therefore the position setting is fixed instead of sticky
+      menuOverlay.style.transform = "translateX(-270px)"; //if the browser is IE and therefore the position setting is fixed instead of sticky
 
       if (internetExplorer === true) {
         //console.log(`header position is ${headerPosition}`) testing
         header.style.transform = "translateX(-270px)";
-      } else {
-        header.style.transform = "none";
       }
     }
 
