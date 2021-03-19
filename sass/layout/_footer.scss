@@ -15,6 +15,16 @@
             text-decoration: underline;
         }
     }
+    @media (min-width: $break-sm) {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 528px;
+    }
+    @media (min-width: $break-lg) {  
+        height: 309px;
+    }
 }
 
 .main-foot-cont {
@@ -24,6 +34,22 @@
     padding-bottom: 43px;   
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: $break-sm) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 750px;
+        margin: 0 auto;
+    }
+    @media (min-width: $break-med) {
+        width: 970px;
+        margin: 0 auto;
+    }
+    @media (min-width: $break-lg) {  
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 //Sub-sections
@@ -37,6 +63,18 @@
         font-size: 16px;
         line-height: 17.6px;
         width: 95%;
+    }
+    @media (min-width: $break-sm) {
+        width: 375px;
+        align-self: flex-start;
+    }
+    @media (min-width: $break-med) {
+        //Main footer sub-section widths 
+        width: 485px;
+    }
+    @media (min-width: $break-lg) { 
+        //Main footer switches to 4 column layout 
+        width: 300px;
     }
 }
 
@@ -69,7 +107,7 @@
 //CLIENT FOOTER //larger screens only ////////////////////////////////////////////////////////////////////////////
 
 .client-footer {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
@@ -78,6 +116,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+    @media (min-width: $break-sm) {
+        display: flex;
+    }
 }
 
 .footer-logos {
@@ -197,7 +238,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //PARTNER FOOTER ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 .partner-footer {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -206,6 +247,21 @@
     width: 100%;
     height: 188px;
     background-color: $white;
+    @media (min-width: $break-sm) {
+        display: flex;
+        width: 720px;
+        margin: 0 auto;
+    }
+    @media (min-width: $break-med) {
+        width: 940px;
+        margin: 0 auto;
+        height: 210px;
+    }
+    @media (min-width: $break-lg) { 
+        height: 188px;
+        width: 1170px;
+        margin: 0 auto;
+    }
 }
 
 //PARTNER LOGOS ///////////////////////
@@ -265,10 +321,6 @@
     }
 }
 
-.client-footer,
-.partner-footer {
-    display: none;
-}
 
 
 

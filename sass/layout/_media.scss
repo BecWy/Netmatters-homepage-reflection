@@ -2,7 +2,6 @@
 //I've already moved all of the ones that could impact on the JS interactions.
 
 //still to move:
-//1) Latest section with the news items
 //2) footers (main, client, and partner footers)
 
 
@@ -11,41 +10,8 @@
 //FROM 768PX --------------------------------------------------------------------------------
 ///////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-sm) {
-
-    //////////////////////////////////////////////////////////////////////////////////
-    //FOOTER /////////////////////////////////////////////////////////////////////////////
-    //Footers main footer splits into 2 columns.
-    .main-footer {
-        flex-direction: row; 
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-around;
-        height: 528px;
-    }
-
-    .main-foot-section {
-        width: 375px;
-        align-self: flex-start;
-    }
-
-    //Footer width
-    .main-foot-cont {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 750px;
-        margin: 0 auto;
-    }
    
-    //Display logo footers
-    .client-footer,
-    .partner-footer {
-        display: flex;
-}
-
-    .footer-logos,
-    .partner-footer {
+    .footer-logos {
         width: 720px;
         margin: 0 auto;
     }
@@ -67,26 +33,11 @@
     ////////////////////////////////////////////////////////////////////////////////////////
     //FOOTERS ///////////////////////////////////////////////////////////////////////
     //Footer width
-    .footer-logos,
-    .partner-footer {
+    .footer-logos {
         width: 940px;
         margin: 0 auto;
     }
 
-    .main-foot-cont {
-        width: 970px;
-        margin: 0 auto;
-    }
-
-    //FOOTER HEIGHT
-    .partner-footer {
-        height: 210px;
-    }
-
-    //Main footer sub-section widths        
-    .main-foot-section {
-        width: 485px;
-    }
 
     //FOOTER CLIENT AND PARTNER LOGO RESIZING. Not sure about the larger partner logos at this size - visually prefer the settings for the next screen up due to image quality and spacing.     
     #busseys {
@@ -141,28 +92,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-lg) {  
 
-    //////////////////////////////////////////////////////////////////////////////////
-    //FOOTER /////////////////////////////////////////////////////////////////////////////
-    //Footer heights
-    .main-footer {
-        height: 309px;
-    }
-
-    .partner-footer {
-        height: 188px;
-    }
-
     //Footer widths
-    .footer-logos,
-    .partner-footer {
+    .footer-logos {
         width: 1170px;
         margin: 0 auto;
     }
 
-    .main-foot-cont {
-        width: 1200px;
-        margin: 0 auto;
-    }
+
 
     //Footer client logos - SWITCH TO FULL SIZE IMAGE SPRITES
     #busseys {
@@ -236,10 +172,7 @@
         }
     }
 
-    //Main footer switches to 4 column layout 
-    .main-foot-section {
-        width: 300px;
-    }
+    
 
      //Social button width
      .social-button li a {
