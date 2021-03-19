@@ -91,6 +91,18 @@
         margin-bottom: 0; //adjusted for social button top margin of 30px
     }
 }
+
+.social-button li a {
+    @media (min-width: $break-sm) {
+        width: 157.5px;
+    }
+    @media (min-width: $break-med) {
+        width: 212.5px;
+    }
+    @media (min-width: $break-lg) {  
+        width: 120px;
+    }
+}
   
 .main-foot-section > ul {
     list-style-type: none;
@@ -125,6 +137,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @media (min-width: $break-sm) {
+        width: 720px;
+        margin: 0 auto;
+    }
+    @media (min-width: $break-med) {
+        width: 940px;
+        margin: 0 auto;
+    }
+    @media (min-width: $break-lg) {
+        width: 1170px;
+        margin: 0 auto;
+    }
 }
 
 //CLIENT LOGOS ////////////////////
@@ -140,6 +164,18 @@
         background: $white url("../images/external-branding/clients/busseys-color.png") no-repeat center;
         background-size: cover;
     }
+    @media (min-width: $break-med) {
+        width: 168.7px;
+        height: 62.8px;
+    }
+    @media (min-width: $break-lg) {   //Switch to full size image sprite 
+        width: 188px; 
+        height: 70px;
+        background: url("../images/external-branding/clients/busseys-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/clients/busseys-sprite.png") -10px -100px;
+        }
+    }
 } 
 
 #crane {
@@ -151,6 +187,19 @@
         background: $white url("../images/external-branding/clients/crane-color.png") no-repeat center;
         background-size: cover;
     }
+    @media (min-width: $break-med) {
+        width: 260px; 
+        height: 62.8px;
+    }
+    @media (min-width: $break-lg) { //Switch to full size image sprite 
+        width: 287px; 
+        height: 70px;
+        background: url("../images/external-branding/clients/crane-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/clients/crane-sprite.png") -10px -100px;
+        }
+    } 
+        
 }
 
 #beat { 
@@ -162,6 +211,18 @@
         background: $white url("../images/external-branding/clients/beat-color.png") no-repeat center;
         background-size: cover;
     }
+    @media (min-width: $break-med) {
+        width: 64.6px; 
+        height: 62.8px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 72px; 
+        height: 70px;
+        background: url("../images/external-branding/clients/beat-sprite.png") -10px -10px;    
+        &:hover {
+            background: url("../images/external-branding/clients/beat-sprite.png") -102px -10px;
+        }
+    }
 }
 
 #northern-diver {
@@ -172,6 +233,18 @@
     &:hover {
         background: $white url("../images/external-branding/clients/northern-diver-color.png") no-repeat center;
         background-size: cover;
+    }
+    @media (min-width: $break-med) {
+        width: 289px; 
+        height: 62.8px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 322px; 
+        height: 70px;
+        background: url("../images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/clients/northern-diver-sprite.png") -10px -100px;
+        }
     }
 }
 
@@ -280,6 +353,16 @@
     background: $white url("../images/external-branding/other/microsoft-bw.jpeg") no-repeat center;
     background-size: cover;
     align-self: center;
+    @media (min-width: $break-med) {
+        width: 140.2px;
+        height: 85.3px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 115px;
+        height: 70px;
+        background: url("../images/external-branding/other/microsoft-bw.jpeg");
+        background-size: cover;
+    }
 }
 
 #future-50 {
@@ -292,6 +375,18 @@
         background: $white url("../images/external-branding/other/future-50-color.jpeg") no-repeat center;
         background-size: cover;
         align-self: center;
+    }
+    @media (min-width: $break-med) {
+        width: 69.2px; 
+        height: 110.1px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 44px; 
+        height: 70px;
+        background: url("../images/external-branding/other/future-50-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/other/future-50-sprite.png") -74px -10px;
+        }
     }
 }
 
@@ -306,6 +401,18 @@
         background-size: cover;
         align-self: center;
     }
+    @media (min-width: $break-med) {
+        width: 85.2px; 
+        height: 99.4px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 60px; 
+        height: 70px;
+        background: url("../images/external-branding/other/qms-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/other/qms-sprite.png") -90px -10px;
+        }
+    }
 }
 
 #carbon-charter {
@@ -318,6 +425,18 @@
         background: $white url("../images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
         background-size: cover;
         align-self: center;
+    }
+    @media (min-width: $break-med) {
+        width: 200.2px; 
+        height: 80.1px;
+    }
+    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+        width: 175px; 
+        height: 70px;
+        background: url("../images/external-branding/other/carbon-charter-sprite.png") -10px -10px;
+        &:hover {
+            background: url("../images/external-branding/other/carbon-charter-sprite.png") -10px -100px;
+        }
     }
 }
 
