@@ -12,38 +12,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-sm) {
 
-    .latest h2 {
-        display: block;
-        width: 100%;
-        & #latest-title {
-            margin: 0 auto;
-        }
-    }
-
-    .posted-by {
-        width: 308px;
-    }
-
-    .posted-by-text {
-        width: 235px;
-    }
-
-    //News Tooltips ----------------------------------
-    .news .tooltip .tooltip-text {
-        width: 176px;
-        right: 50%;
-        margin-right: -88px;
-        & > p {
-            max-width: 113px; //////////////keeps all text visible
-        }
-        //bottom arrow
-        &::after {
-            left: 50%;
-            margin-left: -5px;
-        }
-    }
-
-
     //////////////////////////////////////////////////////////////////////////////////
     //FOOTER /////////////////////////////////////////////////////////////////////////////
     //Footers main footer splits into 2 columns.
@@ -95,60 +63,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-med) {
    
-
-    .news-image-parent {  //for animation
-        display: inline-block;
-        width: 455px;
-        height: 261.844px;
-        overflow: hidden;
-        &:hover > .news-image-child {
-            transform: scale(1.075);  
-            opacity: .8;
-        }
-    }
-
-    .news-image-child {
-        width: 100%;
-        height: 100%;
-        border: none;
-        padding: 0 0;
-        margin: 0 0;
-        border-radius: 3px 3px 0px 0px;
-        transition: all .25s cubic-bezier(.215,.61,.355,1);
-        opacity: 1;
-    }
-
-    .news-1-image-child {           
-        background: url("../images/latest/news-1.jpeg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news-2-image-child {           
-        background: url("../images/latest/news-2.jpeg") no-repeat center;
-        background-size: cover;
-    }
     
-    .news-3-image-child {           
-        background: url("../images/latest/news-3.jpeg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news > a > img {
-        display: none;
-    }
-
-    .news-text {
-        border-top: none;
-        margin-top: -3px;
-    }
-
-    //NEWS TOOLTIPS 
-    .news .tooltip .tooltip-text {
-        width: 200px;
-        margin-right: -100px;
-    }
-
-
     ////////////////////////////////////////////////////////////////////////////////////////
     //FOOTERS ///////////////////////////////////////////////////////////////////////
     //Footer width
@@ -226,14 +141,6 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $break-lg) {  
 
-    //Latest news image animation
-    .news-image-parent { 
-        width: 370px; 
-        height: 212.708px;
-        overflow: hidden;
-    }
-
-    
     //////////////////////////////////////////////////////////////////////////////////
     //FOOTER /////////////////////////////////////////////////////////////////////////////
     //Footer heights
