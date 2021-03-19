@@ -71,51 +71,52 @@ var stickyHeader = function stickyHeader() {
         //also try window.innerHeight & header.clientHeight
         header.classList.remove("nav-show");
         header.classList.add("nav-hide"); //set the current value as the new previous value so that it can be used in the next comparison.
+        //previousScrollDirection = "down";
+        //console.log("scrolling shorter than the window innerheight");
+      } // //TEST CONDITION (similar to number 3)
+      // else if(bodyCont.scrollTop < 500 && scrollDown === false) { //also try window.innerHeight & header.clientHeight
+      //     //header.classList.remove("nav-hide");
+      //     //header.classList.add("nav-show");
+      //     //set the current value as the new previous value so that it can be used in the next comparison.
+      //     previousScrollDirection = "up";
+      //     //console.log("scrolling shorter than the window innerheight");
+      // }
+      //Condition 2
+      //when more than the header height has been scrolled down
+      //only want to run if the scroll direction changes and have scrolled past the image carousel
+      else if (previousScrollDirection !== "down" && scrollDown === true) {
+          //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
+          header.style.transition = "all .2s ease-out";
+          header.style.transform = "translateY(-208px)"; //allow the header to animate before switching to relative positioning
 
-        previousScrollDirection = "down"; //console.log("scrolling shorter than the window innerheight");
-      } //TEST CONDITION (similar to number 3)
-      else if (bodyCont.scrollTop < 500 && scrollDown === false) {
-          //also try window.innerHeight & header.clientHeight
-          //header.classList.remove("nav-hide");
-          //header.classList.add("nav-show");
-          //set the current value as the new previous value so that it can be used in the next comparison.
-          previousScrollDirection = "up"; //console.log("scrolling shorter than the window innerheight");
-        } //Condition 2
-        //when more than the header height has been scrolled down
-        //only want to run if the scroll direction changes and have scrolled past the image carousel
-        else if (previousScrollDirection !== "down" && scrollDown === true) {
-            //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
+          setTimeout(function () {
+            header.classList.remove("nav-show");
+            header.classList.add("nav-hide");
+          }, 200); //set the current value as the new previous value so that it can be used in the next comparison.
+
+          previousScrollDirection = "down"; //console.log("change direction"); //testing
+        } //SCROLLING UP - display the top nav
+        //only want to run if the scroll direction changes and the header isn't already visible
+        //condition 1
+        //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
+        // else if(bodyCont.scrollTop < 600) { //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
+        //     //header.classList.remove("nav-hide");
+        //     //header.classList.add("nav-show");
+        //     //set the current value as the new previous value so that it can be used in the next comparison.
+        //     //console.log("scrolling up shorter than the header height");
+        //     previousScrollDirection = "up";
+        // }
+        //condition 2
+        else if (previousScrollDirection !== "up" && scrollUp === true) {
+            //header.style.animation = "slide 1s forwards";
+            //header.classList.add("slide-down");
             header.style.transition = "all .2s ease-out";
-            header.style.transform = "translateY(-208px)"; //allow the header to animate before switching to relative positioning
+            header.style.transform = "translateY(0px)";
+            header.classList.remove("nav-hide");
+            header.classList.add("nav-show"); //set the current value as the new previous value so that it can be used in the next comparison.
 
-            setTimeout(function () {
-              header.classList.remove("nav-show");
-              header.classList.add("nav-hide");
-            }, 200); //set the current value as the new previous value so that it can be used in the next comparison.
-
-            previousScrollDirection = "down"; //console.log("change direction"); //testing
-          } //SCROLLING UP - display the top nav
-          //only want to run if the scroll direction changes and the header isn't already visible
-          //condition 1
-          //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
-          else if (bodyCont.scrollTop < 600) {
-              //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
-              //header.classList.remove("nav-hide");
-              //header.classList.add("nav-show");
-              //set the current value as the new previous value so that it can be used in the next comparison.
-              //console.log("scrolling up shorter than the header height");
-              previousScrollDirection = "up";
-            } //condition 2
-            else if (previousScrollDirection !== "up" && scrollUp === true) {
-                //header.style.animation = "slide 1s forwards";
-                //header.classList.add("slide-down");
-                header.style.transition = "all .2s ease-out";
-                header.style.transform = "translateY(0px)";
-                header.classList.remove("nav-hide");
-                header.classList.add("nav-show"); //set the current value as the new previous value so that it can be used in the next comparison.
-
-                previousScrollDirection = "up"; //console.log("change direction"); //testing
-              } //set the current value as the new previous value so that it can be used in the next comparison.
+            previousScrollDirection = "up"; //console.log("change direction"); //testing
+          } //set the current value as the new previous value so that it can be used in the next comparison.
 
 
     previousScrollTop = bodyCont.scrollTop; //console.log("this fucntion is working?")

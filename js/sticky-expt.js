@@ -82,18 +82,18 @@ const stickyHeader = () => { // this line is for testing only
             header.classList.remove("nav-show");
             header.classList.add("nav-hide");
             //set the current value as the new previous value so that it can be used in the next comparison.
-            previousScrollDirection = "down";
+            //previousScrollDirection = "down";
             //console.log("scrolling shorter than the window innerheight");
         }
 
-        //TEST CONDITION (similar to number 3)
-        else if(bodyCont.scrollTop < 500 && scrollDown === false) { //also try window.innerHeight & header.clientHeight
-            //header.classList.remove("nav-hide");
-            //header.classList.add("nav-show");
-            //set the current value as the new previous value so that it can be used in the next comparison.
-            previousScrollDirection = "up";
-            //console.log("scrolling shorter than the window innerheight");
-        }
+        // //TEST CONDITION (similar to number 3)
+        // else if(bodyCont.scrollTop < 500 && scrollDown === false) { //also try window.innerHeight & header.clientHeight
+        //     //header.classList.remove("nav-hide");
+        //     //header.classList.add("nav-show");
+        //     //set the current value as the new previous value so that it can be used in the next comparison.
+        //     previousScrollDirection = "up";
+        //     //console.log("scrolling shorter than the window innerheight");
+        // }
 
 
 
@@ -117,13 +117,13 @@ const stickyHeader = () => { // this line is for testing only
         //only want to run if the scroll direction changes and the header isn't already visible
         //condition 1
         //when scrolling up and down in the header section don't want the header position to keep switching between relative and sticky
-        else if(bodyCont.scrollTop < 600) { //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
-            //header.classList.remove("nav-hide");
-            //header.classList.add("nav-show");
-            //set the current value as the new previous value so that it can be used in the next comparison.
-            //console.log("scrolling up shorter than the header height");
-            previousScrollDirection = "up";
-        }
+        // else if(bodyCont.scrollTop < 600) { //removed condition && scrollUp === true //also try window.innerHeight & header.clientHeight
+        //     //header.classList.remove("nav-hide");
+        //     //header.classList.add("nav-show");
+        //     //set the current value as the new previous value so that it can be used in the next comparison.
+        //     //console.log("scrolling up shorter than the header height");
+        //     previousScrollDirection = "up";
+        // }
 
         //condition 2
         else if(previousScrollDirection !== "up" && scrollUp === true) { 
