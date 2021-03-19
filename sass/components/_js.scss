@@ -62,6 +62,26 @@ header {
 }
 
 
+@keyframes slide-up {
+    from {transform:translateY(-208px)}
+    to {transform: translateY(0px)}
+}
+
+@keyframes slide-down {
+    from {transform:translateY(0px)}
+    to {transform: translateY(-208px)}
+}
+
+
+.header-animation-scroll-up {
+    animation-name: slide-down;
+    animation-duration: 4s;
+}
+
+.header-animation-scroll-down {
+    animation-name: slide-up;
+    animation-duration: 4s;
+}
 
 ///////////////////////////////////////////////////////////////////////
 //BURGER MENU

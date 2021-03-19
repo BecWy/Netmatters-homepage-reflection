@@ -113,10 +113,38 @@ const stickyHeader = () => { // this line is for testing only
         //Scrolling up - display the top nav
         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) { 
+            
+            //experiment with animation. Check IE for original code inclusions
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
-            header.style.transition = "all .2s ease-out .2s"; 
-            header.style.transform =  "translateY(0px)";
+           // header.style.transform =  "translateY(-208px)";
+            
+            
+            //header.style.transition = "all .2s ease-out .2s"; 
+            //header.style.transform =  "translateY(0px)";
+            setTimeout(function(){ 
+                header.classList.add(".header-animation-scroll-up");
+            }, 200);
+            //I'm going to have to create the keyframe in css with this start and end position so that it stops at the end
+            // header.animate([
+            //     // keyframes
+            //     { transform: 'translateY(-208px)' }, 
+            //     { transform: 'translateY(0px)' }
+                  
+            // ], {
+            //     // timing options
+            //     duration: 500,
+            //     iterations: 1,
+            //     direction: "normal"
+            // });
+
+            // setTimeout(function(){ 
+            //     header.classList.remove("nav-hide");
+            //     header.classList.add("nav-show");
+            // }, 200);
+            
+            
+            
             
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";

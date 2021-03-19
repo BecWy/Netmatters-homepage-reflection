@@ -69,6 +69,7 @@ var stickyHeader = function stickyHeader() {
     //don't set previous scroll direction - don't want it to interfere with previous and next scroll
     else if (bodyCont.scrollTop < 500 && scrollDown === true) {
         //also try window.innerHeight & header.clientHeight
+        header.style.transition = "none";
         header.classList.remove("nav-show");
         header.classList.add("nav-hide");
         console.log("scroll down below 500px");
@@ -83,7 +84,7 @@ var stickyHeader = function stickyHeader() {
         //only want to run if the scroll direction changes
         else if (previousScrollDirection !== "down" && scrollDown === true) {
             //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
-            header.style.transition = "all .2s ease-out";
+            header.style.transition = "all .2s ease-out .2s";
             header.style.transform = "translateY(-208px)"; //allow the header to animate before switching to relative positioning
 
             setTimeout(function () {
@@ -96,10 +97,10 @@ var stickyHeader = function stickyHeader() {
           //Scrolling up - display the top nav
           //only want to run if the scroll direction changes
           else if (previousScrollDirection !== "up" && scrollUp === true) {
-              header.style.transition = "all .2s ease-out";
-              header.style.transform = "translateY(0px)";
               header.classList.remove("nav-hide");
-              header.classList.add("nav-show"); //set the current value as the new previous value so that it can be used in the next comparison.
+              header.classList.add("nav-show");
+              header.style.transition = "all .2s ease-out .2s";
+              header.style.transform = "translateY(0px)"; //set the current value as the new previous value so that it can be used in the next comparison.
 
               previousScrollDirection = "up"; //console.log("change direction"); //testing
             } //set the current value as the new previous value so that it can be used in the next comparison.
