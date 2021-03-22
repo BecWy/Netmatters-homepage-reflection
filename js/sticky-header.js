@@ -22,7 +22,7 @@ const stickyHeader = () => { // this line is for testing only
     //check if the browser is Internet Explorer
     if(headerPosition === "sticky") {
         internetExplorer = false;
-        //console.log("the browser is modern and supports sticky");
+        //console.log("the browser supports sticky");
     } else {
         internetExplorer = true;
         //console.log("the browser is old and does not support sticky");
@@ -71,6 +71,8 @@ const stickyHeader = () => { // this line is for testing only
         //if scrolltop is 0
         if(bodyCont.scrollTop === 0) {
             header.classList.remove("nav-hide");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-show");
         }
 
@@ -80,51 +82,58 @@ const stickyHeader = () => { // this line is for testing only
         //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500 && scrollDown === true) { //also try window.innerHeight & header.clientHeight
-            header.style.transition = "none"; 
             header.classList.remove("nav-show");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-hide");
-            console.log("scroll down below 500px");
         }
 
         //when scrolling up want it to stay fixed right up to the very top
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500) { //also try window.innerHeight & header.clientHeight
-            header.style.transition = "none"; 
-            console.log("do nothing");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
         }
 
         //CONDITION 4
         //when more than 500PX has been scrolled down keep/make the header relatively positioned
          //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "down" && scrollDown === true) { //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
-            header.style.transition = "all .2s ease-out .2s"; 
-            header.style.transform =  "translateY(-208px)";
             //allow the header to animate before switching to relative positioning
+            header.classList.remove("header-animation-scroll-up");
+            
             setTimeout(function(){ 
-            header.classList.remove("nav-show");
-            header.classList.add("nav-hide");
+            header.classList.add("header-animation-scroll-down");
             }, 200);
+            
+           //switch to relative positioning
+            setTimeout(function(){ 
+                header.classList.remove("nav-show");
+                header.classList.add("nav-hide");
+            }, 500);
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "down";
-            //console.log("change direction"); //testing
         } 
 
         //CONDITION 5
         //Scrolling up - display the top nav
         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) { 
+            //switch to sticky positioning
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
-            header.style.transition = "all .2s ease-out .2s"; 
-            header.style.transform =  "translateY(0px)";
+            
+            //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
+            setTimeout(function(){ 
+                header.classList.remove("header-animation-scroll-down");
+                header.classList.add("header-animation-scroll-up");
+            }, 200);
             
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";
-            //console.log("change direction"); //testing
         }
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;
-        //console.log("this function is working?")
     }
 
 
@@ -142,6 +151,8 @@ const stickyHeader = () => { // this line is for testing only
         //if scrolltop is 0
         if(bodyCont.scrollTop === 0) {
             header.classList.remove("nav-hide");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-show");
             //on page load in Internet Explorer top padding is added to the body container so that the header doens't overlap the carousel
             if(window.matchMedia('(min-width: 993px)').matches) {
@@ -161,18 +172,19 @@ const stickyHeader = () => { // this line is for testing only
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500 && scrollDown === true) { //also try window.innerHeight & header.clientHeight
             header.classList.remove("nav-show");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-hide");
-            header.style.transition = "none"; 
-            bodyCont.style.transition = "none";
+            bodyCont.classList.remove("header-IE-padding-add");
+            bodyCont.classList.add("header-IE-padding-remove");
             bodyCont.style.paddingTop = "0px";
-            console.log("scroll down below 500px");
         }
 
         //when scrolling up want it to stay fixed right up to the very top
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500) { //also try window.innerHeight & header.clientHeight
-            header.style.transition = "none"; 
-            console.log("do nothing");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
         }
 
 
@@ -180,19 +192,21 @@ const stickyHeader = () => { // this line is for testing only
         //when more than 500PX has been scrolled down keep/make the header relatively positioned
          //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "down" && scrollDown === true) { 
-            //header slides up
-            header.style.transition = "all .2s ease-out"; 
-            header.style.transform =  "translateY(-208px)";
+            //allow the header to slide up before switching to relative positioning
+            header.classList.remove("header-animation-scroll-up");
             bodyCont.style.paddingTop = "0px";
-            //allow the header to animate before switching to relative positioning
+
+            setTimeout(function(){ 
+            header.classList.add("header-animation-scroll-down");
+            }, 200);
+            
+           //switch to relative positioning
             setTimeout(function(){ 
                 header.classList.remove("nav-show");
                 header.classList.add("nav-hide");
-            }, 200);
-
+            }, 500);
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "down";
-            //console.log("change direction");
         }
 
 
@@ -200,28 +214,32 @@ const stickyHeader = () => { // this line is for testing only
         //Scrolling up - display the top nav
         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) {
+            //switch to fixed positioning
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
-            if(window.matchMedia('(min-width: 993px)').matches) {
-                bodyCont.style.paddingTop = "208px";
-            } else if(window.matchMedia('(min-width: 768px)').matches) {
-                bodyCont.style.paddingTop = "110px";
-            } else { 
-                bodyCont.style.paddingTop = "168px";
-            }    
-            //header slides down - WORKS
-            header.style.transition = "all .2s ease-out"; 
-            header.style.transform =  "translateY(0px)";
+        
+            //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
+            setTimeout(function(){ 
+                header.classList.remove("header-animation-scroll-down");
+                header.classList.add("header-animation-scroll-up");
+            }, 200);
+
+            setTimeout(function(){ 
+                if(window.matchMedia('(min-width: 993px)').matches) {
+                    bodyCont.style.paddingTop = "208px";
+                } else if(window.matchMedia('(min-width: 768px)').matches) {
+                    bodyCont.style.paddingTop = "110px";
+                } else { 
+                    bodyCont.style.paddingTop = "168px";
+                }  
+            }, 500);
+            
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";
-            //console.log("change direction");
         } 
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;
     }
-
-
-  
 }
 
 stickyHeader(); //for when testing this as a separate file only

@@ -240,9 +240,6 @@ const stickyHeader = () => { // this line is for testing only
         //set the current value as the new previous value so that it can be used in the next comparison.
         previousScrollTop = bodyCont.scrollTop;
     }
-
-
-  
 }
 
 stickyHeader(); //for when testing this as a separate file only
