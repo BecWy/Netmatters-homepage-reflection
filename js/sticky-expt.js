@@ -2,6 +2,7 @@
 //currently the related css can be found in js.scss, under STICKY HEADER
 const header = document.querySelector("header");
 const bodyCont = document.querySelector(".body-container");
+const main = document.querySelector("main");
 
 
 //export const stickyHeader = () => { //re-activate when switch back to the app js file after testing
@@ -156,11 +157,11 @@ const stickyHeader = () => { // this line is for testing only
             header.classList.add("nav-show");
             //on page load in Internet Explorer top padding is added to the body container so that the header doens't overlap the carousel
             if(window.matchMedia('(min-width: 993px)').matches) {
-                bodyCont.style.paddingTop = "208px";
+                main.style.paddingTop = "208px";
             } else if(window.matchMedia('(min-width: 768px)').matches) {
-                bodyCont.style.paddingTop = "110px";
+                main.style.paddingTop = "110px";
             } else { 
-                bodyCont.style.paddingTop = "168px";
+                main.style.paddingTop = "168px";
             }
         }
 
@@ -175,9 +176,9 @@ const stickyHeader = () => { // this line is for testing only
             header.classList.remove("header-animation-scroll-down");
             header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-hide");
-            bodyCont.classList.remove("header-IE-padding-add");
-            bodyCont.classList.add("header-IE-padding-remove");
-            bodyCont.style.paddingTop = "0px";
+            //bodyCont.classList.remove("header-IE-padding-add");
+            //bodyCont.classList.add("header-IE-padding-remove");
+            //main.style.paddingTop = "0px";
         }
 
         //when scrolling up want it to stay fixed right up to the very top
@@ -194,7 +195,7 @@ const stickyHeader = () => { // this line is for testing only
         else if(previousScrollDirection !== "down" && scrollDown === true) { 
             //allow the header to slide up before switching to relative positioning
             header.classList.remove("header-animation-scroll-up");
-            bodyCont.style.paddingTop = "0px";
+            //main.style.paddingTop = "0px";
 
             setTimeout(function(){ 
             header.classList.add("header-animation-scroll-down");
@@ -224,15 +225,15 @@ const stickyHeader = () => { // this line is for testing only
                 header.classList.add("header-animation-scroll-up");
             }, 200);
 
-            setTimeout(function(){ 
-                if(window.matchMedia('(min-width: 993px)').matches) {
-                    bodyCont.style.paddingTop = "208px";
-                } else if(window.matchMedia('(min-width: 768px)').matches) {
-                    bodyCont.style.paddingTop = "110px";
-                } else { 
-                    bodyCont.style.paddingTop = "168px";
-                }  
-            }, 500);
+            // setTimeout(function(){ 
+            //     if(window.matchMedia('(min-width: 993px)').matches) {
+            //         bodyCont.style.paddingTop = "208px";
+            //     } else if(window.matchMedia('(min-width: 768px)').matches) {
+            //         bodyCont.style.paddingTop = "110px";
+            //     } else { 
+            //         bodyCont.style.paddingTop = "168px";
+            //     }  
+            // }, 500);
             
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";

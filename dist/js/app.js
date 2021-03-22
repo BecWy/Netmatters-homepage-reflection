@@ -22,10 +22,10 @@ var cookiesJS = function cookiesJS() {
     var cookiesSaved = localStorage.getItem('cookiesAccepted'); //Checks if cookies are saved. Decides whether to display the cookies popup or not.
 
     if (cookiesSaved === 'yes') {
-      cookies.style.display = "none";
+      //cookies.style.display = "none";
       cookiesOuter.style.display = "none"; //console.log("cookies already accepted"); //for testing purposes
     } else {
-      cookies.style.display = "block";
+      //cookies.style.display = "block";
       cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
       //console.log("user needs to accept cookies"); //for testing purposes
 
