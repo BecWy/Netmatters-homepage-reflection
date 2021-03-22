@@ -19,7 +19,7 @@ var stickyHeader = function stickyHeader() {
   var scrollUp = true; //check if the browser is Internet Explorer
 
   if (headerPosition === "sticky") {
-    internetExplorer = false; //console.log("the browser is modern and supports sticky");
+    internetExplorer = false; //console.log("the browser supports sticky");
   } else {
     internetExplorer = true; //console.log("the browser is old and does not support sticky");
   } //when the body content is scrolled the sticky function is run
@@ -62,6 +62,8 @@ var stickyHeader = function stickyHeader() {
 
     if (bodyCont.scrollTop === 0) {
       header.classList.remove("nav-hide");
+      header.classList.remove("header-animation-scroll-down");
+      header.classList.remove("header-animation-scroll-up");
       header.classList.add("nav-show");
     } //CONDITIONS 2 & 3
     //if scroll is less than 500px from the top of the page
@@ -69,17 +71,14 @@ var stickyHeader = function stickyHeader() {
     //don't set previous scroll direction - don't want it to interfere with previous and next scroll
     else if (bodyCont.scrollTop < 500 && scrollDown === true) {
         //also try window.innerHeight & header.clientHeight
-        //header.style.transition = "none"; 
         header.classList.remove("nav-show");
-        header.classList.add("nav-hide");
         header.classList.remove("header-animation-scroll-down");
-        header.classList.remove("header-animation-scroll-up"); //console.log("scroll down below 500px");
+        header.classList.remove("header-animation-scroll-up");
+        header.classList.add("nav-hide");
       } //when scrolling up want it to stay fixed right up to the very top
       //don't set previous scroll direction - don't want it to interfere with previous and next scroll
       else if (bodyCont.scrollTop < 500) {
           //also try window.innerHeight & header.clientHeight
-          //header.style.transition = "none"; 
-          //console.log("do nothing");
           header.classList.remove("header-animation-scroll-down");
           header.classList.remove("header-animation-scroll-up");
         } //CONDITION 4
@@ -89,41 +88,34 @@ var stickyHeader = function stickyHeader() {
             //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
             //allow the header to animate before switching to relative positioning
             header.classList.remove("header-animation-scroll-up");
-            void header.offsetWidth; //trigger a DOM reflow
-
-            header.classList.add("header-animation-scroll-down"); //switch to relative positioning
+            setTimeout(function () {
+              header.classList.add("header-animation-scroll-down");
+            }, 200); //switch to relative positioning
 
             setTimeout(function () {
-              void header.offsetWidth; //trigger a DOM reflow
-
               header.classList.remove("nav-show");
               header.classList.add("nav-hide");
-            }, 200); //set the current value as the new previous value so that it can be used in the next comparison.
+            }, 500); //set the current value as the new previous value so that it can be used in the next comparison.
 
-            previousScrollDirection = "down"; //console.log("change direction"); //testing
+            previousScrollDirection = "down";
           } //CONDITION 5
           //Scrolling up - display the top nav
           //only want to run if the scroll direction changes
           else if (previousScrollDirection !== "up" && scrollUp === true) {
               //switch to sticky positioning
-              //header.style.transform =  "translateY(-208px)";
               header.classList.remove("nav-hide");
-              header.classList.add("nav-show");
-              void header.offsetWidth; //trigger a DOM reflow
-              //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
+              header.classList.add("nav-show"); //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
 
               setTimeout(function () {
                 header.classList.remove("header-animation-scroll-down");
-                void header.offsetWidth; //trigger a DOM reflow
-
                 header.classList.add("header-animation-scroll-up");
               }, 200); //set the current value as the new previous value so that it can be used in the next comparison.
 
-              previousScrollDirection = "up"; //console.log("change direction"); //testing
+              previousScrollDirection = "up";
             } //set the current value as the new previous value so that it can be used in the next comparison.
 
 
-    previousScrollTop = bodyCont.scrollTop; //console.log("this function is working?")
+    previousScrollTop = bodyCont.scrollTop;
   }; ////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -137,6 +129,8 @@ var stickyHeader = function stickyHeader() {
 
     if (bodyCont.scrollTop === 0) {
       header.classList.remove("nav-hide");
+      header.classList.remove("header-animation-scroll-down");
+      header.classList.remove("header-animation-scroll-up");
       header.classList.add("nav-show"); //on page load in Internet Explorer top padding is added to the body container so that the header doens't overlap the carousel
 
       if (window.matchMedia('(min-width: 993px)').matches) {
@@ -153,52 +147,58 @@ var stickyHeader = function stickyHeader() {
     else if (bodyCont.scrollTop < 500 && scrollDown === true) {
         //also try window.innerHeight & header.clientHeight
         header.classList.remove("nav-show");
+        header.classList.remove("header-animation-scroll-down");
+        header.classList.remove("header-animation-scroll-up");
         header.classList.add("nav-hide");
-        header.style.transition = "none";
-        bodyCont.style.transition = "none";
+        bodyCont.classList.remove("header-IE-padding-add");
+        bodyCont.classList.add("header-IE-padding-remove");
         bodyCont.style.paddingTop = "0px";
-        console.log("scroll down below 500px");
       } //when scrolling up want it to stay fixed right up to the very top
       //don't set previous scroll direction - don't want it to interfere with previous and next scroll
       else if (bodyCont.scrollTop < 500) {
           //also try window.innerHeight & header.clientHeight
-          header.style.transition = "none";
-          console.log("do nothing");
+          header.classList.remove("header-animation-scroll-down");
+          header.classList.remove("header-animation-scroll-up");
         } //CONDITION 4
         //when more than 500PX has been scrolled down keep/make the header relatively positioned
         //only want to run if the scroll direction changes
         else if (previousScrollDirection !== "down" && scrollDown === true) {
-            //header slides up
-            header.style.transition = "all .2s ease-out";
-            header.style.transform = "translateY(-208px)";
-            bodyCont.style.paddingTop = "0px"; //allow the header to animate before switching to relative positioning
+            //allow the header to slide up before switching to relative positioning
+            header.classList.remove("header-animation-scroll-up");
+            bodyCont.style.paddingTop = "0px";
+            setTimeout(function () {
+              header.classList.add("header-animation-scroll-down");
+            }, 200); //switch to relative positioning
 
             setTimeout(function () {
               header.classList.remove("nav-show");
               header.classList.add("nav-hide");
-            }, 200); //set the current value as the new previous value so that it can be used in the next comparison.
+            }, 500); //set the current value as the new previous value so that it can be used in the next comparison.
 
-            previousScrollDirection = "down"; //console.log("change direction");
+            previousScrollDirection = "down";
           } //CONDITION 5
           //Scrolling up - display the top nav
           //only want to run if the scroll direction changes
           else if (previousScrollDirection !== "up" && scrollUp === true) {
+              //switch to fixed positioning
               header.classList.remove("nav-hide");
-              header.classList.add("nav-show");
+              header.classList.add("nav-show"); //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
 
-              if (window.matchMedia('(min-width: 993px)').matches) {
-                bodyCont.style.paddingTop = "208px";
-              } else if (window.matchMedia('(min-width: 768px)').matches) {
-                bodyCont.style.paddingTop = "110px";
-              } else {
-                bodyCont.style.paddingTop = "168px";
-              } //header slides down - WORKS
+              setTimeout(function () {
+                header.classList.remove("header-animation-scroll-down");
+                header.classList.add("header-animation-scroll-up");
+              }, 200);
+              setTimeout(function () {
+                if (window.matchMedia('(min-width: 993px)').matches) {
+                  bodyCont.style.paddingTop = "208px";
+                } else if (window.matchMedia('(min-width: 768px)').matches) {
+                  bodyCont.style.paddingTop = "110px";
+                } else {
+                  bodyCont.style.paddingTop = "168px";
+                }
+              }, 500); //set the current value as the new previous value so that it can be used in the next comparison.
 
-
-              header.style.transition = "all .2s ease-out";
-              header.style.transform = "translateY(0px)"; //set the current value as the new previous value so that it can be used in the next comparison.
-
-              previousScrollDirection = "up"; //console.log("change direction");
+              previousScrollDirection = "up";
             } //set the current value as the new previous value so that it can be used in the next comparison.
 
 

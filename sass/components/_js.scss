@@ -83,12 +83,77 @@ header {
 }
 
 .header-animation-scroll-up {
-    animation: slide-down 200ms ease-out forwards;
+    animation: slide-down 250ms ease-out forwards;
 }
 
 .header-animation-scroll-down {
-    animation: slide-up 200ms ease-out forwards;
+    animation: slide-up 250ms ease-out forwards;
 }
+
+//FOR INTERNET EXPLORER
+//Add padding-top to the body when switching to fixed positioning
+// @keyframes padding-add {
+//     @media (min-width: $break-lg) {
+//         0% {
+//             padding-top: 0; 
+//           }
+//         100% {
+//             padding-top: 208px;
+//         } 
+//     }
+//     @media (min-width: $break-med) {
+//         0% {
+//             padding-top: 0; 
+//           }
+//         100% {
+//             padding-top: 110px;
+//         } 
+//     }
+//     @media (max-width: $break-med) {
+//         0% {
+//             padding-top: 0; 
+//           }
+//         100% {
+//             padding-top: 168px;
+//         } 
+//     }
+// }
+// //remove padding-top from the body when switching to relative positioning
+// @keyframes padding-remove {
+//     @media (min-width: $break-lg) {
+//         0% {
+//             padding-top: 208px; 
+//           }
+//         100% {
+//             padding-top: 0;
+//         } 
+//     }
+//     @media (min-width: $break-med) {
+//         0% {
+//             padding-top: 110px; 
+//           }
+//         100% {
+//             padding-top: 0;
+//         } 
+//     }
+//     @media (max-width: $break-med) {
+//         0% {
+//             padding-top: 168px; 
+//           }
+//         100% {
+//             padding-top: 0;
+//         } 
+//     }
+// }
+
+// .header-IE-padding-add {
+//     animation: padding-add 100ms linear forwards;
+// }
+
+// .header-IE-padding-remove {
+//     animation: padding-remove 100ms linear forwards;
+// }
+
 
 ///////////////////////////////////////////////////////////////////////
 //BURGER MENU
