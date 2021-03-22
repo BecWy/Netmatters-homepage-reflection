@@ -42,7 +42,7 @@ header {
     //position is controlled by sticky-header.js
     top: 0;
     left: 0;
-    transition: top 0.2s ease-in-out;
+    //transition: top 0.2s ease-in-out;
     background-color: $white;
     width: 100%;
 }
@@ -50,6 +50,7 @@ header {
 //Hides the header when the user is scrolling down. This class is added and removed in the JS
 .nav-hide {
     position: relative;
+    //translate: 0px;
   }
 
 //Shows the header when the user is scrolling up. This class is added and removed in the JS
@@ -59,28 +60,34 @@ header {
     position: fixed; //sticky doesn't work in IE
     //Browsers that DO support position:sticky will use this
     position: sticky; //sticky works in all modern browsers
+    //transform: translateY(-208px);
 }
 
 
 @keyframes slide-up {
-    from {transform:translateY(-208px)}
-    to {transform: translateY(0px)}
+    0% {
+        transform: translateY(0); 
+      }
+    100% {
+        transform: translateY(-100%); // - 208px
+    }
 }
 
 @keyframes slide-down {
-    from {transform:translateY(0px)}
-    to {transform: translateY(-208px)}
+    0% {
+        transform: translateY(-100%); // - 208px
+      }
+    100% {
+        transform: translateY(0);
+    }
 }
 
-
 .header-animation-scroll-up {
-    animation-name: slide-down;
-    animation-duration: 4s;
+    animation: slide-down 200ms ease-out forwards;
 }
 
 .header-animation-scroll-down {
-    animation-name: slide-up;
-    animation-duration: 4s;
+    animation: slide-up 200ms ease-out forwards;
 }
 
 ///////////////////////////////////////////////////////////////////////

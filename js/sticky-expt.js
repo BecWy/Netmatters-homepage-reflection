@@ -80,29 +80,37 @@ const stickyHeader = () => { // this line is for testing only
         //when scrolling down want the header to remain relatively positioned (don't want it to slide up) until the header is no longer visible
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500 && scrollDown === true) { //also try window.innerHeight & header.clientHeight
-            header.style.transition = "none"; 
+            //header.style.transition = "none"; 
             header.classList.remove("nav-show");
             header.classList.add("nav-hide");
-            console.log("scroll down below 500px");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
+            //console.log("scroll down below 500px");
         }
 
         //when scrolling up want it to stay fixed right up to the very top
         //don't set previous scroll direction - don't want it to interfere with previous and next scroll
         else if(bodyCont.scrollTop < 500) { //also try window.innerHeight & header.clientHeight
-            header.style.transition = "none"; 
-            console.log("do nothing");
+            //header.style.transition = "none"; 
+            //console.log("do nothing");
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
         }
 
         //CONDITION 4
         //when more than 500PX has been scrolled down keep/make the header relatively positioned
          //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "down" && scrollDown === true) { //removed condition - no longer needed now change of direction is taken into account? && (bodyCont.scrollTop - previousScrollTop) > 10
-            header.style.transition = "all .2s ease-out .2s"; 
-            header.style.transform =  "translateY(-208px)";
             //allow the header to animate before switching to relative positioning
+            header.classList.remove("header-animation-scroll-up");
+            void header.offsetWidth; //trigger a DOM reflow
+            header.classList.add("header-animation-scroll-down");
+            
+           //switch to relative positioning
             setTimeout(function(){ 
-            header.classList.remove("nav-show");
-            header.classList.add("nav-hide");
+                void header.offsetWidth; //trigger a DOM reflow
+                header.classList.remove("nav-show");
+                header.classList.add("nav-hide");
             }, 200);
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "down";
@@ -113,10 +121,18 @@ const stickyHeader = () => { // this line is for testing only
         //Scrolling up - display the top nav
         //only want to run if the scroll direction changes
         else if(previousScrollDirection !== "up" && scrollUp === true) { 
+            //switch to sticky positioning
+            //header.style.transform =  "translateY(-208px)";
             header.classList.remove("nav-hide");
             header.classList.add("nav-show");
-            header.style.transition = "all .2s ease-out .2s"; 
-            header.style.transform =  "translateY(0px)";
+            void header.offsetWidth; //trigger a DOM reflow
+
+            //header slides down. Set timeout makes sure the correct positioning is set before the animation starts
+            setTimeout(function(){ 
+                header.classList.remove("header-animation-scroll-down");
+                void header.offsetWidth; //trigger a DOM reflow
+                header.classList.add("header-animation-scroll-up");
+            }, 200);
             
             //set the current value as the new previous value so that it can be used in the next comparison.
             previousScrollDirection = "up";
