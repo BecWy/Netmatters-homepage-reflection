@@ -42,7 +42,6 @@ header {
     //position is controlled by sticky-header.js
     top: 0;
     left: 0;
-    //transition: top 0.2s ease-in-out;
     background-color: $white;
     width: 100%;
 }
@@ -50,17 +49,14 @@ header {
 //Hides the header when the user is scrolling down. This class is added and removed in the JS
 .nav-hide {
     position: relative;
-    //translate: 0px;
   }
 
 //Shows the header when the user is scrolling up. This class is added and removed in the JS
 .nav-show {
-    //z-index: 20000;
-    //Browsers that DON'T support position:sticky will use this
-    position: fixed; //sticky doesn't work in IE
-    //Browsers that DO support position:sticky will use this
-    position: sticky; //sticky works in all modern browsers
-    //transform: translateY(-208px);
+    //Browsers that DON'T support position:sticky will use this (IE)
+    position: fixed;
+    //Browsers that DO support position:sticky will use this (all modern browsers)
+    position: sticky;
 }
 
 
@@ -69,13 +65,13 @@ header {
         transform: translateY(0); 
       }
     100% {
-        transform: translateY(-100%); // - 208px
+        transform: translateY(-100%); // height of the header
     }
 }
 
 @keyframes slide-down {
     0% {
-        transform: translateY(-100%); // - 208px
+        transform: translateY(-100%); // height of the header
       }
     100% {
         transform: translateY(0);
@@ -90,69 +86,7 @@ header {
     animation: slide-up 250ms ease-out forwards;
 }
 
-//FOR INTERNET EXPLORER
-//Add padding-top to the body when switching to fixed positioning
-// @keyframes padding-add {
-//     @media (min-width: $break-lg) {
-//         0% {
-//             padding-top: 0; 
-//           }
-//         100% {
-//             padding-top: 208px;
-//         } 
-//     }
-//     @media (min-width: $break-med) {
-//         0% {
-//             padding-top: 0; 
-//           }
-//         100% {
-//             padding-top: 110px;
-//         } 
-//     }
-//     @media (max-width: $break-med) {
-//         0% {
-//             padding-top: 0; 
-//           }
-//         100% {
-//             padding-top: 168px;
-//         } 
-//     }
-// }
-// //remove padding-top from the body when switching to relative positioning
-// @keyframes padding-remove {
-//     @media (min-width: $break-lg) {
-//         0% {
-//             padding-top: 208px; 
-//           }
-//         100% {
-//             padding-top: 0;
-//         } 
-//     }
-//     @media (min-width: $break-med) {
-//         0% {
-//             padding-top: 110px; 
-//           }
-//         100% {
-//             padding-top: 0;
-//         } 
-//     }
-//     @media (max-width: $break-med) {
-//         0% {
-//             padding-top: 168px; 
-//           }
-//         100% {
-//             padding-top: 0;
-//         } 
-//     }
-// }
 
-// .header-IE-padding-add {
-//     animation: padding-add 100ms linear forwards;
-// }
-
-// .header-IE-padding-remove {
-//     animation: padding-remove 100ms linear forwards;
-// }
 
 
 ///////////////////////////////////////////////////////////////////////
