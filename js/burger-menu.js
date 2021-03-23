@@ -1,7 +1,5 @@
 //also includes some code relating to the sticky header, particularly when viewport is resized
 
-
-
 const menuButton = document.querySelector("#menu");
 const burgerMenu = document.querySelector(".burger-menu"); 
 const burgerMenuCont = document.querySelector(".burger-menu-container");
@@ -11,8 +9,8 @@ const burgerIcon = document.querySelector(".hamburger");
 const header = document.querySelector("header");
 let bodyContWidth = document.querySelector(".body-container").clientWidth; //this is the width of the body container. It is used as a comparison for the header, to make sure that the header width is always the same as the body width. Position fixed in IE will make the header cover the scroll bar otherwise
 
-//for IE purposes. Returns the value of the header's css position - sticky or fixed
-const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
+//for IE purposes. Returns the value of the header's css position - sticky or fixed - NO LONGER NEEDED - finding out IE another way
+//const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
 //console.log(`the header position is ${headerPosition}`); //for testing
 let internetExplorer = false;
 
@@ -20,15 +18,16 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
 //const burgerMenuJS = () => { // this line is for testing only
 
     //determine if the browser supports position: sticky
-    if(headerPosition === "sticky") {
-        internetExplorer = false;
-        console.log("the browser is modern and supports sticky");
-        
-    } else {
+    let ua = window.navigator.userAgent;
+    let isIE = /MSIE|Trident/.test(ua);
+    
+    if ( isIE ) {
         internetExplorer = true;
-        console.log("the browser is old and does not support sticky");
+    } else {
+        internetExplorer = false;
     }
-
+    //console.log(internetExplorer);
+ 
     //on page load the side menu is closed
     document.addEventListener('DOMContentLoaded', () => {
         closeNav();
@@ -61,9 +60,15 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-350px)"; 
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
-            header.style.transition = "none"; //only applies to IE - makes sure there's no transition
             if(internetExplorer === true) {
-                header.style.transform = "translateX(-350px)"; 
+                header.classList.remove("header-animation-scroll-down");
+                header.classList.remove("header-animation-scroll-up");
+                header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+                if(header.classList.contains("nav-hide")) {
+                    header.style.transform =  "translateX(0)";
+                } else {
+                    header.style.transform =  "translateX(-350px)";
+                }
             }
         //for small screens with the menu open translate the page content by the correct distance
         } else if (menuOpen === true) {  //small screens
@@ -71,9 +76,15 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-270px)"; 
             bodyCont.style.transition = "none";
             menuOverlay.style.transition = "none";
-            header.style.transition = "none"; //only applies to IE - makes sure there's no transition
             if(internetExplorer === true) {
-                header.style.transform = "translateX(-270px)"; 
+                header.classList.remove("header-animation-scroll-down");
+                header.classList.remove("header-animation-scroll-up");
+                header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+                if(header.classList.contains("nav-hide")) {
+                    header.style.transform =  "translateX(0)";
+                } else {
+                    header.style.transform =  "translateX(-270px)";
+                }
             }
         //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
         } else {
@@ -98,6 +109,8 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         burgerIcon.classList.add("is-active"); //hamburger animation
         
         if(internetExplorer === true) {
+            header.classList.remove("header-animation-scroll-down");
+            header.classList.remove("header-animation-scroll-up");
             header.style.transition = "all .5s ease-out"; 
             //header.style.paddingTop = bodyCont.scrollTop;
         }
@@ -108,7 +121,11 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-350px)";
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
-                header.style.transform =  "translateX(-350px)";
+                if(header.classList.contains("nav-hide")) {
+                    header.style.transform =  "translateX(0)";
+                } else {
+                    header.style.transform =  "translateX(-350px)";
+                }
             }
             
         } else {  //small screens
@@ -116,8 +133,11 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-270px)";
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
-                //console.log(`header position is ${headerPosition}`) testing
-                header.style.transform =  "translateX(-270px)";
+                if(header.classList.contains("nav-hide")) {
+                    header.style.transform =  "translateX(0)";
+                } else {
+                    header.style.transform =  "translateX(-270px)";
+                }
             } 
         }  
         menuOpen = true;     
