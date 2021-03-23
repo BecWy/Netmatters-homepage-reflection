@@ -47,7 +47,7 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
     //is the menu open
     let menuOpen = false;
 
-
+    //RESIZE FUNCTION
     //When the page is resized, this updates the distance the page content translates to the left
     window.addEventListener('resize', () => {
         if(internetExplorer === true) {

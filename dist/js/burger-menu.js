@@ -80,7 +80,8 @@ var burgerMenuJS = function burgerMenuJS() {
     closeNav();
   }); //is the menu open
 
-  var menuOpen = false; //When the page is resized, this updates the distance the page content translates to the left
+  var menuOpen = false; //RESIZE FUNCTION
+  //When the page is resized, this updates the distance the page content translates to the left
 
   window.addEventListener('resize', function () {
     if (internetExplorer === true) {
