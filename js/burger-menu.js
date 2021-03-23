@@ -1,3 +1,4 @@
+//the related css can be found in js.scss, under Burger Menu
 //also includes some code relating to the sticky header, particularly when viewport is resized
 
 const menuButton = document.querySelector("#menu");
@@ -12,14 +13,14 @@ let bodyContWidth = document.querySelector(".body-container").clientWidth; //thi
 //for IE purposes. Returns the value of the header's css position - sticky or fixed - NO LONGER NEEDED - finding out IE another way
 //const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
 //console.log(`the header position is ${headerPosition}`); //for testing
-let internetExplorer = false;
 
 export const burgerMenuJS = () => { //re-activate when switch back to the app js file after testing
 //const burgerMenuJS = () => { // this line is for testing only
 
-    //determine if the browser supports position: sticky
+    //determine if the browser is Internet Explorer (important as IE doesn't support position:sticky)
     let ua = window.navigator.userAgent;
     let isIE = /MSIE|Trident/.test(ua);
+    let internetExplorer = false;
     
     if ( isIE ) {
         internetExplorer = true;
@@ -63,11 +64,11 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             if(internetExplorer === true) {
                 header.classList.remove("header-animation-scroll-down");
                 header.classList.remove("header-animation-scroll-up");
-                header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+                header.style.transition = "none"; 
                 if(header.classList.contains("nav-hide")) {
-                    header.style.transform =  "translateX(0)";
+                    header.style.transform =  "translateX(0)"; //relatively positioned
                 } else {
-                    header.style.transform =  "translateX(-350px)";
+                    header.style.transform =  "translateX(-350px)"; //fixed position
                 }
             }
         //for small screens with the menu open translate the page content by the correct distance
@@ -79,11 +80,11 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             if(internetExplorer === true) {
                 header.classList.remove("header-animation-scroll-down");
                 header.classList.remove("header-animation-scroll-up");
-                header.style.transition = "none"; //only applies to IE - makes sure there's no transition
+                header.style.transition = "none"; 
                 if(header.classList.contains("nav-hide")) {
-                    header.style.transform =  "translateX(0)";
+                    header.style.transform =  "translateX(0)"; //relatively positioned
                 } else {
-                    header.style.transform =  "translateX(-270px)";
+                    header.style.transform =  "translateX(-270px)"; //fixed position
                 }
             }
         //when the menu is closed and resized, this avoids part of the menu displaying unintentionally due to the transition time
@@ -112,7 +113,6 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             header.classList.remove("header-animation-scroll-down");
             header.classList.remove("header-animation-scroll-up");
             header.style.transition = "all .5s ease-out"; 
-            //header.style.paddingTop = bodyCont.scrollTop;
         }
         
     
@@ -122,9 +122,9 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
                 if(header.classList.contains("nav-hide")) {
-                    header.style.transform =  "translateX(0)";
+                    header.style.transform =  "translateX(0)"; //relatively positioned
                 } else {
-                    header.style.transform =  "translateX(-350px)";
+                    header.style.transform =  "translateX(-350px)"; //fixed position
                 }
             }
             
@@ -134,9 +134,9 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
                 if(header.classList.contains("nav-hide")) {
-                    header.style.transform =  "translateX(0)";
+                    header.style.transform =  "translateX(0)"; //relatively positioned
                 } else {
-                    header.style.transform =  "translateX(-270px)";
+                    header.style.transform =  "translateX(-270px)"; //fixed position
                 }
             } 
         }  

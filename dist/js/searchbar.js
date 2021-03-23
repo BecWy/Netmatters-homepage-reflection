@@ -38,6 +38,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "searchbarJS": function() { return /* binding */ searchbarJS; }
 /* harmony export */ });
+//the related css can be found in js.scss, under Search bar toggle
 var searchBar = document.querySelector("#search-bar");
 var searchButton = document.querySelector("#submit");
 var searchInput = document.querySelector("#search-bar-input");
@@ -51,13 +52,21 @@ var searchbarJS = function searchbarJS() {
   });
 
   var searchToggle = function searchToggle() {
-    supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+    supportButton.classList.toggle("toggle-visible"); //transition
 
-    contactButton.classList.toggle("toggle-hide"); //displays/hides the button
+    contactButton.classList.toggle("toggle-visible"); //transition
 
-    searchBar.classList.toggle("toggle-search-width"); //expands the width of the searchbar container 
+    searchInput.classList.toggle("toggle-visible"); //transition
 
-    searchInput.classList.toggle("toggle-hide"); //displays/hides the search input
+    setTimeout(function () {
+      supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+
+      contactButton.classList.toggle("toggle-hide"); //displays/hides the button
+
+      searchBar.classList.toggle("toggle-search-width"); //expands/reduces the width of the searchbar container 
+
+      searchInput.classList.toggle("toggle-hide"); //displays/hides the search input 
+    }, 400);
   };
 }; //searchbarJS(); for testing purposes only - this breaks it if it's set to export.
 /******/ })()

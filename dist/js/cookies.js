@@ -51,10 +51,8 @@ var cookiesJS = function cookiesJS() {
     var cookiesSaved = localStorage.getItem('cookiesAccepted'); //Checks if cookies are saved. Decides whether to display the cookies popup or not.
 
     if (cookiesSaved === 'yes') {
-      //cookies.style.display = "none";
       cookiesOuter.style.display = "none"; //console.log("cookies already accepted"); //for testing purposes
     } else {
-      //cookies.style.display = "block";
       cookiesOuter.style.display = "block"; //"flex" caused issues in mobile as need the ability to scroll
       //console.log("user needs to accept cookies"); //for testing purposes
 
@@ -73,21 +71,23 @@ var cookiesJS = function cookiesJS() {
     cookiesOuter.style.display = "none";
     bodyCont.style.overflowY = "scroll"; //show the scrollbar on the body container div when the popup closes
     //for internet explorer
+    //check if the browser is Internet Explorer
 
-    var headerPosition = window.getComputedStyle(header, null).getPropertyValue("position").toLowerCase();
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
     var internetExplorer = false;
 
-    if (headerPosition === "sticky") {
-      internetExplorer = false;
-    } else {
+    if (isIE) {
       internetExplorer = true;
+    } else {
+      internetExplorer = false;
     }
 
     if (internetExplorer === true) {
       var bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
       //console.log(`The body cont width is ${bodyContWidth}`);
 
-      header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+      header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width and always the same width as the body if set to position:fixed (for IE sticky header settings)
     }
   });
 }; //cookiesJS(); for when testing this as a separate file

@@ -38,7 +38,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "stickyHeader": function() { return /* binding */ stickyHeader; }
 /* harmony export */ });
-//currently the related css can be found in js.scss, under STICKY HEADER
+//the related css can be found in js.scss, under STICKY HEADER
 var header = document.querySelector("header");
 var bodyCont = document.querySelector(".body-container");
 var stickyHeader = function stickyHeader() {
@@ -166,9 +166,7 @@ var stickyHeader = function stickyHeader() {
       header.classList.remove("nav-show");
       header.classList.remove("header-animation-scroll-down");
       header.classList.remove("header-animation-scroll-up");
-      header.classList.add("nav-hide"); //bodyCont.classList.remove("header-IE-padding-add");
-      //bodyCont.classList.add("header-IE-padding-remove");
-
+      header.classList.add("nav-hide");
       bodyCont.style.paddingTop = "0px";
     } //when scrolling up want it to stay fixed right up to the very top
     //don't set previous scroll direction - don't want it to interfere with previous and next scroll

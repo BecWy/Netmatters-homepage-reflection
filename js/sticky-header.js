@@ -1,4 +1,4 @@
-//currently the related css can be found in js.scss, under STICKY HEADER
+//the related css can be found in js.scss, under STICKY HEADER
 
 const header = document.querySelector("header");
 const bodyCont = document.querySelector(".body-container");
@@ -146,8 +146,6 @@ export const stickyHeader = () => { //re-activate when switch back to the app js
             header.classList.remove("header-animation-scroll-down");
             header.classList.remove("header-animation-scroll-up");
             header.classList.add("nav-hide");
-            //bodyCont.classList.remove("header-IE-padding-add");
-            //bodyCont.classList.add("header-IE-padding-remove");
             bodyCont.style.paddingTop = "0px";
         }
 

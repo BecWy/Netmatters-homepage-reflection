@@ -20,6 +20,10 @@
         display: none;
     }
 
+    .toggle-visible {
+        animation: visible 400ms ease-out forwards;
+    }
+
     //edits the search bar width. This class is added and removed in the JS
     .toggle-search-width {
         width: 363px;
@@ -31,6 +35,21 @@
     }
 }
 
+@keyframes visible {
+    0% {
+        opacity: 100; 
+      }
+    100% {
+        opacity: 0;
+    }
+}
+
+// #submit,
+// #search-bar-input,
+// #support-button,
+// #contact-button {
+//     opacity: 100;
+// }
 
 
 /////////////////////////////////////////////////////////////////////////

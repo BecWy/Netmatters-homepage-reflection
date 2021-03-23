@@ -1,3 +1,5 @@
+//the related css can be found in js.scss, under Search bar toggle
+
 const searchBar = document.querySelector("#search-bar");
 const searchButton = document.querySelector("#submit");
 const searchInput = document.querySelector("#search-bar-input");
@@ -12,10 +14,17 @@ export const searchbarJS = () => { //re-activate when switch back to the app js 
     })
     
      const searchToggle = () => {
-        supportButton.classList.toggle("toggle-hide"); //displays/hides the button
-        contactButton.classList.toggle("toggle-hide"); //displays/hides the button
-        searchBar.classList.toggle("toggle-search-width"); //expands the width of the searchbar container 
-        searchInput.classList.toggle("toggle-hide") //displays/hides the search input
+        supportButton.classList.toggle("toggle-visible"); //transition
+        contactButton.classList.toggle("toggle-visible"); //transition
+        searchInput.classList.toggle("toggle-visible") //transition
+
+        setTimeout(function(){ 
+            supportButton.classList.toggle("toggle-hide"); //displays/hides the button
+            contactButton.classList.toggle("toggle-hide"); //displays/hides the button
+            searchBar.classList.toggle("toggle-search-width"); //expands/reduces the width of the searchbar container 
+            searchInput.classList.toggle("toggle-hide") //displays/hides the search input 
+        }, 400);
+        
     }
 }
 
