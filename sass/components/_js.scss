@@ -71,6 +71,12 @@ header {
     position: relative;
   }
 
+.nav-hide-ie-test {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 //Shows the header when the user is scrolling up. This class is added and removed in the JS
 .nav-show {
     //Browsers that DON'T support position:sticky will use this (IE)

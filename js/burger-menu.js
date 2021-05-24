@@ -121,7 +121,8 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-350px)";
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
-                if(header.classList.contains("nav-hide")) {
+               // if(header.classList.contains("nav-hide")) {
+                if(header.classList.contains("nav-hide-ie-test")) {    
                     header.style.transform =  "translateX(0px)"; //relatively positioned.
                 } else {
                     header.style.transform =  "translateX(-349px)"; //fixed position. For some reason having 1 pixel less prevents an unexpected line to the right of the nav bar next to scroll.
@@ -133,7 +134,8 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             menuOverlay.style.transform = "translateX(-270px)";
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
-                if(header.classList.contains("nav-hide")) {
+                //if(header.classList.contains("nav-hide")) {
+                if(header.classList.contains("nav-hide-ie-test")) {
                     header.style.transform =  "translateX(0)"; //relatively positioned
                 } else {
                     header.style.transform =  "translateX(-270px)"; //fixed position
