@@ -1,3 +1,5 @@
+@use "utilities/variables" as v;
+
 //MAIN-FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .main-footer {
     display: flex;
@@ -5,24 +7,24 @@
     width: 100%;
     font-size: 16px;
     line-height: 22.8571px;
-    color: $white;
-    background-color: $main-grey;
+    color: v.$white;
+    background-color: v.$mainGrey;
     & a {
         font-size: 13px;
         line-height: 22px;
-        color: $white;
+        color: v.$white;
         &:hover {
             text-decoration: underline;
         }
     }
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         flex-direction: row; 
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-around;
         height: 528px;
     }
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         height: 309px;
     }
 }
@@ -34,7 +36,7 @@
     padding-bottom: 43px;   
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -42,11 +44,11 @@
         width: 750px;
         margin: 0 auto;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 970px;
         margin: 0 auto;
     }
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         width: 1200px;
         margin: 0 auto;
     }
@@ -58,21 +60,21 @@
     width: 100%;
     & > h2 {
         text-transform: uppercase;
-        font-weight: $regular;
+        font-weight: v.$regular;
         margin-top: 0;
         font-size: 16px;
         line-height: 17.6px;
         width: 95%;
     }
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 375px;
         align-self: flex-start;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         //Main footer sub-section widths 
         width: 485px;
     }
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         //Main footer switches to 4 column layout 
         width: 300px;
     }
@@ -93,13 +95,13 @@
 }
 
 .social-button li a {
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 157.5px;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 212.5px;
     }
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         width: 120px;
     }
 }
@@ -124,11 +126,11 @@
     justify-content: space-around;
     height: 100%;
     width: 100%;
-    background-color: $white;
+    background-color: v.$white;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         display: flex;
     }
 }
@@ -137,15 +139,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 720px;
         margin: 0 auto;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 940px;
         margin: 0 auto;
     }
-    @media (min-width: $break-lg) {
+    @media (min-width: v.$break-lg) {
         width: 1170px;
         margin: 0 auto;
     }
@@ -158,17 +160,17 @@
     width: 121.1px;
     height: 45.1px;
     display: inline-block;
-    background: $white url("../images/external-branding/clients/busseys-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/clients/busseys-bw.jpeg") no-repeat center;
     background-size: cover;
     &:hover {
-        background: $white url("../images/external-branding/clients/busseys-color.png") no-repeat center;
+        background: v.$white url("../images/external-branding/clients/busseys-color.png") no-repeat center;
         background-size: cover;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 168.7px;
         height: 62.8px;
     }
-    @media (min-width: $break-lg) {   //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {   //Switch to full size image sprite 
         width: 188px; 
         height: 70px;
         background: url("../images/external-branding/clients/busseys-sprite.png") -10px -10px;
@@ -181,17 +183,17 @@
 #crane {
     width: 186px; 
     height: 45px;
-    background: $white url("../images/external-branding/clients/crane-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/clients/crane-bw.jpeg") no-repeat center;
     background-size: cover;
     &:hover {
-        background: $white url("../images/external-branding/clients/crane-color.png") no-repeat center;
+        background: v.$white url("../images/external-branding/clients/crane-color.png") no-repeat center;
         background-size: cover;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 260px; 
         height: 62.8px;
     }
-    @media (min-width: $break-lg) { //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) { //Switch to full size image sprite 
         width: 287px; 
         height: 70px;
         background: url("../images/external-branding/clients/crane-sprite.png") -10px -10px;
@@ -205,17 +207,17 @@
 #beat { 
     width: 46.4px; 
     height: 45.1px;
-    background: $white url("../images/external-branding/clients/beat-bw.jpeg") no-repeat center;    
+    background: v.$white url("../images/external-branding/clients/beat-bw.jpeg") no-repeat center;    
     background-size: cover;
     &:hover {
-        background: $white url("../images/external-branding/clients/beat-color.png") no-repeat center;
+        background: v.$white url("../images/external-branding/clients/beat-color.png") no-repeat center;
         background-size: cover;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 64.6px; 
         height: 62.8px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 72px; 
         height: 70px;
         background: url("../images/external-branding/clients/beat-sprite.png") -10px -10px;    
@@ -228,17 +230,17 @@
 #northern-diver {
     width: 207.5px; 
     height: 45px;
-    background: $white url("../images/external-branding/clients/northern-diver-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/clients/northern-diver-bw.jpeg") no-repeat center;
     background-size: cover;
     &:hover {
-        background: $white url("../images/external-branding/clients/northern-diver-color.png") no-repeat center;
+        background: v.$white url("../images/external-branding/clients/northern-diver-color.png") no-repeat center;
         background-size: cover;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 289px; 
         height: 62.8px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 322px; 
         height: 70px;
         background: url("../images/external-branding/clients/northern-diver-sprite.png") -10px -10px;
@@ -258,8 +260,8 @@
 
 .client-footer .tooltip-text {
     display: none;
-    background-color: $main-grey;
-    color: $white;
+    background-color: v.$mainGrey;
+    color: v.$white;
     text-align: center;
     padding: 20px;
     font-size: 13px;
@@ -283,7 +285,7 @@
     margin-left: -36px;
     border-width: 36px;
     border-style: solid;
-    border-color: $main-grey transparent transparent transparent;
+    border-color: v.$mainGrey transparent transparent transparent;
   }
 
 .footer-logos .tooltip-text p {
@@ -295,7 +297,7 @@
     padding-bottom: 17px;
     margin-top: 0;
     margin-bottom: 11px;
-    font-weight: $regular;
+    font-weight: v.$regular;
     position: relative;
 }
 
@@ -305,7 +307,7 @@
     width: 30px;
     top: 35px;
     left: calc(50% - 15px);
-    border-bottom: 3px solid $white;
+    border-bottom: 3px solid v.$white;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -319,18 +321,18 @@
     padding-bottom: 50px;
     width: 100%;
     height: 188px;
-    background-color: $white;
-    @media (min-width: $break-sm) {
+    background-color: v.$white;
+    @media (min-width: v.$break-sm) {
         display: flex;
         width: 720px;
         margin: 0 auto;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 940px;
         margin: 0 auto;
         height: 210px;
     }
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         height: 188px;
         width: 1170px;
         margin: 0 auto;
@@ -341,7 +343,7 @@
 #google {
     width: 214px;
     height: 70px;
-    background: $white url("../images/external-branding/other/google-color.png") no-repeat center;
+    background: v.$white url("../images/external-branding/other/google-color.png") no-repeat center;
     background-size: cover;
     align-self: center;
 }
@@ -350,14 +352,14 @@
 #microsoft {
     width: 87.6px;
     height: 53.3px;
-    background: $white url("../images/external-branding/other/microsoft-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/other/microsoft-bw.jpeg") no-repeat center;
     background-size: cover;
     align-self: center;
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 140.2px;
         height: 85.3px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 115px;
         height: 70px;
         background: url("../images/external-branding/other/microsoft-bw.jpeg");
@@ -368,19 +370,19 @@
 #future-50 {
     width: 33.5px; 
     height: 53.3px;
-    background: $white url("../images/external-branding/other/future-50-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/other/future-50-bw.jpeg") no-repeat center;
     background-size: cover;
     align-self: center;
     &:hover {
-        background: $white url("../images/external-branding/other/future-50-color.jpeg") no-repeat center;
+        background: v.$white url("../images/external-branding/other/future-50-color.jpeg") no-repeat center;
         background-size: cover;
         align-self: center;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 69.2px; 
         height: 110.1px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 44px; 
         height: 70px;
         background: url("../images/external-branding/other/future-50-sprite.png") -10px -10px;
@@ -393,19 +395,19 @@
 #qms {
     width: 45.7px; 
     height: 53.3px;
-    background: $white url("../images/external-branding/other/qms-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/other/qms-bw.jpeg") no-repeat center;
     background-size: cover;
     align-self: center;
     &:hover {
-        background: $white url("../images/external-branding/other/qms-color.jpeg") no-repeat center;
+        background: v.$white url("../images/external-branding/other/qms-color.jpeg") no-repeat center;
         background-size: cover;
         align-self: center;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 85.2px; 
         height: 99.4px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 60px; 
         height: 70px;
         background: url("../images/external-branding/other/qms-sprite.png") -10px -10px;
@@ -418,19 +420,19 @@
 #carbon-charter {
     width: 133.3px; 
     height: 53.3px;
-    background: $white url("../images/external-branding/other/carbon-charter-bw.jpeg") no-repeat center;
+    background: v.$white url("../images/external-branding/other/carbon-charter-bw.jpeg") no-repeat center;
     background-size: cover;
     align-self: center;
     &:hover {
-        background: $white url("../images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
+        background: v.$white url("../images/external-branding/other/carbon-charter-color.jpeg") no-repeat center;
         background-size: cover;
         align-self: center;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 200.2px; 
         height: 80.1px;
     }
-    @media (min-width: $break-lg) {  //Switch to full size image sprite 
+    @media (min-width: v.$break-lg) {  //Switch to full size image sprite 
         width: 175px; 
         height: 70px;
         background: url("../images/external-branding/other/carbon-charter-sprite.png") -10px -10px;

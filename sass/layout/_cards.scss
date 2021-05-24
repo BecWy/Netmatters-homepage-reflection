@@ -1,3 +1,6 @@
+@use "utilities/variables" as v; //variables
+@use "utilities/mixins" as m; //mixins
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //CARDS ///////////////////////////////////////////////////////////////////////////////////
 .cards {
@@ -10,7 +13,7 @@
     justify-content: center; 
     padding-top: 20px;
     padding-bottom: 50px;
-    @media (min-width: $break-sm) {  
+    @media (min-width: v.$break-sm) {  
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;   ////////////check justify settings
@@ -18,40 +21,40 @@
         margin-left: auto;
         margin-right: auto;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 940px;
     }
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         width: 1170px; ///////////maintain equal margins
     }
 }
 
 .card {
-    @include themes-bg-hov($themes);
-    border: 1px solid $second-grey;
+    @include m.themes-bg-hov(v.$themes);
+    border: 1px solid v.$second-grey;
     margin: 0 auto;
-    background-color: $white;
+    background-color: v.$white;
     padding: 30px 30px;
     margin-top: 30px;
     width: 100%;
     box-shadow: rgba(0,0,0, 0.1) 0px 3px 35px 0px;
-    border-radius: $round-corner;
+    border-radius: v.$round-corner;
     & a {
         width: 100%;
         height: 100%;  
     }
     &:hover h2,
     &:hover p {
-        color: $white;
+        color: v.$white;
     }
     &:hover h2::after {
-        border-bottom: 4px solid $white;
+        border-bottom: 4px solid v.$white;
     }
 }
 
 .card h2,
 .card p {
-    color: $main-grey;  
+    color: v.$mainGrey;  
 }
 
 .card h2 {
@@ -60,7 +63,7 @@
     margin-top: 0;
     margin-bottom: 11px;
     font-size: 18px;
-    font-weight: $regular;
+    font-weight: v.$regular;
     line-height: 19.8px;
         &::after {
             content: "";
@@ -68,7 +71,7 @@
             width: 30px;
             top: 35px;
             left: calc(50% - 15px);
-            border-bottom: 3.5px solid $main-grey;
+            border-bottom: 3.5px solid v.$mainGrey;
         }
 }
 
@@ -87,19 +90,19 @@
 //formatting specifically for each breakpoint
 
 .card-row-1 {
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 100%; 
         margin-left: 0;
         margin-right: 0;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 293.333px;
         height: 356px;
         & > p {
             height: 110px; 
         }
     }
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         width: 370px;
         height: 312px;
         & > p {
@@ -112,19 +115,19 @@
 
 
 .card-row-2 {
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 343px;
         & p {
             height: 66px;
         }
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 455px;
         & > p {
             height: 44px;
         }
     }
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         width: 270px;
         & >  p {
             height: 66px;
@@ -133,7 +136,7 @@
     
 }
 
-@media (min-width: $break-sm) {
+@media (min-width: v.$break-sm) {
     .card-telecoms,
     .card-cyber {
         margin-left: 0;
@@ -145,7 +148,7 @@
     }
 }
 
-@media (min-width: $break-med) {
+@media (min-width: v.$break-med) {
     .card-software {
         margin-left: 0;
     }
@@ -155,7 +158,7 @@
     }
 }
 
-@media (min-width: $break-lg) {  
+@media (min-width: v.$break-lg) {  
     .card-web {
         margin-right: auto;
     }

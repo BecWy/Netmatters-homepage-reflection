@@ -1,3 +1,5 @@
+@use "utilities/variables" as v;
+
 .cookies-outer-container {
         position: fixed;
         display: none;
@@ -8,7 +10,7 @@
         width: 100vw;//100vw; //z index is less than the burger menu, but higher than the rest of the page
         z-index: 6;
         background-color: rgba(0,0,0, 0.7);
-        @media (min-width: $break-sm) {
+        @media (min-width: v.$break-sm) {
             width: 100vw;
             height: 100vh;
             overflow-y: auto;
@@ -20,9 +22,9 @@
     //display: none;
     width: 90%;
     margin: 30px auto;
-    background-color: $white;
+    background-color: v.$white;
     border-radius: 5px;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         height: 505px;
         width: 600px;
         @media (max-height: 565px) {
@@ -38,7 +40,7 @@
 
 .cookies p {
     font-size: 16px;
-    color: $grey-color3;
+    color: v.$grey-color3;
     margin-bottom: 25px;
     line-height: 30px;
     padding-left: 20px;
@@ -47,7 +49,7 @@
 
 .cookies h3 {
     font-size: 26px;
-    color: $main-grey;
+    color: v.$mainGrey;
     font-weight: 400;
     margin: 0;
     position: relative;
@@ -57,7 +59,7 @@
         position: absolute;
         left: 0;
         bottom: 0px;
-        border-bottom: 1px solid $second-grey;
+        border-bottom: 1px solid v.$second-grey;
         width: 100%;
     }
 }
@@ -70,7 +72,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         flex-direction: row;
     }
     button {
@@ -79,13 +81,13 @@
         margin: 15px auto; 
         height: 47px;
         padding: 5px 15px;
-        border-radius: $round-corner;
+        border-radius: v.$round-corner;
         border: 1px solid transparent;
-        color: $white;
+        color: v.$white;
         font-size: 17px;
         outline: none;
         cursor: pointer;
-        @media (min-width: $break-sm) {
+        @media (min-width: v.$break-sm) {
             width: 264px;
         }
 
@@ -98,31 +100,31 @@
         position: absolute;
         left: 0;
         top: 10px;
-        border-top: 1px solid $second-grey;
+        border-top: 1px solid v.$second-grey;
         width: 100%;
     }
 }
 
 #cookies-settings-button {
-    background-color: $cookie-settings-color1;
+    background-color: v.$cookie-settings-color1;
     margin: 0;
     &:hover,
     &:active {
-        background-color: $cookie-settings-color2;
-        border: 1px solid $cookie-settings-color3;
+        background-color: v.$cookie-settings-color2;
+        border: 1px solid v.$cookie-settings-color3;
     }
 }
 
 #cookies-button {
-    background-color: $web-color1;
+    background-color: v.$web-color1;
     margin: 0;
     margin-top: 25px;
     &:hover,
     &:active {
-        background-color: $web-color2;
-        border: 1px solid $web-color3;
+        background-color: v.$web-color2;
+        border: 1px solid v.$web-color3;
     }
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         margin-top: 0;
     }
 }

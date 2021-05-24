@@ -1,8 +1,9 @@
+@use "utilities/variables" as v;
 
 header {
     width: 100%;
     //position: relative; set in js.scss
-    background-color: $white;
+    background-color: v.$white;
 }
 
 nav {
@@ -10,7 +11,7 @@ nav {
 }
 
 .nav-container {
-    background-color: $white;
+    background-color: v.$white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,18 +20,18 @@ nav {
     width: 100%;
     position: relative;
     padding-bottom: 60px;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         flex-wrap: nowrap;
         width: 750px;
         height: 110px;
         margin: 0 auto;
         padding-bottom: 0;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 970px;
         margin: 0 auto;
     }
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         width: 1200px;
     }
 }
@@ -39,7 +40,7 @@ nav {
     height: auto;
     padding-left: 15px;
     flex: 1 1;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 375px;
         padding-right: 15px;
     }
@@ -47,10 +48,10 @@ nav {
 
 #logo img {
     max-width: 100%;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         width: 345px;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         width: 370px;
     }
 }
@@ -61,7 +62,7 @@ nav {
     width: 70px;
     font-size: 20px;
     line-height: 26px;
-    color: $main-grey;
+    color: v.$mainGrey;
     justify-content: center;
     padding-top: 16px;
     margin-left: auto;
@@ -78,11 +79,11 @@ nav {
             width: 32px;
             left: 0px;
             bottom: -2px;
-            border-bottom: 3px solid $main-grey;
+            border-bottom: 3px solid v.$mainGrey;
             z-index: 2;
         }
     }
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         display: none;
     }
 }
@@ -96,25 +97,25 @@ nav {
     margin-right: 15px;
     //padding: none;
     text-align: center;
-    color: $white;
-    background-color: $menu-color1;
-    border: 1px solid $menu-color1;
+    color: v.$white;
+    background-color: v.$menu-color1;
+    border: 1px solid v.$menu-color1;
     margin-top: 7px;
     margin-bottom: 7px;
-    border-radius: $round-corner;
+    border-radius: v.$round-corner;
     align-items: center;
     justify-content: center;
     justify-self: flex-end;
     &:hover,
     &:active {
-        background-color: $menu-color2;
-        border-color: $menu-color3;
+        background-color: v.$menu-color2;
+        border-color: v.$menu-color3;
     }
     // & i { //replaced with the hamburger plugin
     //     font-size: 22px;
     //     line-height: 22px; 
     // }
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         order: 2;
         margin-left: 20px;
     }
@@ -137,7 +138,7 @@ nav {
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-        background-color: $white;
+        background-color: v.$white;
         width: 33px;
         height: 3px;
     }
@@ -149,7 +150,7 @@ nav {
 
 //sets active icon color to white. Has to be high specificity to override original color
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-    background-color: $white;
+    background-color: v.$white;
 }
 
 .support-button,
@@ -159,28 +160,28 @@ nav {
     line-height: 46px;
     height: 56px;
     text-align:	center;
-    border-radius: $round-corner;
-    color: $white;
+    border-radius: v.$round-corner;
+    color: v.$white;
     text-transform: uppercase;
     display: none; //hidden for small screens
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         //hide on toggle, see js-classes.scss and searchbar.js
         display: inline-block;
     }
-    @media (min-width: $break-lg) {
+    @media (min-width: v.$break-lg) {
         //Making certain the buttons are displayed after toggle in the previous screen size.
         display: inline-block;
     }
 }
 
 .support-button {
-    background-color: $it-color1;
-    border: 1px solid $it-color1;
+    background-color: v.$it-color1;
+    border: 1px solid v.$it-color1;
     width: 145px;
     &:hover,
     &:active {
-        background-color: $it-color2;
-        border-color: $it-color3;
+        background-color: v.$it-color2;
+        border-color: v.$it-color3;
     }
     // @media (min-width: $break-med) { //doesn't seem to be necessary.
     //     margin-left: auto;
@@ -188,14 +189,14 @@ nav {
 }
 
 .contact-button {
-    background-color: $contact-color1;
-    border: 1px solid $contact-color1;
+    background-color: v.$contact-color1;
+    border: 1px solid v.$contact-color1;
     margin-left: 20px;
     width: 153px;
     &:hover,
     &:active {
-        background-color: $contact-color2;
-        border-color: $contact-color3; 
+        background-color: v.$contact-color2;
+        border-color: v.$contact-color3; 
     }
 }
 
@@ -208,7 +209,7 @@ nav {
     height: 47px;
     padding: 0 15px;
     margin-top: 10px;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         //NAV SEARCH BAR moves up
         display: inline-block;
         display: flex;
@@ -225,12 +226,12 @@ nav {
         margin-top: 0; //to increase?
         margin: 0 auto;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         //container gets narrower when the support and contact buttons are displayed, and expands on toggle to accommodate the search input
         width: 63px;
         margin-left: 20px;
     }
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         //return to wider container for large screens
         width: 303px;
     }
@@ -258,10 +259,10 @@ nav {
         box-shadow: none;
     }
     //SEARCH BAR //remove box shadow & change border
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         outline: none;
-        border: 1px solid $second-grey;
-        background-color: $white;
+        border: 1px solid v.$second-grey;
+        background-color: v.$white;
         border-radius: 0;
         height: 56px;
         width: 174px;
@@ -278,12 +279,12 @@ nav {
     }
     //displays on toggle, see js-classes.scss and searchbar.js
     //@media (min-width: $break-med) - see js.scss, toggle. Set to display: none with a class.
-    @media (min-width: $break-med) { 
+    @media (min-width: v.$break-med) { 
         width: 300px;
     }
     
     //bring back search input
-    @media (min-width: $break-lg) { 
+    @media (min-width: v.$break-lg) { 
         display: inline-block;
         width: 240px;
     }
@@ -308,22 +309,22 @@ nav {
         line-height: 47px;
         width: 47px;
         font-size: 20px;
-        color: $main-grey;
+        color: v.$mainGrey;
         text-align: right;
         padding-right: 10px; 
     }
-    @media (min-width: $break-sm) {
-        background-color: $search-button-color1;
+    @media (min-width: v.$break-sm) {
+        background-color: v.$search-button-color1;
         height: 56px;   
         border-radius: 0px 3px 3px 0px;
         width: 63px;
         position: relative;
         left: 0;
         &:hover {
-            background-color: $search-button-color2;
+            background-color: v.$search-button-color2;
         }
         & i {
-            color: $white;
+            color: v.$white;
             height: 56px;
             line-height: 56px;
             font-size: 23px;
@@ -332,11 +333,11 @@ nav {
             padding-right: 0;
         }
     }
-    @media (min-width: $break-med) {
-        border-radius: $round-corner;
+    @media (min-width: v.$break-med) {
+        border-radius: v.$round-corner;
     }
     //re-square the search button inner corners
-    @media (min-width: $break-lg) {  
+    @media (min-width: v.$break-lg) {  
         border-radius: 0px 3px 3px 0px;
     }
 }

@@ -3,29 +3,29 @@
 // ======================================
 
 // Utilities
-@import 'utilities/variables',
-        'utilities/mixins',
-        'utilities/functions';
+@use "utilities/variables" as v;
+@use 'utilities/mixins';
+@use 'utilities/functions';
         
 // Base Styles     
-@import 'base/normalize',
-        'base/base';
+@use 'base/normalize';
+@use 'base/base';
 
 // Layout Styles
-@import 'layout/nav',
-        'layout/header',
-        'layout/burger-menu',
-        'layout/cards',  
-        'layout/intro',  
-        'layout/latest',     
-        'layout/footer';
+@use 'layout/nav';
+@use 'layout/header';
+@use 'layout/burger-menu';
+@use 'layout/cards';
+@use 'layout/intro';
+@use 'layout/latest';   
+@use 'layout/footer';
 
 // Component Styles
-@import 'components/buttons',
-        'components/icons',
-        'components/slider',
-        'components/cookies.scss';
+@use 'components/buttons';
+@use 'components/icons';
+@use 'components/slider';
+@use 'components/cookies.scss';
 
 
 //JS related scss
-@import 'components/js';
+@use 'components/js';

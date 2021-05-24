@@ -1,5 +1,7 @@
+@use "utilities/variables" as v;
+
 .banner {
-    background-color: $black;
+    background-color: v.$black;
     background-size: cover; 
     width: 100%; 
     overflow: hidden;
@@ -14,13 +16,13 @@
 .slide, 
 .slick-slide {
     height: 531px;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         height: 589px;
     }
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         height: 490px;
     }
-    @media (min-width: $break-lg) {
+    @media (min-width: v.$break-lg) {
         height: calc(100vh - 208px);
         min-height: 490px;
     }
@@ -31,7 +33,6 @@
 }
 
 .slide-content {
-    //border: 3px solid red;
     display: flex;
     flex-direction: column;
     width: 95%; //guess for the minute
@@ -43,37 +44,32 @@
     padding-bottom: 70px;
     text-align: center; 
     height: 100%;
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         max-width: 912px; 
         align-items: flex-start;
         text-align: left;
     }
-    @media (min-width: $break-lg) {
+    @media (min-width: v.$break-lg) {
         max-width: 1152px; //1170px;
     }
 }
 
 .slides .button {
-    //margin-bottom: 40px;
-    //margin-top: auto;
-    @media (min-width: $break-sm) {
+    @media (min-width: v.$break-sm) {
         margin-top: 0;
-        //margin-bottom: auto;
     }
 }
 
 .slide h1 {
-    //border: 2px solid green;
     margin: 0 auto;
     margin-bottom: 25px;
-    //margin-top: auto;
     font-size: 48px;
     line-height: 52.8px;
-    color: $white;
-    font-weight: $regular;
+    color: v.$white;
+    font-weight: v.$regular;
     text-transform: uppercase;
     width: 95%;
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         margin-left: 0;
     }
 }
@@ -83,10 +79,10 @@
     margin-bottom: 35px;
     font-size: 20px;
     line-height: 36px;
-    color: $white;
-    font-weight: $regular;
+    color: v.$white;
+    font-weight: v.$regular;
     width: 95%;
-    @media (min-width: $break-med) {
+    @media (min-width: v.$break-med) {
         margin-left: 0;
     }
 }
@@ -124,7 +120,7 @@
 }
 
 
-@media (min-width: $break-med) {
+@media (min-width: v.$break-med) {
     .slide1 {
         background: linear-gradient(270deg,transparent 25%,#000),
                 url("../images/slides/slide-1.jpeg") no-repeat center; 
@@ -187,18 +183,18 @@
 .slick-dots li button:hover:before {
 //.slick-dots li button:focus:before {
     opacity: 1; //I've been experimenting with this, was originally set to 1
-    color: $grey-color3; //i've added this to try and get the grey on hover
+    color: v.$grey-color3; //i've added this to try and get the grey on hover
 }
 
 .slick-dots li button:before {
     opacity: .75; //I've updated this, was .25
-    color: $second-grey; //i've updated this (was black), need to move into code above 
+    color: v.$second-grey; //i've updated this (was black), need to move into code above 
 }
 
 .slick-dots li.slick-active button:before { ////////////////this is the button that is currently active
     opacity: 1; //i've updated this, was .75
-    color: $white; //i've updated this (was black)
-    border: 2px solid $white; //this is the outer circle around the dot
+    color: v.$white; //i've updated this (was black)
+    border: 2px solid v.$white; //this is the outer circle around the dot
     border-radius: 50%;
 }
 
