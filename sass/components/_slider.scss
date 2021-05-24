@@ -20,6 +20,10 @@
     @media (min-width: $break-med) {
         height: 490px;
     }
+    @media (min-width: $break-lg) {
+        height: calc(100vh - 208px);
+        min-height: 490px;
+    }
 }
 
 .slide {
