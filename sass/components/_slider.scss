@@ -31,6 +31,7 @@
 }
 
 .slide-content {
+    //border: 3px solid red;
     display: flex;
     flex-direction: column;
     width: 95%; //guess for the minute
@@ -42,26 +43,30 @@
     padding-bottom: 70px;
     text-align: center; 
     height: 100%;
-    max-width: 1170px;
     @media (min-width: $break-med) {
+        max-width: 912px; 
         align-items: flex-start;
         text-align: left;
+    }
+    @media (min-width: $break-lg) {
+        max-width: 1152px; //1170px;
     }
 }
 
 .slides .button {
-    margin-bottom: 40px;
-    margin-top: auto;
+    //margin-bottom: 40px;
+    //margin-top: auto;
     @media (min-width: $break-sm) {
         margin-top: 0;
-        margin-bottom: auto;
+        //margin-bottom: auto;
     }
 }
 
 .slide h1 {
+    //border: 2px solid green;
     margin: 0 auto;
     margin-bottom: 25px;
-    margin-top: auto;
+    //margin-top: auto;
     font-size: 48px;
     line-height: 52.8px;
     color: $white;
