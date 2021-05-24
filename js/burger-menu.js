@@ -122,9 +122,9 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
             //if the browser is IE and therefore the position setting is fixed instead of sticky
             if(internetExplorer === true) { 
                 if(header.classList.contains("nav-hide")) {
-                    header.style.transform =  "translateX(0)"; //relatively positioned
+                    header.style.transform =  "translateX(0px)"; //relatively positioned.
                 } else {
-                    header.style.transform =  "translateX(-350px)"; //fixed position
+                    header.style.transform =  "translateX(-349px)"; //fixed position. For some reason having 1 pixel less prevents an unexpected line to the right of the nav bar next to scroll.
                 }
             }
             
@@ -153,10 +153,10 @@ export const burgerMenuJS = () => { //re-activate when switch back to the app js
         menuOverlay.style.transition = "all .5s ease-out"; 
         burgerIcon.classList.remove("is-active"); //hamburger animation  
         if(internetExplorer === true) { 
-            header.style.transition = "all .5s ease-out"; 
-            header.style.transform = "none"; //if the translate was applied on open nav (aka in IE) then it is now removed.
             bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
             header.style.width = `${bodyContWidth}px`; //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+            header.style.transition = "all .5s ease-out"; 
+            header.style.transform = "none"; //if the translate was applied on open nav (aka in IE) then it is now removed.
         }
         setTimeout(function(){ 
             burgerMenuCont.scrollTop = 0; 
