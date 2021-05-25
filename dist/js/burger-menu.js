@@ -48,6 +48,8 @@ var menuOverlay = document.querySelector(".menu-open-overlay");
 var burgerIcon = document.querySelector(".hamburger");
 var header = document.querySelector("header");
 var bodyContWidth = document.querySelector(".body-container").clientWidth; //this is the width of the body container. It is used as a comparison for the header, to make sure that the header width is always the same as the body width. Position fixed in IE will make the header cover the scroll bar otherwise
+
+var headerHeight = header.offsetHeight; //calculate the height of the header, as this varies depending on the screen size.
 //for IE purposes. Returns the value of the header's css position - sticky or fixed - NO LONGER NEEDED - finding out IE another way
 //const headerPosition = window.getComputedStyle(header).getPropertyValue('position').toLowerCase();
 //console.log(`the header position is ${headerPosition}`); //for testing
@@ -70,6 +72,14 @@ var burgerMenuJS = function burgerMenuJS() {
 
   document.addEventListener('DOMContentLoaded', function () {
     closeNav();
+
+    if (internetExplorer === true) {
+      headerHeight = header.offsetHeight;
+      bodyCont.style.paddingTop = "".concat(headerHeight, "px");
+      header.classList.remove("nav-hide"); //default class on page load, not needed for IE
+
+      header.classList.add("nav-hide-ie"); //sets absolute positioning, instead of relative
+    }
   }); //When the burger menu icon is clicked the side menu is revealed
 
   menuButton.addEventListener('click', function () {
@@ -88,6 +98,9 @@ var burgerMenuJS = function burgerMenuJS() {
       bodyContWidth = document.querySelector(".body-container").clientWidth; //get the value each time
 
       header.style.width = "".concat(bodyContWidth, "px"); //makes sure the header is the correct width if set to position:fixed (for IE sticky header settings)
+
+      headerHeight = header.offsetHeight;
+      bodyCont.style.paddingTop = "".concat(headerHeight, "px"); //add the correct amount of padding to the body container, depending on the screen size
     } //for wide screens with the menu open translate the page content by the correct distance
 
 
@@ -102,8 +115,8 @@ var burgerMenuJS = function burgerMenuJS() {
         header.classList.remove("header-animation-scroll-up");
         header.style.transition = "none";
 
-        if (header.classList.contains("nav-hide")) {
-          header.style.transform = "translateX(0)"; //relatively positioned
+        if (header.classList.contains("nav-hide-ie")) {
+          header.style.transform = "translateX(0)"; //absolute position
         } else {
           header.style.transform = "translateX(-350px)"; //fixed position
         }
@@ -121,8 +134,8 @@ var burgerMenuJS = function burgerMenuJS() {
         header.classList.remove("header-animation-scroll-up");
         header.style.transition = "none";
 
-        if (header.classList.contains("nav-hide")) {
-          header.style.transform = "translateX(0)"; //relatively positioned
+        if (header.classList.contains("nav-hide-ie")) {
+          header.style.transform = "translateX(0)"; //absolute position
         } else {
           header.style.transform = "translateX(-270px)"; //fixed position
         }
@@ -164,11 +177,10 @@ var burgerMenuJS = function burgerMenuJS() {
       menuOverlay.style.transform = "translateX(-350px)"; //if the browser is IE and therefore the position setting is fixed instead of sticky
 
       if (internetExplorer === true) {
-        // if(header.classList.contains("nav-hide")) {
-        if (header.classList.contains("nav-hide-ie-test")) {
-          header.style.transform = "translateX(0px)"; //relatively positioned.
+        if (header.classList.contains("nav-hide-ie")) {
+          header.style.transform = "translateX(0px)"; //absolute position
         } else {
-          header.style.transform = "translateX(-349px)"; //fixed position. For some reason having 1 pixel less prevents an unexpected line to the right of the nav bar next to scroll.
+          header.style.transform = "translateX(-350px)"; //fixed position
         }
       }
     } else {
@@ -177,9 +189,8 @@ var burgerMenuJS = function burgerMenuJS() {
       menuOverlay.style.transform = "translateX(-270px)"; //if the browser is IE and therefore the position setting is fixed instead of sticky
 
       if (internetExplorer === true) {
-        //if(header.classList.contains("nav-hide")) {
-        if (header.classList.contains("nav-hide-ie-test")) {
-          header.style.transform = "translateX(0)"; //relatively positioned
+        if (header.classList.contains("nav-hide-ie")) {
+          header.style.transform = "translateX(0)"; //absolute position
         } else {
           header.style.transform = "translateX(-270px)"; //fixed position
         }
